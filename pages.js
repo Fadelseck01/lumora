@@ -246,7 +246,8 @@ function longText(L){ if(!L) return ""; return [L.key.join(" "), ...L.sections.f
   if(typeof longArticles==="undefined") return;
   items.forEach(x=>{
     const A = longArticles[x.id]; if(!A) return;
-    if(A.video) x.yt = A.video;
+    const dead = window.LUMORA_DEAD_VIDEOS || [];
+    if(A.video && !dead.includes(A.video.id)) x.yt = A.video;
     if(A.fr && A.en){
       const words = longText(A.fr).split(/\s+/).length + String(x.body.fr).split(/\s+/).length;
       x.min = Math.max(x.min, Math.round(words/200));
