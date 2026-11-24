@@ -131,7 +131,7 @@ bigbang: {
 },
 
 andromeda: {
- sources:[{t:"Carnegie Science — Hubble's discovery of Cepheid variable V1 in Andromeda (1923)", u:"https://carnegiescience.edu/news/hubbles-famous-m31-vari-star-plate"}],
+ sources:[{t:"Wikipedia — Andromeda Galaxy (history of observation)", u:"https://en.wikipedia.org/wiki/Andromeda_Galaxy"}],
  fr:[
   {h:"La galaxie qui a agrandi l'univers", p:[
    "Il y a à peine un siècle, beaucoup d'astronomes pensaient que la Voie lactée était tout l'univers, et qu'Andromède n'était qu'une « nébuleuse » de gaz parmi nos étoiles. En 1920, un célèbre débat a opposé deux astronomes américains, Harlow Shapley et Heber Curtis, sur cette question.",
