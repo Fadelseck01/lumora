@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24T20:03:01Z",
- "checked": "2026-11-24T20:03:01Z",
+ "updated": "2026-11-24T21:14:10Z",
+ "checked": "2026-11-24T21:14:10Z",
  "sources": [
   {
    "id": "nasa",
@@ -8,7 +8,7 @@
    "home": "https://www.nasa.gov",
    "ok": true,
    "found": 10,
-   "new": 2
+   "new": 0
   },
   {
    "id": "nasa-iotd",
@@ -16,7 +16,7 @@
    "home": "https://www.nasa.gov/image-of-the-day/",
    "ok": true,
    "found": 60,
-   "new": 48
+   "new": 49
   },
   {
    "id": "esa",
@@ -24,7 +24,7 @@
    "home": "https://www.esa.int",
    "ok": true,
    "found": 15,
-   "new": 3
+   "new": 4
   },
   {
    "id": "esa-fr",
@@ -76,6 +76,21 @@
   }
  ],
  "items": [
+  {
+   "id": "9aa4e60033a103f9",
+   "source": "smithsonian",
+   "sourceName": "Smithsonian",
+   "lang": "en",
+   "title": "The First-Ever Children's Booker Prize Revealed Its Eight Shortlisted Finalists. Meet the Four Young Judges Deciding the Winner",
+   "summary": "Launched amid a historic low in youth reading enjoyment, the award will be decided by a joint panel of three adults and four young readers, who were selected from more than 4,000 applicants",
+   "link": "https://www.smithsonianmag.com/smart-news/the-first-ever-childrens-booker-prize-revealed-its-eight-shortlisted-finalists-meet-the-four-young-judges-deciding-the-winner-180989940/",
+   "published": "2026-11-24T20:44:37Z",
+   "image": null,
+   "imageCredit": null,
+   "universe": "history",
+   "related": null,
+   "firstSeen": "2026-11-24T21:14:10Z"
+  },
   {
    "id": "b4aaa1b0d732706f",
    "source": "mongabay",
@@ -1815,21 +1830,6 @@
    "universe": "cosmos",
    "related": null,
    "firstSeen": "2026-11-24T03:48:02Z"
-  },
-  {
-   "id": "e0888d17f58a5509",
-   "source": "smithsonian",
-   "sourceName": "Smithsonian",
-   "lang": "en",
-   "title": "Octopuses Are the Ultimate Escape Artists. Now Scientists Know How the Creatures Contort Themselves to Squeeze Through Tiny Holes",
-   "summary": "",
-   "link": "https://www.smithsonianmag.com/smart-news/octopuses-are-the-ultimate-escape-artists-now-scientists-know-how-the-creatures-contort-themselves-to-squeeze-through-tiny-holes-180989846/",
-   "published": "2026-11-10T21:17:11Z",
-   "image": null,
-   "imageCredit": null,
-   "universe": "living",
-   "related": "octopus",
-   "firstSeen": "2026-11-24T03:19:40Z"
   },
   {
    "id": "6fa59733af79169e",
