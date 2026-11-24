@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24T05:51:31Z",
- "checked": "2026-11-24T05:51:31Z",
+ "updated": "2026-11-24T06:18:21Z",
+ "checked": "2026-11-24T06:18:21Z",
  "sources": [
   {
    "id": "nasa",
@@ -8,7 +8,7 @@
    "home": "https://www.nasa.gov",
    "ok": true,
    "found": 10,
-   "new": 2
+   "new": 0
   },
   {
    "id": "nasa-iotd",
@@ -56,7 +56,7 @@
    "home": "https://www.who.int/news",
    "ok": true,
    "found": 83,
-   "new": 82
+   "new": 83
   },
   {
    "id": "smithsonian",
@@ -76,6 +76,21 @@
   }
  ],
  "items": [
+  {
+   "id": "e603e16b0941643d",
+   "source": "mongabay",
+   "sourceName": "Mongabay",
+   "lang": "en",
+   "title": "Bush dogs are very rare. You’re 100x more likely to see a jaguar",
+   "summary": "Founder’s Briefs: An occasional series where Mongabay founder Rhett Ayers Butler shares analysis, perspectives and story summaries. Biologists can spend decades working in the Amazon without seeing a bush dog. A new study quantifies just how rare the wild canids are. Writing in…",
+   "link": "https://news.mongabay.com/short-article/2026/11/bush-dogs-are-very-rare-youre-100x-more-likely-to-see-a-jaguar/",
+   "published": "2026-11-24T06:08:50Z",
+   "image": null,
+   "imageCredit": null,
+   "universe": "living",
+   "related": null,
+   "firstSeen": "2026-11-24T06:18:21Z"
+  },
   {
    "id": "f09a9e79e8c1cf63",
    "source": "nasa",
@@ -1138,21 +1153,6 @@
    "image": null,
    "imageCredit": null,
    "universe": "peoples",
-   "related": null,
-   "firstSeen": "2026-11-24T04:34:34Z"
-  },
-  {
-   "id": "a8f50cc898f76fb5",
-   "source": "mongabay",
-   "sourceName": "Mongabay",
-   "lang": "en",
-   "title": "Indigenous protesters board soy and oil barges on Brazilian Amazon river",
-   "summary": "Hundreds of Indigenous protesters on several small boats and canoes stopped and boarded barges carrying soybeans and fuel on Brazil’s Tapajós River in the eastern Amazon. The demonstrations on Nov. 14 and 15 were to demand protection for the river amid industrial expansion and…",
-   "link": "https://news.mongabay.com/short-article/2026/11/indigenous-protesters-board-soy-and-oil-barges-on-brazilian-amazon-river/",
-   "published": "2026-11-20T18:09:50Z",
-   "image": null,
-   "imageCredit": null,
-   "universe": "earth",
    "related": null,
    "firstSeen": "2026-11-24T04:34:34Z"
   },
