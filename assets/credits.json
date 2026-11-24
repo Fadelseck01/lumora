@@ -34,5 +34,23 @@
   "license": "Public domain",
   "artist": "Olaus Magnus.",
   "credit": "Kari Tarkiainen: Sveriges Österland. Från forntiden till Gustav Vasa. Helsingfors 2008."
+ },
+ "assets/photos/plus/mansa-catalan-atlas.jpg": {
+  "title": "File:Catalan Atlas BNF Sheet 6 Mansa Musa (cropped).jpg",
+  "license": "Public domain",
+  "artist": "attributed to Abraham Cresques",
+  "credit": "This file comes from Gallica Digital Library and is available under the digital ID btv1b55002481n"
+ },
+ "assets/photos/plus/zimbabwe-tower.jpg": {
+  "title": "File:Conical Tower - Great Enclosure IV (47561215932).jpg",
+  "license": "CC BY-SA 2.0",
+  "artist": "Andrew Moore from Johannesburg, South Africa",
+  "credit": "Conical Tower - Great Enclosure IV"
+ },
+ "assets/photos/plus/pompeii-forum.jpg": {
+  "title": "File:Forum, Pompeii 05.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Adam Harangozó",
+  "credit": "Own work"
  }
 }
