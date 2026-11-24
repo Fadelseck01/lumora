@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24T21:31:19Z",
- "checked": "2026-11-24T21:31:19Z",
+ "updated": "2026-11-24T21:43:42Z",
+ "checked": "2026-11-24T21:43:42Z",
  "sources": [
   {
    "id": "nasa",
@@ -16,7 +16,7 @@
    "home": "https://www.nasa.gov/image-of-the-day/",
    "ok": true,
    "found": 60,
-   "new": 49
+   "new": 50
   },
   {
    "id": "esa",
@@ -76,6 +76,21 @@
   }
  ],
  "items": [
+  {
+   "id": "f78eeb5c4dbcb404",
+   "source": "nasa",
+   "sourceName": "NASA",
+   "lang": "en",
+   "title": "NASA+ Content Coming to Big Screen at Greenbelt, Maryland Cinema",
+   "summary": "NASA announced Monday that NASA+ content has found its first theatrical home at The Greenbelt Cinema in Greenbelt, Maryland, expanding the agency’s reach across major viewing platforms and bringing space even closer to home. “The National Aeronautics and Space Act of 1958 calls…",
+   "link": "https://www.nasa.gov/nasa/nasa-content-coming-to-big-screen-at-greenbelt-maryland-cinema/",
+   "published": "2026-11-24T21:14:36Z",
+   "image": "https://www.nasa.gov/wp-content/uploads/2026/11/nasa-promo-image-horizontal-1.jpg?w=2048",
+   "imageCredit": "NASA",
+   "universe": "cosmos",
+   "related": null,
+   "firstSeen": "2026-11-24T21:43:42Z"
+  },
   {
    "id": "ba44a48be42177bd",
    "source": "nasa",
@@ -1857,21 +1872,6 @@
    "published": "2026-11-10T15:39:00Z",
    "image": "https://www.nasa.gov/wp-content/uploads/2026/11/jsc2026e425219orig.jpg",
    "imageCredit": "NASA",
-   "universe": "cosmos",
-   "related": null,
-   "firstSeen": "2026-11-24T03:48:02Z"
-  },
-  {
-   "id": "30b251cb494a4c24",
-   "source": "esa",
-   "sourceName": "ESA",
-   "lang": "en",
-   "title": "Predicting El Niño's impact on carbon sinks",
-   "summary": "Satellite observations across the central-eastern Pacific, combined with seasonal climate forecasts, are pointing to the development of one of the strongest El Niño events in recent decades – and offer early insights into where the land’s ability to absorb and store carbon could…",
-   "link": "https://www.esa.int/articles/about-us/directorates/earth-observation-programmes/futureeo/space-for-our-climate/predicting-el-nino-s-impact-on-carbon-sinks",
-   "published": "2026-11-10T15:30:00Z",
-   "image": null,
-   "imageCredit": null,
    "universe": "cosmos",
    "related": null,
    "firstSeen": "2026-11-24T03:48:02Z"
