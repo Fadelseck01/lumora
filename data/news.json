@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24T19:15:51Z",
- "checked": "2026-11-24T19:15:51Z",
+ "updated": "2026-11-24T20:03:01Z",
+ "checked": "2026-11-24T20:03:01Z",
  "sources": [
   {
    "id": "nasa",
@@ -8,7 +8,7 @@
    "home": "https://www.nasa.gov",
    "ok": true,
    "found": 10,
-   "new": 1
+   "new": 2
   },
   {
    "id": "nasa-iotd",
@@ -24,7 +24,7 @@
    "home": "https://www.esa.int",
    "ok": true,
    "found": 15,
-   "new": 2
+   "new": 3
   },
   {
    "id": "esa-fr",
@@ -64,7 +64,7 @@
    "home": "https://www.smithsonianmag.com",
    "ok": true,
    "found": 10,
-   "new": 0
+   "new": 1
   },
   {
    "id": "mongabay",
@@ -76,6 +76,51 @@
   }
  ],
  "items": [
+  {
+   "id": "b4aaa1b0d732706f",
+   "source": "mongabay",
+   "sourceName": "Mongabay",
+   "lang": "en",
+   "title": "‘We don’t want it’: First Nations reject plan to release mining waste into water source",
+   "summary": "Suncor, Canada’s second-largest oil company, wants to release treated wastewater from mining oil in Alberta’s tar sands into a drinking water source for the community of Fort Chipewyan. Investigative reporter Leana Hosea visited the community to learn more. She joins the…",
+   "link": "https://news.mongabay.com/podcast/2026/11/we-dont-want-it-first-nations-reject-plan-to-release-mining-waste-into-water-source/",
+   "published": "2026-11-24T19:53:25Z",
+   "image": null,
+   "imageCredit": null,
+   "universe": "living",
+   "related": null,
+   "firstSeen": "2026-11-24T20:03:01Z"
+  },
+  {
+   "id": "82b4dd566f65645d",
+   "source": "smithsonian",
+   "sourceName": "Smithsonian",
+   "lang": "en",
+   "title": "A.I. Cracked the Riemann Hypothesis, the Most Famous Unsolved Math Problem. The Proof Is 17 Million Lines Long",
+   "summary": "Mathematicians have puzzled over the problem since the 19th century. An Anthropic researcher has used Claude to produce a proof, but humans may need years to understand how it works",
+   "link": "https://www.smithsonianmag.com/innovation/ai-cracked-the-riemann-hypothesis-the-most-famous-unsolved-math-problem-the-proof-is-17-million-lines-long-180989939/",
+   "published": "2026-11-24T19:43:13Z",
+   "image": null,
+   "imageCredit": null,
+   "universe": "history",
+   "related": null,
+   "firstSeen": "2026-11-24T20:03:01Z"
+  },
+  {
+   "id": "d533626949309de9",
+   "source": "nasa",
+   "sourceName": "NASA",
+   "lang": "en",
+   "title": "Amateur Astronomer? Be a Kilonova Catcher!",
+   "summary": "Neutron stars are the ultra-dense, city-sized leftovers of dead stars. When they collide, they can release a brief flash of light called a kilonova. These immensely powerful events forge much of the universe’s gold, platinum and other heavy elements. Since a kilonova fades…",
+   "link": "https://science.nasa.gov/get-involved/citizen-science/amateur-astronomer-be-a-kilonova-catcher/",
+   "published": "2026-11-24T19:19:52Z",
+   "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/citizen-science/highlights/2026/NGC_4993.jpg?w=700&h=748&fit=clip",
+   "imageCredit": "NASA",
+   "universe": "cosmos",
+   "related": null,
+   "firstSeen": "2026-11-24T20:03:01Z"
+  },
   {
    "id": "0fc14089684c75dd",
    "source": "nasa",
@@ -90,6 +135,21 @@
    "universe": "cosmos",
    "related": null,
    "firstSeen": "2026-11-24T19:15:51Z"
+  },
+  {
+   "id": "40b4609b4a6296d3",
+   "source": "nasa",
+   "sourceName": "NASA",
+   "lang": "en",
+   "title": "AGU Hyperwall Schedule",
+   "summary": "American Geophysical Union (AGU) 2026 Join NASA in the Exhibit Hall (Booth #525) for Hyperwall Storytelling by NASA experts. Full Hyperwall Agenda below. TUESDAY, NOVEMBER 17 10:30 AMHigh Resolution Hydrology Simulations and Agentic Super Intelligence Interfaces for Mapping…",
+   "link": "https://science.nasa.gov/earth/agu-hyperwall-schedule/",
+   "published": "2026-11-24T18:55:42Z",
+   "image": null,
+   "imageCredit": "NASA",
+   "universe": "cosmos",
+   "related": null,
+   "firstSeen": "2026-11-24T20:03:01Z"
   },
   {
    "id": "b38c01fbe9f4587c",
@@ -855,21 +915,6 @@
    "universe": "history",
    "related": null,
    "firstSeen": "2026-11-24T03:48:02Z"
-  },
-  {
-   "id": "a828bacc28be7bc8",
-   "source": "mongabay",
-   "sourceName": "Mongabay",
-   "lang": "en",
-   "title": "Colombia president’s move on mining, oil weakens country’s Amazon protections, experts warn",
-   "summary": "After repealing a measure that banned large-scale mining and hydrocarbon extraction in the Amazon, the Colombian government is sending mixed signals, organizations and experts warn.",
-   "link": "https://news.mongabay.com/2026/11/colombia-presidents-move-on-mining-oil-weakens-countrys-amazon-protections-experts-warn/",
-   "published": "2026-11-23T14:19:44Z",
-   "image": null,
-   "imageCredit": null,
-   "universe": "living",
-   "related": null,
-   "firstSeen": "2026-11-24T04:34:34Z"
   },
   {
    "id": "814832dfa939f441",
@@ -1787,21 +1832,6 @@
    "firstSeen": "2026-11-24T03:19:40Z"
   },
   {
-   "id": "ebecec327f4556fc",
-   "source": "smithsonian",
-   "sourceName": "Smithsonian",
-   "lang": "en",
-   "title": "This Adorable, Orphaned Baby Walrus Was Rescued by Two Researchers in Alaska. Now, He's Found a New Home in Florida",
-   "summary": "",
-   "link": "https://www.smithsonianmag.com/smart-news/this-adorable-orphaned-baby-walrus-was-rescued-by-two-researchers-in-alaska-now-hes-found-a-new-home-in-florida-180989847/",
-   "published": "2026-11-10T16:00:00Z",
-   "image": null,
-   "imageCredit": null,
-   "universe": "living",
-   "related": null,
-   "firstSeen": "2026-11-24T03:19:40Z"
-  },
-  {
    "id": "6fa59733af79169e",
    "source": "nasa-iotd",
    "sourceName": "NASA · Image du jour",
@@ -1842,36 +1872,6 @@
    "published": "2026-11-09T16:57:00Z",
    "image": "https://www.nasa.gov/wp-content/uploads/2026/11/20261106-artemiscelebrationgala-sl1-4202.jpg",
    "imageCredit": "NASA",
-   "universe": "cosmos",
-   "related": null,
-   "firstSeen": "2026-11-24T03:48:02Z"
-  },
-  {
-   "id": "9f74ee0cfb257a08",
-   "source": "nasa-iotd",
-   "sourceName": "NASA · Image du jour",
-   "lang": "en",
-   "title": "M30's Sparkling Stars",
-   "summary": "This NASA/ESA Hubble Space Telescope image features the globular star cluster called Messier 30 (M30), also called NGC 7099.",
-   "link": "https://www.nasa.gov/image-detail/hubble-m30-potm2610a/",
-   "published": "2026-11-06T16:28:00Z",
-   "image": "https://www.nasa.gov/wp-content/uploads/2026/11/hubble-m30-potm2610a.jpg",
-   "imageCredit": "NASA",
-   "universe": "cosmos",
-   "related": null,
-   "firstSeen": "2026-11-24T03:48:02Z"
-  },
-  {
-   "id": "1ab1162dfc5b3c95",
-   "source": "esa",
-   "sourceName": "ESA",
-   "lang": "en",
-   "title": "MTG-I2 weather satellite delivers first images",
-   "summary": "The Meteosat Third Generation (MTG) mission’s second Imager satellite has delivered its first images, showing weather patterns over Europe and Africa.",
-   "link": "https://www.esa.int/articles/about-us/directorates/earth-observation-programmes/meteorological-missions/meteosat-third-generation/mtg-i2-weather-satellite-delivers-first-images",
-   "published": "2026-11-06T11:15:00Z",
-   "image": null,
-   "imageCredit": null,
    "universe": "cosmos",
    "related": null,
    "firstSeen": "2026-11-24T03:48:02Z"
