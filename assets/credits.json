@@ -190,5 +190,65 @@
   "license": "Public domain",
   "artist": "NASA/CXC/M. Weiss",
   "credit": "Chandra X-Ray Observatory: 1E 0657-56"
+ },
+ "assets/photos/plus/codex-regius.jpg": {
+  "title": "File:Codex Regius of Eddaic Poems.jpg",
+  "license": "Public domain",
+  "artist": "Unknown authorUnknown author",
+  "credit": "http://jrider.web.wesleyan.edu/wescourses/2001f/fren234/01/1300.htm"
+ },
+ "assets/photos/plus/medusa-caravaggio.jpg": {
+  "title": "File:Medusa-Caravaggio (Uffizi).jpg",
+  "license": "Public domain",
+  "artist": "Caravaggio",
+  "credit": "Self-scanned"
+ },
+ "assets/photos/plus/gorgon-corfu.jpg": {
+  "title": "File:Close up of Gorgon at the pediment of Artemis temple in Corfu.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "Dr.K.",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/weighing-heart.jpg": {
+  "title": "File:BD Weighing of the Heart.jpg",
+  "license": "Public domain",
+  "artist": "Photographed by the British Museum; original artist unknown",
+  "credit": "Eternal Egypt: Masterworks of Ancient Art from the British Museum by Edna R. Russmann"
+ },
+ "assets/photos/plus/anubis-shrine.jpg": {
+  "title": "File:Anubis-shrine (cropped).jpg",
+  "license": "Public domain",
+  "artist": "Harry Burton",
+  "credit": "Imgur"
+ },
+ "assets/photos/plus/akan-goldweights.jpg": {
+  "title": "File:Akan Goldweights.jpg",
+  "license": "CC BY 4.0",
+  "artist": "Bambiwa",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/bull-leaping.jpg": {
+  "title": "File:Bull leaping minoan fresco archmus Heraklion (cropped).jpg",
+  "license": "CC0",
+  "artist": "Jebulon",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/giant-squid.jpg": {
+  "title": "File:Architeuthis dux specimen F 88555.jpg",
+  "license": "CC BY 4.0",
+  "artist": "Rodney Start, Museums Victoria",
+  "credit": "https://collections.museumsvictoria.com.au/specimens/664297"
+ },
+ "assets/photos/plus/tamamo.jpg": {
+  "title": "File:Tamamo-no-mae-woodblock.jpg",
+  "license": "Public domain",
+  "artist": "Yoshitoshi",
+  "credit": "Jacksonarts.com https://jacksonarts.com/product/yoshitoshi-tamamo-no-mai/"
+ },
+ "assets/photos/plus/sessho-seki.jpg": {
+  "title": "File:Splited Sessho-Seki.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Miyuki Meinaka",
+  "credit": "Own work"
  }
 }
