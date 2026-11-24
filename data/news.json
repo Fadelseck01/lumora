@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24T05:02:06Z",
- "checked": "2026-11-24T05:02:06Z",
+ "updated": "2026-11-24T05:51:31Z",
+ "checked": "2026-11-24T05:51:31Z",
  "sources": [
   {
    "id": "nasa",
@@ -8,7 +8,7 @@
    "home": "https://www.nasa.gov",
    "ok": true,
    "found": 10,
-   "new": 0
+   "new": 2
   },
   {
    "id": "nasa-iotd",
@@ -76,6 +76,36 @@
   }
  ],
  "items": [
+  {
+   "id": "f09a9e79e8c1cf63",
+   "source": "nasa",
+   "sourceName": "NASA",
+   "lang": "en",
+   "title": "APOD: 2026 November 24 – Galaxies Battle in the NGC 7771 Group",
+   "summary": "APOD Science APOD APOD: 2026 November 24 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a…",
+   "link": "https://science.nasa.gov/image-article/apod-2026-november-24-galaxies-battle-in-the-ngc-7771-group/",
+   "published": "2026-11-24T05:05:00Z",
+   "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/november/NGC7771group_Marinoni_1179.jpg?w=1179&h=1422&fit=clip",
+   "imageCredit": "NASA",
+   "universe": "cosmos",
+   "related": null,
+   "firstSeen": "2026-11-24T05:51:31Z"
+  },
+  {
+   "id": "e3618abe24d172fc",
+   "source": "nasa",
+   "sourceName": "NASA",
+   "lang": "en",
+   "title": "Eruption Extends Iwo Jima’s Beach",
+   "summary": "A volcanic eruption just off the southeast shore of the Pacific island has reshaped the coast, but it’s unclear how long the new land will survive.",
+   "link": "https://science.nasa.gov/earth/earth-observatory/eruption-extends-iwo-jimas-beach/",
+   "published": "2026-11-24T05:01:00Z",
+   "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/esd/eo/images/iotd/2026/eruption-enlarges-iwo-jima’s-beach/iwojima_oli2_20261026.jpg",
+   "imageCredit": "NASA",
+   "universe": "earth",
+   "related": null,
+   "firstSeen": "2026-11-24T05:51:31Z"
+  },
   {
    "id": "f03f09e25cc2f963",
    "source": "mongabay",
@@ -1845,21 +1875,6 @@
    "universe": "cosmos",
    "related": null,
    "firstSeen": "2026-11-24T03:48:02Z"
-  },
-  {
-   "id": "a6ce6c799899740d",
-   "source": "who",
-   "sourceName": "OMS / WHO",
-   "lang": "en",
-   "title": "New WHO technical package to help countries improve health data for COVID-19 response and beyond",
-   "summary": "",
-   "link": "https://www.who.int/news/item/27-08-2020-new-who-technical-package-health-data-for-covid-19-response",
-   "published": "2026-10-10T07:49:45Z",
-   "image": null,
-   "imageCredit": null,
-   "universe": "body",
-   "related": null,
-   "firstSeen": "2026-11-24T04:34:34Z"
   }
  ]
 }
