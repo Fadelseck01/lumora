@@ -250,5 +250,71 @@
   "license": "CC BY-SA 4.0",
   "artist": "Miyuki Meinaka",
   "credit": "Own work"
+ },
+ "assets/photos/plus/djinguereber.jpg": {
+  "title": "File:Djinguereber Mosque, Timbuktu.jpg",
+  "license": "CC BY 2.0",
+  "artist": "upyernoz",
+  "credit": "Flickr: Djinguereber Mosque, Timbuktu"
+ },
+ "assets/photos/plus/timbuktu-manuscript.jpg": {
+  "title": "File:Timbuktu-manuscripts-astronomy-tables.jpg",
+  "license": "Public domain",
+  "artist": "Unknown authorUnknown author",
+  "credit": "EurAstro : Mission to Mali"
+ },
+ "assets/photos/plus/cleopatra-berlin.jpg": {
+  "title": "File:Bust of Cleopatra VII - Altes Museum - Berlin - Germany 2017 (3).jpg",
+  "license": "Public domain",
+  "artist": "José Luiz",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/dendera-cleopatra.jpg": {
+  "title": "File:Dendera Tempel 14.JPG",
+  "license": "CC BY 3.0",
+  "artist": "Olaf Tausch",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/zimbabwe-wall.jpg": {
+  "title": "File:Wall of the great enclosure, Great Zimbabwe.JPG",
+  "license": "CC BY 3.0",
+  "artist": "Jens Klinzing",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/zimbabwe-birds.jpg": {
+  "title": "File:Soapstone birds on pedestals.jpg",
+  "license": "Public domain",
+  "artist": "James Theodore Bent",
+  "credit": "The Ruined Cities of Mashonaland - https://archive.org/details/ruinedcitiesofma00jthe"
+ },
+ "assets/photos/plus/vesuvius-pompeii.jpg": {
+  "title": "File:Mount Vesuvius from Pompeii2.jpg",
+  "license": "CC0",
+  "artist": "Jebulon",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/pompeii-casts.jpg": {
+  "title": "File:-Plaster Casts of Bodies, Pompeii- MET DP262064.jpg",
+  "license": "CC0",
+  "artist": "Giorgio Sommer",
+  "credit": "This file was donated to Wikimedia Commons as part of a project by the Metropolitan Museum of Art. See the Image and Dat"
+ },
+ "assets/photos/plus/rihla-manuscript.jpg": {
+  "title": "File:Manuscript of Ibn Juzayy (XIV).png",
+  "license": "CC BY-SA 4.0",
+  "artist": "Bibliothèque nationale de France; Ibn Juzayy; Ibn Battuta",
+  "credit": "https://archivesetmanuscrits.bnf.fr/ark:/12148/cc302100/"
+ },
+ "assets/photos/plus/goree-door.jpg": {
+  "title": "File:Goree 024 (46581124792).jpg",
+  "license": "CC BY 2.0",
+  "artist": "John  Crane from Prague, Czech Republic",
+  "credit": "Goree 024"
+ },
+ "assets/photos/plus/goree-1685.jpg": {
+  "title": "File:View of Goree Island (Senegal), 1685.jpg",
+  "license": "Public domain",
+  "artist": "Alain Manesson Mallet",
+  "credit": "http://www.columbia.edu/itc/mealac/pritchett/00generallinks/mallet/index.html#index"
  }
 }
