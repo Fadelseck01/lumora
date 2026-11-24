@@ -8,6 +8,19 @@ window.addLong = window.addLong || function(o){
   }
 };
 
+window.addParas = window.addParas || function(o){
+  /* o = { id: { fr: { "Titre de section": "paragraphe" | ["p1","p2"] }, en: {...} } } — ajoute des paragraphes à une section */
+  for(const id in o){ const A=longArticles[id]; if(!A) continue;
+    ["fr","en"].forEach(l=>{ const m=o[id][l]; if(!m||!A[l]) return;
+      for(const h in m){ const s=A[l].sections.find(x=>x.h===h); if(s) s.p.push(...[].concat(m[h])); } }); }
+};
+window.addFig = window.addFig || function(o){
+  /* o = { id: { fr: { "Titre": {src,cap,credit} }, en: {...} } } — illustre une section par une photo */
+  for(const id in o){ const A=longArticles[id]; if(!A) continue;
+    ["fr","en"].forEach(l=>{ const m=o[id][l]; if(!m||!A[l]) return;
+      for(const h in m){ const s=A[l].sections.find(x=>x.h===h); if(s) s.fig=m[h]; } }); }
+};
+
 addLong({
 
 blackhole: {
@@ -202,4 +215,65 @@ darkmatter: {
  ]
 }
 
+});
+
+/* Troisièmes paragraphes des nouvelles sections (objectif ~1 200 mots) */
+addParas({
+ blackhole:{
+  fr:{"Petits, moyens et géants":"Depuis 2015, les détecteurs d'ondes gravitationnelles LIGO et Virgo « entendent » régulièrement des trous noirs fusionner, à des milliards d'années-lumière. Plusieurs centaines de ces collisions ont déjà été enregistrées. Elles ont révélé des trous noirs de masses inattendues, parfois trop lourds pour être nés directement d'une seule étoile, ce qui suggère qu'ils se sont formés par fusions successives, comme des boules de neige qui grossissent.",
+      "Que se passerait-il si l'on tombait dedans ?":"Ces effets ne sont pas que théoriques. Les satellites GPS doivent corriger en permanence leurs horloges, car le temps s'écoule un peu plus vite en altitude, où la gravité terrestre est plus faible, qu'au sol. Sans cette correction, inspirée directement de la relativité d'Einstein, la position indiquée par nos téléphones dériverait de plusieurs kilomètres par jour."},
+  en:{"Small, medium and giant":"Since 2015 the LIGO and Virgo gravitational-wave detectors have regularly \"heard\" black holes merging billions of light-years away. Several hundred such collisions have already been recorded. They have revealed black holes of unexpected masses, sometimes too heavy to have formed directly from a single star, suggesting they grew through successive mergers, like snowballs getting bigger.",
+      "What would happen if you fell in?":"These effects are not just theory. GPS satellites must constantly correct their clocks, because time runs slightly faster at altitude, where Earth's gravity is weaker, than on the ground. Without this correction, taken straight from Einstein's relativity, the position shown by our phones would drift by several kilometres a day."}
+ },
+ oort:{
+  fr:{"Des visiteurs venus d'autres étoiles":"Leur vitesse les trahit. Une comète née autour du Soleil suit une orbite fermée, en forme d'ellipse. Un visiteur interstellaire, lui, arrive trop vite pour être retenu par la gravité solaire : sa trajectoire est ouverte, comme un boomerang qui ne reviendrait jamais. Avec les nouveaux grands relevés du ciel, les astronomes s'attendent à en découvrir plusieurs chaque année.",
+      "Une planète cachée aux confins ?":"Ce ne serait pas la première fois qu'une planète est trouvée par le calcul avant d'être vue. En 1846, le mathématicien français Urbain Le Verrier avait prédit la position de Neptune en étudiant les irrégularités de l'orbite d'Uranus ; l'astronome allemand Johann Galle l'a observée la nuit même où il a reçu ses calculs. Les chercheurs de la Planète Neuf espèrent un succès comparable."},
+  en:{"Visitors from other stars":"Their speed gives them away. A comet born around the Sun follows a closed, elliptical orbit. An interstellar visitor arrives too fast to be held by the Sun's gravity: its path is open, like a boomerang that never comes back. With the new large sky surveys, astronomers expect to discover several every year.",
+      "A hidden planet at the edge?":"It would not be the first time a planet was found by calculation before being seen. In 1846 the French mathematician Urbain Le Verrier predicted Neptune's position by studying irregularities in Uranus's orbit; the German astronomer Johann Galle observed it the very night he received the calculations. Planet Nine hunters hope for a similar success."}
+ },
+ betelgeuse:{
+  fr:{"Siwarha, la compagne enfin aperçue":"Cette compagne aurait un destin bref. Elle tourne si près de Bételgeuse qu'elle traverse presque son atmosphère extérieure, très étendue. Selon les chercheurs, elle pourrait être freinée peu à peu, puis avalée par la géante d'ici quelques milliers d'années, bien avant que Bételgeuse n'explose. La compagne expliquerait aussi certains mouvements de poussière observés autour de l'étoile.",
+      "La première étoile mesurée":"Bételgeuse est si grande que, placée au centre du Système solaire, sa surface dépasserait l'orbite de Mars, voire celle de Jupiter selon les estimations. Pourtant, sa matière est extrêmement diluée : ses couches extérieures sont des milliers de fois moins denses que l'air que nous respirons. C'est un immense ballon de gaz chaud, qui « respire » en gonflant et en se contractant au fil des années."},
+  en:{"Siwarha, the companion seen at last":"This companion may have a short future. It orbits so close to Betelgeuse that it almost passes through the giant's vast outer atmosphere. According to researchers, it could gradually be slowed down and then swallowed by the giant within a few thousand years, long before Betelgeuse explodes. The companion may also explain some movements of dust seen around the star.",
+      "The first star ever measured":"Betelgeuse is so large that, placed at the centre of the Solar System, its surface would reach beyond the orbit of Mars, perhaps even Jupiter by some estimates. Yet its matter is extremely thin: its outer layers are thousands of times less dense than the air we breathe. It is a huge balloon of hot gas that \"breathes\", swelling and shrinking over the years."}
+ },
+ saturn:{
+  fr:{"Titan et Encelade, deux mondes à part":"Titan est un laboratoire précieux pour comprendre la Terre primitive. Son atmosphère orangée est remplie de molécules organiques complexes, formées par la lumière du Soleil, qui tombent lentement vers le sol comme une neige brune. À –180 °C, l'eau y est dure comme de la roche : les montagnes sont faites de glace et les rivières de méthane liquide. Dragonfly devrait voler d'un site à l'autre pour analyser ces dunes et ces cratères.",
+      "274 lunes, un hexagone et des anneaux qui disparaissent":"Ces passages par la tranche sont aussi une aubaine pour les astronomes : quand l'éclat des anneaux disparaît, les petites lunes proches de la planète deviennent plus faciles à repérer. C'est ainsi que la lune Janus a été découverte en 1966. Prochain rendez-vous : vers 2038-2039, les anneaux se présenteront de nouveau par la tranche vus de la Terre."},
+  en:{"Titan and Enceladus, two worlds apart":"Titan is a precious laboratory for understanding the early Earth. Its orange atmosphere is full of complex organic molecules, made by sunlight, which slowly fall to the ground like brown snow. At –180 °C, water there is as hard as rock: the mountains are made of ice and the rivers of liquid methane. Dragonfly should fly from site to site to analyse its dunes and craters.",
+      "274 moons, a hexagon and vanishing rings":"These edge-on passages are also a boon for astronomers: when the rings' glare vanishes, small moons close to the planet become easier to spot. That is how the moon Janus was discovered in 1966. Next appointment: around 2038–2039, the rings will again appear edge-on from Earth."}
+ },
+ bigbang:{
+  fr:{"Les premières galaxies vues par James Webb":"Webb ne voit pas seulement des galaxies : il analyse aussi leur lumière, décomposée comme un arc-en-ciel, pour mesurer leur distance et leur composition. Il a ainsi détecté de l'oxygène dans des galaxies très anciennes, preuve que des générations d'étoiles y avaient déjà vécu et explosé. Chaque nouvelle image repousse un peu plus loin la frontière de ce que l'on sait des débuts de l'univers.",
+      "Les grandes questions encore ouvertes":"Des indices récents ajoutent un nouveau suspense. En 2024 et 2025, la grande carte des galaxies réalisée par l'instrument DESI, en Arizona, a suggéré que l'énergie sombre, la mystérieuse force qui accélère l'expansion de l'univers, pourrait faiblir avec le temps. Si cela se confirme, notre vision de l'avenir lointain de l'univers pourrait changer. Les chercheurs restent prudents et attendent davantage de données."},
+  en:{"The first galaxies seen by James Webb":"Webb does not just see galaxies: it also analyses their light, split like a rainbow, to measure their distance and composition. It has detected oxygen in very old galaxies, proof that generations of stars had already lived and exploded there. Each new image pushes the frontier of what we know about the universe's beginnings a little further.",
+      "The big questions still open":"Recent clues add fresh suspense. In 2024 and 2025 the large galaxy map made by the DESI instrument in Arizona suggested that dark energy, the mysterious force speeding up the universe's expansion, might be weakening over time. If confirmed, our picture of the universe's distant future could change. Researchers remain cautious and are waiting for more data."}
+ },
+ andromeda:{
+  fr:{"La galaxie qui a agrandi l'univers":"Hubble ne s'est pas arrêté là. En 1929, en comparant les distances et les vitesses de nombreuses galaxies, il a montré qu'elles s'éloignent toutes de nous, d'autant plus vite qu'elles sont loin. C'est la preuve que l'univers est en expansion. Andromède fait figure d'exception : elle est assez proche pour que la gravité l'emporte, et elle se rapproche de nous à environ 110 kilomètres par seconde.",
+      "Le Groupe local, notre quartier cosmique":"Le Groupe local n'est lui-même qu'une petite partie d'une structure bien plus vaste. Il appartient au superamas de la Vierge et, à plus grande échelle encore, à un immense ensemble de galaxies baptisé Laniakea, « horizon céleste immense » en hawaïen, défini en 2014. Il contient environ 100 000 galaxies, qui semblent toutes s'écouler vers une même région du ciel."},
+  en:{"The galaxy that made the universe bigger":"Hubble did not stop there. In 1929, comparing the distances and speeds of many galaxies, he showed they are all moving away from us, faster the farther they are. This is the proof that the universe is expanding. Andromeda is an exception: it is close enough for gravity to win, and it is approaching us at about 110 kilometres per second.",
+      "The Local Group, our cosmic neighbourhood":"The Local Group itself is only a small part of a much larger structure. It belongs to the Virgo Supercluster and, on an even larger scale, to a vast collection of galaxies named Laniakea, \"immense heaven\" in Hawaiian, defined in 2014. It contains about 100,000 galaxies, which all seem to flow towards the same region of the sky."}
+ },
+ voyager:{
+  fr:{"Un jour-lumière de la Terre":"Pour mesurer l'exploit, il faut se rappeler les distances : il faudrait encore environ 4,2 années-lumière pour atteindre l'étoile la plus proche, Proxima du Centaure. À la vitesse de Voyager 1, environ 17 kilomètres par seconde, le voyage durerait plus de 70 000 ans. Dans environ 40 000 ans, la sonde passera à 1,6 année-lumière d'une petite étoile de la constellation de la Girafe, Gliese 445.",
+      "Réparer à distance un ordinateur de 1977":"Pour communiquer avec les Voyager, la NASA utilise le réseau Deep Space Network, de grandes antennes réparties en Californie, en Espagne et en Australie, afin de toujours avoir une sonde « en vue ». Le signal de Voyager 1 arrive sur Terre avec une puissance infime, des milliards de fois plus faible que celle d'une montre à pile. Il faut des antennes de 70 mètres de diamètre pour le capter."},
+  en:{"One light-day from Earth":"To grasp the feat, remember the distances: it would still take about 4.2 light-years to reach the nearest star, Proxima Centauri. At Voyager 1's speed, about 17 kilometres per second, the journey would take more than 70,000 years. In about 40,000 years the probe will pass within 1.6 light-years of a small star in the constellation Camelopardalis, Gliese 445.",
+      "Remotely fixing a 1977 computer":"To talk to the Voyagers, NASA uses the Deep Space Network, large antennas spread across California, Spain and Australia so that a probe is always \"in view\". Voyager 1's signal reaches Earth with a tiny power, billions of times weaker than a watch battery. Antennas 70 metres across are needed to catch it."}
+ },
+ darkmatter:{
+  fr:{"La chasse à la particule invisible":"D'autres chercheurs tentent de fabriquer de la matière noire. Au grand collisionneur de particules du CERN, près de Genève, les physiciens font se percuter des protons à des vitesses proches de celle de la lumière, en espérant que certaines collisions produisent des particules invisibles. Elles se trahiraient par de l'énergie « manquante » dans le bilan de la collision. Là encore, aucun signe convaincant n'a encore été trouvé.",
+      "Cartographier l'invisible":"Cette déformation de la lumière s'appelle l'effet de lentille gravitationnelle. Prédite par Einstein, elle fonctionne comme une loupe cosmique : une grande masse courbe l'espace autour d'elle et dévie la lumière des galaxies situées derrière. Plus la déformation est forte, plus il y a de masse. C'est en mesurant ces distorsions sur des millions de galaxies que l'on peut « peser » la matière noire, sans jamais la voir directement."},
+  en:{"Hunting the invisible particle":"Other researchers are trying to make dark matter. At CERN's Large Hadron Collider near Geneva, physicists smash protons together at nearly the speed of light, hoping some collisions produce invisible particles. They would give themselves away as \"missing\" energy in the collision's balance sheet. Here too, no convincing sign has yet been found.",
+      "Mapping the invisible":"This distortion of light is called gravitational lensing. Predicted by Einstein, it works like a cosmic magnifying glass: a large mass bends space around it and deflects the light of galaxies behind it. The stronger the distortion, the more mass there is. By measuring these distortions on millions of galaxies, we can \"weigh\" dark matter without ever seeing it directly."}
+ }
+});
+
+addFig({
+ blackhole:{fr:{"Photographier l'invisible":{src:"assets/photos/plus/blackhole-eht.jpg",cap:"Les deux premières images de trous noirs : M87* (à gauche, publiée en 2019) et Sagittarius A*, au centre de notre galaxie (à droite, 2022). Les deux anneaux ont presque la même taille apparente, mais M87* est environ 1 500 fois plus massif et beaucoup plus loin.",credit:"Image : EHT Collaboration — CC BY 4.0"}},
+            en:{"Photographing the invisible":{src:"assets/photos/plus/blackhole-eht.jpg",cap:"The first two images of black holes: M87* (left, released in 2019) and Sagittarius A* at the centre of our galaxy (right, 2022). The two rings look almost the same size, but M87* is about 1,500 times more massive and much farther away.",credit:"Image: EHT Collaboration — CC BY 4.0"}}},
+ voyager:{fr:{"Un point bleu pâle":{src:"assets/photos/plus/voyager-paleblue.jpg",cap:"Le « point bleu pâle » : la Terre, minuscule point lumineux au milieu d'un rayon de lumière solaire, photographiée par Voyager 1 le 14 février 1990 à environ 6 milliards de kilomètres (version retraitée par la NASA en 2020).",credit:"Photo : NASA / JPL-Caltech — domaine public"}},
+          en:{"A pale blue dot":{src:"assets/photos/plus/voyager-paleblue.jpg",cap:"The \"pale blue dot\": Earth, a tiny speck of light within a ray of sunlight, photographed by Voyager 1 on 14 February 1990 from about 6 billion kilometres (version reprocessed by NASA in 2020).",credit:"Photo: NASA / JPL-Caltech — public domain"}}},
+ saturn:{fr:{"Des anneaux de glace… et peut-être temporaires":{src:"assets/photos/plus/saturn-equinox.jpg",cap:"Saturne photographiée par la sonde Cassini en 2009, au moment de l'équinoxe : le Soleil éclaire les anneaux exactement par la tranche, ce qui les fait paraître très sombres.",credit:"Photo : NASA / JPL / Space Science Institute — domaine public"}},
+         en:{"Rings of ice… and perhaps temporary ones":{src:"assets/photos/plus/saturn-equinox.jpg",cap:"Saturn photographed by the Cassini probe in 2009, at equinox: the Sun lights the rings exactly edge-on, making them look very dark.",credit:"Photo: NASA / JPL / Space Science Institute — public domain"}}}
 });
