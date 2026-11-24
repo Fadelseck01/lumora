@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24T04:34:34Z",
- "checked": "2026-11-24T04:34:34Z",
+ "updated": "2026-11-24T05:02:06Z",
+ "checked": "2026-11-24T05:02:06Z",
  "sources": [
   {
    "id": "nasa",
@@ -40,7 +40,7 @@
    "home": "https://www.sciencedaily.com",
    "ok": true,
    "found": 60,
-   "new": 56
+   "new": 37
   },
   {
    "id": "sciencedaily-health",
@@ -48,7 +48,7 @@
    "home": "https://www.sciencedaily.com",
    "ok": true,
    "found": 60,
-   "new": 38
+   "new": 23
   },
   {
    "id": "who",
@@ -56,7 +56,7 @@
    "home": "https://www.who.int/news",
    "ok": true,
    "found": 83,
-   "new": 83
+   "new": 82
   },
   {
    "id": "smithsonian",
@@ -72,10 +72,25 @@
    "home": "https://news.mongabay.com",
    "ok": true,
    "found": 32,
-   "new": 28
+   "new": 12
   }
  ],
  "items": [
+  {
+   "id": "f03f09e25cc2f963",
+   "source": "mongabay",
+   "sourceName": "Mongabay",
+   "lang": "en",
+   "title": "Timor-Leste issues guidelines for whale-watching, but malpractice is rife as industry booms",
+   "summary": "DILI, Timor-Leste — As the annual whale migration gets into full swing in Timor-Leste, conservationists are raising concerns about increasingly aggressive tourist encounters with the world’s largest animals, despite new guidelines designed to protect them. Whale tourism is…",
+   "link": "https://news.mongabay.com/2026/11/timor-leste-issues-guidelines-for-whale-watching-but-malpractice-is-rife-as-industry-booms/",
+   "published": "2026-11-24T04:56:04Z",
+   "image": null,
+   "imageCredit": null,
+   "universe": "living",
+   "related": null,
+   "firstSeen": "2026-11-24T05:02:06Z"
+  },
   {
    "id": "da530abcb956443a",
    "source": "smithsonian",
@@ -1108,21 +1123,6 @@
    "image": null,
    "imageCredit": null,
    "universe": "earth",
-   "related": null,
-   "firstSeen": "2026-11-24T04:34:34Z"
-  },
-  {
-   "id": "09743aab017335af",
-   "source": "mongabay",
-   "sourceName": "Mongabay",
-   "lang": "en",
-   "title": "It’s time to put Africa’s forest communities on the map (commentary)",
-   "summary": "The U.N. General Assembly’s recent adoption of a new standard world map, more accurately reflecting the true size of Africa than depicted in the Eurocentric 16th-century Mercator projection, is great news and a welcome reminder that multilateralism isn’t dead yet. It also…",
-   "link": "https://news.mongabay.com/2026/11/its-past-time-to-put-africas-forest-communities-on-the-map-commentary/",
-   "published": "2026-11-20T18:01:05Z",
-   "image": null,
-   "imageCredit": null,
-   "universe": "living",
    "related": null,
    "firstSeen": "2026-11-24T04:34:34Z"
   },
