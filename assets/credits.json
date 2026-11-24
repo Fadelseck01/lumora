@@ -130,5 +130,65 @@
   "license": "CC BY-SA 3.0",
   "artist": "Stan Shebs",
   "credit": "Own work"
+ },
+ "assets/photos/plus/sgra-m87.jpg": {
+  "title": "File:Comparison of the sizes of two black holes- M87* and Sagittarius A* (eso2208-eht-mwe).jpg",
+  "license": "CC BY 4.0",
+  "artist": "EHT collaboration (acknowledgment: Lia Medeiros, xkcd)",
+  "credit": "This media was produced by the European Southern Observatory (ESO), under the identifier eso2208-eht-mwe\nThis tag does n"
+ },
+ "assets/photos/plus/hale-bopp.jpg": {
+  "title": "File:Comet Hale-Bopp Phot-mar14-hbs-2.jpg",
+  "license": "CC BY 4.0",
+  "artist": "ESO/E. Slawik",
+  "credit": "https://www.eso.org/public/images/phot-mar14-hbs-2/"
+ },
+ "assets/photos/plus/oumuamua.jpg": {
+  "title": "File:Artist’s impression of the interstellar asteroid `Oumuamua.jpg",
+  "license": "CC BY 4.0",
+  "artist": "ESA/Hubble, NASA, ESO, M. Kornmesser",
+  "credit": "https://www.eso.org/public/images/eso1820a/"
+ },
+ "assets/photos/plus/betelgeuse-dimming.jpg": {
+  "title": "File:Betelgeuse’s surface before and during its 2019–2020 Great Dimming (eso2109a).jpg",
+  "license": "CC BY 4.0",
+  "artist": "ESO/M. Montargès et al.",
+  "credit": "This media was produced by the European Southern Observatory (ESO), under the identifier eso2109a\nThis tag does not indi"
+ },
+ "assets/photos/plus/enceladus-plumes.jpg": {
+  "title": "File:Enceladus geysers June 2009.jpg",
+  "license": "Public domain",
+  "artist": "NASA/JPL/SSI",
+  "credit": "http://www.nasa.gov/mission_pages/cassini/multimedia/pia11688.html"
+ },
+ "assets/photos/plus/webb-deep-field.jpg": {
+  "title": "File:Webb's First Deep Field (adjusted).jpg",
+  "license": "Public domain",
+  "artist": "NASA, ESA, CSA, and STScI",
+  "credit": "https://webbtelescope.org/contents/media/images/2022/038/01G7JGTH21B5GN9VCYAHBXKSD1"
+ },
+ "assets/photos/plus/cmb-planck.jpg": {
+  "title": "File:Cosmic Microwave Background (CMB).jpeg",
+  "license": "CC BY 4.0",
+  "artist": "ESA and the Planck Collaboration",
+  "credit": "Cosmic Microwave Background"
+ },
+ "assets/photos/plus/andromeda-killarney.jpg": {
+  "title": "File:M31, the Andromeda Galaxy, Killarney Provincial Park Observatory.jpg",
+  "license": "CC BY 4.0",
+  "artist": "Brucewaters",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/golden-record.jpg": {
+  "title": "File:The Sounds of Earth Record Cover - GPN-2000-001978.jpg",
+  "license": "Public domain",
+  "artist": "NASA/JPL",
+  "credit": "The Sounds of Earth Record Cover"
+ },
+ "assets/photos/plus/bullet-cluster.jpg": {
+  "title": "File:1e0657 scale.jpg",
+  "license": "Public domain",
+  "artist": "NASA/CXC/M. Weiss",
+  "credit": "Chandra X-Ray Observatory: 1E 0657-56"
  }
 }
