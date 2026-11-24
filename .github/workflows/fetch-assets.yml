@@ -1,0 +1,32 @@
+name: Télécharger des images (domaine public)
+on:
+  workflow_dispatch:
+    inputs:
+      list:
+        description: "Lignes chemin=url séparées par des espaces"
+        required: true
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Télécharger
+        env:
+          LIST: ${{ github.event.inputs.list }}
+        run: |
+          for pair in $LIST; do
+            path="${pair%%=*}"; url="${pair#*=}"
+            case "$path" in assets/*) ;; *) echo "chemin refusé: $path"; exit 1;; esac
+            mkdir -p "$(dirname "$path")"
+            curl -fsSL -A "LUMORA-site/1.0 (https://github.com/Fadelseck01/lumora)" "$url" -o "$path"
+            file "$path"; ls -l "$path"
+          done
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets
+          git diff --cached --quiet || git commit -m "Images d'archives (domaine public) téléchargées"
+          git push
