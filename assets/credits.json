@@ -70,5 +70,65 @@
   "license": "CC BY-SA 4.0",
   "artist": "Emmanuel Eslava",
   "credit": "Own work"
+ },
+ "assets/photos/plus/kinchakuda.jpg": {
+  "title": "File:Lycoris radiata - Kinchakuda Plateau, Hidaka, Saitama.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Kakidai",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/flytrap-hairs.jpg": {
+  "title": "File:Venus Flytrap showing trigger hairs.jpg",
+  "license": "CC BY-SA 2.5",
+  "artist": "Noah Elhardt",
+  "credit": "Self-published photo by Noah Elhardt"
+ },
+ "assets/photos/plus/nepenthes-rajah.jpg": {
+  "title": "File:Nepenthes rajah - Curtis’s Botanical Magazine (1905).jpg",
+  "license": "Public domain",
+  "artist": "M. Smith",
+  "credit": "http://plantillustrations.org/illustration.php?id_illustration=6733"
+ },
+ "assets/photos/plus/mirabilis-colours.jpg": {
+  "title": "File:Mirabilis jalapa, Burdwan, West Bengal, India 02 01 2013 (3).jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "JDP90 (Joydeep)",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/vaquita-boats.jpg": {
+  "title": "File:Vaquita3 Olson NOAA.jpg",
+  "license": "Public domain",
+  "artist": "Paula Olson, NOAA",
+  "credit": "https://web.archive.org/web/20141228122542/http://www.nmfs.noaa.gov/pr/species/mammals/cetaceans/vaquita.htm"
+ },
+ "assets/photos/plus/tardigrade-sem.jpg": {
+  "title": "File:SEM image of Milnesium tardigradum in active state - journal.pone.0045682.g001-2.png",
+  "license": "CC BY 2.5",
+  "artist": "Schokraie E, Warnken U, Hotz-Wagenblatt A, Grohme MA, Hengherr S, et al. (2012)",
+  "credit": "Schokraie E, Warnken U, Hotz-Wagenblatt A, Grohme MA, Hengherr S, et al. (2012) Comparative proteome analysis of Milnesi"
+ },
+ "assets/photos/plus/zombie-ant.jpg": {
+  "title": "File:Ant and Ophiocordyceps.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Bealeiderman",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/death-cap.jpg": {
+  "title": "File:Amanita phalloides 2011 G1.jpg",
+  "license": "Public domain",
+  "artist": "George Chernilevsky",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/armillaria.jpg": {
+  "title": "File:Armillaria ostoyaea 2011 G2.jpg",
+  "license": "Public domain",
+  "artist": "George Chernilevsky",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/axolotl.jpg": {
+  "title": "File:Ambystoma mexicanum 1.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "Stan Shebs",
+  "credit": "Own work"
  }
 }
