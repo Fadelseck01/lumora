@@ -1,0 +1,33 @@
+name: Images Wikimedia Commons
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "search ou get"
+        required: true
+      args:
+        description: "Arguments séparés par | (ex. mots clés | autres mots, ou chemin=File:Nom.jpg | ...)"
+        required: true
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Commons
+        env:
+          MODE: ${{ github.event.inputs.mode }}
+          ARGS: ${{ github.event.inputs.args }}
+        run: |
+          IFS='|' read -ra A <<< "$ARGS"
+          T=(); for a in "${A[@]}"; do a="$(echo "$a" | xargs -0 | sed 's/^ *//;s/ *$//')"; T+=("$a"); done
+          python3 scripts/fetch_commons.py "$MODE" "${T[@]}"
+      - name: Commit
+        if: ${{ github.event.inputs.mode == 'get' }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets
+          git diff --cached --quiet || git commit -m "Images Wikimedia Commons (licences dans assets/credits.json)"
+          git pull --rebase && git push
