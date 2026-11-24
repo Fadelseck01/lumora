@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24T21:43:42Z",
- "checked": "2026-11-24T21:43:42Z",
+ "updated": "2026-11-24T23:50:44Z",
+ "checked": "2026-11-24T23:50:44Z",
  "sources": [
   {
    "id": "nasa",
@@ -8,7 +8,7 @@
    "home": "https://www.nasa.gov",
    "ok": true,
    "found": 10,
-   "new": 1
+   "new": 0
   },
   {
    "id": "nasa-iotd",
@@ -24,7 +24,7 @@
    "home": "https://www.esa.int",
    "ok": true,
    "found": 15,
-   "new": 4
+   "new": 5
   },
   {
    "id": "esa-fr",
@@ -48,7 +48,7 @@
    "home": "https://www.sciencedaily.com",
    "ok": true,
    "found": 60,
-   "new": 27
+   "new": 26
   },
   {
    "id": "who",
@@ -76,6 +76,21 @@
   }
  ],
  "items": [
+  {
+   "id": "082cb587f7e85ce9",
+   "source": "sciencedaily-health",
+   "sourceName": "ScienceDaily",
+   "lang": "en",
+   "title": "New nose drops restore youthful memory and fight Alzheimer’s in aging mice",
+   "summary": "A revolutionary new nasal treatment has restored youthful learning and memory performance in aging mice while preventing severe cognitive decline in mice with Alzheimer’s-like disease. Developed using technology similar to COVID-19 mRNA vaccines, the nose drops stimulate production of a brain-protecting protein that strengthens neurons and supports memory. Remarkably, the treatment preserved brain function without removing Alzheimer’s-associated plaques, suggesting a completely different way to combat cognitive decline.",
+   "link": "https://www.sciencedaily.com/releases/2026/11/261123005337.htm",
+   "published": "2026-11-24T23:31:52Z",
+   "image": null,
+   "imageCredit": null,
+   "universe": "body",
+   "related": "memory",
+   "firstSeen": "2026-11-24T23:50:44Z"
+  },
   {
    "id": "f78eeb5c4dbcb404",
    "source": "nasa",
@@ -105,6 +120,21 @@
    "universe": "cosmos",
    "related": null,
    "firstSeen": "2026-11-24T21:31:19Z"
+  },
+  {
+   "id": "d97b368904303b2b",
+   "source": "sciencedaily",
+   "sourceName": "ScienceDaily",
+   "lang": "en",
+   "title": "A black hole the size of an atom could destroy an entire star",
+   "summary": "MIT scientists have discovered that tiny black holes left over from the Big Bang could slowly devour stars from within, eventually triggering spectacular explosions visible across galaxies. Detecting these unusual cosmic events could reveal the existence of primordial black holes and help solve the mystery of dark matter.",
+   "link": "https://www.sciencedaily.com/releases/2026/11/261122060332.htm",
+   "published": "2026-11-24T20:58:15Z",
+   "image": null,
+   "imageCredit": null,
+   "universe": "cosmos",
+   "related": "blackhole",
+   "firstSeen": "2026-11-24T23:50:44Z"
   },
   {
    "id": "9aa4e60033a103f9",
@@ -1562,21 +1592,6 @@
    "firstSeen": "2026-11-24T03:48:02Z"
   },
   {
-   "id": "2f795dcf53346c87",
-   "source": "sciencedaily",
-   "sourceName": "ScienceDaily",
-   "lang": "en",
-   "title": "Einstein’s relativity just upended a fundamental rule of chemistry",
-   "summary": "A surprising discovery at Brown University is challenging one of chemistry's most fundamental textbook explanations. Researchers found direct evidence that Einstein's theory of relativity changes how heavy atoms form triple bonds, causing normally distinct types of chemical bonds to blend together. The breakthrough confirms a decades-old prediction and suggests that traditional chemistry rules don't fully apply to heavy elements such as bismuth.",
-   "link": "https://www.sciencedaily.com/releases/2026/11/261120075602.htm",
-   "published": "2026-11-20T12:56:02Z",
-   "image": null,
-   "imageCredit": null,
-   "universe": "science",
-   "related": "gps",
-   "firstSeen": "2026-11-24T04:34:34Z"
-  },
-  {
    "id": "a51d54d0d1826e7a",
    "source": "sciencedaily-health",
    "sourceName": "ScienceDaily",
@@ -1589,21 +1604,6 @@
    "imageCredit": null,
    "universe": "body",
    "related": null,
-   "firstSeen": "2026-11-24T04:34:34Z"
-  },
-  {
-   "id": "3476eae0217cf499",
-   "source": "sciencedaily-health",
-   "sourceName": "ScienceDaily",
-   "lang": "en",
-   "title": "This simple habit is linked to a 33% lower risk of Alzheimer's",
-   "summary": "Reading for pleasure may have surprisingly powerful benefits for the brain, with studies linking it to better memory, reduced stress, improved mental health, and a lower risk of dementia. Researchers highlight findings that just five minutes of fiction can reduce stress by up to 20%, while reading has also been associated with a 33% lower risk of Alzheimer's disease.",
-   "link": "https://www.sciencedaily.com/releases/2026/11/261118065536.htm",
-   "published": "2026-11-20T12:06:07Z",
-   "image": null,
-   "imageCredit": null,
-   "universe": "body",
-   "related": "memory",
    "firstSeen": "2026-11-24T04:34:34Z"
   },
   {
