@@ -199,7 +199,7 @@ darkmatter: {
    "Pour l'instant, aucun signal clair n'a été détecté, mais chaque résultat élimine des possibilités. Les candidats sont nombreux : des particules lourdes appelées WIMP, des particules extrêmement légères appelées axions, ou d'autres encore. Une minorité de chercheurs pense même qu'il faudrait plutôt modifier les lois de la gravité à grande échelle, une piste qui peine toutefois à expliquer toutes les observations."
   ]},
   {h:"Cartographier l'invisible", p:[
-   "En 2006, l'observation d'une collision entre deux amas de galaxies, l'amas de la Balle, a fourni l'un des indices les plus frappants. Le gaz chaud des deux amas, ralenti par le choc, est resté au centre, tandis que la masse, mesurée grâce à la déviation de la lumière, est passée de part et d'autre. Comme si une matière invisible avait traversé la collision sans être freinée.",
+   
    "Aujourd'hui, de nouveaux instruments cartographient la matière noire sur d'immenses régions du ciel. Le télescope spatial européen Euclid, lancé en juillet 2023, mesure les formes de milliards de galaxies, légèrement déformées par la matière noire située devant elles. Au Chili, l'observatoire Vera Rubin, qui a livré ses premières images en 2025, va photographier tout le ciel austral pendant dix ans. Ensemble, ils devraient dresser la carte en trois dimensions la plus précise jamais réalisée de cette matière invisible."
   ]}
  ],
@@ -209,7 +209,7 @@ darkmatter: {
    "So far no clear signal has been detected, but each result rules out possibilities. The candidates are many: heavy particles called WIMPs, extremely light particles called axions, and others. A minority of researchers even think the laws of gravity should be modified on large scales instead, an approach that nonetheless struggles to explain all the observations."
   ]},
   {h:"Mapping the invisible", p:[
-   "In 2006, observations of a collision between two galaxy clusters, the Bullet Cluster, provided one of the most striking clues. The hot gas of the two clusters, slowed by the impact, stayed in the middle, while the mass, measured from the bending of light, passed through on either side. As if invisible matter had gone through the collision without being slowed down.",
+   
    "Today new instruments are mapping dark matter across vast regions of sky. The European Euclid space telescope, launched in July 2023, measures the shapes of billions of galaxies, slightly distorted by the dark matter in front of them. In Chile the Vera Rubin Observatory, which released its first images in 2025, will photograph the whole southern sky for ten years. Together they should produce the most precise three-dimensional map ever made of this invisible matter."
   ]}
  ]
