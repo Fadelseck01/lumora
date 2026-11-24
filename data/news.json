@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24T19:06:54Z",
- "checked": "2026-11-24T19:06:54Z",
+ "updated": "2026-11-24T19:15:51Z",
+ "checked": "2026-11-24T19:15:51Z",
  "sources": [
   {
    "id": "nasa",
@@ -8,7 +8,7 @@
    "home": "https://www.nasa.gov",
    "ok": true,
    "found": 10,
-   "new": 3
+   "new": 1
   },
   {
    "id": "nasa-iotd",
@@ -16,7 +16,7 @@
    "home": "https://www.nasa.gov/image-of-the-day/",
    "ok": true,
    "found": 60,
-   "new": 42
+   "new": 48
   },
   {
    "id": "esa",
@@ -24,7 +24,7 @@
    "home": "https://www.esa.int",
    "ok": true,
    "found": 15,
-   "new": 0
+   "new": 2
   },
   {
    "id": "esa-fr",
@@ -64,7 +64,7 @@
    "home": "https://www.smithsonianmag.com",
    "ok": true,
    "found": 10,
-   "new": 5
+   "new": 0
   },
   {
    "id": "mongabay",
@@ -76,6 +76,21 @@
   }
  ],
  "items": [
+  {
+   "id": "0fc14089684c75dd",
+   "source": "nasa",
+   "sourceName": "NASA",
+   "lang": "en",
+   "title": "NASA’s Northrop Grumman CRS-25 Mission Overview",
+   "summary": "NASA’s Northrop Grumman Commercial Resupply Services 25 mission, or Northrop Grumman CRS-25, will deliver about 11,000 pounds of science and supplies to the International Space Station. The mission will be the third flight of the company’s Cygnus XL, the larger, more…",
+   "link": "https://www.nasa.gov/missions/station/nasas-northrop-grumman-crs-25-mission-overview/",
+   "published": "2026-11-24T19:09:16Z",
+   "image": "https://www.nasa.gov/wp-content/uploads/2026/11/ntv-ng-crs-25-falcon9-cygnus-overview-2160-dark.png?w=2048",
+   "imageCredit": "NASA",
+   "universe": "cosmos",
+   "related": null,
+   "firstSeen": "2026-11-24T19:15:51Z"
+  },
   {
    "id": "b38c01fbe9f4587c",
    "source": "smithsonian",
@@ -1855,21 +1870,6 @@
    "summary": "The Meteosat Third Generation (MTG) mission’s second Imager satellite has delivered its first images, showing weather patterns over Europe and Africa.",
    "link": "https://www.esa.int/articles/about-us/directorates/earth-observation-programmes/meteorological-missions/meteosat-third-generation/mtg-i2-weather-satellite-delivers-first-images",
    "published": "2026-11-06T11:15:00Z",
-   "image": null,
-   "imageCredit": null,
-   "universe": "cosmos",
-   "related": null,
-   "firstSeen": "2026-11-24T03:48:02Z"
-  },
-  {
-   "id": "c9dd336908b1d4e0",
-   "source": "esa",
-   "sourceName": "ESA",
-   "lang": "en",
-   "title": "Prometheus reusable rocket engine fires up at improved test bench",
-   "summary": "The Prometheus firing tests validated both the upgraded test bench and a new way of producing the engine’s combustion chamber.",
-   "link": "https://www.esa.int/articles/about-us/directorates/space-transportation/future-space-transportation/prometheus-reusable-rocket-engine-fires-up-at-improved-test-bench",
-   "published": "2026-11-06T08:56:52Z",
    "image": null,
    "imageCredit": null,
    "universe": "cosmos",
