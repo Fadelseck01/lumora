@@ -33,8 +33,12 @@ def site_mode():
     videos = {}
     for f in sorted(glob.glob(os.path.join(root, "articles*.js"))):
         txt = open(f, encoding="utf-8").read()
-        for m in re.finditer(r'^(\w+):\s*\{\s*\n\s*video:\s*\{id:"([^"]+)"', txt, re.M):
-            videos[m.group(2)] = m.group(1)
+        current = None
+        for line in txt.splitlines():
+            km = re.match(r'^(\w+):\s*\{\s*$', line)
+            if km: current = km.group(1)
+            for vm in re.finditer(r'\{id:"([^"]+)",\s*channel:', line):
+                if current: videos[vm.group(1)] = current
     print(f"{len(videos)} vidéo(s) trouvée(s) (limite : {MAX_VIDEOS})")
     if len(videos) > MAX_VIDEOS:
         print(f"::warning::{len(videos)} vidéos, au-delà de la limite de {MAX_VIDEOS}")

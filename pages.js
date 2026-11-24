@@ -247,16 +247,18 @@ function longText(L){ if(!L) return ""; return [L.key.join(" "), ...L.sections.f
   items.forEach(x=>{
     const A = longArticles[x.id]; if(!A) return;
     const dead = window.LUMORA_DEAD_VIDEOS || [];
-    if(A.video && !dead.includes(A.video.id)) x.yt = A.video;
+    const vids = (A.videos || (A.video ? [A.video] : [])).filter(v=>!dead.includes(v.id));
+    if(vids.length){ x.yts = vids; x.yt = vids[0]; }
     if(A.fr && A.en){
       const words = longText(A.fr).split(/\s+/).length + String(x.body.fr).split(/\s+/).length;
       x.min = Math.max(x.min, Math.round(words/200));
     }
   });
 })();
-function ytHTML(v){
+function ytList(list){ return list && list.length ? `<h2>▶ ${esc(la("vid"))}</h2>${list.map(v=>ytHTML(v,false)).join("")}` : ""; }
+function ytHTML(v, head=true){
   const id = encodeURIComponent(v.id);
-  return `<h2>▶ ${esc(la("vid"))}</h2>
+  return `${head?`<h2>▶ ${esc(la("vid"))}</h2>`:""}
   <div class="yt-facade" data-yt="${id}" data-title="${esc(v.title[lang])}">
     <img src="https://i.ytimg.com/vi/${id}/hqdefault.jpg" alt="" loading="lazy">
     <button class="yt-play" aria-label="${esc(la("play"))} : ${esc(v.title[lang])}"><span>▶</span></button>
@@ -275,10 +277,34 @@ function longHTML(x){
   const L = A[lang];
   return `<section class="la-essential"><h2>⚡ ${esc(la("ess"))}</h2><ul>${L.key.map(k=>`<li>${esc(k)}</li>`).join("")}</ul></section>
   <h2>${esc(t("modalSection"))}</h2><p class="article-body">${esc(x.body[lang])}</p>
-  ${L.sections.map(s=>`<h2>${esc(s.h)}</h2>${s.p.map(p=>`<p class="article-body">${esc(p)}</p>`).join("")}`).join("")}
+  ${L.sections.map(s=>`<h2>${esc(s.h)}</h2>${s.fig?figHTML(s.fig):""}${s.p.map(p=>`<p class="article-body">${esc(p)}</p>`).join("")}${s.compare?compareHTML(s.compare):""}`).join("")}
   <h2>${esc(la("nums"))}</h2><div class="la-numbers">${L.numbers.map(n=>`<div><strong>${esc(n[0])}</strong><span>${esc(n[1])}</span></div>`).join("")}</div>
   <div class="la-didyou"><h3>💡 ${esc(la("did"))}</h3><ul>${L.didyou.map(d=>`<li>${esc(d)}</li>`).join("")}</ul></div>
   <h2>${esc(la("open"))}</h2><ul class="la-open">${L.open.map(o=>`<li>${esc(o)}</li>`).join("")}</ul>`;
+}
+
+function figHTML(f){
+  return `<figure class="la-fig"><img src="${esc(f.src)}" alt="${esc(f.alt||f.cap)}" loading="lazy"><figcaption>${esc(f.cap)}${f.credit?` <small>${esc(f.credit)}</small>`:""}</figcaption></figure>`;
+}
+function compareHTML(c){
+  const lb = lang==="fr" ? ["Avant","Après","Glissez pour comparer"] : ["Before","After","Drag to compare"];
+  return `<figure class="ba-fig">
+    <div class="ba" style="--pos:50%;aspect-ratio:${c.ratio||"4/3"}${c.maxw?`;max-width:${c.maxw};margin-inline:auto`:""}">
+      <img class="ba-after" src="${esc(c.after)}" alt="${esc(c.altAfter||lb[1])}" loading="lazy">
+      <div class="ba-before"><img src="${esc(c.before)}" alt="${esc(c.altBefore||lb[0])}" loading="lazy"></div>
+      <span class="ba-tag ba-tag-l">${lb[0]}${c.dateBefore?` · ${esc(c.dateBefore)}`:""}</span>
+      <span class="ba-tag ba-tag-r">${lb[1]}${c.dateAfter?` · ${esc(c.dateAfter)}`:""}</span>
+      <span class="ba-handle" aria-hidden="true"></span>
+      <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="${lb[2]} : ${esc(c.cap)}">
+    </div>
+    <figcaption>${esc(c.cap)}${c.credit?` <small>${esc(c.credit)}</small>`:""} <em>↔ ${lb[2]}</em></figcaption>
+  </figure>`;
+}
+function bindCompare(root){
+  root.querySelectorAll(".ba").forEach(b=>{
+    const r=b.querySelector(".ba-range"); const set=()=>b.style.setProperty("--pos", r.value+"%");
+    r.addEventListener("input", set); set();
+  });
 }
 function sourcesHTML(x){
   const A = longOf(x); if(!A || !A.sources) return `<div class="source-note"><span>ⓘ</span><span>${esc(t("prototypeSource"))}</span></div>`;
@@ -318,7 +344,7 @@ function renderArticle(id){
     <div class="article-layout">
       <div class="article-main">
         ${longHTML(x)}
-        ${x.yt?ytHTML(x.yt):""}
+        ${x.yts?ytList(x.yts):""}
         ${gal.length>1?`<h2>${esc(t("gallery"))}</h2><div class="article-gallery">${gal.map((g,i)=>`<button data-i="${i}" aria-label="${t("photo")} ${i+1}"><img src="${g}" alt="" loading="lazy"></button>`).join("")}</div>`:""}
         ${x.credits?`<p class="photo-credits">◫ ${esc(lang==="fr"?"Photos":"Photos")} : ${x.credits.map(esc).join(" · ")}</p>`:""}
         ${x.video?`<h2>${esc(t("video"))}</h2><div class="article-video"><video controls preload="none" src="${x.video}"></video></div>`:""}
@@ -350,7 +376,7 @@ function renderArticle(id){
       <div class="discovery-grid">${relatedCache.map(cardHTML).join("")}</div>
     </section>
   </article>`;
-  bindCards($("#page")); bindYT($("#page"));
+  bindCards($("#page")); bindYT($("#page")); bindCompare($("#page"));
   updateAudioButton();
   $("#audioBtn").addEventListener("click", ()=>playArticle(x));
   $("#audioStop").addEventListener("click", stopAudio);
