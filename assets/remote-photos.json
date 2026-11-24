@@ -1,0 +1,13 @@
+{
+  "_lisez-moi": "Photos sous licence libre téléchargées automatiquement par GitHub Actions (scripts/fetch_assets.py). Ajoute une entrée : url (fichier source), path (où l'enregistrer), credit (affiché sur le site).",
+  "photos": [
+    {"url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lac_Rose_in_Senegal.jpg?width=1600",
+     "path": "assets/photos/decouvertes/lacrose-1.jpg",
+     "credit": "Arnault, CC BY-SA 2.0, via Wikimedia Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Lac_Rose_in_Senegal.jpg"},
+    {"url": "https://commons.wikimedia.org/wiki/Special:FilePath/Salt_collector_in_Lake_Retba.jpg?width=1600",
+     "path": "assets/photos/decouvertes/lacrose-2.jpg",
+     "credit": "Ferdinand Reus, CC BY-SA 2.0, via Wikimedia Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Salt_collector_in_Lake_Retba.jpg"}
+  ]
+}

@@ -16,6 +16,9 @@ const uniPhotoSrc = (u, w=1280) => u.photo ? (u.photo.src || commonsImg(u.photo.
 const shuffle = a => { a=[...a]; for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; };
 const yearLabel = x => x.tl ? (x.tl.l ? x.tl.l[lang] : (x.tl.y<0 ? t("bce")(x.tl.y) : String(x.tl.y))) : "";
 
+/* une image absente (pas encore téléchargée, lien cassé) disparaît et laisse le visuel de l'univers */
+document.addEventListener("error", e=>{ const t = e.target; if(t && t.tagName==="IMG" && !t.closest(".universe-card")){ const b = t.closest(".article-gallery button"); if(b) b.remove(); else t.remove(); } }, true);
+
 /* ---------- historique ---------- */
 let history_ = store.get("lumora-history", []);
 function pushHistory(id){
@@ -265,6 +268,7 @@ function renderArticle(id){
         <h2>${esc(t("modalSection"))}</h2>
         <p class="article-body">${esc(x.body[lang])}</p>
         ${gal.length>1?`<h2>${esc(t("gallery"))}</h2><div class="article-gallery">${gal.map((g,i)=>`<button data-i="${i}" aria-label="${t("photo")} ${i+1}"><img src="${g}" alt="" loading="lazy"></button>`).join("")}</div>`:""}
+        ${x.credits?`<p class="photo-credits">◫ ${esc(lang==="fr"?"Photos":"Photos")} : ${x.credits.map(esc).join(" · ")}</p>`:""}
         ${x.video?`<h2>${esc(t("video"))}</h2><div class="article-video"><video controls preload="none" src="${x.video}"></video></div>`:""}
         <div class="source-note"><span>ⓘ</span><span>${esc(t("prototypeSource"))}</span></div>
         <div class="prev-next"><div class="eyebrow">${esc(t("prevNext").toUpperCase())}</div>

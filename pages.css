@@ -331,3 +331,5 @@
 .news-out{font-size:12px;color:var(--blue);text-decoration:none;font-weight:600}.news-out:hover{text-decoration:underline}
 @media(max-width:1000px){.news-grid.live{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:620px){.news-grid.live{grid-template-columns:1fr}}
+
+.photo-credits{font-size:11px;color:#7c8ea8;margin:12px 0 0;line-height:1.5}

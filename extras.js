@@ -17,7 +17,7 @@ const subOf = {
   quantum:0, gps:1, emc2:4, absolutezero:4, montyhall:2,
   ai:0, ingenuity:1, quantumcomputer:2, graphene:3, fusion:4,
   life:3, consciousness:1, time:2, whyexist:0, fermi:3, printing:4,
-  goree:4, lacrose:0
+  goree:4, lacrose:0, dindefelo:0
 };
 
 /* Phrase d'accueil de chaque page univers */
@@ -168,6 +168,7 @@ const uiPages = {
 /* Carte du monde : lieux et découvertes liées (lat, lon en degrés) */
 const places = [
   {id:"senegal",lat:14.7,lon:-17.4,name:{fr:"Sénégal",en:"Senegal"},blurb:{fr:"Une île de mémoire, un lac rose et le plat national.",en:"An island of memory, a pink lake and the national dish."},items:["goree","lacrose","ceebu"]},
+  {id:"kedougou",lat:12.38,lon:-12.33,name:{fr:"Sénégal oriental (Kédougou)",en:"Eastern Senegal (Kédougou)"},blurb:{fr:"Une cascade de près de 100 mètres et les derniers chimpanzés du pays.",en:"A waterfall of nearly 100 metres and the country's last chimpanzees."},items:["dindefelo"]},
   {id:"egypt",lat:29.9,lon:31.1,name:{fr:"Égypte",en:"Egypt"},blurb:{fr:"Pyramides, pharaons et dieux à tête d'animal.",en:"Pyramids, pharaohs and animal-headed gods."},items:["khufu","cleopatra","mummies","anubis"]},
   {id:"iceland",lat:64.9,lon:-18.6,name:{fr:"Islande",en:"Iceland"},blurb:{fr:"Volcans, sable noir, cascades et aurores boréales.",en:"Volcanoes, black sand, waterfalls and northern lights."},items:["vestrahorn","godafoss","aurora"]},
   {id:"norway",lat:61.0,lon:8.5,name:{fr:"Norvège et Svalbard",en:"Norway and Svalbard"},blurb:{fr:"Fjords, nuit polaire et légendes nordiques.",en:"Fjords, polar night and Norse legends."},items:["preikestolen","polarnight","yggdrasil","kraken"]},

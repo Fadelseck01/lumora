@@ -24,7 +24,7 @@ ROOT = Path(__file__).resolve().parent.parent
 CONFIG = ROOT / "news" / "sources.json"
 OUT_JSON = ROOT / "data" / "news.json"
 OUT_JS = ROOT / "data" / "news.js"
-USER_AGENT = "LUMORA-news-bot/1.0 (+https://github.com/; agrégateur de titres avec lien vers la source)"
+USER_AGENT = "Mozilla/5.0 (compatible; LUMORA-RSS/1.0; +https://fadelseck01.github.io/lumora/)"
 TIMEOUT = 20
 
 

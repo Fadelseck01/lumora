@@ -41,20 +41,24 @@ jobs:
         id: news
         run: python scripts/fetch_news.py
 
-      - name: Enregistrer les nouvelles actualités
-        if: steps.news.outputs.changed == 'true'
+      - name: Télécharger les photos sous licence libre
+        id: assets
+        run: python scripts/fetch_assets.py
+
+      - name: Enregistrer les nouvelles actualités et photos
+        if: steps.news.outputs.changed == 'true' || steps.assets.outputs.added == 'true'
         run: |
           git config user.name "lumora-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/news.json data/news.js
-          git commit -m "Actualités : mise à jour automatique" || exit 0
+          git add data/news.json data/news.js assets/photos
+          git commit -m "Mise à jour automatique (actualités, photos)" || exit 0
           git pull --rebase --autostash || true
           git push
 
       # le site n'est republié que s'il y a du nouveau (ou après un push / un lancement manuel)
       - name: Décider de la publication
         id: decide
-        run: echo "publish=${{ github.event_name != 'schedule' || steps.news.outputs.changed == 'true' }}" >> "$GITHUB_OUTPUT"
+        run: echo "publish=${{ github.event_name != 'schedule' || steps.news.outputs.changed == 'true' || steps.assets.outputs.added == 'true' }}" >> "$GITHUB_OUTPUT"
 
       - uses: actions/configure-pages@v5
         if: steps.decide.outputs.publish == 'true'
