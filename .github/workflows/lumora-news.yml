@@ -1,0 +1,76 @@
+# LUMORA — actualités automatiques + mise en ligne sur GitHub Pages
+# - toutes les 30 minutes : lit les flux RSS, enregistre data/news.json si quelque chose a changé, republie le site
+# - à chaque push sur main : republie le site
+# - bouton « Run workflow » dans l'onglet Actions : lancement manuel
+name: LUMORA - actualités et site
+
+on:
+  schedule:
+    - cron: "7,37 * * * *"     # deux fois par heure (minutes 7 et 37, moins chargées que :00 et :30)
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write    # pour enregistrer data/news.json
+  pages: write       # pour publier sur GitHub Pages
+  id-token: write
+
+concurrency:
+  group: lumora-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      publish: ${{ steps.decide.outputs.publish }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: scripts/requirements.txt
+
+      - name: Installer les dépendances
+        run: pip install -r scripts/requirements.txt
+
+      - name: Récupérer les actualités
+        id: news
+        run: python scripts/fetch_news.py
+
+      - name: Enregistrer les nouvelles actualités
+        if: steps.news.outputs.changed == 'true'
+        run: |
+          git config user.name "lumora-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/news.json data/news.js
+          git commit -m "Actualités : mise à jour automatique" || exit 0
+          git pull --rebase --autostash || true
+          git push
+
+      # le site n'est republié que s'il y a du nouveau (ou après un push / un lancement manuel)
+      - name: Décider de la publication
+        id: decide
+        run: echo "publish=${{ github.event_name != 'schedule' || steps.news.outputs.changed == 'true' }}" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/configure-pages@v5
+        if: steps.decide.outputs.publish == 'true'
+
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.decide.outputs.publish == 'true'
+        with:
+          path: .
+
+  deploy:
+    needs: build
+    if: needs.build.outputs.publish == 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

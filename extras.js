@@ -1,0 +1,241 @@
+/* LUMORA — données des pages univers, de la chronologie et du quiz.
+   Les sous-catégories reprennent les « domaines » de chaque univers (même ordre). */
+
+/* Sous-catégorie de chaque découverte : indice dans universe.domains */
+const subOf = {
+  blackhole:3, oort:2, betelgeuse:0, saturn:1, bigbang:4, andromeda:0, voyager:5, darkmatter:3,
+  ocean:2, preikestolen:0, polarnight:4, diksam:0, vestrahorn:0, corvo:0, tianshan:0, kalsoy:0, federa:0, bokty:0,
+  aurora:4, pico:3, godafoss:0, ringoffire:3, challenger:2, atacama:4, vatican:1,
+  dodo:1, lycoris:3, fungi:3, carnivorous:3, fouroclock:3, vaquita:2, tardigrade:0, axolotl:2, octopus:0, evolution:4,
+  mansa:1, cleopatra:0, zimbabwe:1, pompeii:2, ibnbattuta:3,
+  ceebu:3, tsimane:0, sentinelese:0, kimchi:3, mole:3, injera:3, muertos:2, mummies:2, languages:1, silbo:1,
+  khufu:2, sagrada:3, starrynight:0, moai:1, monalisa:0, tajmahal:2, terracotta:1,
+  yggdrasil:2, medusa:0, kukulcan:1, anubis:3, kitsune:5, anansi:4, minotaur:0, kraken:5,
+  voynich:3, nazca:0, bermuda:1, stonehenge:0, roanoke:2, wow:3,
+  plague:0, covid:0, cholera:0, ww1:1, calbuco:2, spanishflu:0, tsunami2004:2, ww2:1, rome476:3,
+  penicillin:4, sleep:1, cancer:3, brain:0, memory:0, genome:2, bajau:5, vaccines:4,
+  quantum:0, gps:1, emc2:4, absolutezero:4, montyhall:2,
+  ai:0, ingenuity:1, quantumcomputer:2, graphene:3, fusion:4,
+  life:3, consciousness:1, time:2, whyexist:0, fermi:3, printing:4,
+  goree:4, lacrose:0
+};
+
+/* Phrase d'accueil de chaque page univers */
+const uniIntro = {
+  cosmos:{fr:"Explore l'immensité de l'Univers, de sa naissance jusqu'à ses frontières inconnues.",en:"Explore the vastness of the Universe, from its birth to its unknown frontiers."},
+  earth:{fr:"Des fjords de Norvège aux abysses du Pacifique, pars à la rencontre des paysages et des forces qui façonnent notre planète.",en:"From Norway's fjords to the Pacific depths, discover the landscapes and forces that shape our planet."},
+  living:{fr:"Animaux étonnants, plantes insolites et espèces disparues : la vie sous toutes ses formes.",en:"Astonishing animals, unusual plants and vanished species: life in all its forms."},
+  history:{fr:"Pharaons, empires africains et cités englouties : les civilisations qui ont écrit notre passé.",en:"Pharaohs, African empires and buried cities: the civilisations that wrote our past."},
+  peoples:{fr:"Langues, fêtes et plats du monde : ce qui rassemble les peuples et les rend uniques.",en:"Languages, festivals and dishes from around the world: what brings peoples together and makes each unique."},
+  arts:{fr:"Tableaux, statues et monuments : ce que l'humanité a créé de plus beau.",en:"Paintings, statues and monuments: the most beautiful things humanity has made."},
+  myths:{fr:"Dieux, héros et créatures : les histoires que les peuples se racontent depuis des millénaires.",en:"Gods, heroes and creatures: the stories peoples have told for thousands of years."},
+  mystery:{fr:"Manuscrits indéchiffrables, disparitions et signaux venus du ciel : les énigmes encore ouvertes.",en:"Undeciphered manuscripts, disappearances and signals from the sky: the riddles still unsolved."},
+  upheavals:{fr:"Pandémies, guerres et catastrophes : les épreuves qui ont changé le cours de l'histoire.",en:"Pandemics, wars and disasters: the ordeals that changed the course of history."},
+  body:{fr:"Le cerveau, le sommeil, l'ADN et les grandes découvertes médicales : voyage à l'intérieur de nous.",en:"The brain, sleep, DNA and great medical discoveries: a journey inside ourselves."},
+  science:{fr:"Quantique, relativité et paradoxes : les lois étonnantes qui gouvernent le réel.",en:"Quantum physics, relativity and paradoxes: the surprising laws that govern reality."},
+  future:{fr:"Intelligence artificielle, robots sur Mars et énergie des étoiles : les idées qui changent demain.",en:"Artificial intelligence, robots on Mars and the energy of the stars: the ideas changing tomorrow."},
+  questions:{fr:"Pourquoi existons-nous ? Sommes-nous seuls ? Les questions que l'humanité se pose depuis toujours.",en:"Why do we exist? Are we alone? The questions humanity has always asked."}
+};
+
+/* Chronologie : année (négative = avant notre ère) et libellé facultatif */
+const timeline = {
+  stonehenge:{y:-3000}, mummies:{y:-2600}, khufu:{y:-2560},
+  nazca:{y:-500, l:{fr:"500 av. – 500 apr. J.-C.",en:"500 BCE – 500 CE"}},
+  terracotta:{y:-210}, cleopatra:{y:-51, l:{fr:"51 – 30 av. J.-C.",en:"51 – 30 BCE"}},
+  pompeii:{y:79}, rome476:{y:476},
+  zimbabwe:{y:1100, l:{fr:"XIe – XVe siècle",en:"11th – 15th century"}},
+  moai:{y:1250, l:{fr:"XIIIe – XVIe siècle",en:"13th – 16th century"}},
+  mansa:{y:1324}, ibnbattuta:{y:1325}, plague:{y:1347},
+  voynich:{y:1420, l:{fr:"Début du XVe siècle",en:"Early 15th century"}},
+  printing:{y:1450, l:{fr:"Vers 1450",en:"Around 1450"}},
+  monalisa:{y:1503}, roanoke:{y:1587}, tajmahal:{y:1632}, dodo:{y:1662},
+  tardigrade:{y:1773}, goree:{y:1776, l:{fr:"Fin du XVIIIe siècle",en:"Late 18th century"}}, vaccines:{y:1796}, cholera:{y:1854}, evolution:{y:1859},
+  sagrada:{y:1882}, starrynight:{y:1889}, quantum:{y:1900}, emc2:{y:1905},
+  ww1:{y:1914}, spanishflu:{y:1918}, penicillin:{y:1928}, vatican:{y:1929},
+  darkmatter:{y:1933}, ww2:{y:1939}, oort:{y:1950}, fermi:{y:1950}, ai:{y:1956},
+  challenger:{y:1960}, voyager:{y:1977}, wow:{y:1977}, genome:{y:2003},
+  tsunami2004:{y:2004}, graphene:{y:2004}, calbuco:{y:2015},
+  blackhole:{y:2019}, covid:{y:2019, l:{fr:"2019 – 2023",en:"2019 – 2023"}}, ingenuity:{y:2021}
+};
+
+/* Quiz : deux questions écrites par univers (+ questions photo générées automatiquement).
+   a = indice de la bonne réponse ; ref = découverte à lire ensuite. */
+const quizBank = [
+  {cat:"cosmos",ref:"bigbang",a:0,q:{fr:"Quel âge a l'univers selon les mesures actuelles ?",en:"How old is the universe according to current measurements?"},
+   o:{fr:["13,8 milliards d'années","4,6 milliards d'années","100 milliards d'années","6 000 ans"],en:["13.8 billion years","4.6 billion years","100 billion years","6,000 years"]}},
+  {cat:"cosmos",ref:"voyager",a:0,q:{fr:"Quel objet fabriqué par l'humain est le plus éloigné de la Terre ?",en:"Which human-made object is farthest from Earth?"},
+   o:{fr:["La sonde Voyager 1","Le télescope Hubble","Le rover Curiosity","Le satellite Spoutnik"],en:["The Voyager 1 probe","The Hubble telescope","The Curiosity rover","The Sputnik satellite"]}},
+  {cat:"earth",ref:"challenger",a:0,q:{fr:"Où se trouve le point le plus profond des océans ?",en:"Where is the deepest point in the oceans?"},
+   o:{fr:["Dans la fosse des Mariannes","Dans la fosse de Porto Rico","Au fond de la mer Morte","Au fond du lac Baïkal"],en:["In the Mariana Trench","In the Puerto Rico Trench","At the bottom of the Dead Sea","At the bottom of Lake Baikal"]}},
+  {cat:"earth",ref:"vatican",a:0,q:{fr:"Quel est le plus petit pays du monde ?",en:"What is the smallest country in the world?"},
+   o:{fr:["Le Vatican","Monaco","Malte","Saint-Marin"],en:["Vatican City","Monaco","Malta","San Marino"]}},
+  {cat:"living",ref:"octopus",a:2,q:{fr:"Combien de cœurs possède une pieuvre ?",en:"How many hearts does an octopus have?"},
+   o:{fr:["Un","Deux","Trois","Huit"],en:["One","Two","Three","Eight"]}},
+  {cat:"living",ref:"dodo",a:0,q:{fr:"Sur quelle île vivait le dodo ?",en:"On which island did the dodo live?"},
+   o:{fr:["L'île Maurice","Madagascar","La Réunion","Les Galápagos"],en:["Mauritius","Madagascar","Réunion","The Galápagos"]}},
+  {cat:"history",ref:"pompeii",a:0,q:{fr:"Quelle ville romaine a été ensevelie par le Vésuve en 79 ?",en:"Which Roman city was buried by Vesuvius in 79 CE?"},
+   o:{fr:["Pompéi","Rome","Carthage","Ostie"],en:["Pompeii","Rome","Carthage","Ostia"]}},
+  {cat:"history",ref:"mansa",a:0,q:{fr:"Sur quel empire régnait Mansa Moussa ?",en:"Which empire did Mansa Musa rule?"},
+   o:{fr:["L'empire du Mali","L'empire du Ghana","L'empire songhaï","L'empire d'Éthiopie"],en:["The Mali Empire","The Ghana Empire","The Songhai Empire","The Ethiopian Empire"]}},
+  {cat:"peoples",ref:"ceebu",a:0,q:{fr:"De quel pays le ceebu jën est-il le plat national ?",en:"Ceebu jën is the national dish of which country?"},
+   o:{fr:["Le Sénégal","Le Maroc","La Côte d'Ivoire","Le Cameroun"],en:["Senegal","Morocco","Côte d'Ivoire","Cameroon"]}},
+  {cat:"peoples",ref:"silbo",a:0,q:{fr:"Sur quelle île parle-t-on le silbo gomero, une langue sifflée ?",en:"On which island is Silbo Gomero, a whistled language, spoken?"},
+   o:{fr:["La Gomera","Tenerife","Majorque","La Sicile"],en:["La Gomera","Tenerife","Majorca","Sicily"]}},
+  {cat:"arts",ref:"starrynight",a:0,q:{fr:"Qui a peint La Nuit étoilée ?",en:"Who painted The Starry Night?"},
+   o:{fr:["Vincent van Gogh","Claude Monet","Pablo Picasso","Paul Gauguin"],en:["Vincent van Gogh","Claude Monet","Pablo Picasso","Paul Gauguin"]}},
+  {cat:"arts",ref:"tajmahal",a:0,q:{fr:"Dans quelle ville se trouve le Taj Mahal ?",en:"In which city is the Taj Mahal?"},
+   o:{fr:["Agra","New Delhi","Jaipur","Bombay"],en:["Agra","New Delhi","Jaipur","Mumbai"]}},
+  {cat:"myths",ref:"anubis",a:0,q:{fr:"Quelle tête porte le dieu égyptien Anubis ?",en:"What head does the Egyptian god Anubis have?"},
+   o:{fr:["Une tête de chacal","Une tête de faucon","Une tête de chat","Une tête de crocodile"],en:["A jackal's head","A falcon's head","A cat's head","A crocodile's head"]}},
+  {cat:"myths",ref:"yggdrasil",a:0,q:{fr:"Combien de mondes l'arbre Yggdrasil relie-t-il ?",en:"How many worlds does the tree Yggdrasil connect?"},
+   o:{fr:["Neuf","Sept","Trois","Douze"],en:["Nine","Seven","Three","Twelve"]}},
+  {cat:"mystery",ref:"nazca",a:0,q:{fr:"Dans quel pays se trouvent les lignes de Nazca ?",en:"In which country are the Nazca Lines?"},
+   o:{fr:["Le Pérou","Le Mexique","Le Chili","La Bolivie"],en:["Peru","Mexico","Chile","Bolivia"]}},
+  {cat:"mystery",ref:"wow",a:0,q:{fr:"En quelle année le signal « Wow! » a-t-il été capté ?",en:"In which year was the \"Wow!\" signal detected?"},
+   o:{fr:["1977","1969","1987","1957"],en:["1977","1969","1987","1957"]}},
+  {cat:"upheavals",ref:"plague",a:0,q:{fr:"Quelle bactérie a causé la peste noire ?",en:"Which bacterium caused the Black Death?"},
+   o:{fr:["Yersinia pestis","Vibrio cholerae","Le staphylocoque doré","Le bacille de Koch"],en:["Yersinia pestis","Vibrio cholerae","Staphylococcus aureus","Koch's bacillus"]}},
+  {cat:"upheavals",ref:"cholera",a:0,q:{fr:"À Londres en 1854, John Snow a relié une épidémie de choléra à…",en:"In London in 1854, John Snow linked a cholera outbreak to…"},
+   o:{fr:["une pompe à eau","l'air pollué","les rats","le lait"],en:["a water pump","polluted air","rats","milk"]}},
+  {cat:"body",ref:"penicillin",a:0,q:{fr:"Qui a découvert la pénicilline en 1928 ?",en:"Who discovered penicillin in 1928?"},
+   o:{fr:["Alexander Fleming","Louis Pasteur","Marie Curie","Edward Jenner"],en:["Alexander Fleming","Louis Pasteur","Marie Curie","Edward Jenner"]}},
+  {cat:"body",ref:"brain",a:0,q:{fr:"Combien de neurones compte environ le cerveau humain ?",en:"Roughly how many neurons does the human brain have?"},
+   o:{fr:["86 milliards","8 milliards","1 million","500 000"],en:["86 billion","8 billion","1 million","500,000"]}},
+  {cat:"science",ref:"emc2",a:0,q:{fr:"Dans E = mc², que représente la lettre c ?",en:"In E = mc², what does the letter c stand for?"},
+   o:{fr:["La vitesse de la lumière","La charge électrique","La chaleur","La constante de Planck"],en:["The speed of light","Electric charge","Heat","Planck's constant"]}},
+  {cat:"science",ref:"absolutezero",a:0,q:{fr:"À combien de degrés Celsius correspond le zéro absolu ?",en:"What is absolute zero in degrees Celsius?"},
+   o:{fr:["−273,15 °C","−100 °C","−459,67 °C","0 °C"],en:["−273.15 °C","−100 °C","−459.67 °C","0 °C"]}},
+  {cat:"future",ref:"ingenuity",a:0,q:{fr:"Sur quelle planète l'hélicoptère Ingenuity a-t-il volé ?",en:"On which planet did the Ingenuity helicopter fly?"},
+   o:{fr:["Mars","Vénus","Jupiter","Mercure"],en:["Mars","Venus","Jupiter","Mercury"]}},
+  {cat:"future",ref:"graphene",a:0,q:{fr:"De quel élément le graphène est-il fait ?",en:"What element is graphene made of?"},
+   o:{fr:["Le carbone","Le silicium","Le fer","L'hydrogène"],en:["Carbon","Silicon","Iron","Hydrogen"]}},
+  {cat:"questions",ref:"printing",a:0,q:{fr:"Qui a mis au point l'imprimerie à caractères mobiles en Europe ?",en:"Who developed movable-type printing in Europe?"},
+   o:{fr:["Johannes Gutenberg","Léonard de Vinci","Galilée","Érasme"],en:["Johannes Gutenberg","Leonardo da Vinci","Galileo","Erasmus"]}},
+  {cat:"questions",ref:"fermi",a:0,q:{fr:"La question « Où sont-ils tous ? » porte le nom de quel physicien ?",en:"The question \"Where is everybody?\" is named after which physicist?"},
+   o:{fr:["Enrico Fermi","Albert Einstein","Carl Sagan","Stephen Hawking"],en:["Enrico Fermi","Albert Einstein","Carl Sagan","Stephen Hawking"]}}
+];
+
+/* Textes de l'interface pour les nouvelles pages */
+const uiPages = {
+ fr:{
+  navLibrary:"Ma bibliothèque",navTimeline:"Chronologie",navQuiz:"Quiz",surprise:"Surprends-moi",surpriseHere:"Surprends-moi dans cet univers",
+  home:"Accueil",universeLabel:n=>`UNIVERS ${n}`,discoveriesCount:n=>`${n} découverte${n>1?"s":""}`,subcats:"Sous-catégories",subcat:"Sous-catégorie",allSubs:"Tout l'univers",
+  comingSoon:"Bientôt",subEmpty:"Les premières découvertes de cette catégorie arrivent bientôt.",otherUniverses:"Continuer l'exploration",nextUniverse:"Univers suivant",
+  dailyEyebrow:"DÉCOUVERTE DU JOUR",dailyTitle:"La découverte du jour",dailyNote:"Une nouvelle découverte chaque jour, la même pour tout le monde.",read:"Lire la découverte",
+  listen:"Écouter",pause:"Pause",resume:"Reprendre",stop:"Arrêter",share:"Partager",linkCopied:"Lien copié",
+  keyInfo:"L'essentiel",period:"Époque",readingTime:"Temps de lecture",minutes:n=>`${n} min`,keywords:"Mots-clés",gallery:"Galerie",video:"Vidéo",
+  related:"Découvertes associées",prevNext:"Dans le même univers",previous:"← Précédente",next:"Suivante →",backTo:n=>`← Retour à ${n}`,
+  notFound:"Cette découverte est introuvable.",
+  libraryEyebrow:"TON ESPACE",libraryTitle:"Ma bibliothèque",libraryIntro:"Tes favoris et ton historique de lecture sont gardés sur cet appareil.",
+  tabSaved:n=>`Favoris (${n})`,tabHistory:n=>`Historique (${n})`,savedEmpty:"Aucun favori pour l'instant. Touche ♡ sur une découverte pour la retrouver ici.",
+  historyEmpty:"Tu n'as encore lu aucune découverte.",clearHistory:"Effacer l'historique",resumeExploring:"Reprendre où tu t'étais arrêté",
+  ago:ms=>{const m=Math.round(ms/60000);if(m<1)return"à l'instant";if(m<60)return`il y a ${m} min`;const h=Math.round(m/60);if(h<24)return`il y a ${h} h`;const d=Math.round(h/24);return`il y a ${d} j`;},
+  timelineEyebrow:"DE LA PRÉHISTOIRE À AUJOURD'HUI",timelineTitle:"La chronologie",timelineIntro:"Fais défiler le temps et ouvre les découvertes qui ont marqué chaque époque.",
+  eras:[["Préhistoire et Antiquité",-99999,476],["Moyen Âge",476,1492],["Époque moderne",1492,1789],["XIXe siècle",1789,1900],["XXe siècle",1900,2000],["XXIe siècle",2000,99999]],
+  bce:y=>`${Math.abs(y)} av. J.-C.`,dragTime:"Fais glisser ou utilise les flèches pour voyager dans le temps",
+  quizEyebrow:"APPRENDRE EN JOUANT",quizTitle:"Quiz de culture générale",quizIntro:"Huit questions pour tester tes connaissances. Choisis un univers ou mélange-les tous.",
+  quizAll:"Tous les univers",quizStart:"Commencer",question:(i,n)=>`Question ${i} / ${n}`,photoQ:"Quelle découverte cette image illustre-t-elle ?",
+  correct:"Bonne réponse !",wrong:a=>`Raté — la bonne réponse était : ${a}`,nextQ:"Question suivante →",seeResult:"Voir mon score →",
+  score:(s,n)=>`${s} / ${n}`,scoreMsg:(s,n)=>s===n?"Parfait ! Tu es un véritable explorateur.":s>=n*0.6?"Très bien joué !":"Continue d'explorer, tu progresses à chaque partie.",
+  best:b=>`Meilleur score : ${b}`,replay:"Rejouer",otherQuiz:"Choisir un autre quiz",readMore:"Lire la découverte ↗",
+  surpriseToast:"Direction l'inconnu…",audioUnsupported:"La lecture audio n'est pas disponible sur ce navigateur."
+ },
+ en:{
+  navLibrary:"My library",navTimeline:"Timeline",navQuiz:"Quiz",surprise:"Surprise me",surpriseHere:"Surprise me in this universe",
+  home:"Home",universeLabel:n=>`UNIVERSE ${n}`,discoveriesCount:n=>`${n} discover${n>1?"ies":"y"}`,subcats:"Subcategories",subcat:"Subcategory",allSubs:"The whole universe",
+  comingSoon:"Coming soon",subEmpty:"The first discoveries in this category are coming soon.",otherUniverses:"Keep exploring",nextUniverse:"Next universe",
+  dailyEyebrow:"DISCOVERY OF THE DAY",dailyTitle:"Today's discovery",dailyNote:"A new discovery every day, the same for everyone.",read:"Read the discovery",
+  listen:"Listen",pause:"Pause",resume:"Resume",stop:"Stop",share:"Share",linkCopied:"Link copied",
+  keyInfo:"Key facts",period:"Period",readingTime:"Reading time",minutes:n=>`${n} min`,keywords:"Keywords",gallery:"Gallery",video:"Video",
+  related:"Related discoveries",prevNext:"In the same universe",previous:"← Previous",next:"Next →",backTo:n=>`← Back to ${n}`,
+  notFound:"This discovery could not be found.",
+  libraryEyebrow:"YOUR SPACE",libraryTitle:"My library",libraryIntro:"Your favourites and reading history are kept on this device.",
+  tabSaved:n=>`Favourites (${n})`,tabHistory:n=>`History (${n})`,savedEmpty:"No favourites yet. Tap ♡ on a discovery to find it here.",
+  historyEmpty:"You haven't read any discoveries yet.",clearHistory:"Clear history",resumeExploring:"Pick up where you left off",
+  ago:ms=>{const m=Math.round(ms/60000);if(m<1)return"just now";if(m<60)return`${m} min ago`;const h=Math.round(m/60);if(h<24)return`${h} h ago`;const d=Math.round(h/24);return`${d} d ago`;},
+  timelineEyebrow:"FROM PREHISTORY TO TODAY",timelineTitle:"The timeline",timelineIntro:"Scroll through time and open the discoveries that marked each era.",
+  eras:[["Prehistory and Antiquity",-99999,476],["Middle Ages",476,1492],["Early modern period",1492,1789],["19th century",1789,1900],["20th century",1900,2000],["21st century",2000,99999]],
+  bce:y=>`${Math.abs(y)} BCE`,dragTime:"Drag or use the arrows to travel through time",
+  quizEyebrow:"LEARN BY PLAYING",quizTitle:"General knowledge quiz",quizIntro:"Eight questions to test what you know. Pick a universe or mix them all.",
+  quizAll:"All universes",quizStart:"Start",question:(i,n)=>`Question ${i} / ${n}`,photoQ:"Which discovery does this image illustrate?",
+  correct:"Correct!",wrong:a=>`Not quite — the right answer was: ${a}`,nextQ:"Next question →",seeResult:"See my score →",
+  score:(s,n)=>`${s} / ${n}`,scoreMsg:(s,n)=>s===n?"Perfect! You're a true explorer.":s>=n*0.6?"Well played!":"Keep exploring — you get better every round.",
+  best:b=>`Best score: ${b}`,replay:"Play again",otherQuiz:"Choose another quiz",readMore:"Read the discovery ↗",
+  surpriseToast:"Heading into the unknown…",audioUnsupported:"Audio playback isn't available in this browser."
+ }
+};
+
+/* Carte du monde : lieux et découvertes liées (lat, lon en degrés) */
+const places = [
+  {id:"senegal",lat:14.7,lon:-17.4,name:{fr:"Sénégal",en:"Senegal"},blurb:{fr:"Une île de mémoire, un lac rose et le plat national.",en:"An island of memory, a pink lake and the national dish."},items:["goree","lacrose","ceebu"]},
+  {id:"egypt",lat:29.9,lon:31.1,name:{fr:"Égypte",en:"Egypt"},blurb:{fr:"Pyramides, pharaons et dieux à tête d'animal.",en:"Pyramids, pharaohs and animal-headed gods."},items:["khufu","cleopatra","mummies","anubis"]},
+  {id:"iceland",lat:64.9,lon:-18.6,name:{fr:"Islande",en:"Iceland"},blurb:{fr:"Volcans, sable noir, cascades et aurores boréales.",en:"Volcanoes, black sand, waterfalls and northern lights."},items:["vestrahorn","godafoss","aurora"]},
+  {id:"norway",lat:61.0,lon:8.5,name:{fr:"Norvège et Svalbard",en:"Norway and Svalbard"},blurb:{fr:"Fjords, nuit polaire et légendes nordiques.",en:"Fjords, polar night and Norse legends."},items:["preikestolen","polarnight","yggdrasil","kraken"]},
+  {id:"faroe",lat:62.3,lon:-6.8,name:{fr:"Îles Féroé",en:"Faroe Islands"},blurb:{fr:"Falaises vertigineuses et femme-phoque.",en:"Towering cliffs and the seal woman."},items:["kalsoy"]},
+  {id:"uk",lat:51.5,lon:-1.5,name:{fr:"Royaume-Uni",en:"United Kingdom"},blurb:{fr:"Un cercle de pierres, une pompe à eau et une moisissure qui a sauvé des millions de vies.",en:"A stone circle, a water pump and a mould that saved millions of lives."},items:["stonehenge","cholera","penicillin"]},
+  {id:"france",lat:46.2,lon:3.5,name:{fr:"France",en:"France"},blurb:{fr:"Un tableau volé et un ciel étoilé peint en Provence.",en:"A stolen painting and a starry sky painted in Provence."},items:["monalisa","starrynight"]},
+  {id:"spain",lat:41.4,lon:2.2,name:{fr:"Espagne",en:"Spain"},blurb:{fr:"Une basilique inachevée à Barcelone.",en:"An unfinished basilica in Barcelona."},items:["sagrada"]},
+  {id:"canaries",lat:28.1,lon:-17.2,name:{fr:"La Gomera (Canaries)",en:"La Gomera (Canaries)"},blurb:{fr:"Une île où l'on parle en sifflant.",en:"An island where people talk by whistling."},items:["silbo"]},
+  {id:"azores",lat:38.5,lon:-28.4,name:{fr:"Açores",en:"Azores"},blurb:{fr:"Volcans et cratères au milieu de l'Atlantique.",en:"Volcanoes and craters in the middle of the Atlantic."},items:["pico","corvo"]},
+  {id:"italy",lat:42.3,lon:12.6,name:{fr:"Italie et Vatican",en:"Italy and Vatican City"},blurb:{fr:"Une ville figée, un empire tombé, le plus petit pays du monde et un lac des Dolomites.",en:"A frozen city, a fallen empire, the world's smallest country and a Dolomite lake."},items:["pompeii","rome476","vatican","federa"]},
+  {id:"germany",lat:50.0,lon:8.3,name:{fr:"Allemagne",en:"Germany"},blurb:{fr:"L'atelier de Gutenberg à Mayence.",en:"Gutenberg's workshop in Mainz."},items:["printing"]},
+  {id:"greece",lat:37.5,lon:23.5,name:{fr:"Grèce et Crète",en:"Greece and Crete"},blurb:{fr:"Gorgones, labyrinthe et Minotaure.",en:"Gorgons, a labyrinth and the Minotaur."},items:["medusa","minotaur"]},
+  {id:"mali",lat:16.8,lon:-3.0,name:{fr:"Mali",en:"Mali"},blurb:{fr:"L'empire du roi le plus riche de l'histoire.",en:"The empire of history's richest king."},items:["mansa"]},
+  {id:"morocco",lat:35.8,lon:-5.8,name:{fr:"Maroc",en:"Morocco"},blurb:{fr:"Tanger, point de départ du plus grand voyageur du Moyen Âge.",en:"Tangier, where the Middle Ages' greatest traveller set out."},items:["ibnbattuta"]},
+  {id:"ghana",lat:6.7,lon:-1.6,name:{fr:"Ghana",en:"Ghana"},blurb:{fr:"Anansi, l'araignée conteuse.",en:"Anansi, the storytelling spider."},items:["anansi"]},
+  {id:"ethiopia",lat:9.0,lon:38.7,name:{fr:"Éthiopie",en:"Ethiopia"},blurb:{fr:"La galette qui sert d'assiette.",en:"The flatbread that doubles as a plate."},items:["injera"]},
+  {id:"zimbabwe",lat:-20.3,lon:30.9,name:{fr:"Zimbabwe",en:"Zimbabwe"},blurb:{fr:"Une cité de pierre bâtie sans mortier.",en:"A stone city built without mortar."},items:["zimbabwe"]},
+  {id:"mauritius",lat:-20.3,lon:57.6,name:{fr:"Île Maurice",en:"Mauritius"},blurb:{fr:"Le dernier refuge du dodo.",en:"The dodo's last refuge."},items:["dodo"]},
+  {id:"socotra",lat:12.5,lon:53.9,name:{fr:"Socotra (Yémen)",en:"Socotra (Yemen)"},blurb:{fr:"Les arbres-dragons du plateau de Diksam.",en:"The dragon trees of the Diksam plateau."},items:["diksam"]},
+  {id:"kazakhstan",lat:43.6,lon:54.0,name:{fr:"Mangystau (Kazakhstan)",en:"Mangystau (Kazakhstan)"},blurb:{fr:"Une montagne aux couches colorées comme un gâteau.",en:"A mountain with cake-like coloured layers."},items:["bokty"]},
+  {id:"tianshan",lat:42.0,lon:80.0,name:{fr:"Tian Shan",en:"Tian Shan"},blurb:{fr:"Les « montagnes célestes » d'Asie centrale.",en:"The \"celestial mountains\" of Central Asia."},items:["tianshan"]},
+  {id:"india",lat:27.2,lon:78.0,name:{fr:"Inde",en:"India"},blurb:{fr:"Un tombeau construit par amour.",en:"A tomb built for love."},items:["tajmahal"]},
+  {id:"andaman",lat:11.6,lon:92.2,name:{fr:"Île de Sentinelle du Nord",en:"North Sentinel Island"},blurb:{fr:"L'un des derniers peuples isolés de la planète.",en:"One of the last isolated peoples on the planet."},items:["sentinelese"]},
+  {id:"china",lat:34.4,lon:109.3,name:{fr:"Chine",en:"China"},blurb:{fr:"Des milliers de soldats de terre cuite.",en:"Thousands of terracotta soldiers."},items:["terracotta"]},
+  {id:"korea",lat:37.5,lon:127.0,name:{fr:"Corée du Sud",en:"South Korea"},blurb:{fr:"Le kimchi préparé ensemble, chaque automne.",en:"Kimchi made together every autumn."},items:["kimchi"]},
+  {id:"japan",lat:35.7,lon:138.5,name:{fr:"Japon",en:"Japan"},blurb:{fr:"Fleurs de l'équinoxe et renards magiques.",en:"Equinox flowers and magical foxes."},items:["lycoris","kitsune"]},
+  {id:"indonesia",lat:-1.5,lon:118.0,name:{fr:"Indonésie",en:"Indonesia"},blurb:{fr:"Des plongeurs hors du commun et le tsunami de 2004.",en:"Extraordinary divers and the 2004 tsunami."},items:["bajau","tsunami2004"]},
+  {id:"mariana",lat:11.3,lon:142.2,name:{fr:"Pacifique ouest",en:"Western Pacific"},blurb:{fr:"Le point le plus profond des océans, au cœur de la ceinture de feu.",en:"The deepest point of the oceans, in the heart of the Ring of Fire."},items:["challenger","ringoffire"]},
+  {id:"easter",lat:-27.1,lon:-109.4,name:{fr:"Île de Pâques",en:"Easter Island"},blurb:{fr:"Les géants de pierre de Rapa Nui.",en:"The stone giants of Rapa Nui."},items:["moai"]},
+  {id:"galapagos",lat:-0.8,lon:-91.0,name:{fr:"Galápagos",en:"Galápagos"},blurb:{fr:"Les îles qui ont inspiré Darwin.",en:"The islands that inspired Darwin."},items:["evolution"]},
+  {id:"peru",lat:-14.7,lon:-75.1,name:{fr:"Pérou",en:"Peru"},blurb:{fr:"Des dessins géants visibles du ciel.",en:"Giant drawings visible from the sky."},items:["nazca"]},
+  {id:"bolivia",lat:-14.8,lon:-66.8,name:{fr:"Bolivie",en:"Bolivia"},blurb:{fr:"Les Tsimanes et leur cœur exceptionnel.",en:"The Tsimane and their exceptional hearts."},items:["tsimane"]},
+  {id:"chile",lat:-30.0,lon:-70.0,name:{fr:"Chili",en:"Chile"},blurb:{fr:"Le désert le plus sec du monde et un volcan en furie.",en:"The world's driest desert and a raging volcano."},items:["atacama","calbuco"]},
+  {id:"mexico",lat:20.0,lon:-99.0,name:{fr:"Mexique",en:"Mexico"},blurb:{fr:"Serpent à plumes, fête des morts, axolotl et vaquita.",en:"Feathered serpent, Day of the Dead, axolotl and vaquita."},items:["kukulcan","muertos","mole","axolotl","vaquita"]},
+  {id:"usa",lat:35.5,lon:-78.0,name:{fr:"Est des États-Unis",en:"Eastern United States"},blurb:{fr:"Une colonie disparue, une plante carnivore et un signal venu de l'espace.",en:"A vanished colony, a carnivorous plant and a signal from space."},items:["roanoke","carnivorous","wow"]},
+  {id:"bermuda",lat:28.0,lon:-68.0,name:{fr:"Triangle des Bermudes",en:"Bermuda Triangle"},blurb:{fr:"Mystère ou mythe ?",en:"Mystery or myth?"},items:["bermuda"]}
+];
+
+Object.assign(uiPages.fr, {
+  navAtlas:"Carte",allUniverses:"← Tous les univers",
+  atlasEyebrow:"CARTE DU MONDE INTERACTIVE",atlasTitle:"Explore la Terre",atlasIntro:"Fais tourner le globe et touche un point lumineux pour découvrir les merveilles de chaque lieu.",
+  atlasHint:"Glisse pour tourner · molette pour zoomer · touche un point",atlasPick:"Choisis un lieu",atlasPlaces:n=>`${n} lieux`,
+  atlasRandom:"Surprends-moi sur la carte",atlasHero:"Carte interactive",seeOnMap:"Voir sur la carte",atlasCount:n=>`${n} découverte${n>1?"s":""} ici`,
+  atlasNoGL:"Le globe 3D n'est pas disponible sur cet appareil : voici la liste des lieux.",
+  detourEyebrow:"DÉTOUR INATTENDU",detourTitle:"Tu ne savais pas que tu voulais le savoir…",detourSame:p=>`Même destination (${p}), mais un tout autre univers.`,detourOther:"Un saut vers un tout autre univers.",
+  voice:"Voix",voiceDefault:"Voix automatique",settings:"Paramètres",voiceSetting:"Voix de lecture",voiceTest:"Tester la voix",voiceSample:"Bienvenue sur LUMORA. Tu viens découvrir une chose, tu repars avec mille autres.",voiceNote:"Par défaut : Vivienne multilingue (★), disponible dans le navigateur Edge. Les autres voix dépendent de ton appareil.",philosophy:"Tu viens découvrir une chose. Tu repars avec celles que tu ne savais pas vouloir connaître."
+});
+Object.assign(uiPages.en, {
+  navAtlas:"Map",allUniverses:"← All universes",
+  atlasEyebrow:"INTERACTIVE WORLD MAP",atlasTitle:"Explore the Earth",atlasIntro:"Spin the globe and tap a glowing point to discover the wonders of each place.",
+  atlasHint:"Drag to spin · scroll to zoom · tap a point",atlasPick:"Choose a place",atlasPlaces:n=>`${n} places`,
+  atlasRandom:"Surprise me on the map",atlasHero:"Interactive map",seeOnMap:"See on the map",atlasCount:n=>`${n} discover${n>1?"ies":"y"} here`,
+  atlasNoGL:"The 3D globe isn't available on this device: here is the list of places.",
+  detourEyebrow:"UNEXPECTED DETOUR",detourTitle:"You didn't know you wanted to know this…",detourSame:p=>`Same destination (${p}), but a completely different universe.`,detourOther:"A leap into a completely different universe.",
+  voice:"Voice",voiceDefault:"Automatic voice",settings:"Settings",voiceSetting:"Reading voice",voiceTest:"Test the voice",voiceSample:"Welcome to LUMORA. You come to discover one thing, and leave with a thousand more.",voiceNote:"Default: Vivienne Multilingual (★), available in the Edge browser. Other voices depend on your device.",philosophy:"You come to discover one thing. You leave with the ones you didn't know you wanted to know."
+});
+
+Object.assign(uiPages.fr, {
+  newsAll:"Toutes",newsMore:n=>`Voir plus d'actualités (${n}) ↓`,newsRead:s=>`Lire sur ${s} ↗`,newsGoFurther:"Pour aller plus loin",
+  newsEmpty:"Aucune actualité pour le moment dans cet univers.",newsLangEn:"EN",
+  newsStatus:(when,n,srcs)=>`Mis à jour ${when} · ${n} actualités · sources : ${srcs}. LUMORA affiche le titre, la date et le résumé fournis par chaque source, avec un lien vers l'article original.`,
+  newsSnapshot:"Aperçu : ces titres réels ont été rassemblés le 23 novembre 2026. Sur le site en ligne, ils se renouvellent automatiquement.",
+  imageBy:c=>`Image : ${c}`
+});
+Object.assign(uiPages.en, {
+  newsAll:"All",newsMore:n=>`Show more news (${n}) ↓`,newsRead:s=>`Read on ${s} ↗`,newsGoFurther:"Go further",
+  newsEmpty:"No news in this universe yet.",newsLangEn:"EN",
+  newsStatus:(when,n,srcs)=>`Updated ${when} · ${n} stories · sources: ${srcs}. LUMORA shows the title, date and summary provided by each source, with a link to the original article.`,
+  newsSnapshot:"Preview: these real headlines were gathered on 23 November 2026. On the live site, they refresh automatically.",
+  imageBy:c=>`Image: ${c}`
+});
