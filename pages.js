@@ -34,7 +34,7 @@ function updateLibraryCount(){
 function cardHTML(x){
   return `
     <article class="discovery-card" data-id="${x.id}" tabindex="0">
-      <div class="discovery-art ${x.art}${x.photo?" has-photo":""}" style="--glow:${uni(x.cat).glow}" data-icon="${uni(x.cat).icon}">${x.photo?`<img class="art-photo" src="${x.photo}" alt="" loading="lazy">`:""}<span class="art-label">${esc(uniName(x.cat).toUpperCase())} / LUMORA</span>${x.gallery&&x.gallery.length>1?`<span class="photo-count">◫ ${x.gallery.length} ${t("photos")}</span>`:""}</div>
+      <div class="discovery-art ${x.art}${x.photo?" has-photo":""}" style="--glow:${uni(x.cat).glow}" data-icon="${uni(x.cat).icon}">${x.photo?`<img class="art-photo" src="${x.photo}" alt="" loading="lazy">`:""}<span class="art-label">${esc(uniName(x.cat).toUpperCase())} / LUMORA</span>${x.yt?`<span class="video-badge">▶ ${lang==="fr"?"Vidéo":"Video"}</span>`:""}${x.gallery&&x.gallery.length>1?`<span class="photo-count">◫ ${x.gallery.length} ${t("photos")}</span>`:""}</div>
       <div class="discovery-content">
         <div class="discovery-meta"><span>${esc(uniName(x.cat))}</span><span>${x.min} MIN ${t("readSuffix")}</span></div>
         <h3>${esc(x.title[lang])}</h3>
@@ -103,7 +103,7 @@ function playArticle(x){
   if(ttsState==="playing"){ tts.pause(); ttsState="paused"; updateAudioButton(); return; }
   if(ttsState==="paused"){ tts.resume(); ttsState="playing"; updateAudioButton(); return; }
   tts.cancel();
-  const text = [x.title[lang], x.lead[lang], t("modalSection")+".", x.body[lang]].join(" ");
+  const _L = longOf(x); const text = [x.title[lang], x.lead[lang], _L&&_L[lang]?_L[lang].key.join(" "):"", t("modalSection")+".", x.body[lang], _L&&_L[lang]?_L[lang].sections.map(s=>s.h+". "+s.p.join(" ")).join(" "):""].join(" ");
   const chunks = text.match(/[^.!?…]+[.!?…]*\s*/g) || [text];
   const voice = pickVoice();
   chunks.forEach((c,i)=>{
@@ -233,6 +233,57 @@ function relatedOf(x, skip){
   return items.filter(y=>y.id!==x.id && y.id!==skip).map(y=>[score(y),Math.random(),y]).sort((a,b)=>b[0]-a[0]||a[1]-b[1]).slice(0,4).map(a=>a[2]);
 }
 
+
+/* ---- Articles longs + vidéos YouTube ---- */
+const LA = {
+  fr:{ess:"L'essentiel en 30 secondes",nums:"Les chiffres clés",did:"Le saviez-vous ?",open:"Ce qu'on ne sait pas encore",src:"Sources",vid:"En vidéo",play:"Lire la vidéo",onYt:"Ouvrir sur YouTube",ytNote:"La vidéo se charge depuis YouTube seulement si vous cliquez.",badge:"Vidéo",verified:"Article vérifié à partir des sources ci-dessous."},
+  en:{ess:"The essentials in 30 seconds",nums:"Key figures",did:"Did you know?",open:"What we don't know yet",src:"Sources",vid:"Watch",play:"Play video",onYt:"Open on YouTube",ytNote:"The video only loads from YouTube when you click.",badge:"Video",verified:"Article checked against the sources below."}
+};
+const la = k => LA[lang][k];
+function longOf(x){ return (typeof longArticles!=="undefined" && longArticles[x.id]) || null; }
+function longText(L){ if(!L) return ""; return [L.key.join(" "), ...L.sections.flatMap(s=>[s.h, ...s.p]), L.numbers.map(n=>n.join(" ")).join(" "), L.didyou.join(" "), L.open.join(" ")].join(" "); }
+(function initLong(){
+  if(typeof longArticles==="undefined") return;
+  items.forEach(x=>{
+    const A = longArticles[x.id]; if(!A) return;
+    if(A.video) x.yt = A.video;
+    if(A.fr && A.en){
+      const words = longText(A.fr).split(/\s+/).length + String(x.body.fr).split(/\s+/).length;
+      x.min = Math.max(x.min, Math.round(words/200));
+    }
+  });
+})();
+function ytHTML(v){
+  const id = encodeURIComponent(v.id);
+  return `<h2>▶ ${esc(la("vid"))}</h2>
+  <div class="yt-facade" data-yt="${id}" data-title="${esc(v.title[lang])}">
+    <img src="https://i.ytimg.com/vi/${id}/hqdefault.jpg" alt="" loading="lazy">
+    <button class="yt-play" aria-label="${esc(la("play"))} : ${esc(v.title[lang])}"><span>▶</span></button>
+    <div class="yt-cap"><strong>${esc(v.title[lang])}</strong><small>${esc(v.channel)} · YouTube</small></div>
+  </div>
+  <p class="yt-note">${esc(la("ytNote"))} <a href="https://www.youtube.com/watch?v=${id}" target="_blank" rel="noopener">${esc(la("onYt"))} ↗</a></p>`;
+}
+function bindYT(root){
+  root.querySelectorAll(".yt-facade").forEach(f=>{
+    const go=()=>{ f.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${f.dataset.yt}?autoplay=1&rel=0" title="${f.dataset.title}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`; f.classList.add("playing"); };
+    f.querySelector(".yt-play").addEventListener("click",go);
+  });
+}
+function longHTML(x){
+  const A = longOf(x); if(!A || !A[lang]) return `<h2>${esc(t("modalSection"))}</h2><p class="article-body">${esc(x.body[lang])}</p>`;
+  const L = A[lang];
+  return `<section class="la-essential"><h2>⚡ ${esc(la("ess"))}</h2><ul>${L.key.map(k=>`<li>${esc(k)}</li>`).join("")}</ul></section>
+  <h2>${esc(t("modalSection"))}</h2><p class="article-body">${esc(x.body[lang])}</p>
+  ${L.sections.map(s=>`<h2>${esc(s.h)}</h2>${s.p.map(p=>`<p class="article-body">${esc(p)}</p>`).join("")}`).join("")}
+  <h2>${esc(la("nums"))}</h2><div class="la-numbers">${L.numbers.map(n=>`<div><strong>${esc(n[0])}</strong><span>${esc(n[1])}</span></div>`).join("")}</div>
+  <div class="la-didyou"><h3>💡 ${esc(la("did"))}</h3><ul>${L.didyou.map(d=>`<li>${esc(d)}</li>`).join("")}</ul></div>
+  <h2>${esc(la("open"))}</h2><ul class="la-open">${L.open.map(o=>`<li>${esc(o)}</li>`).join("")}</ul>`;
+}
+function sourcesHTML(x){
+  const A = longOf(x); if(!A || !A.sources) return `<div class="source-note"><span>ⓘ</span><span>${esc(t("prototypeSource"))}</span></div>`;
+  return `<div class="la-sources"><h2>${esc(la("src"))}</h2><p>${esc(la("verified"))}</p><ol>${A.sources.map(s=>`<li><a href="${esc(s.u)}" target="_blank" rel="noopener">${esc(s.t)} ↗</a></li>`).join("")}</ol></div>`;
+}
+
 function renderArticle(id){
   const x = byId(id);
   if(!x){ return renderNotFound(); }
@@ -265,12 +316,12 @@ function renderArticle(id){
     </header>
     <div class="article-layout">
       <div class="article-main">
-        <h2>${esc(t("modalSection"))}</h2>
-        <p class="article-body">${esc(x.body[lang])}</p>
+        ${longHTML(x)}
+        ${x.yt?ytHTML(x.yt):""}
         ${gal.length>1?`<h2>${esc(t("gallery"))}</h2><div class="article-gallery">${gal.map((g,i)=>`<button data-i="${i}" aria-label="${t("photo")} ${i+1}"><img src="${g}" alt="" loading="lazy"></button>`).join("")}</div>`:""}
         ${x.credits?`<p class="photo-credits">◫ ${esc(lang==="fr"?"Photos":"Photos")} : ${x.credits.map(esc).join(" · ")}</p>`:""}
         ${x.video?`<h2>${esc(t("video"))}</h2><div class="article-video"><video controls preload="none" src="${x.video}"></video></div>`:""}
-        <div class="source-note"><span>ⓘ</span><span>${esc(t("prototypeSource"))}</span></div>
+        ${sourcesHTML(x)}
         <div class="prev-next"><div class="eyebrow">${esc(t("prevNext").toUpperCase())}</div>
           <a href="#/d/${prev.id}"><small>${t("previous")}</small><span>${esc(prev.title[lang])}</span></a>
           <a href="#/d/${next.id}" class="next"><small>${t("next")}</small><span>${esc(next.title[lang])}</span></a>
@@ -298,7 +349,7 @@ function renderArticle(id){
       <div class="discovery-grid">${relatedCache.map(cardHTML).join("")}</div>
     </section>
   </article>`;
-  bindCards($("#page"));
+  bindCards($("#page")); bindYT($("#page"));
   updateAudioButton();
   $("#audioBtn").addEventListener("click", ()=>playArticle(x));
   $("#audioStop").addEventListener("click", stopAudio);
