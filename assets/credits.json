@@ -52,5 +52,23 @@
   "license": "CC BY-SA 4.0",
   "artist": "Adam Harangozó",
   "credit": "Own work"
+ },
+ "assets/photos/plus/dodo-edwards.jpg": {
+  "title": "File:Edwards' Dodo.jpg",
+  "license": "Public domain",
+  "artist": "Possibly Roelant Savery / Roelant Savery",
+  "credit": "https://julianhume.co.uk/wp-content/uploads/2010/07/History-of-the-dodo-Hume.pdf"
+ },
+ "assets/photos/plus/coconut-octopus.jpg": {
+  "title": "File:Coconut octopus in shell.jpg",
+  "license": "CC BY 2.0",
+  "artist": "q phia",
+  "credit": "File:Coconut octo bundle, rojos, lembeh, indonesia, 2017 (34860134342).jpg"
+ },
+ "assets/photos/plus/xochimilco.jpg": {
+  "title": "File:Paisaje del canal y chinampas en Xochimilco.JPG",
+  "license": "CC BY-SA 4.0",
+  "artist": "Emmanuel Eslava",
+  "credit": "Own work"
  }
 }
