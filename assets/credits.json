@@ -316,5 +316,47 @@
   "license": "Public domain",
   "artist": "Alain Manesson Mallet",
   "credit": "http://www.columbia.edu/itc/mealac/pritchett/00generallinks/mallet/index.html#index"
+ },
+ "assets/photos/plus/retba-harvest.jpg": {
+  "title": "File:Lake Retba salt harvesting.jpg",
+  "license": "CC0",
+  "artist": "Alexey Yakovlev",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/retba-pink.jpg": {
+  "title": "File:Lac Rose in Senegal.jpg",
+  "license": "CC BY-SA 2.0",
+  "artist": "Arnault",
+  "credit": "originally posted to Flickr as Lac rose"
+ },
+ "assets/photos/plus/dindefelo-falls.jpg": {
+  "title": "File:Dindefelofalls.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "NoahElhardt",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/fongoli-chimp.jpg": {
+  "title": "File:Pan troglodytes, tool use in Senegal.jpg",
+  "license": "CC BY 4.0",
+  "artist": "J. D. Pruetz , P. Bertolani , K. Boyer Ontl , S. Lindshield , M. Shelley , E. G. Wessling",
+  "credit": "http://rsos.royalsocietypublishing.org/content/2/4/140507"
+ },
+ "assets/photos/plus/aurora-yellowknife.jpg": {
+  "title": "File:2018 Aurora Yellowknife Canada.jpg",
+  "license": "Public domain",
+  "artist": "raymond22112376",
+  "credit": "https://www.flickr.com/photos/90226810@N08/26328219877/"
+ },
+ "assets/photos/plus/steve-aurora.jpg": {
+  "title": "File:The Aurora Named STEVE (26938621998).jpg",
+  "license": "CC0",
+  "artist": "NASA Goddard Space Flight Center from Greenbelt, MD, USA",
+  "credit": "The Aurora Named STEVE"
+ },
+ "assets/photos/plus/krakatoa-1888.jpg": {
+  "title": "File:Krakatoa eruption lithograph.jpg",
+  "license": "Public domain",
+  "artist": "Lithograph: Parker &amp; Coward, Britain;",
+  "credit": "Image published as Plate 1 in The eruption of Krakatoa, and subsequent phenomena. Report of the Krakatoa Committee of th"
  }
 }
