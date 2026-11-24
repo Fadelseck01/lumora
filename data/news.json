@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24T21:14:10Z",
- "checked": "2026-11-24T21:14:10Z",
+ "updated": "2026-11-24T21:31:19Z",
+ "checked": "2026-11-24T21:31:19Z",
  "sources": [
   {
    "id": "nasa",
@@ -8,7 +8,7 @@
    "home": "https://www.nasa.gov",
    "ok": true,
    "found": 10,
-   "new": 0
+   "new": 1
   },
   {
    "id": "nasa-iotd",
@@ -64,7 +64,7 @@
    "home": "https://www.smithsonianmag.com",
    "ok": true,
    "found": 10,
-   "new": 1
+   "new": 0
   },
   {
    "id": "mongabay",
@@ -76,6 +76,21 @@
   }
  ],
  "items": [
+  {
+   "id": "ba44a48be42177bd",
+   "source": "nasa",
+   "sourceName": "NASA",
+   "lang": "en",
+   "title": "Teams Lock in Mission Architecture for NASA’s SR-1 Freedom",
+   "summary": "NASA completed a major review for Space Reactor-1 (SR-1) Freedom and locked in key elements of the spacecraft, which is targeted to launch in 2028 and demonstrate nuclear electric propulsion in deep space for the first time. Experts from across the agency, the U.S. Department of…",
+   "link": "https://www.nasa.gov/general/nasa-locks-in-sr1-freedom-mission-architecture/",
+   "published": "2026-11-24T21:04:32Z",
+   "image": "https://www.nasa.gov/wp-content/uploads/2026/06/sr-1-freedom-11-6-2026.png",
+   "imageCredit": "NASA",
+   "universe": "cosmos",
+   "related": null,
+   "firstSeen": "2026-11-24T21:31:19Z"
+  },
   {
    "id": "9aa4e60033a103f9",
    "source": "smithsonian",
@@ -1857,21 +1872,6 @@
    "published": "2026-11-10T15:30:00Z",
    "image": null,
    "imageCredit": null,
-   "universe": "cosmos",
-   "related": null,
-   "firstSeen": "2026-11-24T03:48:02Z"
-  },
-  {
-   "id": "4fedd689f40fc8e0",
-   "source": "nasa-iotd",
-   "sourceName": "NASA · Image du jour",
-   "lang": "en",
-   "title": "Astronauts Across Generations Share the Stage",
-   "summary": "On Nov. 6, 2026, Purpose Entertainment hosted the Artemis Celebration Gala at NASA's Kennedy Space Center Visitor Complex in Merritt Island, Florida. Held on the eve of NASA's MAX POWER event, the gala celebrated the explorers, innovators, and visionaries advancing the next era…",
-   "link": "https://www.nasa.gov/image-detail/20261106-artemiscelebrationgala-sl1-4202/",
-   "published": "2026-11-09T16:57:00Z",
-   "image": "https://www.nasa.gov/wp-content/uploads/2026/11/20261106-artemiscelebrationgala-sl1-4202.jpg",
-   "imageCredit": "NASA",
    "universe": "cosmos",
    "related": null,
    "firstSeen": "2026-11-24T03:48:02Z"
