@@ -284,7 +284,7 @@ function longHTML(x){
 }
 
 function figHTML(f){
-  return `<figure class="la-fig"><img src="${esc(f.src)}" alt="${esc(f.alt||f.cap)}" loading="lazy"><figcaption>${esc(f.cap)}${f.credit?` <small>${esc(f.credit)}</small>`:""}</figcaption></figure>`;
+  return `<figure class="la-fig"${f.maxw?` style="max-width:${esc(f.maxw)};margin-inline:auto"`:""}><img src="${esc(f.src)}" alt="${esc(f.alt||f.cap)}" loading="lazy"><figcaption>${esc(f.cap)}${f.credit?` <small>${esc(f.credit)}</small>`:""}</figcaption></figure>`;
 }
 function compareHTML(c){
   const lb = lang==="fr" ? ["Avant","Après","Glissez pour comparer"] : ["Before","After","Drag to compare"];
