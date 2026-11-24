@@ -1,0 +1,67 @@
+{
+ "checked": "2026-11-24",
+ "count": 10,
+ "dead": [],
+ "videos": {
+  "xrGAQCq9BMU": {
+   "status": "ok",
+   "channel": "NASA Jet Propulsion Laboratory",
+   "title": "NASA at Saturn: Cassini's Grand Finale",
+   "article": "saturn"
+  },
+  "L4hf8HyP0LI": {
+   "status": "ok",
+   "channel": "NASA Jet Propulsion Laboratory",
+   "title": "Voyager Reaches Interstellar Space",
+   "article": "voyager"
+  },
+  "O3YJMaL55TM": {
+   "status": "ok",
+   "channel": "TED-Ed",
+   "title": "Mansa Musa, one of the wealthiest people who ever lived - Jessica Smith",
+   "article": "mansa"
+  },
+  "quzjmZ-7s6w": {
+   "status": "ok",
+   "channel": "TED-Ed",
+   "title": "Who built Great Zimbabwe? And why? - Breeanna Elliott",
+   "article": "zimbabwe"
+  },
+  "9klE-iUxX0c": {
+   "status": "ok",
+   "channel": "TED-Ed",
+   "title": "Run, sail, or hide? How to survive the destruction of Pompeii - Gary Devore",
+   "article": "pompeii"
+  },
+  "1yv_MXNYbAo": {
+   "status": "ok",
+   "channel": "TED-Ed",
+   "title": "The Egyptian Book of the Dead: A guidebook for the underworld - Tejal Gala",
+   "article": "anubis"
+  },
+  "2aoIs-5zqoI": {
+   "status": "ok",
+   "channel": "TED-Ed",
+   "title": "The scientific origins of the Minotaur - Matt Kaplan",
+   "article": "minotaur"
+  },
+  "chhcwk4-esM": {
+   "status": "ok",
+   "channel": "NASA Goddard",
+   "title": "NASA Simulation’s Plunge Into a Black Hole: Explained",
+   "article": "blackhole"
+  },
+  "WKdnvw1uymg": {
+   "status": "ok",
+   "channel": "UNESCO",
+   "title": "Island of Gorée (UNESCO/NHK)",
+   "article": "goree"
+  },
+  "wMnOo2zcjXA": {
+   "status": "ok",
+   "channel": "NASA Jet Propulsion Laboratory",
+   "title": "First Video of NASA’s Ingenuity Mars Helicopter in Flight, Includes Takeoff and Landing (High-Res)",
+   "article": "ingenuity"
+  }
+ }
+}
