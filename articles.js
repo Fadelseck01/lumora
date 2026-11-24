@@ -33,6 +33,9 @@ blackhole: {
     "Puisqu'un trou noir n'émet pas de lumière, on ne le voit pas directement. On voit en revanche le gaz brûlant qui tourbillonne autour de lui avant d'y tomber. Pour obtenir une image assez nette, le réseau Event Horizon Telescope (EHT) a relié des radiotélescopes répartis sur toute la planète, synchronisés par des horloges atomiques, pour former l'équivalent d'une antenne de la taille de la Terre.",
     "En 2019, l'EHT dévoile la première image d'un trou noir : M87*, au cœur de la galaxie Messier 87, à environ 55 millions d'années-lumière, avec une masse d'environ 6,5 milliards de Soleils. En 2022 vient le tour de Sagittarius A*, le trou noir de notre Voie lactée : environ 4 millions de fois la masse du Soleil, à quelque 27 000 années-lumière. Sur les deux images, on voit le même anneau lumineux autour d'une « ombre » sombre, exactement comme le prévoit la relativité générale."
    ]}
+,
+   {h:"Pourquoi l'image de 2022 a été si difficile", p:["Il a fallu cinq ans de travail et plus de 300 chercheurs pour obtenir l'image de Sagittarius A*. Le paradoxe, c'est que notre trou noir est bien plus proche que M87*, mais aussi bien plus petit. Le gaz qui tourne autour de lui boucle son orbite en quelques minutes à peine, alors qu'il lui faut des jours, voire des semaines, autour de M87*.",
+    "Résultat : pendant une même nuit d'observation, l'anneau lumineux de Sagittarius A* changeait sans arrêt de forme et d'éclat, un peu comme si l'on essayait de photographier un enfant qui court avec un long temps de pose. Les chercheurs ont dû combiner des milliers d'images simulées pour reconstituer la plus fidèle. Ironie du sort : comme M87* est plus de 1 000 fois plus massif mais aussi beaucoup plus loin, les deux trous noirs apparaissent à peu près de la même taille dans notre ciel."]}
   ],
   numbers: [
    ["≈ 6,5 milliards", "masses solaires pour M87*, le premier trou noir photographié (2019)"],
@@ -71,6 +74,9 @@ blackhole: {
     "Since a black hole gives off no light, we cannot see it directly. What we can see is the scorching gas swirling around it before falling in. To get a sharp enough picture, the Event Horizon Telescope (EHT) linked radio telescopes across the globe, synchronised by atomic clocks, to act like a dish the size of the Earth.",
     "In 2019, the EHT unveiled the first image of a black hole: M87*, at the heart of the galaxy Messier 87, about 55 million light-years away, with a mass of about 6.5 billion Suns. In 2022 came Sagittarius A*, the black hole in our own Milky Way: about 4 million times the Sun's mass, some 27,000 light-years away. Both images show the same bright ring around a dark \"shadow\", exactly as general relativity predicts."
    ]}
+,
+   {h:"Why the 2022 image was so hard", p:["It took five years of work and more than 300 researchers to produce the image of Sagittarius A*. The paradox is that our black hole is much closer than M87*, but also much smaller. The gas circling it completes an orbit in just minutes, whereas around M87* it takes days or even weeks.",
+    "As a result, during a single night of observation, Sagittarius A*'s bright ring kept changing shape and brightness, a bit like trying to photograph a running child with a long exposure. Researchers had to combine thousands of simulated images to reconstruct the most faithful one. As a twist: because M87* is more than 1,000 times more massive but also much farther away, the two black holes look roughly the same size in our sky."]}
   ],
   numbers: [
    ["≈ 6.5 billion", "solar masses for M87*, the first black hole ever imaged (2019)"],
@@ -92,10 +98,14 @@ blackhole: {
 
 /* ======================= L'ÎLE DE GORÉE ======================= */
 goree: {
+ video: {id:"WKdnvw1uymg", channel:"UNESCO", title:{fr:"L'île de Gorée (UNESCO/NHK, en anglais)", en:"Island of Gorée (UNESCO/NHK)"}},
  sources: [
   {t:"UNESCO — Île de Gorée (fiche du patrimoine mondial)", u:"https://whc.unesco.org/fr/list/26/"},
+  {t:"UNESCO / NHK — Island of Gorée (vidéo)", u:"https://www.youtube.com/watch?v=WKdnvw1uymg"},
   {t:"Au Sénégal — La Maison des Esclaves", u:"https://au-senegal.com/maison-des-esclaves,2782.html"},
   {t:"Britannica — Gorée Island", u:"https://www.Britannica.Com/place/Goree-Island"},
+  {t:"UNESCO, archives multimédia — « Gorée la joyeuse » après la fin de la traite", u:"https://www.unesco.org/archives/multimedia/document-188"},
+  {t:"Afrique Renouveau (ONU) — Gorée, entre mémoire et vie quotidienne (2025)", u:"https://africarenewal.un.org/en/magazine/goree-between-remembrance-and-living-vibrant-world-heritage-site"},
   {t:"World History Edu — History of Gorée Island and the transatlantic slave trade", u:"https://worldhistoryedu.com/history-of-goree-island-and-the-role-it-played-in-the-transatlantic-slave-trade/"}
  ],
  fr: {
@@ -121,6 +131,9 @@ goree: {
    {h:"Gorée aujourd'hui", p:[
     "On y accède en une vingtaine de minutes de chaloupe depuis le port de Dakar. Sans voitures, l'île se visite à pied : Maison des Esclaves, Fort d'Estrées transformé en musée historique, place du Gouvernement, ateliers d'artistes et plages. Ses ruelles colorées accueillent de nombreux peintres et créateurs, qui font de Gorée un lieu où l'histoire douloureuse côtoie une vie culturelle très vivante."
    ]}
+,
+   {h:"« Gorée la joyeuse » : l'autre visage de l'île", p:["Avec l'abolition de la traite au XIXe siècle et l'ouverture du commerce à tous les habitants de l'île, Gorée connaît une nouvelle période de prospérité. On la surnomme alors « Gorée la joyeuse ». Mais la croissance de Dakar, juste en face, finit par lui faire de l'ombre, et l'île se vide peu à peu de son activité commerciale.",
+    "Aujourd'hui, Gorée n'est pas un musée figé : c'est une île habitée, avec ses familles, son école, ses commerçants et ses visiteurs. Ses habitants vivent au quotidien entre deux missions qui ne sont pas toujours faciles à concilier : transmettre une histoire douloureuse avec respect, et faire vivre une communauté bien présente. Cet équilibre fait partie de ce qui rend la visite si marquante."]}
   ],
   numbers: [
    ["≈ 3 km", "séparent Gorée du centre de Dakar"],
@@ -160,6 +173,9 @@ goree: {
    {h:"Gorée today", p:[
     "It is about a twenty-minute ferry ride from the port of Dakar. With no cars, the island is explored on foot: the House of Slaves, the Fort d'Estrées now a history museum, the Government square, artists' studios and beaches. Its colourful lanes are home to many painters and craftspeople, making Gorée a place where a painful history sits alongside a lively cultural scene."
    ]}
+,
+   {h:"\"Happy Gorée\": the island's other face", p:["With the abolition of the slave trade in the 19th century and the opening of trade to all the island's inhabitants, Gorée entered a new period of prosperity. It was nicknamed \"Gorée la joyeuse\", Happy Gorée. But the growth of Dakar, just across the water, eventually overshadowed it, and the island gradually lost its commercial activity.",
+    "Today Gorée is not a frozen museum: it is an inhabited island, with its families, its school, its shopkeepers and its visitors. Its residents live every day between two missions that are not always easy to reconcile: passing on a painful history with respect, and keeping a very real community alive. That balance is part of what makes a visit so moving."]}
   ],
   numbers: [
    ["≈ 3 km", "between Gorée and central Dakar"],
@@ -210,6 +226,9 @@ kitsune: {
     "En mars 2022, la Sesshō-seki s'est fendue en deux, et la nouvelle a fait le tour du monde : l'esprit du renard allait-il se libérer ? Les scientifiques ont donné une explication plus terre à terre : de l'eau infiltrée dans une fissure existante a gelé. Des prêtres ont tout de même célébré un rite de purification sur place.",
     "Aujourd'hui, le kitsune est partout dans la culture populaire, des mangas aux jeux vidéo. La ville de Nasu a même choisi un renard à neuf queues comme mascotte touristique."
    ]}
+,
+   {h:"Pourquoi des renards ?", p:["Pourquoi le renard plutôt qu'un autre animal ? Une explication souvent avancée est très concrète : les renards fréquentaient les rizières, où ils chassaient les souris et les rats qui s'attaquaient aux récoltes. Pour des paysans, un animal qui protège le riz devient facilement l'envoyé du dieu du riz.",
+    "Le renard est aussi un animal discret, qui apparaît au crépuscule et disparaît aussitôt, ce qui nourrit l'idée qu'il passe d'un monde à l'autre. Dans les contes, cette ambiguïté est partout : le même renard peut récompenser un paysan honnête ou punir un voisin trop cupide. C'est sans doute pour cela que le kitsune fascine autant : il n'est jamais tout à fait bon, ni tout à fait mauvais."]}
   ],
   numbers: [
    ["9", "queues au maximum pour les kitsune les plus puissants"],
@@ -250,6 +269,9 @@ kitsune: {
     "In March 2022, the Sesshō-seki split in two, and the news went around the world: would the fox's spirit break free? Scientists offered a more down-to-earth explanation: water had seeped into an existing crack and frozen. Priests still held a purification ritual on site.",
     "Today the kitsune is everywhere in popular culture, from manga to video games. The town of Nasu has even chosen a nine-tailed fox as its tourism mascot."
    ]}
+,
+   {h:"Why foxes?", p:["Why the fox rather than another animal? One frequently suggested explanation is very practical: foxes frequented the rice paddies, where they hunted the mice and rats that attacked the crops. To farmers, an animal that protects the rice easily becomes the envoy of the rice god.",
+    "The fox is also a discreet animal that appears at dusk and vanishes just as quickly, which feeds the idea that it moves between worlds. In the tales, this ambiguity is everywhere: the same fox can reward an honest farmer or punish a greedy neighbour. That is probably why the kitsune is so fascinating: it is never entirely good, nor entirely bad."]}
   ],
   numbers: [
    ["9", "tails at most for the most powerful kitsune"],
