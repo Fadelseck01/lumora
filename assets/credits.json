@@ -358,5 +358,65 @@
   "license": "Public domain",
   "artist": "Lithograph: Parker &amp; Coward, Britain;",
   "credit": "Image published as Plate 1 in The eruption of Krakatoa, and subsequent phenomena. Report of the Krakatoa Committee of th"
+ },
+ "assets/photos/plus/trieste.jpg": {
+  "title": "File:Bathyscaphe Trieste with USS Lewis (DE-535) over the Marianas Trench, 23 January 1960 (NH 96797).jpg",
+  "license": "Public domain",
+  "artist": "",
+  "credit": "U.S. Navy photo NH 96797"
+ },
+ "assets/photos/plus/hms-challenger.jpg": {
+  "title": "File:HMS Challenger (1858).jpg",
+  "license": "Public domain",
+  "artist": "Unidentified engraver",
+  "credit": "The Report of the Scientific Results of the Exploring Voyage of HMS Challenger during the years 1873–1876"
+ },
+ "assets/photos/plus/alma-chajnantor.jpg": {
+  "title": "File:ALMA antennas on Chajnantor (malin-dsc0027).jpg",
+  "license": "CC BY 4.0",
+  "artist": "ESO/C. Malin",
+  "credit": "This media was produced by the European Southern Observatory (ESO), under the identifier malin-dsc0027\nThis tag does not"
+ },
+ "assets/photos/plus/desierto-florido.jpg": {
+  "title": "File:Desierto florido 2015 (22109458955).jpg",
+  "license": "CC BY 2.0",
+  "artist": "Pato Novoa from Valparaíso, Chile",
+  "credit": "Desierto florido 2015"
+ },
+ "assets/photos/plus/el-tatio.jpg": {
+  "title": "File:El Tatio geothermal field in Chile.jpg",
+  "license": "CC0",
+  "artist": "Alexarje",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/black-smoker.jpg": {
+  "title": "File:High Rise black smoker.jpg",
+  "license": "Public domain",
+  "artist": "NOAA",
+  "credit": "http://oceanexplorer.noaa.gov/okeanos/explorations/10index/background/plumes/media/black_smoker.html"
+ },
+ "assets/photos/plus/vent-crabs.jpg": {
+  "title": "File:Cyanagraea.jpg",
+  "license": "Public domain",
+  "artist": "Submarine Ring of Fire 2006 Exploration, NOAA Vents Program",
+  "credit": "NOAA photo library"
+ },
+ "assets/photos/plus/longyearbyen-night.jpg": {
+  "title": "File:Night Longyearbyen.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "Bjørn Christian Tørrissen",
+  "credit": "Own work by uploader, https://bjornfree.com/galleries.html"
+ },
+ "assets/photos/plus/seed-vault.jpg": {
+  "title": "File:Svalbard Global Seed Vault February 2025.jpg",
+  "license": "CC BY-SA 2.0",
+  "artist": "Michael Major for Crop Trust",
+  "credit": "https://www.flickr.com/photos/croptrust/54368366423/"
+ },
+ "assets/photos/plus/pyramiden.jpg": {
+  "title": "File:Pyramiden Svalbard 2.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "No machine-readable author provided. Arcimboldo assumed (based on copyright claims).",
+  "credit": "No machine-readable source provided. Own work assumed (based on copyright claims)."
  }
 }
