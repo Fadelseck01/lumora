@@ -808,5 +808,59 @@
   "license": "CC BY-SA 4.0",
   "artist": "Medici82",
   "credit": "Own work"
+ },
+ "assets/photos/plus/lepa-semporna.jpg": {
+  "title": "File:Semporna Sabah Regatta-Lepa-2015-12.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "CEphoto, Uwe Aranas",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/moken-boat.jpg": {
+  "title": "File:Moken boat.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "No machine-readable author provided. Manop assumed (based on copyright claims).",
+  "credit": "No machine-readable source provided. Own work assumed (based on copyright claims)."
+ },
+ "assets/photos/plus/haenyeo-tools.jpg": {
+  "title": "File:Korea-Jeju-Haenyeo-06.jpg",
+  "license": "CC BY 2.0",
+  "artist": "by karendotcom127",
+  "credit": "https://www.flickr.com/photos/karendotcom127/462194947/"
+ },
+ "assets/photos/plus/phineas-gage.jpg": {
+  "title": "File:Phineas Gage Cased Daguerreotype WilgusPhoto2008-12-19 EnhancedRetouched Color.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "Photograph by Jack and Beverly Wilgus of daguerreotype originally from their collection, and now in the Warren Anatomical Museum, Center for the History of Medicine, Francis A. Countway Library of Medicine, Harvard Medical School.Enlarged using Waifu2x and retouched by Joe Haythornthwaite (see notes on talk page).",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/brain-lobes.jpg": {
+  "title": "File:Lobes of the brain INV.jpg",
+  "license": "CC0",
+  "artist": "Ndelarosep",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/first-eeg.jpg": {
+  "title": "File:1st-eeg.png",
+  "license": "Public domain",
+  "artist": "Hans Berger",
+  "credit": "Berger H. Über das Elektrenkephalogramm des Menchen. Archives für Psychiatrie. 1929; 87:527-70."
+ },
+ "assets/photos/plus/herculano-houzel.jpg": {
+  "title": "File:Suzana Herculano-Houzel (2009).jpg",
+  "license": "CC BY-SA 2.0",
+  "artist": "CPFL Cultura",
+  "credit": "File:As_Conexões_e_Desconexões_do_Amor_-_Suzana_Herculano-Houzel_em_Sorocaba.jpg"
+ },
+ "assets/photos/plus/aplysia.jpg": {
+  "title": "File:Aplysia californica, Monterey.jpg",
+  "license": "Public domain",
+  "artist": "Chad King / NOAA MBNMS",
+  "credit": "http://www.sanctuarysimon.org/photos/photo_info.php?photoID=4588&amp;search=gs&amp;s=0&amp;page=1"
+ },
+ "assets/photos/plus/ebbinghaus-curve.jpg": {
+  "title": "File:Über das Gedächtnis. Untersuchungen zur experimentellen Psychologie, Fig 2.png",
+  "license": "Public domain",
+  "artist": "Hermann Ebbinghaus",
+  "credit": "https://archive.org/details/berdasgedcht00ebbi/page/65/mode/1up"
  }
 }
