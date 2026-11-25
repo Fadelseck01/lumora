@@ -520,5 +520,89 @@
   "license": "CC BY 2.0",
   "artist": "Ævar Guðmundsson",
   "credit": "Flickr"
+ },
+ "assets/photos/plus/kopakonan.jpg": {
+  "title": "File:The Seal Woman, Mikladalur, Kalsoy, Faroe Islands.jpg",
+  "license": "CC BY 2.0",
+  "artist": "lamblukas",
+  "credit": "https://www.flickr.com/photos/dnevill/53753733353/"
+ },
+ "assets/photos/plus/becco-federa.jpg": {
+  "title": "File:Il Becco di Mezzodì riflesso nel lago Federa.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Yreen",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/cinque-torri-trenches.jpg": {
+  "title": "File:Cinque Torri WWI trenches.jpg",
+  "license": "CC BY 4.0",
+  "artist": "Szydzio",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/enrosadira.jpg": {
+  "title": "File:Enrosadira cadini croda toni.jpg",
+  "license": "CC BY 3.0",
+  "artist": "Kufoleto",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/kyzylkup.jpg": {
+  "title": "File:Kyzylkup.jpg",
+  "license": "CC0",
+  "artist": "IvarT",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/bozjyra.jpg": {
+  "title": "File:Bozjyra Gorge 50MP Panorama.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Zoin",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/beket-ata.jpg": {
+  "title": "File:Некрополь Бекет-Ата.JPG",
+  "license": "CC BY-SA 3.0",
+  "artist": "Adaykz",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/saiga.jpg": {
+  "title": "File:Saiga antelope at the Stepnoi Sanctuary.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Andrey Giljov",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/sherkala.jpg": {
+  "title": "File:Sherkala, Mangistau, Kazakhstan.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Berik Aday",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/swiss-guards.jpg": {
+  "title": "File:Swiss Guards in the Vatican City 02.jpg",
+  "license": "CC0",
+  "artist": "Vsatinet",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/vatican-gardens.jpg": {
+  "title": "File:Gardens in the Vatican City (2).jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Krzysztof Golik",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/vatican-station.jpg": {
+  "title": "File:Railway Station, Vatican City (45885203815).jpg",
+  "license": "CC BY 2.0",
+  "artist": "Sonse",
+  "credit": "Railway Station, Vatican City"
+ },
+ "assets/photos/plus/st-peter-dome.jpg": {
+  "title": "File:Dome of St. Peter's Basilica (interior).jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "Wknight94",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/vatican-necropolis.jpg": {
+  "title": "File:Vatican Necropolis 01.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "Blue 439",
+  "credit": "Own work"
  }
 }
