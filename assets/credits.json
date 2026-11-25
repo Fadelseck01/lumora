@@ -1264,5 +1264,47 @@
   "license": "CC0",
   "artist": "Helge Klaus Rieder",
   "credit": "Own work"
+ },
+ "assets/photos/plus/voynich-page.jpg": {
+  "title": "File:Voynich Manuscript (135).jpg",
+  "license": "Public domain",
+  "artist": "Unknown authorUnknown author",
+  "credit": "Beinecke Rare Book &amp; Manuscript Library, Yale University ([1])."
+ },
+ "assets/photos/plus/voynich-zodiac.jpg": {
+  "title": "File:Voynich f72r2 detail.jpg",
+  "license": "Public domain",
+  "artist": "Digitized by Jason Davies (2004)",
+  "credit": "https://www.jasondavies.com/voynich/#f71v_f72r1_f72r2_f72r3/0.627/0.475/5.90"
+ },
+ "assets/photos/plus/voynich-root-faces.jpg": {
+  "title": "File:Root f33r cropped.jpg",
+  "license": "Public domain",
+  "artist": "Digited by Yale University Library",
+  "credit": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006138"
+ },
+ "assets/photos/plus/wow-printout.jpg": {
+  "title": "File:Wow signal (large).jpg",
+  "license": "Public domain",
+  "artist": "Credit: Big Ear Radio Observatory and North American AstroPhysical Observatory (NAAPO).",
+  "credit": "http://www.bigear.org/Wow30th/WowL.jpg"
+ },
+ "assets/photos/plus/arecibo-dish.jpg": {
+  "title": "File:Arecibo Radiotelescopio SJU 06 2019 7472.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Mariordo (Mario Roberto Durán Ortiz)",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/arecibo-message.jpg": {
+  "title": "File:Arecibo message monochrome transparent.png",
+  "license": "CC BY-SA 4.0",
+  "artist": "Pablo Carlos Budassi",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/jocelyn-bell-1967.jpg": {
+  "title": "File:Susan Jocelyn Bell (Burnell), 1967.jpg",
+  "license": "CC BY-SA 2.0",
+  "artist": "Roger W Haworth",
+  "credit": "Flickr"
  }
 }
