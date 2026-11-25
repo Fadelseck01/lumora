@@ -1306,5 +1306,65 @@
   "license": "CC BY-SA 2.0",
   "artist": "Roger W Haworth",
   "credit": "Flickr"
+ },
+ "assets/photos/plus/khufu-statuette.jpg": {
+  "title": "File:Ivory statuette of Khufu from Abydos, 2551-2528 BCE; Egyptian Museum, Cairo (1).jpg",
+  "license": "CC BY 2.0",
+  "artist": "Richard Mortel",
+  "credit": "https://www.flickr.com/photos/prof_richard/52087052716/"
+ },
+ "assets/photos/plus/bent-pyramid.jpg": {
+  "title": "File:Bent Pyramid featuring the original polished limestone outer casing that the pyramids used to have (14616487960).jpg",
+  "license": "CC BY 2.0",
+  "artist": "Jorge Láscar from Melbourne, Australia",
+  "credit": "Bent Pyramid featuring the original polished limestone outer casing that the pyramids used to have"
+ },
+ "assets/photos/plus/grand-gallery.jpg": {
+  "title": "File:Great Pyramid of Giza Grand Gallery.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Keith Adler",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/khufu-ship.jpg": {
+  "title": "File:Grand Egyptian Museum - Khufu ship.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Alena Belova for Exhibo",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/ahu-tongariki.jpg": {
+  "title": "File:Ahu Tongariki.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "Rivi",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/rano-raraku.jpg": {
+  "title": "File:Moai at Rano Raraku (Easter Island).jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Mc vc",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/pukao.jpg": {
+  "title": "File:Pukao Puna Pau.jpg",
+  "license": "CC0",
+  "artist": "Jorge Morales Piderit",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/hoa-hakananaia.jpg": {
+  "title": "File:Hoa Hakananai'a 1.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Photograph by Mike Peel (www.mikepeel.net).",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/ahu-akivi.jpg": {
+  "title": "File:Ahu Akivi Easter Island.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "kallerna",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/routledge-moai.jpg": {
+  "title": "File:Rano Raraku Moai body.jpg",
+  "license": "Public domain",
+  "artist": "Katherine Routledge",
+  "credit": "https://www.gutenberg.org/cache/epub/69807/pg69807-images.html\n\nFigure 69 from The Mystery Of Easter Island: The Story O"
  }
 }
