@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25T17:17:43Z",
- "checked": "2026-11-25T17:17:43Z",
+ "updated": "2026-11-25T18:48:31Z",
+ "checked": "2026-11-25T18:48:31Z",
  "sources": [
   {
    "id": "nasa",
@@ -8,7 +8,7 @@
    "home": "https://www.nasa.gov",
    "ok": true,
    "found": 10,
-   "new": 3
+   "new": 0
   },
   {
    "id": "nasa-iotd",
@@ -16,7 +16,7 @@
    "home": "https://www.nasa.gov/image-of-the-day/",
    "ok": true,
    "found": 60,
-   "new": 51
+   "new": 50
   },
   {
    "id": "esa",
@@ -24,7 +24,7 @@
    "home": "https://www.esa.int",
    "ok": true,
    "found": 15,
-   "new": 3
+   "new": 5
   },
   {
    "id": "esa-fr",
@@ -40,7 +40,7 @@
    "home": "https://www.sciencedaily.com",
    "ok": true,
    "found": 60,
-   "new": 36
+   "new": 35
   },
   {
    "id": "sciencedaily-health",
@@ -48,7 +48,7 @@
    "home": "https://www.sciencedaily.com",
    "ok": true,
    "found": 60,
-   "new": 29
+   "new": 30
   },
   {
    "id": "who",
@@ -64,7 +64,7 @@
    "home": "https://www.smithsonianmag.com",
    "ok": true,
    "found": 10,
-   "new": 5
+   "new": 0
   },
   {
    "id": "mongabay",
@@ -76,6 +76,51 @@
   }
  ],
  "items": [
+  {
+   "id": "539e41e21a22b609",
+   "source": "mongabay",
+   "sourceName": "Mongabay",
+   "lang": "en",
+   "title": "Nations hail new shark finning rules in the Atlantic. Conservationists say Japan blocked better ones",
+   "summary": "VILAMOURA, Portugal — Shark finning entails slashing fins off sharks and dumping the bodies into the sea, often while they’re still alive. In the Atlantic Ocean, the practice has been banned on paper since 2004, yet some Japanese and Chinese vessels still do it. The fins end up…",
+   "link": "https://news.mongabay.com/2026/11/nations-hail-new-shark-finning-rules-in-the-atlantic-conservationists-say-japan-blocked-better-ones/",
+   "published": "2026-11-25T17:52:18Z",
+   "image": null,
+   "imageCredit": null,
+   "universe": "living",
+   "related": "ocean",
+   "firstSeen": "2026-11-25T18:48:31Z"
+  },
+  {
+   "id": "d9d5f7a3c5cf8b24",
+   "source": "mongabay",
+   "sourceName": "Mongabay",
+   "lang": "en",
+   "title": "As Indonesia burns, communities look to fire-free agriculture for relief",
+   "summary": "In Kalimantan, the Indonesian portion of the island of Borneo, rain is bringing relief to the months-long fire season. Around 684,000 hectares (1.69 million acres) of land burned between January and September, amounting to 36% of the national total, despite the region comprising…",
+   "link": "https://news.mongabay.com/2026/11/as-indonesia-burns-communities-look-to-fire-free-agriculture-for-relief/",
+   "published": "2026-11-25T17:25:38Z",
+   "image": null,
+   "imageCredit": null,
+   "universe": "living",
+   "related": null,
+   "firstSeen": "2026-11-25T18:48:31Z"
+  },
+  {
+   "id": "40229a166a21d7c1",
+   "source": "mongabay",
+   "sourceName": "Mongabay",
+   "lang": "en",
+   "title": "Army blows up bomb chemicals in Iowa despite fears a toxic plume could endanger residents",
+   "summary": "MIDDLETOWN, Iowa (AP) — The U.S. Army has intentionally blown up 5 tons of bomb-making chemicals at an ammunition plant in southeastern Iowa. Wednesday’s controlled detonation of lead azide at the Iowa Army Ammunition Plant came after environmentalists voiced concerns about…",
+   "link": "https://news.mongabay.com/short-article/2026/11/army-blows-up-bomb-chemicals-in-iowa-despite-fears-a-toxic-plume-could-endanger-residents/",
+   "published": "2026-11-25T17:22:07Z",
+   "image": null,
+   "imageCredit": null,
+   "universe": "living",
+   "related": null,
+   "firstSeen": "2026-11-25T18:48:31Z"
+  },
   {
    "id": "afc105b15bba2213",
    "source": "nasa",
@@ -887,21 +932,6 @@
    "firstSeen": "2026-11-24T19:06:54Z"
   },
   {
-   "id": "ce081a0279c392c8",
-   "source": "mongabay",
-   "sourceName": "Mongabay",
-   "lang": "en",
-   "title": "Indigenous peoples leave collapsed climate talks with promises on hold",
-   "summary": "ANTALYA, Türkiye — A year ago, a record number of Indigenous people attended the United Nations climate summit in Belém, Brazil. Although there as observers, without a seat at the negotiating table, they left with promises: recognition of their lands, a share of a new forest…",
-   "link": "https://news.mongabay.com/2026/11/indigenous-peoples-leave-collapsed-climate-talks-with-promises-on-hold/",
-   "published": "2026-11-24T14:24:04Z",
-   "image": null,
-   "imageCredit": null,
-   "universe": "living",
-   "related": null,
-   "firstSeen": "2026-11-24T14:44:24Z"
-  },
-  {
    "id": "7b9fce499d3b0b80",
    "source": "nasa",
    "sourceName": "NASA",
@@ -928,36 +958,6 @@
    "image": null,
    "imageCredit": null,
    "universe": "history",
-   "related": null,
-   "firstSeen": "2026-11-24T14:44:24Z"
-  },
-  {
-   "id": "1c77fe3c45ca0b7b",
-   "source": "mongabay",
-   "sourceName": "Mongabay",
-   "lang": "en",
-   "title": "Global marine conservation gathering seeks solutions amid mounting ocean challenges",
-   "summary": "EDINBURGH — Ocean conservation efforts are being hindered by inadequate funding, as well as difficulties translating research into action, according to attendees of an international marine conservation congress in Scotland. Between Nov. 13 and 16, nearly 800 attendees from more…",
-   "link": "https://news.mongabay.com/2026/11/global-marine-conservation-gathering-seeks-solutions-amid-mounting-ocean-challenges/",
-   "published": "2026-11-24T12:44:27Z",
-   "image": null,
-   "imageCredit": null,
-   "universe": "living",
-   "related": "ocean",
-   "firstSeen": "2026-11-24T14:44:24Z"
-  },
-  {
-   "id": "179e6102bf7b2617",
-   "source": "mongabay",
-   "sourceName": "Mongabay",
-   "lang": "en",
-   "title": "Indonesia fires test palm oil certification scheme as NGOs question RSPO accountability",
-   "summary": "JAKARTA — Environmental groups are questioning the effectiveness of a global organization that develops standards and certification for sustainable palm oil production after fires affected thousands of hectares in concessions belonging to its members in Indonesia — including…",
-   "link": "https://news.mongabay.com/2026/11/indonesia-fires-test-palm-oil-certification-scheme-as-ngos-question-rspo-accountability/",
-   "published": "2026-11-24T12:37:21Z",
-   "image": null,
-   "imageCredit": null,
-   "universe": "living",
    "related": null,
    "firstSeen": "2026-11-24T14:44:24Z"
   },
