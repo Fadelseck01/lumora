@@ -328,6 +328,7 @@ function renderArticle(id){
     <header class="article-hero">
       <div class="article-hero-media ${x.art}${x.photo?" has-photo":""}" data-icon="${u.icon}">${x.photo?`<img src="${x.photo}" alt="${esc(x.title[lang])}">`:""}</div>
       <div class="article-hero-copy">
+        <a class="back-link lm-uni-return" href="#/u/${u.id}">${esc(t("backTo")(u.icon+" "+u.name[lang]))}</a>
         <div class="eyebrow">${esc(u.name[lang].toUpperCase())} · ${esc(subName(x.cat,x.sub).toUpperCase())}</div>
         <h1 tabindex="-1">${esc(x.title[lang])}</h1>
         <p class="article-lead">${esc(x.lead[lang])}</p>
