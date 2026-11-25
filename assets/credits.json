@@ -790,5 +790,23 @@
   "license": "Public domain",
   "artist": "Erland Nordenskiöld",
   "credit": "This file was provided to Wikimedia Commons by the Museum of World Culture in cooperation with Wikimedia Sverige."
+ },
+ "assets/photos/plus/rivera-alameda.jpg": {
+  "title": "File:Sueño de una tarde dominical en la Alameda Central (Dream of a Sunday Afternoon in the Alameda Central).jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Wikipologus",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/golden-parade-stamp.jpg": {
+  "title": "File:The Pharaohs' golden parade stamps 29.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "أشرف اليماني",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/north-sentinel.jpg": {
+  "title": "File:Gallery-1491391768-north-sentinel-island.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Medici82",
+  "credit": "Own work"
  }
 }
