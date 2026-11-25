@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25T00:28:32Z",
- "checked": "2026-11-25T00:28:32Z",
+ "updated": "2026-11-25T02:25:55Z",
+ "checked": "2026-11-25T02:25:55Z",
  "sources": [
   {
    "id": "nasa",
@@ -16,7 +16,7 @@
    "home": "https://www.nasa.gov/image-of-the-day/",
    "ok": true,
    "found": 60,
-   "new": 50
+   "new": 51
   },
   {
    "id": "esa",
@@ -24,7 +24,7 @@
    "home": "https://www.esa.int",
    "ok": true,
    "found": 15,
-   "new": 5
+   "new": 3
   },
   {
    "id": "esa-fr",
@@ -76,6 +76,21 @@
   }
  ],
  "items": [
+  {
+   "id": "3cb3c4c5fd720545",
+   "source": "mongabay",
+   "sourceName": "Mongabay",
+   "lang": "en",
+   "title": "Study reveals rising ‘double threat’ of wildfire smoke and heatwaves in Indonesia",
+   "summary": "JAKARTA — While the worst of Indonesia’s wildfire and haze season for 2026 may be over with fewer hotspots detected in recent weeks, this wasn’t the only hazard faced by residents in the months-long crisis. Take, for example, Palangka Raya in Central Kalimantan province, one of…",
+   "link": "https://news.mongabay.com/2026/11/study-reveals-rising-double-threat-of-wildfire-smoke-and-heatwaves-in-indonesia/",
+   "published": "2026-11-25T02:15:02Z",
+   "image": null,
+   "imageCredit": null,
+   "universe": "earth",
+   "related": null,
+   "firstSeen": "2026-11-25T02:25:55Z"
+  },
   {
    "id": "8aaa935219e6242f",
    "source": "mongabay",
@@ -900,21 +915,6 @@
    "universe": "cosmos",
    "related": null,
    "firstSeen": "2026-11-25T00:28:32Z"
-  },
-  {
-   "id": "617832abf65fa4bb",
-   "source": "mongabay",
-   "sourceName": "Mongabay",
-   "lang": "en",
-   "title": "In South Africa’s Limpopo, residents wonder what the next flood will bring",
-   "summary": "“Everyone needs to understand their responsibilities before an emergency occurs.” This is the view of Hope Magidimisha, a national planning commissioner in the Office of the Presidency, South Africa. She said the January floods in South Africa’s Limpopo province, which is still…",
-   "link": "https://news.mongabay.com/2026/11/in-south-africas-limpopo-residents-wonder-what-the-next-flood-will-bring/",
-   "published": "2026-11-23T17:51:59Z",
-   "image": null,
-   "imageCredit": null,
-   "universe": "earth",
-   "related": null,
-   "firstSeen": "2026-11-24T04:34:34Z"
   },
   {
    "id": "ecafd246fc616b12",
