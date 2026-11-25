@@ -418,5 +418,47 @@
   "license": "CC BY-SA 3.0",
   "artist": "No machine-readable author provided. Arcimboldo assumed (based on copyright claims).",
   "credit": "No machine-readable source provided. Own work assumed (based on copyright claims)."
+ },
+ "assets/photos/plus/aldeyjarfoss.jpg": {
+  "title": "File:Aldeyjarfoss (3).jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "Chmee2/Valtameri",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/althing-collingwood.jpg": {
+  "title": "File:Althingi.jpg",
+  "license": "Public domain",
+  "artist": "W. G. Collingwood",
+  "credit": "The Trustees of the British Museum (cropped)"
+ },
+ "assets/photos/plus/pico-currais.jpg": {
+  "title": "File:The 1923 planting at Criaçao Velha owned by the Açores Wine Company.jpg",
+  "license": "CC0",
+  "artist": "Treephoto",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/pico-from-faial.jpg": {
+  "title": "File:View of Mount Pico from Horta island.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Chrisbal",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/kjeragbolten.jpg": {
+  "title": "File:A man standing on Kjeragbolten.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Scoundrelgeo",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/diksam-trees.jpg": {
+  "title": "File:Dragon’s blood trees, Diksam plateau, Socotra Island.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "2socotra",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/socotra-desert-rose.jpg": {
+  "title": "File:Desert Rose Bottle Tree, Socotra Island (15534436912).jpg",
+  "license": "CC BY-SA 2.0",
+  "artist": "Rod Waddington from Kergunyah, Australia",
+  "credit": "Desert Rose Bottle Tree, Socotra Island"
  }
 }
