@@ -664,5 +664,71 @@
   "license": "CC BY 2.0",
   "artist": "by Drab Makyo",
   "credit": "https://www.flickr.com/photos/ranna/343662516/"
+ },
+ "assets/photos/plus/hunminjeongeum.jpg": {
+  "title": "File:Hunminjeongeumhaerye.jpg",
+  "license": "Public domain",
+  "artist": "Kbarends at English Wikipedia",
+  "credit": "First uploaded as en:Image:Hunminjeongeum.jpg on 17:58, 2007 June 24 by Kbarends. Moved due to misnaming."
+ },
+ "assets/photos/plus/sequoyah.jpg": {
+  "title": "File:1838 Sequoyah Bowen.jpg",
+  "license": "Public domain",
+  "artist": "Various: John T. Bowen (1838), Lehman &amp; Duval (1843), Unknown daguerreotypist (c.1844-1848)",
+  "credit": "Library of Congress, Prints &amp; Photographs Division"
+ },
+ "assets/photos/plus/nko-whatsapp.jpg": {
+  "title": "File:Online N'ko classroom via WhatsApp.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Coleman Donaldson",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/cacao-fruit.jpg": {
+  "title": "File:Theobroma cacao fruit.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "Bernard Gagnon",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/metate-kitchen.jpg": {
+  "title": "File:Cocina tradicional, San Juan Achiutla, Oaxaca, México, 2020. 01.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Eduardo Ruiz Mondragón",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/puebla-talavera.jpg": {
+  "title": "File:Facade with Tiles (Talaveras) - Puebla - Mexico (38963835872).jpg",
+  "license": "CC BY-SA 2.0",
+  "artist": "Adam Jones from Kelowna, BC, Canada",
+  "credit": "Facade with Tiles (Talaveras) - Puebla - Mexico"
+ },
+ "assets/photos/plus/mole-negro.jpg": {
+  "title": "File:Mole negro de Oaxaca con arroz.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "ProtoplasmaKid",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/cempasuchil-field.jpg": {
+  "title": "File:Preparándose para el día de muertos.JPG",
+  "license": "CC BY-SA 4.0",
+  "artist": "Topster37",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/pan-de-muerto.jpg": {
+  "title": "File:Pan de muerto closeup.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "ProtoplasmaKid",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/janitzio-nets.jpg": {
+  "title": "File:Janitzio 1.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Isco huerta",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/janitzio-night.jpg": {
+  "title": "File:Noche de Muertos en Janitzio.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Miguel Angel Mandujano Contreras",
+  "credit": "Own work"
  }
 }
