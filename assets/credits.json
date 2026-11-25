@@ -1684,5 +1684,107 @@
   "license": "Public domain",
   "artist": "National Institute of Standards and Technology",
   "credit": "Ion Trap"
+ },
+ "assets/photos/plus/descartes-hals.jpg": {
+  "title": "File:Frans Hals, Portrait of René Descartes (cleaned up).jpg",
+  "license": "Public domain",
+  "artist": "Frans Hals",
+  "credit": "File:Frans_Hals,_Portrait_of_René_Descartes.jpg"
+ },
+ "assets/photos/plus/chalmers.jpg": {
+  "title": "File:David Chalmers 2011 (cropped).jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "HerbertErwin",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/francis-crick.jpg": {
+  "title": "File:Francis Crick 1980.jpg",
+  "license": "CC BY 4.0",
+  "artist": "Unknown authorUnknown author",
+  "credit": "[1]"
+ },
+ "assets/photos/plus/ether-dome.jpg": {
+  "title": "File:Inside the Ether Dome at Massachusetts General Hospital.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Kenneth C. Zirkel",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/cleaner-wrasse.jpg": {
+  "title": "File:Lábrido limpiador común (Labroides dimidiatus), islas Ad Dimaniyat, Omán, 2024-08-15, DD 54.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Diego Delso",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/rubber-hand.jpg": {
+  "title": "File:Rubber hand illusion.png",
+  "license": "CC BY 3.0",
+  "artist": "Laura E Downey, Phillip Fletcher, Hannah L Golden, Colin J Mahoney, Jennifer L Agustus, Jonathan M Schott, Jonathan Rohrer, Jon Beck, Simon Mead, Martin N Rossor, Sebastian James Crutch, Jason Warren",
+  "credit": "https://www.researchgate.net/figure/Figure3-Schematic-diagram-of-the-experimental-set-up-in-the-rubber-hand-illusion-tas"
+ },
+ "assets/photos/plus/enrico-fermi.jpg": {
+  "title": "File:Enrico Fermi 1943-49 (cropped).jpg",
+  "license": "Public domain",
+  "artist": "Department of Energy. Office of Public Affairs",
+  "credit": "This tag does not indicate the copyright status of the attached work. A normal copyright tag is still required. See Comm"
+ },
+ "assets/photos/plus/kepler-telescope.jpg": {
+  "title": "File:Telescope Kepler-NASA.jpeg",
+  "license": "Public domain",
+  "artist": "NASA",
+  "credit": "http://www.nasa.gov/centers/ames/multimedia/images/2007/kepler_iotd.html (direct link)"
+ },
+ "assets/photos/plus/ska-art.jpg": {
+  "title": "File:SKA-MPI-2.jpg",
+  "license": "CC BY 3.0",
+  "artist": "Square Kilometre Array Organisation (SKAO)",
+  "credit": "https://skao.canto.global/v/SKAOMediaKit/landing?viewIndex=0"
+ },
+ "assets/photos/plus/parkes.jpg": {
+  "title": "File:CSIRO ScienceImage 4350 CSIROs Parkes Radio Telescope with moon in the background.jpg",
+  "license": "CC BY 3.0",
+  "artist": "division, CSIRO",
+  "credit": "http://www.scienceimage.csiro.au/image/4350"
+ },
+ "assets/photos/plus/tabby-star.jpg": {
+  "title": "File:Artist’s concept of KIC 8462852.png",
+  "license": "Public domain",
+  "artist": "Credit: NASA, JPL-Caltech",
+  "credit": "https://phys.org/news/2017-01-explanation-alien-megastructure.html"
+ },
+ "assets/photos/plus/lowell-canals.jpg": {
+  "title": "File:Lowell Mars channels.jpg",
+  "license": "Public domain",
+  "artist": "Percival Lowell",
+  "credit": "Яков Перельман - \"Далёкие миры\". СПб, типография Сойкина (English transliteration: Yakov Perelman - \"Distant Worlds\". St"
+ },
+ "assets/photos/plus/viking-surface.jpg": {
+  "title": "File:Viking Lander 1 Martian Surface.jpg",
+  "license": "Public domain",
+  "artist": "NASA/JPL",
+  "credit": "http://nssdcftp.gsfc.nasa.gov/photo_gallery/image/planetary/mars/vikinglander1-2.jpg"
+ },
+ "assets/photos/plus/alh84001.jpg": {
+  "title": "File:ALH84001.jpg",
+  "license": "Public domain",
+  "artist": "NASA",
+  "credit": "NASA - JSC:\n\nhttp://www-curator.jsc.nasa.gov/curator/antmet/marsmets/posslife.htm (https://web.archive.org/web/200512071"
+ },
+ "assets/photos/plus/cheyava-falls.jpg": {
+  "title": "File:1-PIA26368-Perseverance Finds a Rock with Leopard Spots-annotated.png",
+  "license": "Public domain",
+  "artist": "NASA",
+  "credit": "https://www.jpl.nasa.gov/images/pia26368-perseverance-finds-a-rock-with-leopard-spots"
+ },
+ "assets/photos/plus/europa.jpg": {
+  "title": "File:PIA19048 realistic color Europa mosaic edited.jpg",
+  "license": "Public domain",
+  "artist": "NASA / Jet Propulsion Lab-Caltech / SETI Institute",
+  "credit": "http://photojournal.jpl.nasa.gov/catalog/PIA19048 Also described here: http://www.jpl.nasa.gov/news/news.php?release=201"
+ },
+ "assets/photos/plus/trappist-1c.jpg": {
+  "title": "File:Rocky Exoplanet TRAPPIST-1 c (Artist Concept).jpg",
+  "license": "Public domain",
+  "artist": "NASA, ESA, CSA, Joseph Olmsted (STScI)",
+  "credit": "https://webbtelescope.org/contents/media/images/2023/125/01H2TJJF981PWQK9YT0VGH2HPV"
  }
 }
