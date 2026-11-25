@@ -1018,5 +1018,65 @@
   "license": "CC BY-SA 4.0",
   "artist": "Chris93",
   "credit": "Own work"
+ },
+ "assets/photos/plus/osorno-llanquihue.jpg": {
+  "title": "File:Volcán Osorno y lago Llanquihue desde el sector Los Riscos.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Jorge Morales Piderit",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/villarrica-araucaria.jpg": {
+  "title": "File:Majestuso Volcan Villarrica de fondo con una Araucaria (Pehuen) en el frente.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Nicolás Barra Robles",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/armero-ruins.jpg": {
+  "title": "File:Armero Mudflow and ruins.jpg",
+  "license": "Public domain",
+  "artist": "N. Banks (w:United States Geological Survey)",
+  "credit": "http://volcanoes.usgs.gov/Imgs/Jpg/Ruiz/30410135_071_large.jpg"
+ },
+ "assets/photos/plus/snow-map.jpg": {
+  "title": "File:Map showing deaths from Cholera in Broad Street... Wellcome L0063431.jpg",
+  "license": "CC BY 4.0",
+  "artist": "",
+  "credit": "https://wellcomeimages.org/indexplus/obf_images/f8/d4/adc9682e126c74de1449d5d512bc.jpg\n\nGallery: https://wellcomeimages."
+ },
+ "assets/photos/plus/london-sewer.jpg": {
+  "title": "File:London sewer.jpg",
+  "license": "Public domain",
+  "artist": "Joseph Bazalgette",
+  "credit": "Metropolitan Board of Works"
+ },
+ "assets/photos/plus/ors-packet.jpg": {
+  "title": "File:Oral rehydration salts - Packet.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Cjp24",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/camp-funston.jpg": {
+  "title": "File:Emergency hospital during Influenza epidemic, Camp Funston, Kansas - NCP 1603.jpg",
+  "license": "Public domain",
+  "artist": "Otis Historical Archives, National Museum of Health and Medicine",
+  "credit": "Emergency hospital during influenza epidemic (NCP 1603), National Museum of Health and Medicine.\n\nhttps://www.buckscount"
+ },
+ "assets/photos/plus/munch-flu.jpg": {
+  "title": "File:Edvard Munch - Self-Portrait with the Spanish Flu - NG.M.01867 - National Museum of Art, Architecture and Design.jpg",
+  "license": "Public domain",
+  "artist": "Edvard Munch",
+  "credit": "National Museum of Art, Architecture and Design"
+ },
+ "assets/photos/plus/eureka-nurses.jpg": {
+  "title": "File:Medical Department - Influenza Epidemic 1918 - Volunteer nurses at Red Cross Hospital during the Influenza Epidemic Eureka, California - NARA - 45499325.jpg",
+  "license": "Public domain",
+  "artist": "Freeman Art Company, Eureka, California (per lower left corner of image)",
+  "credit": "U.S. National Archives and Records Administration"
+ },
+ "assets/photos/plus/red-cross-masks.jpg": {
+  "title": "File:Demonstration at the Red Cross Emergency Ambulance Station in Washington, D.C., during the influenza pandemic of 1918 LCCN2016844533 (cropped).jpg",
+  "license": "Public domain",
+  "artist": "National Photo Company Collection",
+  "credit": "Library of Congress\n\nCatalog: https://lccn.loc.gov/2016844533\nImage download: https://cdn.loc.gov/service/pnp/npcc/18600"
  }
 }
