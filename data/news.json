@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25T02:25:55Z",
- "checked": "2026-11-25T02:25:55Z",
+ "updated": "2026-11-25T04:56:10Z",
+ "checked": "2026-11-25T04:56:10Z",
  "sources": [
   {
    "id": "nasa",
@@ -76,6 +76,21 @@
   }
  ],
  "items": [
+  {
+   "id": "52412522be9b0e14",
+   "source": "mongabay",
+   "sourceName": "Mongabay",
+   "lang": "en",
+   "title": "Deadly accidents loom over labor dispute at Indonesia’s largest nickel hub",
+   "summary": "Since it was established in 2015, PT Indonesia Morowali Industrial Park, the world’s largest conglomeration of nickel smelters, has sat at the heart of Indonesia’s ambition to choke off exports of raw resources and force exporters to instead process the ore at home.…",
+   "link": "https://news.mongabay.com/2026/11/deadly-accidents-loom-over-labor-dispute-at-indonesias-largest-nickel-hub/",
+   "published": "2026-11-25T04:49:46Z",
+   "image": null,
+   "imageCredit": null,
+   "universe": "body",
+   "related": null,
+   "firstSeen": "2026-11-25T04:56:10Z"
+  },
   {
    "id": "3cb3c4c5fd720545",
    "source": "mongabay",
@@ -885,21 +900,6 @@
    "universe": "earth",
    "related": null,
    "firstSeen": "2026-11-24T03:48:02Z"
-  },
-  {
-   "id": "4f3bb6cd09ec1119",
-   "source": "mongabay",
-   "sourceName": "Mongabay",
-   "lang": "en",
-   "title": "China’s mangroves have bounced back. Birds have returned too",
-   "summary": "Between 1998 and 2020, mangrove cover in China more than doubled, while the number of bird species recorded in those areas rose from 148 to 397, according to findings published in The Innovation. The recovery follows decades of steep decline: China lost nearly 70% of its…",
-   "link": "https://news.mongabay.com/short-article/2026/11/chinas-mangroves-have-bounced-back-birds-have-returned-too/",
-   "published": "2026-11-23T18:57:25Z",
-   "image": null,
-   "imageCredit": null,
-   "universe": "living",
-   "related": null,
-   "firstSeen": "2026-11-24T04:34:34Z"
   },
   {
    "id": "cb28d8e7a107b7d7",
