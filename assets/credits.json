@@ -1547,12 +1547,6 @@
   "artist": "U.S. Navy",
   "credit": "https://fredericksburg.com/lifestyles/gladys-wests-work-on-gps-would-impact-the-world/article_26e82f21-bb5a-5d76-9789-69"
  },
- "assets/photos/plus/hafele-clock.jpg": {
-  "title": "File:Cesium beam atomic clock unit.jpg",
-  "license": "CC BY-SA 3.0",
-  "artist": "Binarysequence",
-  "credit": "File:HP_5061A_Cesium_Beam_Frequency_Standard.JPG"
- },
  "assets/photos/plus/galileo-sat.jpg": {
   "title": "File:Galileo satellite in LEAF for acoustic testing ESA295941.jpg",
   "license": "CC BY-SA 3.0 igo",
@@ -1575,12 +1569,6 @@
   "title": "File:Trinkende Taube am Neptunbrunnen in Tübingen 2019 cropped.jpg",
   "license": "CC0",
   "artist": "Dktue",
-  "credit": "Own work"
- },
- "assets/photos/plus/monty-sim.jpg": {
-  "title": "File:Monty Hall Problem Simulation.png",
-  "license": "CC BY-SA 4.0",
-  "artist": "Aldaron",
   "credit": "Own work"
  },
  "assets/photos/plus/solvay-1927.jpg": {
@@ -1655,12 +1643,6 @@
   "artist": "Prolineserver (talk)",
   "credit": "Own work"
  },
- "assets/photos/plus/pencil-lead.jpg": {
-  "title": "File:Faber-Castell Lead pencil 0.7.jpg",
-  "license": "CC BY-SA 4.0",
-  "artist": "Mr Yukio",
-  "credit": "Own work"
- },
  "assets/photos/plus/ingenuity-bw.jpg": {
   "title": "File:Ingenuity's First Black-and-White Image From the Air.jpg",
   "license": "Public domain",
@@ -1702,17 +1684,5 @@
   "license": "Public domain",
   "artist": "National Institute of Standards and Technology",
   "credit": "Ion Trap"
- },
- "assets/photos/plus/dilution-fridge.jpg": {
-  "title": "File:Dilution Fridge with Quantum Processors Enclosed 008 8K.png",
-  "license": "CC BY 4.0",
-  "artist": "OJB Quantum",
-  "credit": "Own work"
- },
- "assets/photos/plus/graphene-svg.jpg": {
-  "title": "File:Graphene Crystal Structure.svg",
-  "license": "CC0",
-  "artist": "Д.Ильин: vectorization",
-  "credit": "File:Graphene Crystal Structure.gif by Holopoman"
  }
 }
