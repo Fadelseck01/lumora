@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25T18:48:31Z",
- "checked": "2026-11-25T18:48:31Z",
+ "updated": "2026-11-25T19:18:33Z",
+ "checked": "2026-11-25T19:18:33Z",
  "sources": [
   {
    "id": "nasa",
@@ -8,7 +8,7 @@
    "home": "https://www.nasa.gov",
    "ok": true,
    "found": 10,
-   "new": 0
+   "new": 1
   },
   {
    "id": "nasa-iotd",
@@ -64,7 +64,7 @@
    "home": "https://www.smithsonianmag.com",
    "ok": true,
    "found": 10,
-   "new": 0
+   "new": 1
   },
   {
    "id": "mongabay",
@@ -76,6 +76,36 @@
   }
  ],
  "items": [
+  {
+   "id": "6cb82615b1978398",
+   "source": "smithsonian",
+   "sourceName": "Smithsonian",
+   "lang": "en",
+   "title": "America's Thanksgiving Parade in Detroit Is Celebrating 100 Years of Elaborate Floats, Papier-Mâché 'Big Heads' and a Distinguished Clown Corps",
+   "summary": "A new exhibition at the Detroit Historical Society looks back at 100 years of the city's Thanksgiving Day parade, which is tied with New York City for the country's second-oldest",
+   "link": "https://www.smithsonianmag.com/smart-news/america-thanksgiving-parade-in-detroit-is-celebrating-100-years-of-elaborate-floats-papier-Mache-big-heads-and-a-distinguished-clown-corps-180989943/",
+   "published": "2026-11-25T18:50:16Z",
+   "image": null,
+   "imageCredit": null,
+   "universe": "history",
+   "related": null,
+   "firstSeen": "2026-11-25T19:18:33Z"
+  },
+  {
+   "id": "8cd7bb44a04c6296",
+   "source": "nasa",
+   "sourceName": "NASA",
+   "lang": "en",
+   "title": "NASA Eyes Crop Candidates for Future Menus",
+   "summary": "As NASA prepares for future missions to the Moon and Mars, researchers are studying crops that could provide astronauts with fresh food, nutrition, and variety far from Earth. Such crop variety can help with menus in deep space, something top of mind this week as the nation…",
+   "link": "https://science.nasa.gov/directorates/smd/nasa-eyes-crop-candidates-for-future-menus/",
+   "published": "2026-11-25T17:53:42Z",
+   "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/bps/space-crops/SpaceCrops_thanksgiving.jpg?w=1366&h=618&fit=clip",
+   "imageCredit": "NASA",
+   "universe": "cosmos",
+   "related": "ingenuity",
+   "firstSeen": "2026-11-25T19:18:33Z"
+  },
   {
    "id": "539e41e21a22b609",
    "source": "mongabay",
@@ -1288,36 +1318,6 @@
    "image": "https://www.nasa.gov/wp-content/uploads/2026/11/theeuropaconceptposter-digitalassets-keyart-1-1-notitle-fnl-option1-centered.jpg",
    "imageCredit": "NASA",
    "universe": "cosmos",
-   "related": null,
-   "firstSeen": "2026-11-24T03:48:02Z"
-  },
-  {
-   "id": "67813de0a1c8de6e",
-   "source": "nasa",
-   "sourceName": "NASA",
-   "lang": "en",
-   "title": "NASA’s Webb Shows How Supernova Dust Chronicles Star Evolution",
-   "summary": "NASA’s James Webb Space Telescope has painted a vibrant tapestry of the legendary supernova remnant Cassiopeia A (Cas A). Remnants like these are the clouds of gas and dust that remain following the explosion of a massive star and will eventually seed a new generation of stars…",
-   "link": "https://science.nasa.gov/missions/webb/nasas-webb-shows-how-supernova-dust-chronicles-star-evolution/",
-   "published": "2026-11-23T15:00:00Z",
-   "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2026/11/STScI-01M6PRXJ9A7S81CH1C9SJP1MB0.jpg?w=1536&h=1536&fit=clip",
-   "imageCredit": "NASA",
-   "universe": "cosmos",
-   "related": "bigbang",
-   "firstSeen": "2026-11-24T03:48:02Z"
-  },
-  {
-   "id": "022ddca9882cbe93",
-   "source": "smithsonian",
-   "sourceName": "Smithsonian",
-   "lang": "en",
-   "title": "These Endangered Snakes Are Some of the Most Beautiful in North America. Here's How Conservationists Are Trying to Save Them",
-   "summary": "Fewer than 2,000 San Francisco garter snakes are estimated to live in their native home of two California counties. So, experts are raising some babies at the San Francisco Zoo to give them a head start before releasing the creatures into the wild",
-   "link": "https://www.smithsonianmag.com/smart-news/these-endangered-snakes-are-some-of-the-most-beautiful-in-north-america-heres-how-conservationists-are-trying-to-save-them-180989916/",
-   "published": "2026-11-23T15:00:00Z",
-   "image": null,
-   "imageCredit": null,
-   "universe": "history",
    "related": null,
    "firstSeen": "2026-11-24T03:48:02Z"
   },
