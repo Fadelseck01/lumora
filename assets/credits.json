@@ -1751,12 +1751,6 @@
   "artist": "Credit: NASA, JPL-Caltech",
   "credit": "https://phys.org/news/2017-01-explanation-alien-megastructure.html"
  },
- "assets/photos/plus/lowell-canals.jpg": {
-  "title": "File:Lowell Mars channels.jpg",
-  "license": "Public domain",
-  "artist": "Percival Lowell",
-  "credit": "Яков Перельман - \"Далёкие миры\". СПб, типография Сойкина (English transliteration: Yakov Perelman - \"Distant Worlds\". St"
- },
  "assets/photos/plus/viking-surface.jpg": {
   "title": "File:Viking Lander 1 Martian Surface.jpg",
   "license": "Public domain",
@@ -1841,12 +1835,6 @@
   "artist": "Rob Koopman (Flickr profile)",
   "credit": "https://www.flickr.com/photos/koopmanrob/3775343287/sizes/o/"
  },
- "assets/photos/plus/harrison-h4.jpg": {
-  "title": "File:Harrison H4 chronometer.jpg",
-  "license": "CC BY-SA 3.0",
-  "artist": "Colonel Warden at en.wikipedia",
-  "credit": "Transferred from en.wikipedia by SreeBot"
- },
  "assets/photos/plus/greenwich-meridian.jpg": {
   "title": "File:Tourists taking pictures at Prime Meridian monument, Greenwich Observatory, London.jpg",
   "license": "CC BY-SA 3.0",
@@ -1882,11 +1870,5 @@
   "license": "CC BY-SA 4.0",
   "artist": "Ms Sarah Welch",
   "credit": "Own work"
- },
- "assets/photos/plus/lucretius-ms.jpg": {
-  "title": "File:Lucretius - De rerum natura, first page Leiden VLF 30, 9th century.jpg",
-  "license": "Public domain",
-  "artist": "Titus Lucretius Carus (c. 99 – October 15, 55 BC)",
-  "credit": "https://digitalcollections.universiteitleiden.nl/view/item/4127827#page/6/mode/1up"
  }
 }
