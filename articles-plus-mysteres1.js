@@ -58,3 +58,8 @@ const fig=(id,hf,he,f)=>({[id]:{fr:{[hf]:f[0]},en:{[he]:f[1]}}});
  fig("nazca","Maria Reiche, la dame des lignes","Maria Reiche, the lady of the lines",F("maria-reiche-statue.jpg","La statue de Maria Reiche, à Nazca, rend hommage à celle qui a consacré sa vie aux lignes.","The statue of Maria Reiche in Nazca honours the woman who devoted her life to the lines.","Photo : Kevo287 — CC BY-SA 4.0","Photo: Kevo287 — CC BY-SA 4.0","460px"))
 ].forEach(addFig);
 }
+
+addParas({
+ bermuda:{fr:{"Les boussoles s'affolent-elles vraiment ?":"Les pilotes et les marins apprennent cette correction dès leur formation."},en:{"Do compasses really go haywire?":"Pilots and sailors learn this correction early in their training."}},
+ nazca:{fr:{"Un bestiaire géant":"Les archéologues continuent de débattre de l'identification exacte de plusieurs de ces animaux, dont certains pourraient représenter des espèces disparues de la région."},en:{"A giant bestiary":"Archaeologists still debate the exact identification of several of these animals, some of which may represent species no longer found in the region."}}
+});
