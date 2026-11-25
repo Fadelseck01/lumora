@@ -1,0 +1,53 @@
+name: LUMORA - Ce jour-là (Wikipédia)
+
+# Récupère les événements « Ce jour-là » de Wikipédia pour les 366 jours de l'année,
+# une fois par semaine (les pages Wikipédia évoluent peu), puis republie le site.
+on:
+  schedule:
+    - cron: "41 4 * * 0"
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "Jours précis (ex. 11-25,11-26) — vide = toute l'année"
+        default: ""
+
+permissions:
+  contents: write   # enregistrer data/onthisday
+  actions: write    # relancer la publication du site
+
+concurrency:
+  group: lumora-onthisday
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install "requests>=2.31"
+      - name: Récupérer les événements
+        id: otd
+        env:
+          DAYS: ${{ inputs.days }}
+        run: |
+          if [ -n "$DAYS" ]; then
+            [[ "$DAYS" =~ ^([0-9]{2}-[0-9]{2},?)+$ ]] || { echo "format invalide"; exit 1; }
+            python scripts/fetch_onthisday.py --days "$DAYS"
+          else
+            python scripts/fetch_onthisday.py
+          fi
+      - name: Enregistrer
+        if: steps.otd.outputs.changed == 'true'
+        run: |
+          git config user.name "lumora-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/onthisday
+          git commit -m "Ce jour-là : mise à jour depuis Wikipédia" || exit 0
+          git pull --rebase --autostash || true
+          git push
+          gh workflow run lumora-news.yml
+        env:
+          GH_TOKEN: ${{ github.token }}

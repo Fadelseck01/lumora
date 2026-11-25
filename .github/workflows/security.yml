@@ -6,7 +6,7 @@ name: Sécurité — attaques et mutations
 on:
   push:
     branches: [main]
-    paths-ignore: ["data/news.json", "data/news.js", "assets/photos/**"]
+    paths-ignore: ["data/news.json", "data/news.js", "data/onthisday/**", "assets/photos/**"]
   pull_request:
   schedule:
     - cron: "23 6 * * 1"
