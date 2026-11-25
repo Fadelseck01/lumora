@@ -856,5 +856,47 @@
   "license": "Public domain",
   "artist": "Chad King / NOAA MBNMS",
   "credit": "http://www.sanctuarysimon.org/photos/photo_info.php?photoID=4588&amp;search=gs&amp;s=0&amp;page=1"
+ },
+ "assets/photos/plus/edwin-smith-papyrus.jpg": {
+  "title": "File:Edwin Smith Papyrus v2.jpg",
+  "license": "Public domain",
+  "artist": "Jeff Dahl",
+  "credit": "Edited version of Image:EdSmPaPlateVIandVIIPrintsx.jpg"
+ },
+ "assets/photos/plus/hela-cells.jpg": {
+  "title": "File:HeLa-V.jpg",
+  "license": "Public domain",
+  "artist": "National Institutes of Health (NIH)",
+  "credit": "National Institutes of Health (NIH)"
+ },
+ "assets/photos/plus/naked-mole-rat.jpg": {
+  "title": "File:Naked Mole Rat (Heterocephalus glaber) (7662741774).jpg",
+  "license": "CC BY-SA 2.0",
+  "artist": "Bernard DUPONT from FRANCE",
+  "credit": "Naked Mole Rat (Heterocephalus glaber)"
+ },
+ "assets/photos/plus/tasmanian-devil.jpg": {
+  "title": "File:Sarcophilus harrisii taranna.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "JJ Harrison (https://www.jjharrison.com.au/)",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/car-t-nci.jpg": {
+  "title": "File:CAR T-Cell Therapy.jpg",
+  "license": "Public domain",
+  "artist": "National Cancer Institute (NCI)",
+  "credit": "https://visualsonline.cancer.gov/details.cfm?imageid=12069"
+ },
+ "assets/photos/plus/rosalind-franklin.jpg": {
+  "title": "File:Rosalind Franklin.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "MRC Laboratory of Molecular Biology",
+  "credit": "From the personal collection of Jenifer Glynn."
+ },
+ "assets/photos/plus/paris-japonica.jpg": {
+  "title": "File:Paris japonica (flower s5).jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Alpsdake",
+  "credit": "Own work"
  }
 }
