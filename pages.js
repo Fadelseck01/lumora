@@ -324,11 +324,11 @@ function renderArticle(id){
   setMeta(`${x.title[lang]} — LUMORA`, x.desc[lang], {"@context":"https://schema.org","@type":"Article","headline":x.title[lang],"description":x.desc[lang],"inLanguage":lang,"image":gal.slice(0,3),"articleSection":u.name[lang],"keywords":x.facts[lang].join(", "),"publisher":{"@type":"Organization","name":"LUMORA"}});
   $("#page").innerHTML = `
   <article class="article-page" style="--glow:${u.glow};--shade:${u.shade}">
+    <a class="lm-uni-return" href="#/u/${u.id}">${esc(t("backTo")(u.name[lang]))}</a>
     <nav class="crumbs" aria-label="breadcrumb"><a href="#/">${esc(t("home"))}</a><span>/</span><a href="#/u/${u.id}">${esc(u.name[lang])}</a><span>/</span><a href="#/u/${u.id}/${x.sub}">${esc(subName(x.cat,x.sub))}</a></nav>
     <header class="article-hero">
       <div class="article-hero-media ${x.art}${x.photo?" has-photo":""}" data-icon="${u.icon}">${x.photo?`<img src="${x.photo}" alt="${esc(x.title[lang])}">`:""}</div>
       <div class="article-hero-copy">
-        <a class="back-link lm-uni-return" href="#/u/${u.id}">${esc(t("backTo")(u.icon+" "+u.name[lang]))}</a>
         <div class="eyebrow">${esc(u.name[lang].toUpperCase())} · ${esc(subName(x.cat,x.sub).toUpperCase())}</div>
         <h1 tabindex="-1">${esc(x.title[lang])}</h1>
         <p class="article-lead">${esc(x.lead[lang])}</p>
