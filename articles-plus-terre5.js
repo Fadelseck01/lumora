@@ -200,3 +200,6 @@ addParas({
        en:{"The lava tubes":"These dark caves also shelter surprising wildlife. Biologists have discovered small blind, pale insects and spiders there, adapted to life in total darkness and found only in the caves of the Azores. Each tunnel can be a little world of its own, to be protected with care.",
            "Living on a volcanic island":"Earthquakes are also part of life in the archipelago. On 1 January 1980 a strong earthquake struck the island of Terceira and damaged much of Angra do Heroísmo, its historic town. Carefully rebuilt, it was inscribed as a UNESCO World Heritage Site in 1983."}}
 });
+
+addParas({godafoss:{fr:{"Akureyri, la capitale du Nord":"La ville est reliée à Reykjavík par la route circulaire, en cinq heures environ, mais aussi par avion en moins d'une heure. Depuis quelques années, des vols directs depuis l'Europe y arrivent, ce qui permet de découvrir le nord de l'Islande sans passer par la capitale."},
+                    en:{"Akureyri, capital of the North":"The town is linked to Reykjavík by the Ring Road, about five hours' drive, and also by plane in under an hour. In recent years direct flights from Europe have begun arriving there, making it possible to discover north Iceland without going through the capital."}}});
