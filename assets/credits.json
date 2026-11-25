@@ -1168,5 +1168,59 @@
   "license": "CC BY-SA 4.0",
   "artist": "QueenEspressoBean",
   "credit": "Own work"
+ },
+ "assets/photos/plus/avengers-formation.jpg": {
+  "title": "File:TBM Avengers of VT-88 in flight in August 1945.jpg",
+  "license": "Public domain",
+  "artist": "USN",
+  "credit": "Official U.S. Navy photo 80-G-345030 from the U.S. Navy Naval History and Heritage Command"
+ },
+ "assets/photos/plus/uss-cyclops.jpg": {
+  "title": "File:USS Cyclops (1910-1918) - 19-N-13451.jpg",
+  "license": "Public domain",
+  "artist": "Unknown authorUnknown author",
+  "credit": "This image has been extracted from another file"
+ },
+ "assets/photos/plus/sargassum.jpg": {
+  "title": "File:Lines of sargassum Sargasso Sea.jpg",
+  "license": "Public domain",
+  "artist": "Unknown authorUnknown author",
+  "credit": "Ocean Explorer/NOAA"
+ },
+ "assets/photos/plus/sea-venture-memorial.jpg": {
+  "title": "File:Sea Venture Memorial.jpg",
+  "license": "CC BY 2.0",
+  "artist": "todd.vision",
+  "credit": "https://www.flickr.com/photos/16894927@N08/49368462343/"
+ },
+ "assets/photos/plus/nazca-monkey.jpg": {
+  "title": "File:Líneas de Nazca, Nazca, Perú, 2015-07-29, DD 49.JPG",
+  "license": "CC BY-SA 4.0",
+  "artist": "Diego Delso",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/nazca-hummingbird.jpg": {
+  "title": "File:Líneas de Nazca, Nazca, Perú, 2015-07-29, DD 52.JPG",
+  "license": "CC BY-SA 4.0",
+  "artist": "Diego Delso",
+  "credit": "Self-photographed"
+ },
+ "assets/photos/plus/cantalloc.jpg": {
+  "title": "File:Acueductos subterráneos de Cantalloc, Nazca, Perú, 2015-07-29, DD 09.JPG",
+  "license": "CC BY-SA 4.0",
+  "artist": "Diego Delso",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/nazca-vessel.jpg": {
+  "title": "File:Nazca - Happy Fisherman Vessel - Walters 482865 - Profile.jpg",
+  "license": "Public domain",
+  "artist": "Anonymous (Nazca)Unknown author",
+  "credit": "Walters Art Museum:  Home page  Info about artwork"
+ },
+ "assets/photos/plus/maria-reiche-statue.jpg": {
+  "title": "File:Estatua Maria Reiche.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Kevo287",
+  "credit": "Own work"
  }
 }
