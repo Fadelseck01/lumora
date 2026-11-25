@@ -1624,5 +1624,95 @@
   "license": "CC BY-SA 2.0",
   "artist": "Jeff Kubina from Columbia, Maryland",
   "credit": "John McCarthy"
+ },
+ "assets/photos/plus/iter-2018.jpg": {
+  "title": "File:ITER construction in 2018 (41809718461).jpg",
+  "license": "CC BY 2.0",
+  "artist": "Oak Ridge National Laboratory",
+  "credit": "ITER Site"
+ },
+ "assets/photos/plus/nif-chamber.jpg": {
+  "title": "File:Worker inside the target chamber of the National Ignition Facility.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "Lawrence Livermore National Security",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/w7x.jpg": {
+  "title": "File:Wendelstein 7-X.jpg",
+  "license": "CC BY 4.0",
+  "artist": "SimonWaldherr",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/ivy-mike.jpg": {
+  "title": "File:IvyMike2.jpg",
+  "license": "Public domain",
+  "artist": "Photo courtesy of National Nuclear Security Administration / Nevada Site Office",
+  "credit": "This image is available from the National Nuclear Security Administration Nevada Site Office Photo Library under number "
+ },
+ "assets/photos/plus/andre-geim.jpg": {
+  "title": "File:Andre Geim 2010-1.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "Prolineserver (talk)",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/pencil-lead.jpg": {
+  "title": "File:Faber-Castell Lead pencil 0.7.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Mr Yukio",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/ingenuity-bw.jpg": {
+  "title": "File:Ingenuity's First Black-and-White Image From the Air.jpg",
+  "license": "Public domain",
+  "artist": "NASA/JPL-Caltech",
+  "credit": "https://mars.nasa.gov/resources/25818/ingenuitys-first-black-and-white-image-from-the-air/"
+ },
+ "assets/photos/plus/wright-swatch.jpg": {
+  "title": "File:PIA24438-MarsIngenuityHelicopter-WrightBros1stPlaneSwatch-20210406.jpg",
+  "license": "",
+  "artist": "NASA/JPL-Caltech",
+  "credit": "https://photojournal.jpl.nasa.gov/jpeg/PIA24438.jpg"
+ },
+ "assets/photos/plus/ingenuity-blade.jpg": {
+  "title": "File:PIA26243-MarsIngenuity-DamagedRotorBladeShadow-20240118.jpg",
+  "license": "",
+  "artist": "NASA/JPL-Caltech",
+  "credit": "https://photojournal.jpl.nasa.gov/jpeg/PIA26243.jpg"
+ },
+ "assets/photos/plus/ingenuity-final.jpg": {
+  "title": "File:PIA26236-MarsPerseveranceViewsIngenuity-FinalAirfield-20240204.jpg",
+  "license": "",
+  "artist": "NASA/JPL-Caltech/ASU/MSSS",
+  "credit": "https://photojournal.jpl.nasa.gov/jpeg/PIA26236.jpg"
+ },
+ "assets/photos/plus/ibm-q.jpg": {
+  "title": "File:IBM Q system (Fraunhofer 2).jpg",
+  "license": "CC BY 2.0",
+  "artist": "IBM Research",
+  "credit": "https://www.flickr.com/photos/ibm_research_zurich/51248690716/"
+ },
+ "assets/photos/plus/sycamore.jpg": {
+  "title": "File:Google Sycamore Chip 002.png",
+  "license": "CC BY 3.0",
+  "artist": "Google (https://www.youtube.com/channel/UCK8sQmJBp8GCxrOtXWBpyEA)",
+  "credit": "YouTube: https://www.youtube.com/watch?v=-ZNEzzDcllU – View/save archived versions on archive.org"
+ },
+ "assets/photos/plus/ion-trap.jpg": {
+  "title": "File:Ion Trap (6099414213).jpg",
+  "license": "Public domain",
+  "artist": "National Institute of Standards and Technology",
+  "credit": "Ion Trap"
+ },
+ "assets/photos/plus/dilution-fridge.jpg": {
+  "title": "File:Dilution Fridge with Quantum Processors Enclosed 008 8K.png",
+  "license": "CC BY 4.0",
+  "artist": "OJB Quantum",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/graphene-svg.jpg": {
+  "title": "File:Graphene Crystal Structure.svg",
+  "license": "CC0",
+  "artist": "Д.Ильин: vectorization",
+  "credit": "File:Graphene Crystal Structure.gif by Holopoman"
  }
 }
