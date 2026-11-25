@@ -1072,5 +1072,41 @@
   "license": "Public domain",
   "artist": "National Photo Company Collection",
   "credit": "Library of Congress\n\nCatalog: https://lccn.loc.gov/2016844533\nImage download: https://cdn.loc.gov/service/pnp/npcc/18600"
+ },
+ "assets/photos/plus/sars-cov-2.jpg": {
+  "title": "File:Novel Coronavirus SARS-CoV-2 (49597020648).jpg",
+  "license": "CC BY 2.0",
+  "artist": "National Institute of Allergy and Infectious Diseases (NIAID)",
+  "credit": "Novel Coronavirus SARS-CoV-2"
+ },
+ "assets/photos/plus/remote-learning.jpg": {
+  "title": "File:Remote learning Victoria.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Pru.mitchell",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/justinian-mosaic.jpg": {
+  "title": "File:Justinian mosaic, San Vitale, consecrated 547, Ravenna, Italy.jpg",
+  "license": "CC BY 2.0",
+  "artist": "Steven Zucker",
+  "credit": "https://smarthistory.org/san-vitale/"
+ },
+ "assets/photos/plus/roze-tourette.jpg": {
+  "title": "File:Chevalier Roze à la Tourette - 1720.PNG",
+  "license": "Public domain",
+  "artist": "Michel Serre",
+  "credit": "Transferred from fr.wikipedia to Commons."
+ },
+ "assets/photos/plus/mur-peste.jpg": {
+  "title": "File:Mur de la peste.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "Psycho Chicken",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/totentanz.jpg": {
+  "title": "File:Totentanz Lübeck 1701.jpg",
+  "license": "Public domain",
+  "artist": "Bernt Notke",
+  "credit": "Self-photographed"
  }
 }
