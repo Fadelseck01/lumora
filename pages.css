@@ -382,4 +382,5 @@
 .ba-tag-l{left:10px}.ba-tag-r{right:10px}
 .article-page{position:relative}
 .lm-uni-return{position:absolute;top:8px;left:7.2%;font-size:13px;font-weight:600;color:#cfe2f7;text-decoration:none;transition:.2s}
+@media (min-width:1100px){.lm-uni-return{top:14px;left:22px;width:calc(7.2% - 34px);font-size:12.5px;line-height:1.35}}
 .lm-uni-return:hover{color:#fff;text-decoration:underline}
