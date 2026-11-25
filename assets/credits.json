@@ -952,5 +952,71 @@
   "license": "CC0",
   "artist": "Daderot",
   "credit": "Own work"
+ },
+ "assets/photos/plus/latin-bridge.jpg": {
+  "title": "File:Latin Bridge where WWI began.jpg",
+  "license": "CC BY 2.0",
+  "artist": "Jennifer Boyer",
+  "credit": "Flickr: Latin Bridge"
+ },
+ "assets/photos/plus/somme-trench.jpg": {
+  "title": "File:Cheshire Regiment trench Somme 1916.jpg",
+  "license": "Public domain",
+  "artist": "John Warwick Brooke",
+  "credit": "This photograph Q 3990 comes from the collections of the Imperial War Museums(collection no. 1900-13)"
+ },
+ "assets/photos/plus/tirailleurs-1914.jpg": {
+  "title": "File:Tirailleurs du 8e bataillon sénégalais du Maroc envoyés en France, septembre 1914.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "Jacques Provot",
+  "credit": "https://1914-1918.europeana.eu/fr/contributions/21278"
+ },
+ "assets/photos/plus/douaumont.jpg": {
+  "title": "File:Douaumont couloir.JPG",
+  "license": "CC BY-SA 3.0",
+  "artist": "Lvcvlvs",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/armistice-wagon.jpg": {
+  "title": "File:Rethondes Wagon de l'Armistice.jpg",
+  "license": "Public domain",
+  "artist": "Nicklaarakkers",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/jaws-of-death.jpg": {
+  "title": "File:Into the Jaws of Death 23-0455M edit.jpg",
+  "license": "Public domain",
+  "artist": "Chief Photographer's Mate (CPHoM) Robert F. Sargent",
+  "credit": "This tag does not indicate the copyright status of the attached work. A normal copyright tag is still required. See Comm"
+ },
+ "assets/photos/plus/st-pauls-survives.jpg": {
+  "title": "File:St Paul's Survives.jpg",
+  "license": "Public domain",
+  "artist": "Herbert Mason",
+  "credit": "The Sphere Jan 04, 1941 page 1"
+ },
+ "assets/photos/plus/auschwitz-gate.jpg": {
+  "title": "File:The arbeit macht frei gate in Auschwitz I.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Yair Haklai",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/nagasaki-cloud.jpg": {
+  "title": "File:Nagasakibomb.jpg",
+  "license": "Public domain",
+  "artist": "Charles Levy",
+  "credit": "U.S. National Archives and Records Administration"
+ },
+ "assets/photos/plus/genbaku-dome.jpg": {
+  "title": "File:Hiroshima Peace Memorial (Genbaku Dome), 20240817 1050 4229.jpg",
+  "license": "CC BY 4.0",
+  "artist": "Jakub Hałun",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/avrechy-tirailleurs.jpg": {
+  "title": "File:Avrechy Tirailleurs sénégalais 1.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Chris93",
+  "credit": "Own work"
  }
 }
