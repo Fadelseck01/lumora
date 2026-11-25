@@ -385,3 +385,54 @@
 .lm-uni-return:hover{color:#fff;border-color:#fff}
 .lm-uni-return .nw{white-space:nowrap}
 @media (min-width:1400px){.article-page>.crumbs{padding-left:22px}.lm-uni-return{position:absolute;top:26px;left:16px;margin:0;width:min-content;max-width:calc(7.2% - 26px);font-size:12.5px;padding:7px 9px}}
+
+/* ---------- apparition au défilement ---------- */
+.rv-on .rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease var(--rv-d,0ms),transform .8s cubic-bezier(.2,.7,.2,1) var(--rv-d,0ms)}
+.rv-on .rv.rv-in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv-on .rv{opacity:1;transform:none;transition:none}}
+
+/* ---------- Ce jour-là ---------- */
+.otd-home-section{padding-top:0}
+.otd-home-card{display:grid;grid-template-columns:240px 1fr;gap:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:linear-gradient(135deg,#1a1f33,#0d1626);text-decoration:none;color:var(--text);transition:border-color .25s}
+.otd-home-card:hover{border-color:rgba(232,190,118,.5)}
+.otd-home-media{background:#0a1220;min-height:190px}
+.otd-home-media img{width:100%;height:100%;object-fit:cover;display:block}
+.otd-home-copy{padding:26px 30px;display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.otd-home-copy p{margin:0;font:500 clamp(18px,1.8vw,23px)/1.35 var(--display);letter-spacing:-.02em}
+.otd-home-card:not(:has(.otd-home-media)){grid-template-columns:1fr}
+.otd-year{font:600 22px var(--display);color:#e8be76;display:flex;align-items:baseline;gap:12px}
+.otd-year small{font:500 11px var(--font);letter-spacing:.12em;color:#8ea8c8;text-transform:uppercase}
+.otd-page .section-heading h1{font:500 clamp(38px,5vw,64px)/1.05 var(--display);letter-spacing:-.045em;margin:14px 0 0;text-transform:capitalize}
+.otd-nav{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:-8px 0 30px}
+.otd-arrow{width:42px;height:42px;display:grid;place-items:center;border:1px solid var(--line);border-radius:10px;color:#e8be76;text-decoration:none;font-size:22px;transition:.2s}
+.otd-arrow:hover{border-color:#e8be76}
+.otd-pick{display:flex;gap:8px}
+.otd-pick select{background:#0e1a2b;color:var(--text);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font:600 14px var(--font);text-transform:capitalize}
+.otd-today{margin-left:6px}
+.otd-feature{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:linear-gradient(135deg,#13203a,#0b1626)}
+.otd-feature:not(:has(.otd-feature-media)){grid-template-columns:1fr}
+.otd-feature-media{margin:0;background:#091120;position:relative;min-height:300px;display:flex;flex-direction:column}
+.otd-feature-media img{width:100%;height:100%;max-height:520px;object-fit:contain;flex:1;display:block}
+.otd-feature-media figcaption{padding:8px 14px;font-size:11px}
+.otd-feature-media figcaption a,.otd-wiki{color:#9fcfff}
+.otd-feature-copy{padding:34px 36px;display:flex;flex-direction:column;justify-content:center;gap:14px}
+.otd-feature-copy h2{font:500 clamp(24px,2.6vw,36px)/1.22 var(--display);letter-spacing:-.035em;margin:0}
+.otd-actions{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center}
+.otd-ours{display:inline-flex;gap:6px;align-items:center;border:1px solid var(--glow,#75c5ff);border-radius:30px;padding:7px 13px;color:#fff;text-decoration:none;font-size:12px;font-weight:600;background:rgba(8,15,28,.5)}
+.otd-ours:hover{background:rgba(255,255,255,.08)}
+.otd-wiki{font-size:12px;text-decoration:none}
+.otd-wiki:hover{text-decoration:underline}
+.otd-sub{font:500 24px var(--display);letter-spacing:-.03em;margin:44px 0 18px}
+.otd-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.otd-card{display:grid;grid-template-columns:110px 1fr;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#0e1a2b}
+.otd-card:not(:has(.otd-card-media)){grid-template-columns:1fr}
+.otd-card-media{display:block;background:#0a1220}
+.otd-card-media img{width:100%;height:100%;object-fit:cover;display:block;min-height:110px}
+.otd-card-copy{padding:16px 18px;display:flex;flex-direction:column;gap:8px}
+.otd-card-year{font:600 17px var(--display);color:#e8be76}
+.otd-card-copy p{margin:0;color:#c3d0e0;font-size:14px;line-height:1.6}
+.otd-loading{color:#9aaac1;padding:30px 0}
+.otd-note{color:#7f93ad;font-size:12px;margin-top:34px;border-top:1px solid var(--line);padding-top:16px}
+@media (max-width:900px){.otd-feature,.otd-home-card{grid-template-columns:1fr}.otd-home-media{max-height:220px}.otd-grid{grid-template-columns:1fr}.otd-feature-copy{padding:24px}}
+.otd-home-section{margin-top:-60px}
+.otd-page h1:focus{outline:none}

@@ -700,6 +700,7 @@ function parseRoute(){
   if(a==="quiz") return {name:"quiz", scope:b||null};
   if(a==="chronologie" || a==="timeline") return {name:"timeline"};
   if(a==="atlas" || a==="carte" || a==="map") return {name:"atlas", id:b||null};
+  if(a==="aujourdhui" || a==="today" || a==="ce-jour") return {name:"otd", day:b||null};
   return {name:"404"};
 }
 function drawRoute(r){
@@ -709,12 +710,13 @@ function drawRoute(r){
   else if(r.name==="quiz") renderQuiz(r.scope);
   else if(r.name==="timeline") renderTimeline();
   else if(r.name==="atlas") renderAtlas(r.id);
+  else if(r.name==="otd") renderOnThisDay(r.day);
   else renderNotFound();
 }
 function navHighlight(r){
   $$(".desktop-nav a").forEach(a=>{
     const href = a.getAttribute("href");
-    a.classList.toggle("current", (r.name==="timeline" && href==="#/chronologie") || (r.name==="quiz" && href==="#/quiz") || (r.name==="atlas" && href==="#/atlas"));
+    a.classList.toggle("current", (r.name==="timeline" && href==="#/chronologie") || (r.name==="quiz" && href==="#/quiz") || (r.name==="atlas" && href==="#/atlas") || (r.name==="otd" && href==="#/aujourdhui"));
   });
   $(".library-link").classList.toggle("current", r.name==="library");
 }
@@ -742,6 +744,7 @@ window.addEventListener("hashchange", onRoute);
 /* appelé par renderAll() (changement de langue, premier rendu) */
 function renderExtras(){
   renderDaily();
+  renderOtdHome();
   updateLibraryCount();
   if(!$("#settingsPop").hidden) renderSettings();
   if(route && route.name!=="home"){ const y = window.scrollY; drawRoute(route); window.scrollTo(0,y); }

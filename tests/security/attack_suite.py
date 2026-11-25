@@ -88,6 +88,7 @@ SCAN = """() => {
       }
     }
     if (el.tagName==='SCRIPT' && /__pwned/.test(el.textContent)) bad.push('balise <script> injectée');
+    if (el.tagName==='SCRIPT' && /onthisday\\//.test(el.getAttribute('src')||'') && !/^data\\/onthisday\\/\\d\\d-\\d\\d\\.js$/.test(el.getAttribute('src'))) bad.push('chargement de script détourné : '+el.getAttribute('src').slice(0,60));
   }
   return bad;
 }"""
@@ -180,16 +181,57 @@ class Run:
             with contextlib.suppress(Exception): p.evaluate("d=>{newsData=d; renderNewsFeed();}", self.wrap([self.BASE_ITEM]))
         ctx.close()
 
+    # ------------------------------------------------ 1 bis. « Ce jour-là » (données Wikipédia)
+    def attack_otd(self):
+        good = {"y": 1915, "t": "Einstein", "links": [{"t": "Albert Einstein", "u": "https://fr.wikipedia.org/wiki/Albert_Einstein"}],
+                "img": {"src": "https://upload.wikimedia.org/x.jpg", "page": "https://commons.wikimedia.org/wiki/File:x.jpg", "free": True}, "soft": True}
+        cases = []
+        for x in (XSS if not self.quick else XSS[:6]):
+            cases.append(("texte = " + x[:40], dict(good, t=x)))
+            cases.append(("titre de lien = " + x[:40], dict(good, links=[{"t": x, "u": "https://ok.example/"}])))
+        for u in BAD_URLS:
+            cases.append(("lien = " + u[:40], dict(good, links=[{"t": "x", "u": u}])))
+            cases.append(("image = " + u[:40], dict(good, img={"src": u, "page": u})))
+            cases.append(("crédit image = " + u[:40], dict(good, img={"src": "https://ok.example/i.jpg", "page": u})))
+        for k, v in [("y", "1915"), ("y", None), ("y", float("inf")), ("t", None), ("t", 5), ("links", "x"), ("links", [None, 3]), ("img", "x"), ("soft", "oui")]:
+            cases.append((f"{k} = {str(v)[:20]} (type inattendu)", dict(good, **{k: v})))
+        ctx, p = self.page(); self.goto(p, self.base + "?lang=fr#/aujourdhui/11-25")
+        for label, ev in cases:
+            day = {"d": "11-25", "fr": {"selected": [ev], "events": [ev, good]}, "en": {"selected": [ev], "events": []}}
+            try:
+                p.evaluate("""d=>{ window.LUMORA_OTD["11-25"]=JSON.parse(d); renderOnThisDay("11-25"); renderOtdHome(); }""",
+                           json.dumps(day).replace("Infinity", "1e999"))
+                p.wait_for_timeout(60)
+                for a in p.query_selector_all("#otdBody a")[:4]:
+                    with contextlib.suppress(Exception): a.hover(timeout=150)
+            except Exception as e:
+                p._errors.append(str(e).splitlines()[0])
+            self.check("Ce jour-là : " + label, p)
+        for label, raw in [("jour = null", None), ("jour = chaîne", "x"), ("fr = null", {"fr": None}), ("selected = objet", {"fr": {"selected": {"a": 1}, "events": 3}})]:
+            try:
+                p.evaluate("d=>{ window.LUMORA_OTD['11-25']=d; renderOnThisDay('11-25'); renderOtdHome(); }", raw); p.wait_for_timeout(60)
+            except Exception as e:
+                p._errors.append(str(e).splitlines()[0])
+            self.check("Ce jour-là : " + label, p)
+        ctx.close()
+        # fichier de données piégé servi au premier chargement
+        body = "(window.LUMORA_OTD=window.LUMORA_OTD||{})['11-25']=" + json.dumps({"fr": {"selected": [dict(good, t=XSS[0], links=[{"t": XSS[1], "u": BAD_URLS[0]}])], "events": []}}) + ";"
+        ctx, p = self.page()
+        p.route("**/data/onthisday/**", lambda r: r.fulfill(status=200, content_type="application/javascript", body=body))
+        self.goto(p, self.base + "?lang=fr#/aujourdhui/11-25"); p.wait_for_timeout(300)
+        self.check("Ce jour-là : fichier de données piégé", p); ctx.close()
+
     # ------------------------------------------------ 2. adresse
     def attack_url(self):
         payloads = XSS if not self.quick else XSS[:5]
         routes = []
         for x in payloads:
             q = urllib.parse.quote(x, safe="")
-            routes += [f"#/d/{q}", f"#/u/{q}", f"#/u/cosmos/{q}", f"#/quiz/{q}", f"#/atlas/{q}", f"#{q}", f"#/{q}"]
+            routes += [f"#/d/{q}", f"#/u/{q}", f"#/u/cosmos/{q}", f"#/quiz/{q}", f"#/atlas/{q}", f"#/aujourdhui/{q}", f"#{q}", f"#/{q}"]
         routes += ["#/u/cosmos/999999", "#/u/cosmos/-1", "#/u/__proto__", "#/d/__proto__", "#/d/constructor",
                    "#/quiz/__proto__", "#/quiz/toString", "#/atlas/__proto__", "#%E0%A4%A", "#/d/%", "#" + "A" * 20000,
-                   "#/u/cosmos/1e999", "#/d/" + "../" * 50]
+                   "#/u/cosmos/1e999", "#/d/" + "../" * 50, "#/aujourdhui/02-30", "#/aujourdhui/13-01", "#/aujourdhui/../../app",
+                   "#/aujourdhui/..%2F..%2Fapp", "#/aujourdhui/https:%2F%2Fevil.example%2Fx", "#/aujourdhui/00-00"]
         ctx, p = self.page(); self.goto(p, self.base + "?lang=fr#/")
         for r in routes:
             with contextlib.suppress(Exception): self.hash(p, r)
@@ -254,7 +296,7 @@ class Run:
     # ------------------------------------------------ 5. liens externes et en-têtes
     def audit_static(self):
         ctx, p = self.page()
-        for r in ["#/", "#/d/blackhole", "#/d/gore"]:
+        for r in ["#/", "#/d/blackhole", "#/d/gore", "#/aujourdhui/11-25"]:
             self.goto(p, self.base + "?lang=fr" + r)
             bad = p.evaluate("""()=>[...document.querySelectorAll('a[target=_blank]')]
                  .filter(a=>!/noopener|noreferrer/.test(a.rel||'')).map(a=>a.href.slice(0,80))""")
@@ -262,7 +304,7 @@ class Run:
                 self.findings.append({"vecteur": f"Lien externe sur {r}", "probleme": "target=_blank sans rel=noopener : " + b})
             self.count += 1
         # la politique de sécurité ne doit rien bloquer du fonctionnement normal du site
-        for r in ["#/", "#/d/blackhole", "#/d/ww2", "#/u/cosmos", "#/atlas", "#/quiz/all", "#/chronologie", "#/bibliotheque"]:
+        for r in ["#/", "#/d/blackhole", "#/d/ww2", "#/u/cosmos", "#/atlas", "#/quiz/all", "#/chronologie", "#/bibliotheque", "#/aujourdhui", "#/aujourdhui/02-29"]:
             self.goto(p, self.base + "?lang=fr" + r)
             with contextlib.suppress(Exception):
                 p.mouse.wheel(0, 4000); p.wait_for_timeout(200)
@@ -298,7 +340,7 @@ def main():
     with serve(Path(a.root)) as base, sync_playwright() as pw:
         b = pw.chromium.launch()
         run = Run(b, base, a.quick)
-        steps = {"news": run.attack_news, "url": run.attack_url, "storage": run.attack_storage,
+        steps = {"news": run.attack_news, "otd": run.attack_otd, "url": run.attack_url, "storage": run.attack_storage,
                  "search": run.attack_search, "static": run.audit_static}
         for name, fn in steps.items():
             if a.only and name not in a.only.split(","): continue
