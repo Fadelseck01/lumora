@@ -1420,5 +1420,95 @@
   "license": "Public domain",
   "artist": "Vincent van Gogh",
   "credit": "1. Unknown sourceUnknown source2. Gogh Museum, Amsterdam"
+ },
+ "assets/photos/plus/gaudi-1878.jpg": {
+  "title": "File:Antoni Gaudi 1878.jpg",
+  "license": "Public domain",
+  "artist": "Pau Audouard Deglaire",
+  "credit": "Immediate image source: [1] at the Gaudi and Barcelona Club."
+ },
+ "assets/photos/plus/sagrada-nativity.jpg": {
+  "title": "File:Sagrada Familia March 2015-14a.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Alvesgaspar",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/sagrada-passion.jpg": {
+  "title": "File:Sagrada Familia 03.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "Bernard Gagnon",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/sagrada-interior.jpg": {
+  "title": "File:Barcelona Sagrada Familia interior 01.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Ad Meskens",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/sagrada-magic.jpg": {
+  "title": "File:Magic Square - Sagrada Familia (3408718519).jpg",
+  "license": "CC BY 2.0",
+  "artist": "Serge Melki from Indianapolis, USA",
+  "credit": "Magic Square - Sagrada Familia"
+ },
+ "assets/photos/plus/sagrada-glass.jpg": {
+  "title": "File:Stained-glass windows of the Sagrada Família 2023 1.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Smiley.toerist",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/taj-pietra.jpg": {
+  "title": "File:India Taj Mahal (06).jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Zorka Sojka",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/taj-calligraphy.jpg": {
+  "title": "File:Taj Mahal Calligraphy (22851648099).jpg",
+  "license": "CC0",
+  "artist": "Gary Todd from Xinzheng, China",
+  "credit": "Taj Mahal Calligraphy"
+ },
+ "assets/photos/plus/taj-minaret.jpg": {
+  "title": "File:A minaret of Taj Mahal, Agra.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Slyronit",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/musamman-burj.jpg": {
+  "title": "File:Musamman Burj (Agra Fort)-3.jpg",
+  "license": "Public domain",
+  "artist": "David Castor (dcastor)",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/shah-jahan.jpg": {
+  "title": "File:\"Shah Jahan on a Terrace, Holding a Pendant Set With His Portrait\", Folio from the Shah Jahan Album MET DP246547.jpg",
+  "license": "CC0",
+  "artist": "Chitarman",
+  "credit": "This file was donated to Wikimedia Commons as part of a project by the Metropolitan Museum of Art. See the Image and Dat"
+ },
+ "assets/photos/plus/qin-pit1.jpg": {
+  "title": "File:Qin Terracotta Army, Pit 1 09.jpg",
+  "license": "CC0",
+  "artist": "Gary Lee Todd, Ph.D.",
+  "credit": "https://www.flickr.com/photos/101561334@N08/9895854766/"
+ },
+ "assets/photos/plus/qin-archer.jpg": {
+  "title": "File:2009 Qin State- Terracotta Kneeling Archer, Painted.jpg",
+  "license": "CC0",
+  "artist": "Gary Todd",
+  "credit": "https://www.flickr.com/photos/101561334@N08/9932542566/"
+ },
+ "assets/photos/plus/qin-chariot.jpg": {
+  "title": "File:2007 Qin Shihuang Bronze Chariot & Horses.jpg",
+  "license": "CC0",
+  "artist": "Gary Todd",
+  "credit": "https://www.flickr.com/photos/101561334@N08/9892036195/"
+ },
+ "assets/photos/plus/qin-warrior.jpg": {
+  "title": "File:Qin Terracotta Warrior 08.jpg",
+  "license": "CC0",
+  "artist": "Gary Lee Todd, Ph.D.",
+  "credit": "https://www.flickr.com/photos/101561334@N08/9894152145/"
  }
 }
