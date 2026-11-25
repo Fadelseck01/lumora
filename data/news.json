@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24T23:50:44Z",
- "checked": "2026-11-24T23:50:44Z",
+ "updated": "2026-11-25T00:28:32Z",
+ "checked": "2026-11-25T00:28:32Z",
  "sources": [
   {
    "id": "nasa",
@@ -40,7 +40,7 @@
    "home": "https://www.sciencedaily.com",
    "ok": true,
    "found": 60,
-   "new": 37
+   "new": 36
   },
   {
    "id": "sciencedaily-health",
@@ -48,7 +48,7 @@
    "home": "https://www.sciencedaily.com",
    "ok": true,
    "found": 60,
-   "new": 26
+   "new": 27
   },
   {
    "id": "who",
@@ -76,6 +76,21 @@
   }
  ],
  "items": [
+  {
+   "id": "8aaa935219e6242f",
+   "source": "mongabay",
+   "sourceName": "Mongabay",
+   "lang": "en",
+   "title": "Species down to the last 50 animals can recover, but rarely without help",
+   "summary": "In 1974, the Mauritius kestrel was down to four birds in the wild. In 1979, Norman Myers, a prominent environmentalist, argued that the money might be better spent protecting birds with better prospects. Nevertheless, conservationists pursued captive breeding, predator control…",
+   "link": "https://news.mongabay.com/short-article/2026/11/species-down-to-the-last-50-animals-can-recover-but-rarely-without-help/",
+   "published": "2026-11-25T00:17:59Z",
+   "image": null,
+   "imageCredit": null,
+   "universe": "living",
+   "related": null,
+   "firstSeen": "2026-11-25T00:28:32Z"
+  },
   {
    "id": "082cb587f7e85ce9",
    "source": "sciencedaily-health",
@@ -617,6 +632,21 @@
    "firstSeen": "2026-11-24T14:44:24Z"
   },
   {
+   "id": "ad8f98e7f6d8931d",
+   "source": "esa",
+   "sourceName": "ESA",
+   "lang": "en",
+   "title": "Euclid breaks own quasar record by 40 million years",
+   "summary": "The European Space Agency’s Euclid space telescope has discovered the most distant quasar to date: a rare 360 million-sun-mass galactic core seen just 630 million years after the Big Bang. The discovery breaks Euclid’s own previous record, announced only a few months ago[1.1]…",
+   "link": "https://www.esa.int/articles/about-us/directorates/science/euclid/euclid-breaks-own-quasar-record-by-40-million-years",
+   "published": "2026-11-24T08:00:00Z",
+   "image": null,
+   "imageCredit": null,
+   "universe": "cosmos",
+   "related": "blackhole",
+   "firstSeen": "2026-11-25T00:28:32Z"
+  },
+  {
    "id": "b71d86a1ce2bd329",
    "source": "mongabay",
    "sourceName": "Mongabay",
@@ -857,6 +887,21 @@
    "firstSeen": "2026-11-24T04:34:34Z"
   },
   {
+   "id": "cb28d8e7a107b7d7",
+   "source": "esa",
+   "sourceName": "ESA",
+   "lang": "en",
+   "title": "BepiColombo safely in Mercury orbit despite unexpected challenge",
+   "summary": "On 21 November, starting at 18:24 UTC, BepiColombo achieved Mercury orbit insertion (MOI), the second major milestone of its planetary arrival phase. As soon as the signal from the spacecraft was re-established after a scheduled loss of contact, the Mission Control Team at the…",
+   "link": "https://www.esa.int/articles/about-us/directorates/operations/bepicolombo-safely-in-mercury-orbit-despite-unexpected-challenge",
+   "published": "2026-11-23T18:00:00Z",
+   "image": null,
+   "imageCredit": null,
+   "universe": "cosmos",
+   "related": null,
+   "firstSeen": "2026-11-25T00:28:32Z"
+  },
+  {
    "id": "617832abf65fa4bb",
    "source": "mongabay",
    "sourceName": "Mongabay",
@@ -868,21 +913,6 @@
    "image": null,
    "imageCredit": null,
    "universe": "earth",
-   "related": null,
-   "firstSeen": "2026-11-24T04:34:34Z"
-  },
-  {
-   "id": "9e1f445f15c2c1cb",
-   "source": "mongabay",
-   "sourceName": "Mongabay",
-   "lang": "en",
-   "title": "Analysis: The collapse of UN climate talks, over fossil fuels, was years in the making",
-   "summary": "NEW YORK (AP) — Going into this year’s U.N. climate talks in Turkey, expectations were notably low. Still, the outcome was even worse than expected—a failure to reach an overall agreement at a time of frequent extreme weather events fueled by climate change. While negotiations…",
-   "link": "https://news.mongabay.com/short-article/2026/11/analysis-the-collapse-of-un-climate-talks-over-fossil-fuels-was-years-in-the-making/",
-   "published": "2026-11-23T17:34:45Z",
-   "image": null,
-   "imageCredit": null,
-   "universe": "living",
    "related": null,
    "firstSeen": "2026-11-24T04:34:34Z"
   },
@@ -990,6 +1020,21 @@
    "universe": "history",
    "related": null,
    "firstSeen": "2026-11-24T03:48:02Z"
+  },
+  {
+   "id": "554d6dc4747f8c74",
+   "source": "esa",
+   "sourceName": "ESA",
+   "lang": "en",
+   "title": "Hera’s Didymos asteroid in eclipse",
+   "summary": "A solar eclipse in deep space, shown in this early view of the Didymos binary asteroids from the European Space Agency’s Hera mission for planetary defence. The smaller Dimorphos moonlet is seen casting its shadow across part of its Didymos parent body, to blank out the Sun…",
+   "link": "https://www.esa.int/articles/about-us/directorates/operations/space-safety/hera/hera-s-didymos-asteroid-in-eclipse",
+   "published": "2026-11-23T14:10:46Z",
+   "image": null,
+   "imageCredit": null,
+   "universe": "cosmos",
+   "related": null,
+   "firstSeen": "2026-11-25T00:28:32Z"
   },
   {
    "id": "814832dfa939f441",
@@ -1827,51 +1872,6 @@
    "published": "2026-11-12T11:00:00Z",
    "image": null,
    "imageCredit": null,
-   "universe": "cosmos",
-   "related": null,
-   "firstSeen": "2026-11-24T03:48:02Z"
-  },
-  {
-   "id": "53b2ac62d75f13e5",
-   "source": "smithsonian",
-   "sourceName": "Smithsonian",
-   "lang": "en",
-   "title": "A Rare Surviving Letter From Martha Washington Sheds Light on Her Young Daughter's Struggle With Epilepsy",
-   "summary": "",
-   "link": "https://www.smithsonianmag.com/smart-news/a-rare-surviving-letter-from-martha-washington-sheds-light-on-her-young-daughters-struggle-with-epilepsy-180989858/",
-   "published": "2026-11-11T13:10:00Z",
-   "image": null,
-   "imageCredit": null,
-   "universe": "history",
-   "related": null,
-   "firstSeen": "2026-11-24T03:19:40Z"
-  },
-  {
-   "id": "c31ecaa821344710",
-   "source": "esa",
-   "sourceName": "ESA",
-   "lang": "en",
-   "title": "Hera spacecraft in ‘rectangular orbit’ around target asteroids",
-   "summary": "The European Space Agency’s Hera mission for planetary defence has arrived at its target asteroids. Positioned just 30-25 km away from the binary Didymos system, the small-car-sized spacecraft has commenced its ‘early characterisation phase’ to gather key data on the asteroid…",
-   "link": "https://www.esa.int/articles/about-us/directorates/operations/space-safety/hera/hera-spacecraft-in-rectangular-orbit-around-target-asteroids",
-   "published": "2026-11-11T13:00:00Z",
-   "image": null,
-   "imageCredit": null,
-   "universe": "cosmos",
-   "related": null,
-   "firstSeen": "2026-11-24T03:48:02Z"
-  },
-  {
-   "id": "6fa59733af79169e",
-   "source": "nasa-iotd",
-   "sourceName": "NASA · Image du jour",
-   "lang": "en",
-   "title": "CHAPEA Crew Leaves a Mark",
-   "summary": "Photos of the CHAPEA Mission 2 crew are arranged around a boot print in the simulated Martian sand outside their habitat.",
-   "link": "https://www.nasa.gov/image-detail/photos-from-chapea-mission-2-arranged-around-boot-print/",
-   "published": "2026-11-10T15:39:00Z",
-   "image": "https://www.nasa.gov/wp-content/uploads/2026/11/jsc2026e425219orig.jpg",
-   "imageCredit": "NASA",
    "universe": "cosmos",
    "related": null,
    "firstSeen": "2026-11-24T03:48:02Z"
