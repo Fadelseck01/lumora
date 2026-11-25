@@ -922,5 +922,35 @@
   "license": "CC BY 3.0",
   "artist": "GiveWell",
   "credit": "GiveWell"
+ },
+ "assets/photos/plus/siffre-le-guen.jpg": {
+  "title": "File:Véronique Le Guen et Michel Siffre.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Farcyjeanpierre",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/frigatebird.jpg": {
+  "title": "File:Great frigatebird (Fregata minor).jpg",
+  "license": "CC BY 2.0",
+  "artist": "NOAA Photo Library",
+  "credit": "anim2626"
+ },
+ "assets/photos/plus/polysomnography.jpg": {
+  "title": "File:Polysomnography model.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Clinique Somnomed",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/rousseau-bohemienne.jpg": {
+  "title": "File:La Bohémienne endormie.jpg",
+  "license": "Public domain",
+  "artist": "Henri Rousseau",
+  "credit": "Oakenchips"
+ },
+ "assets/photos/plus/cassiopea.jpg": {
+  "title": "File:Cassiopea sp. - MBA - DSC07061.JPG",
+  "license": "CC0",
+  "artist": "Daderot",
+  "credit": "Own work"
  }
 }
