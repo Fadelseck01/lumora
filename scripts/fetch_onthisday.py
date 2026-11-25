@@ -26,7 +26,7 @@ OUT = ROOT / "data" / "onthisday"
 UA = "LUMORA/1.0 (https://fadelseck01.github.io/lumora/; site de découverte éducatif) python-requests"
 API = "https://{lang}.wikipedia.org/api/rest_v1/feed/onthisday/{kind}/{mm}/{dd}"
 LANGS = ("fr", "en")
-MAX_SELECTED, MAX_EVENTS = 8, 14
+MAX_SELECTED, MAX_EVENTS = 8, 10
 MAX_BYTES = 3_000_000
 
 # sujets écartés (on reste un site de découverte, ouvert à tous les âges)
@@ -62,7 +62,7 @@ def image_of(pages, lang):
             src, w, h = orig["source"], ow, oh
         m = re.search(r"/wikipedia/([a-z]+)/(?:thumb/)?[0-9a-f]/[0-9a-f]{2}/([^/]+)", src)
         if not m: continue
-        repo, fname = m.group(1), unquote(m.group(2))
+        repo, fname = m.group(1), unquote(m.group(2).split("?")[0])
         free = repo == "commons"
         if free: page = "https://commons.wikimedia.org/wiki/File:" + quote(fname)
         else: page = f"https://{repo}.wikipedia.org/wiki/" + ("Fichier:" if repo == "fr" else "File:") + quote(fname)
@@ -76,7 +76,7 @@ def event(e, lang):
     if not text or not isinstance(year, int): return None
     pages = [p for p in (e.get("pages") or []) if isinstance(p, dict)]
     links = []
-    for p in pages[:4]:
+    for p in pages[:3]:
         url = https(((p.get("content_urls") or {}).get("desktop") or {}).get("page"))
         title = clean_text(((p.get("titles") or {}).get("normalized")) or p.get("normalizedtitle") or p.get("title", "").replace("_", " "), 120)
         if url and title: links.append({"t": title, "u": url})
