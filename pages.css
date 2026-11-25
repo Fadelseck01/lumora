@@ -381,6 +381,7 @@
 .ba-tag{position:absolute;top:10px;padding:4px 10px;border-radius:999px;background:#000b;color:#fff;font-size:.78rem;letter-spacing:.04em;pointer-events:none}
 .ba-tag-l{left:10px}.ba-tag-r{right:10px}
 .article-page{position:relative}
-.lm-uni-return{position:absolute;top:8px;left:7.2%;font-size:13px;font-weight:600;color:#cfe2f7;text-decoration:none;transition:.2s}
-@media (min-width:1100px){.lm-uni-return{top:14px;left:22px;width:calc(7.2% - 34px);font-size:12.5px;line-height:1.35}}
-.lm-uni-return:hover{color:#fff;text-decoration:underline}
+.lm-uni-return{display:inline-block;margin-bottom:14px;font-size:13px;font-weight:600;line-height:1.35;color:#cfe2f7;text-decoration:none;border:1px solid rgba(148,183,224,.45);border-radius:8px;padding:6px 10px;background:rgba(8,15,28,.55);transition:.2s}
+.lm-uni-return:hover{color:#fff;border-color:#fff}
+.lm-uni-return .nw{white-space:nowrap}
+@media (min-width:1400px){.lm-uni-return{position:absolute;top:10px;left:16px;margin:0;width:min-content;max-width:calc(7.2% - 26px);font-size:12.5px;padding:7px 9px}}
