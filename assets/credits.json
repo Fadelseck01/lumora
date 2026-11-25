@@ -1786,5 +1786,107 @@
   "license": "Public domain",
   "artist": "NASA, ESA, CSA, Joseph Olmsted (STScI)",
   "credit": "https://webbtelescope.org/contents/media/images/2023/125/01H2TJJF981PWQK9YT0VGH2HPV"
+ },
+ "assets/photos/plus/diamond-sutra.jpg": {
+  "title": "File:Diamond Sutra of 868 AD - The Diamond Sutra (868), frontispiece and text - BL Or. 8210-P.2.jpg",
+  "license": "CC0",
+  "artist": "",
+  "credit": "This file has been provided by the British Library from its digital collections. Links to the British Library's website "
+ },
+ "assets/photos/plus/jikji.jpg": {
+  "title": "File:Korean book-Jikji-Selected Teachings of Buddhist Sages and Seon Masters-1377.jpg",
+  "license": "Public domain",
+  "artist": "Authored by Baegun Hwaseng (1289-1374), a master of Seon Buddhism in Korea, and published by his students, Seokchan and Daljam in 1377.",
+  "credit": "Bibliotheque Nationale de France. Source"
+ },
+ "assets/photos/plus/gutenberg-bible-loc.jpg": {
+  "title": "File:Gutenberg Bible on display at the U.S. Library of Congress.jpg",
+  "license": "CC0",
+  "artist": "MC BSU",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/gutenberg-press.jpg": {
+  "title": "File:Gutenberg press.png",
+  "license": "CC0",
+  "artist": "International Printing Museum",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/type-case-mainz.jpg": {
+  "title": "File:Type case with movable types for letterpress printing in the Gutenberg Museum, Mainz, Germany (48988492232).jpg",
+  "license": "CC BY 2.0",
+  "artist": "dronepicr",
+  "credit": "Type case with movable types for letterpress printing in the Gutenberg Museum, Mainz, Germany"
+ },
+ "assets/photos/plus/mainz-psalter.jpg": {
+  "title": "File:1457 Mainz Psalter.jpg",
+  "license": "Public domain",
+  "artist": "Peter Schöffer, Johannes Fust",
+  "credit": "http://www.royalcollection.org.uk/egallery/object.asp?object=1071478&amp;row=0"
+ },
+ "assets/photos/plus/aldus-virgil.jpg": {
+  "title": "File:Page from the edition of Virgil printed by Aldus Manutius in 1501.jpg",
+  "license": "CC0",
+  "artist": "Virgil",
+  "credit": "https://www.bl.uk/britishlibrary/~/media/bl/global/writing/communities%20articles%20collection%20items/226aldinevirgil.j"
+ },
+ "assets/photos/plus/relation-1609.jpg": {
+  "title": "File:Relation Aller Fuernemmen und gedenckwuerdigen Historien (1609).jpg",
+  "license": "Public domain",
+  "artist": "University library of Heidelberg, Germany",
+  "credit": "https://www.numistral.fr/ark:/12148/bpt6k9400607r"
+ },
+ "assets/photos/plus/huygens-clock.jpg": {
+  "title": "File:Christiaan Huygens Clock and Horologii Oscillatorii.jpg",
+  "license": "CC BY-SA 1.0",
+  "artist": "Rob Koopman (Flickr profile)",
+  "credit": "https://www.flickr.com/photos/koopmanrob/3775343287/sizes/o/"
+ },
+ "assets/photos/plus/harrison-h4.jpg": {
+  "title": "File:Harrison H4 chronometer.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "Colonel Warden at en.wikipedia",
+  "credit": "Transferred from en.wikipedia by SreeBot"
+ },
+ "assets/photos/plus/greenwich-meridian.jpg": {
+  "title": "File:Tourists taking pictures at Prime Meridian monument, Greenwich Observatory, London.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "Daniel Case",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/strontium-clock.jpg": {
+  "title": "File:Strontium Atomic Clock Demonstrates Super-Fine 'Ticks' (5941085880).jpg",
+  "license": "Public domain",
+  "artist": "National Institute of Standards and Technology",
+  "credit": "Strontium Atomic Clock Demonstrates Super-Fine 'Ticks'"
+ },
+ "assets/photos/plus/leibniz-francke.jpg": {
+  "title": "File:Christoph Bernhard Francke - Bildnis des Philosophen Leibniz (ca. 1695) (cropped).jpg",
+  "license": "Public domain",
+  "artist": "Christoph Bernhard Francke",
+  "credit": "Herzog Anton Ulrich-Museum, online"
+ },
+ "assets/photos/plus/russell-1950.jpg": {
+  "title": "File:Nobelprijswinnaar Bertrand Russell, 10-11-1950, RP-F-F01636.jpg",
+  "license": "CC0",
+  "artist": "Rijksmuseum",
+  "credit": "http://hdl.handle.net/10934/RM0001.COLLECT.252876"
+ },
+ "assets/photos/plus/parmenides-raphael.jpg": {
+  "title": "File:Sanzio 01 Parmenides.jpg",
+  "license": "Public domain",
+  "artist": "Raphael",
+  "credit": "http://www.newbanner.com/AboutPic/athena/raphael/nbi_parm.html"
+ },
+ "assets/photos/plus/rigveda.jpg": {
+  "title": "File:1500-1200 BCE, Rigveda manuscript page sample v, Sanskrit, Devanagari.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Ms Sarah Welch",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/lucretius-ms.jpg": {
+  "title": "File:Lucretius - De rerum natura, first page Leiden VLF 30, 9th century.jpg",
+  "license": "Public domain",
+  "artist": "Titus Lucretius Carus (c. 99 – October 15, 55 BC)",
+  "credit": "https://digitalcollections.universiteitleiden.nl/view/item/4127827#page/6/mode/1up"
  }
 }
