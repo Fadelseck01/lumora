@@ -26,6 +26,7 @@ OUT_JSON = ROOT / "data" / "news.json"
 OUT_JS = ROOT / "data" / "news.js"
 USER_AGENT = "Mozilla/5.0 (compatible; LUMORA-RSS/1.0; +https://fadelseck01.github.io/lumora/)"
 TIMEOUT = 20
+MAX_FEED_BYTES = 8_000_000
 
 
 # ---------- texte ----------
@@ -105,9 +106,15 @@ def load_feed(src, offline_dir):
     if offline_dir:
         return feedparser.parse((Path(offline_dir) / f"{src['id']}.xml").read_bytes())
     import requests
-    r = requests.get(src["url"], headers={"User-Agent": USER_AGENT, "Accept": "application/rss+xml, application/atom+xml, application/xml;q=0.9, */*;q=0.5"}, timeout=TIMEOUT)
+    r = requests.get(src["url"], headers={"User-Agent": USER_AGENT, "Accept": "application/rss+xml, application/atom+xml, application/xml;q=0.9, */*;q=0.5"}, timeout=TIMEOUT, stream=True)
     r.raise_for_status()
-    return feedparser.parse(r.content)
+    # un flux piégé ne doit pas pouvoir saturer la mémoire : on coupe au-delà de MAX_FEED_BYTES
+    data = bytearray()
+    for chunk in r.iter_content(65536):
+        data += chunk
+        if len(data) > MAX_FEED_BYTES:
+            raise ValueError(f"flux trop volumineux (> {MAX_FEED_BYTES // 1_000_000} Mo)")
+    return feedparser.parse(bytes(data))
 
 def entry_date(e):
     for k in ("published_parsed", "updated_parsed"):
@@ -137,7 +144,7 @@ def parse_source(src, feed, uni_rx, rel_rx, now):
         items.append({
             "id": hashlib.sha1(link.encode()).hexdigest()[:16],
             "source": src["id"], "sourceName": src["name"], "lang": src.get("lang", "en"),
-            "title": title, "summary": summary, "link": link,
+            "title": title[:300], "summary": summary, "link": link,
             "published": pub.strftime("%Y-%m-%dT%H:%M:%SZ"),
             "image": find_image(e, imgs) if src.get("image") else None,
             "imageCredit": src.get("image_credit") if src.get("image") else None,

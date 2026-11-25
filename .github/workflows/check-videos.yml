@@ -31,7 +31,12 @@ jobs:
 
       - name: Vérifier des IDs précis
         if: inputs.ids != ''
-        run: python scripts/check_videos.py ${{ inputs.ids }}
+        env:
+          IDS: ${{ inputs.ids }}   # passé par variable d'environnement : pas d'injection de commande
+        run: |
+          read -ra A <<< "$IDS"
+          for i in "${A[@]}"; do [[ "$i" =~ ^[A-Za-z0-9_-]{6,20}$ ]] || { echo "ID invalide : $i"; exit 1; }; done
+          python scripts/check_videos.py "${A[@]}"
 
       - name: Vérifier toutes les vidéos du site
         id: site

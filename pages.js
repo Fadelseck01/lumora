@@ -17,10 +17,10 @@ const shuffle = a => { a=[...a]; for(let i=a.length-1;i>0;i--){ const j=Math.flo
 const yearLabel = x => x.tl ? (x.tl.l ? x.tl.l[lang] : (x.tl.y<0 ? t("bce")(x.tl.y) : String(x.tl.y))) : "";
 
 /* une image absente (pas encore téléchargée, lien cassé) disparaît et laisse le visuel de l'univers */
-document.addEventListener("error", e=>{ const t = e.target; if(t && t.tagName==="IMG" && !t.closest(".universe-card")){ const b = t.closest(".article-gallery button"); if(b) b.remove(); else t.remove(); } }, true);
+document.addEventListener("error", e=>{ const t = e.target; if(t && t.tagName==="IMG" && t.closest(".universe-card")){ const c = t.closest(".universe-card"); c.classList.remove("has-photo"); if(t.parentNode) t.parentNode.remove(); return; } if(t && t.tagName==="IMG"){ const b = t.closest(".article-gallery button"); if(b) b.remove(); else t.remove(); } }, true);
 
 /* ---------- historique ---------- */
-let history_ = store.get("lumora-history", []);
+let history_ = store.get("lumora-history", [], v=>Array.isArray(v)).filter(h=>h && typeof h==="object" && typeof h.id==="string" && Number.isFinite(h.at)).slice(0,60);
 function pushHistory(id){
   history_ = [{id, at:Date.now()}].concat(history_.filter(h=>h.id!==id)).slice(0,60);
   store.set("lumora-history", history_);
@@ -268,7 +268,7 @@ function ytHTML(v, head=true){
 }
 function bindYT(root){
   root.querySelectorAll(".yt-facade").forEach(f=>{
-    const go=()=>{ f.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${f.dataset.yt}?autoplay=1&rel=0" title="${f.dataset.title}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`; f.classList.add("playing"); };
+    const go=()=>{ if(!/^[\w-]{6,20}$/.test(f.dataset.yt||"")) return; f.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${f.dataset.yt}?autoplay=1&rel=0" title="${esc(f.dataset.title)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`; f.classList.add("playing"); };
     f.querySelector(".yt-play").addEventListener("click",go);
   });
 }
@@ -475,7 +475,7 @@ function renderLibrary(){
 
 /* ---------- quiz ---------- */
 let quiz = null;
-const quizBest = () => store.get("lumora-quiz-best", {});
+const quizBest = () => { const b = store.get("lumora-quiz-best", {}, v=>v && typeof v==="object" && !Array.isArray(v)); const o = {}; for(const k of Object.keys(b)) if(typeof b[k]==="string" && /^\d+\/\d+$/.test(b[k])) o[k]=b[k]; return o; };
 function buildQuiz(scope){
   const pool = scope==="all" ? items : items.filter(x=>x.cat===scope);
   const written = shuffle(quizBank.filter(q=>scope==="all"||q.cat===scope)).slice(0, scope==="all"?4:2).map(q=>{
@@ -576,7 +576,7 @@ function renderTimeline(){
 }
 
 /* ---------- actualités automatiques (data/news.json, renouvelé par GitHub Actions) ---------- */
-let newsData = window.LUMORA_NEWS || {items:[], sources:[]}, newsFilter = "all", newsShown = 6;
+let newsData = (window.LUMORA_NEWS && typeof window.LUMORA_NEWS==="object") ? window.LUMORA_NEWS : {items:[], sources:[]}, newsFilter = "all", newsShown = 6;
 function relTime(iso){
   const d = (new Date(iso) - Date.now())/1000, rtf = new Intl.RelativeTimeFormat(lang, {numeric:"auto"});
   const a = Math.abs(d);
@@ -586,7 +586,9 @@ function relTime(iso){
   return new Date(iso).toLocaleDateString(lang==="fr"?"fr-FR":"en-GB", {day:"numeric", month:"long", year:"numeric"});
 }
 function renderNewsFeed(){
-  const all = (newsData.items||[]).filter(n=>uni(n.universe));
+  /* les actualités viennent de flux externes : on ne garde que des entrées bien formées, aux liens http(s) */
+  const all = (Array.isArray(newsData.items) ? newsData.items : []).filter(n=>n && typeof n==="object" && typeof n.universe==="string" && uni(n.universe) && typeof n.title==="string" && n.title.trim() && safeUrl(n.link))
+    .map(n=>({...n, link:safeUrl(n.link), image:safeUrl(n.image)||null, lang:(typeof n.lang==="string"?n.lang:"").slice(0,5), summary:typeof n.summary==="string"?n.summary:"", sourceName:String(n.sourceName??""), related:typeof n.related==="string"?n.related:null}));
   const cats = universes.filter(u=>all.some(n=>n.universe===u.id));
   if(newsFilter!=="all" && !cats.some(u=>u.id===newsFilter)) newsFilter = "all";
   $("#newsFilters").innerHTML = [`<button class="filter-chip${newsFilter==="all"?" selected":""}" data-nf="all">${esc(t("newsAll"))} · ${all.length}</button>`]
@@ -596,7 +598,7 @@ function renderNewsFeed(){
   $("#newsGrid").innerHTML = list.length ? list.slice(0, newsShown).map(n=>{
     const u = uni(n.universe), rel = n.related ? byId(n.related) : null;
     return `<article class="news-item" style="--glow:${u.glow}">
-      <a class="news-media" href="${esc(n.link)}" target="_blank" rel="noopener noreferrer" data-icon="${u.icon}" aria-hidden="true" tabindex="-1">${n.image?`<img src="${esc(n.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">`:""}${n.image&&n.imageCredit?`<small>${esc(t("imageBy")(n.imageCredit))}</small>`:""}</a>
+      <a class="news-media" href="${esc(n.link)}" target="_blank" rel="noopener noreferrer" data-icon="${u.icon}" aria-hidden="true" tabindex="-1">${n.image?`<img src="${esc(n.image)}" alt="" loading="lazy" referrerpolicy="no-referrer">`:""}${n.image&&n.imageCredit?`<small>${esc(t("imageBy")(n.imageCredit))}</small>`:""}</a>
       <div class="news-body">
         <div class="news-top"><span class="news-source">${esc(n.sourceName)}</span><time datetime="${esc(n.published)}">${esc(relTime(n.published))}</time></div>
         <h3><a href="${esc(n.link)}" target="_blank" rel="noopener noreferrer">${esc(n.title)}</a>${n.lang!==lang?` <span class="news-lang">${esc(n.lang.toUpperCase())}</span>`:""}</h3>
@@ -612,7 +614,7 @@ function renderNewsFeed(){
   const rest = list.length - newsShown;
   $("#newsMoreRow").hidden = rest <= 0;
   if(rest > 0) $("#newsMore").textContent = t("newsMore")(rest);
-  const srcNames = [...new Set((newsData.sources||[]).map(s=>s.name))].join(", ");
+  const srcNames = [...new Set((Array.isArray(newsData.sources)?newsData.sources:[]).map(s=>s && typeof s.name==="string" ? s.name : "").filter(Boolean))].join(", ");
   $("#newsStatus").textContent = newsData.snapshot ? t("newsSnapshot")
     : t("newsStatus")(newsData.updated ? relTime(newsData.updated) : "—", all.length, srcNames);
 }
@@ -620,7 +622,7 @@ $("#newsMore").addEventListener("click", ()=>{ newsShown += 6; renderNewsFeed();
 /* sur le site en ligne, on relit news.json sans cache pour avoir la toute dernière version */
 if(location.protocol.startsWith("http")){
   fetch("data/news.json", {cache:"no-store"}).then(r=>r.ok?r.json():null).then(d=>{
-    if(d && d.items && (!newsData.updated || d.updated >= newsData.updated)){ newsData = d; renderNewsFeed(); }
+    if(d && Array.isArray(d.items) && (!newsData.updated || String(d.updated) >= String(newsData.updated))){ newsData = d; renderNewsFeed(); }
   }).catch(()=>{});
 }
 
@@ -687,7 +689,9 @@ function renderNotFound(){
 /* =================== ROUTEUR =================== */
 let route = null, homeScroll = 0;
 function parseRoute(){
-  const h = decodeURIComponent(location.hash.replace(/^#/,""));
+  let h = location.hash.replace(/^#/,"");
+  try{ h = decodeURIComponent(h); }catch(e){ /* adresse mal encodée : on la garde telle quelle */ }
+  if(h.length > 300) return {name:"404"};
   if(!h.startsWith("/") || h==="/") return {name:"home", anchor: h.startsWith("/") ? "" : h};
   const [a,b,c] = h.slice(1).split("/");
   if(a==="d") return {name:"d", id:b};

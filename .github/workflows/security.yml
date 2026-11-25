@@ -1,0 +1,43 @@
+name: Sécurité — attaques et mutations
+
+# À chaque modification du site : la batterie d'attaques complète.
+# Chaque lundi (et à la demande) : les tests de mutation, qui vérifient que les attaques
+# détectent bien chaque protection sabotée.
+on:
+  push:
+    branches: [main]
+    paths-ignore: ["data/news.json", "data/news.js", "assets/photos/**"]
+  pull_request:
+  schedule:
+    - cron: "23 6 * * 1"
+  workflow_dispatch:
+    inputs:
+      mutations:
+        description: "Lancer aussi les tests de mutation"
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lumora-security-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  attaques:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Installer Playwright
+        run: |
+          pip install playwright==1.63.0
+          python -m playwright install --with-deps chromium
+      - name: Bombarder le site (batterie d'attaques complète)
+        run: python tests/security/attack_suite.py
+      - name: Tests de mutation
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.mutations)
+        run: python tests/security/mutation_test.py

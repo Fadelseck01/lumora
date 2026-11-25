@@ -67,7 +67,7 @@ window.LumoraAtlas = (function(){
       const b = document.createElement("button");
       b.className = "atlas-pin"; b.type = "button"; b.dataset.id = p.id;
       b.style.setProperty("--n", Math.min(p.items.length,5));
-      b.innerHTML = `<i></i><span>${opts.label(p)}</span>`;
+      b.innerHTML = `<i></i><span></span>`; b.querySelector("span").textContent = opts.label(p);
       b.setAttribute("aria-label", opts.label(p));
       b.addEventListener("click", e=>{ e.stopPropagation(); if(moved) return; select(p.id, true); });
       layer.appendChild(b);

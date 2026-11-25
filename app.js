@@ -813,22 +813,28 @@ const ui = {
 };
 
 /* ---------- état ---------- */
+/* Le stockage local peut contenir n'importe quoi (modifié à la main, extension, ancienne version) :
+   chaque lecture passe par un contrôle de forme, sinon on revient à la valeur par défaut. */
 const store = {
-  get(k, fallback){ try{ const v = localStorage.getItem(k); return v===null ? fallback : JSON.parse(v); }catch(e){ return fallback; } },
+  get(k, fallback, ok){ try{ const v = localStorage.getItem(k); if(v===null) return fallback; const d = JSON.parse(v); return (!ok || ok(d)) ? d : fallback; }catch(e){ return fallback; } },
   set(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
 };
 const urlLang = new URLSearchParams(location.search).get("lang");
-let lang = ["fr","en"].includes(urlLang) ? urlLang : store.get("lumora-lang", (navigator.language||"fr").startsWith("en") ? "en" : "fr");
+const isLang = v => v==="fr" || v==="en";
+let lang = isLang(urlLang) ? urlLang : store.get("lumora-lang", (navigator.language||"fr").startsWith("en") ? "en" : "fr", isLang);
 let pageSize = 12, shown = 12;
 let activeFilter = "all", currentArticle = null, lastFocus = null;
-const saved = new Set(store.get("lumora-saved", []));
+const isStrList = v => Array.isArray(v) && v.every(x=>typeof x==="string");
+const saved = new Set(store.get("lumora-saved", [], isStrList).slice(0, 500));
 
 const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
 const t = k => ui[lang][k];
 const uni = id => universes.find(u=>u.id===id);
 const uniName = id => uni(id).name[lang];
 const norm = s => s.normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
-const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const esc = s => String(s ?? "").replace(/[&<>"'`]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;","`":"&#96;"}[c]));
+/* N'accepte que des adresses web http(s) : bloque javascript:, data:, vbscript:… venant de sources externes. */
+const safeUrl = u => { if(typeof u!=="string") return ""; const v = u.trim(); if(!/^https?:\/\//i.test(v)) return ""; try{ const p = new URL(v); return (p.protocol==="https:"||p.protocol==="http:") ? p.href : ""; }catch(e){ return ""; } };
 
 /* Photos des univers : servies par Wikimedia Commons (Special:FilePath), à télécharger et héberger soi-même pour la mise en ligne. */
 const commonsImg = (file, w) => "https://commons.wikimedia.org/wiki/Special:FilePath/" + encodeURIComponent(file.replace(/ /g,"_")) + "?width=" + w;
@@ -839,7 +845,7 @@ function renderUniverses(){
   const total = String(universes.length).padStart(2,"0");
   $("#universeGrid").innerHTML = universes.map((u,i)=>`
     <button class="universe-card${u.featured?" featured":""}${u.photo?" has-photo":""}" data-category="${u.id}" style="--glow:${u.glow};--shade:${u.shade}">
-      ${u.photo?`<span class="universe-photo" aria-hidden="true"><img src="${u.photo.src || commonsImg(u.photo.file, u.featured?1280:640)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.universe-card').classList.remove('has-photo');this.parentNode.remove()"></span>`:""}
+      ${u.photo?`<span class="universe-photo" aria-hidden="true"><img src="${u.photo.src || commonsImg(u.photo.file, u.featured?1280:640)}" alt="" loading="lazy" referrerpolicy="no-referrer"></span>`:""}
       <span class="card-number">${String(i+1).padStart(2,"0")} / ${total}<span class="card-number-name"> · ${esc(u.name[lang].toUpperCase())}</span></span>
       <span class="universe-icon" aria-hidden="true">${u.icon}</span>
       <span class="universe-title">${esc(u.name[lang])}</span>
