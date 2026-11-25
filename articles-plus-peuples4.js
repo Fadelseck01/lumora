@@ -220,3 +220,14 @@ addParas({
 });
 
 addParas({tsimane:{fr:{"Dormir sans électricité":"Les chercheurs ont noté que la sieste était plus fréquente en été."},en:{"Sleeping without electricity":"The researchers noted that naps were more common in the warmer season."}}});
+
+/* Photos ajoutées à la demande de Fadel (droits des œuvres : contact en cours avec les ayants droit). */
+{ const P="assets/photos/plus/";
+const F=(s,c,ce,cr,cre,m)=>[{src:P+s,cap:c,credit:cr,...(m?{maxw:m}:{})},{src:P+s,cap:ce,credit:cre,...(m?{maxw:m}:{})}];
+const fig=(id,hf,he,f)=>({[id]:{fr:{[hf]:f[0]},en:{[he]:f[1]}}});
+[
+ fig("muertos","La Catrina, de Posada à Rivera","Catrina, from Posada to Rivera",F("rivera-alameda.jpg","La fresque « Rêve d'un dimanche après-midi dans le parc de l'Alameda » de Diego Rivera (1947), au Museo Mural Diego Rivera de Mexico : la Catrina se tient au centre.","Diego Rivera's mural \"Dream of a Sunday Afternoon in Alameda Park\" (1947), at the Museo Mural Diego Rivera in Mexico City: Catrina stands at the centre.","Œuvre : Diego Rivera (1947) — Photo : Wikipologus — CC BY-SA 4.0","Artwork: Diego Rivera (1947) — Photo: Wikipologus — CC BY-SA 4.0")),
+ fig("mummies","Les pharaons retrouvés","The pharaohs found again",F("golden-parade-stamp.jpg","Le bloc de timbres émis par la poste égyptienne pour la Parade dorée des pharaons du 3 avril 2021.","The stamp sheet issued by Egypt Post for the Pharaohs' Golden Parade of 3 April 2021.","Timbre : Poste égyptienne (2021) — Photo : أشرف اليماني — CC BY-SA 4.0","Stamp: Egypt Post (2021) — Photo: أشرف اليماني — CC BY-SA 4.0","560px")),
+ fig("sentinelese","Une île interdite","A forbidden island",F("north-sentinel.jpg","North Sentinel vue d'avion : l'île couverte de forêt et l'anneau de récifs coralliens qui l'entoure.","North Sentinel from the air: the forest-covered island and the ring of coral reefs around it.","Photo : Medici82 — CC BY-SA 4.0","Photo: Medici82 — CC BY-SA 4.0","560px"))
+].forEach(addFig);
+}
