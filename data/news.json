@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25T04:56:10Z",
- "checked": "2026-11-25T04:56:10Z",
+ "updated": "2026-11-25T08:14:52Z",
+ "checked": "2026-11-25T08:14:52Z",
  "sources": [
   {
    "id": "nasa",
@@ -8,7 +8,7 @@
    "home": "https://www.nasa.gov",
    "ok": true,
    "found": 10,
-   "new": 0
+   "new": 2
   },
   {
    "id": "nasa-iotd",
@@ -76,6 +76,36 @@
   }
  ],
  "items": [
+  {
+   "id": "f8165500d54b2b9b",
+   "source": "nasa",
+   "sourceName": "NASA",
+   "lang": "en",
+   "title": "APOD: 2026 November 25 – SPHEREx Seeing Through Dust",
+   "summary": "APOD Science APOD APOD: 2026 November 25 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a…",
+   "link": "https://science.nasa.gov/image-article/apod-2026-november-25-spherex-seeing-through-dust/",
+   "published": "2026-11-25T05:05:00Z",
+   "image": null,
+   "imageCredit": "NASA",
+   "universe": "cosmos",
+   "related": null,
+   "firstSeen": "2026-11-25T08:14:52Z"
+  },
+  {
+   "id": "cecb33e1b7ed9041",
+   "source": "nasa",
+   "sourceName": "NASA",
+   "lang": "en",
+   "title": "Georgia’s Pecan Belt",
+   "summary": "Since an early-1900s planting boom, orchards along the Flint River in southwest Georgia have become a center of U.S. pecan production.",
+   "link": "https://science.nasa.gov/earth/earth-observatory/georgias-pecan-belt/",
+   "published": "2026-11-25T05:00:00Z",
+   "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/esd/eo/images/iotd/2026/georgia’s-pecan-belt/georgiapecans_oli_20261023.jpg?w=1440&h=1199&fit=clip",
+   "imageCredit": "NASA",
+   "universe": "earth",
+   "related": null,
+   "firstSeen": "2026-11-25T08:14:52Z"
+  },
   {
    "id": "52412522be9b0e14",
    "source": "mongabay",
@@ -487,7 +517,7 @@
    "sourceName": "Mongabay",
    "lang": "en",
    "title": "Indigenous peoples leave collapsed climate talks with promises on hold",
-   "summary": "ANATALYA, Türkiye — A year ago, a record number of Indigenous people attended the United Nations climate summit in Belém, Brazil. Although there as observers, without a seat at the negotiating table, they left with promises: recognition of their lands, a share of a new forest…",
+   "summary": "ANTALYA, Türkiye — A year ago, a record number of Indigenous people attended the United Nations climate summit in Belém, Brazil. Although there as observers, without a seat at the negotiating table, they left with promises: recognition of their lands, a share of a new forest…",
    "link": "https://news.mongabay.com/2026/11/indigenous-peoples-leave-collapsed-climate-talks-with-promises-on-hold/",
    "published": "2026-11-24T14:24:04Z",
    "image": null,
@@ -1382,21 +1412,6 @@
    "firstSeen": "2026-11-24T04:34:34Z"
   },
   {
-   "id": "9884dabb702db086",
-   "source": "nasa",
-   "sourceName": "NASA",
-   "lang": "en",
-   "title": "APOD: 2026 November 22 – Swirls and Colors on Jupiter from Juno",
-   "summary": "APODScienceAPODAPOD: 2026 November 22 –…Today’s APODArchiveSubmissionsIndexSearchCalendarRSSEducationAboutDiscuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief…",
-   "link": "https://science.nasa.gov/image-article/apod-2026-november-22-swirls-and-colors-on-jupiter-from-juno/",
-   "published": "2026-11-22T05:05:00Z",
-   "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/november/JupiterSwirls_JunoBrealey_3709.jpg?w=2048&h=2048&fit=clip",
-   "imageCredit": "NASA",
-   "universe": "cosmos",
-   "related": null,
-   "firstSeen": "2026-11-24T03:48:02Z"
-  },
-  {
    "id": "5b2714845d6acf21",
    "source": "sciencedaily-health",
    "sourceName": "ScienceDaily",
@@ -1545,21 +1560,6 @@
    "universe": "living",
    "related": null,
    "firstSeen": "2026-11-24T04:34:34Z"
-  },
-  {
-   "id": "9f54447fad30ba95",
-   "source": "nasa",
-   "sourceName": "NASA",
-   "lang": "en",
-   "title": "APOD: 2026 November 21 – Voyager’s Neptune",
-   "summary": "APODScienceAPODAPOD: 2026 November 21 –…Today’s APODArchiveSubmissionsIndexSearchCalendarRSSEducationAboutDiscuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief…",
-   "link": "https://science.nasa.gov/image-article/apod-2026-november-21-voyagers-neptune/",
-   "published": "2026-11-21T05:05:00Z",
-   "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/november/Neptune-South-Pole-Voyager-2_2327x1670.jpg?w=2048&h=1669&fit=clip",
-   "imageCredit": "NASA",
-   "universe": "cosmos",
-   "related": "voyager",
-   "firstSeen": "2026-11-24T03:48:02Z"
   },
   {
    "id": "6c107b5d2c92bc67",
