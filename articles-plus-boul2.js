@@ -222,3 +222,5 @@ addParas({
  covid:{fr:{"Combien de morts ?":"Les personnes âgées ont été de loin les plus touchées."},en:{"How many deaths?":"Older people were by far the hardest hit."}},
  plague:{fr:{"Yersin découvre le coupable":"Il travailla aussi sur un sérum contre la maladie."},en:{"Yersin finds the culprit":"He also worked on a serum against the disease."}}
 });
+
+addParas({plague:{fr:{"La troisième pandémie":"Les rats voyageaient dans les cales des navires."},en:{"The third pandemic":"Rats travelled in the holds of ships."}}});
