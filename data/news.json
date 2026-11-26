@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-26T11:25:28Z",
- "checked": "2026-11-26T11:25:28Z",
+ "updated": "2026-11-26T20:28:40Z",
+ "checked": "2026-11-26T20:28:40Z",
  "sources": [
   {
    "id": "nasa",
@@ -8,7 +8,7 @@
    "home": "https://www.nasa.gov",
    "ok": true,
    "found": 10,
-   "new": 2
+   "new": 0
   },
   {
    "id": "nasa-iotd",
@@ -48,7 +48,7 @@
    "home": "https://www.sciencedaily.com",
    "ok": true,
    "found": 60,
-   "new": 32
+   "new": 31
   },
   {
    "id": "who",
@@ -76,6 +76,96 @@
   }
  ],
  "items": [
+  {
+   "id": "2d89e8612e572a3b",
+   "source": "mongabay",
+   "sourceName": "Mongabay",
+   "lang": "en",
+   "title": "US bill to speed up clean energy projects could also fast-track fossil fuels",
+   "summary": "On Nov. 19, the U.S. Senate passed a bill that aims to speed up permitting for energy infrastructure projects. The 62-33 vote on the Bipartisan American Affordability and Jobs Act (BAAJA) included support from pro-environment Democratic senators like Sheldon Whitehouse from…",
+   "link": "https://news.mongabay.com/short-article/2026/11/us-bill-to-speed-up-clean-energy-projects-could-also-fast-track-fossil-fuels/",
+   "published": "2026-11-26T17:58:01Z",
+   "image": null,
+   "imageCredit": null,
+   "universe": "living",
+   "related": null,
+   "firstSeen": "2026-11-26T20:28:40Z"
+  },
+  {
+   "id": "5ee00321b7cdafa9",
+   "source": "mongabay",
+   "sourceName": "Mongabay",
+   "lang": "en",
+   "title": "Tequila’s hangover: How the drink’s success drove deforestation in Mexico",
+   "summary": "For decades, Manuel García Castro has grown corn, squash and beans to feed his family and livestock. In 2019, he followed in the footsteps of prosperous local farmers and dedicated a portion of his land in the highlands of Jalisco, western Mexico, to planting blue agave, used to…",
+   "link": "https://news.mongabay.com/2026/11/tequilas-hangover-how-the-drinks-success-drove-deforestation-in-mexico/",
+   "published": "2026-11-26T15:44:26Z",
+   "image": null,
+   "imageCredit": null,
+   "universe": "living",
+   "related": null,
+   "firstSeen": "2026-11-26T20:28:40Z"
+  },
+  {
+   "id": "a9c09dec821c2f8b",
+   "source": "sciencedaily-health",
+   "sourceName": "ScienceDaily",
+   "lang": "en",
+   "title": "Common supplements rival antibiotics in treating severe gum disease",
+   "summary": "A combination of omega-3 and low-dose aspirin produced results comparable to antibiotics when used alongside standard treatment for severe gum disease, with benefits persisting long after supplementation ended. The surprising discovery could offer an alternative for some patients while reducing reliance on antibiotics.",
+   "link": "https://www.sciencedaily.com/releases/2026/11/261126033031.htm",
+   "published": "2026-11-26T11:43:30Z",
+   "image": null,
+   "imageCredit": null,
+   "universe": "body",
+   "related": "penicillin",
+   "firstSeen": "2026-11-26T20:28:40Z"
+  },
+  {
+   "id": "700edacb0bba2c17",
+   "source": "sciencedaily-health",
+   "sourceName": "ScienceDaily",
+   "lang": "en",
+   "title": "Loneliness is making us sick, but we may be treating it all wrong",
+   "summary": "Loneliness can be surprisingly deadly, with previous research linking it to a roughly 30% increase in the risk of premature death. However, a new study warns that treating loneliness as a medical condition could distract from its deeper social causes. While healthcare professionals can offer support, lasting solutions may require rebuilding communities and fundamentally changing the way people live and work.",
+   "link": "https://www.sciencedaily.com/releases/2026/11/261124055906.htm",
+   "published": "2026-11-26T11:32:30Z",
+   "image": null,
+   "imageCredit": null,
+   "universe": "body",
+   "related": null,
+   "firstSeen": "2026-11-26T20:28:40Z"
+  },
+  {
+   "id": "45bf85215b6db00d",
+   "source": "sciencedaily-health",
+   "sourceName": "ScienceDaily",
+   "lang": "en",
+   "title": "The surprising reason women seem better at multitasking than men",
+   "summary": "Men and women appear to be similarly capable of multitasking, but men are more than twice as likely to ignore conversation while juggling multiple activities. Researchers believe this unexpected difference may help explain why women are widely perceived as better multitaskers.",
+   "link": "https://www.sciencedaily.com/releases/2026/11/261125045306.htm",
+   "published": "2026-11-26T11:21:47Z",
+   "image": null,
+   "imageCredit": null,
+   "universe": "body",
+   "related": null,
+   "firstSeen": "2026-11-26T20:28:40Z"
+  },
+  {
+   "id": "33bbc8519c05d0c5",
+   "source": "sciencedaily",
+   "sourceName": "ScienceDaily",
+   "lang": "en",
+   "title": "Deep beneath Australia, hidden caves could unlock the secrets of alien worlds",
+   "summary": "Scientists have solved the mystery of strange trenches scattered across Australia’s vast Nullarbor Plain, revealing an extensive hidden world beneath the surface. These subtle landscape features are created as deeply buried cave systems slowly collapse upward over millions of years. The discovery could help researchers locate unexplored caves containing ancient environmental records and unusual life forms.",
+   "link": "https://www.sciencedaily.com/releases/2026/11/261124055901.htm",
+   "published": "2026-11-26T11:06:15Z",
+   "image": null,
+   "imageCredit": null,
+   "universe": "history",
+   "related": null,
+   "firstSeen": "2026-11-26T20:28:40Z"
+  },
   {
    "id": "69b1c544c6f87593",
    "source": "mongabay",
@@ -105,6 +195,21 @@
    "universe": "living",
    "related": null,
    "firstSeen": "2026-11-26T11:25:28Z"
+  },
+  {
+   "id": "34e52cea82e08209",
+   "source": "sciencedaily",
+   "sourceName": "ScienceDaily",
+   "lang": "en",
+   "title": "This 345-million-year-old fossil had scientists fooled for decades",
+   "summary": "A famous 345-million-year-old fossil has turned out to be something entirely different from what scientists believed for decades. Advanced X-ray imaging revealed hidden gills and thousands of tiny teeth, exposing a primitive aquatic or amphibious creature rather than an early reptile. The discovery suggests that several adaptations associated with life on land actually evolved in animals still dependent on water.",
+   "link": "https://www.sciencedaily.com/releases/2026/11/261125045307.htm",
+   "published": "2026-11-26T10:46:17Z",
+   "image": null,
+   "imageCredit": null,
+   "universe": "living",
+   "related": null,
+   "firstSeen": "2026-11-26T20:28:40Z"
   },
   {
    "id": "eb0269c8f7c260df",
@@ -165,6 +270,21 @@
    "universe": "living",
    "related": null,
    "firstSeen": "2026-11-26T11:25:28Z"
+  },
+  {
+   "id": "e206cf2f9bf00bdc",
+   "source": "sciencedaily-health",
+   "sourceName": "ScienceDaily",
+   "lang": "en",
+   "title": "Too much of this common nutrient could be accelerating blood vessel aging",
+   "summary": "Researchers have uncovered a kidney protein that may hold an important key to vascular aging and longevity. The protein helps prevent excess phosphate from accumulating in the blood and gradually turning flexible blood vessels rigid. In animal models, a deficiency accelerated blood vessel aging and significantly shortened lifespan, while reducing dietary phosphate helped lessen the damage.",
+   "link": "https://www.sciencedaily.com/releases/2026/11/261124055847.htm",
+   "published": "2026-11-26T03:53:48Z",
+   "image": null,
+   "imageCredit": null,
+   "universe": "living",
+   "related": null,
+   "firstSeen": "2026-11-26T20:28:40Z"
   },
   {
    "id": "91374f1def80d75f",
@@ -752,21 +872,6 @@
    "firstSeen": "2026-11-25T08:14:52Z"
   },
   {
-   "id": "52412522be9b0e14",
-   "source": "mongabay",
-   "sourceName": "Mongabay",
-   "lang": "en",
-   "title": "Deadly accidents loom over labor dispute at Indonesia’s largest nickel hub",
-   "summary": "Since it was established in 2015, PT Indonesia Morowali Industrial Park, the world’s largest conglomeration of nickel smelters, has sat at the heart of Indonesia’s ambition to choke off exports of raw resources and force exporters to instead process the ore at home.…",
-   "link": "https://news.mongabay.com/2026/11/deadly-accidents-loom-over-labor-dispute-at-indonesias-largest-nickel-hub/",
-   "published": "2026-11-25T04:49:46Z",
-   "image": null,
-   "imageCredit": null,
-   "universe": "body",
-   "related": null,
-   "firstSeen": "2026-11-25T04:56:10Z"
-  },
-  {
    "id": "8a3840a9274ace9c",
    "source": "sciencedaily-health",
    "sourceName": "ScienceDaily",
@@ -795,21 +900,6 @@
    "universe": "science",
    "related": null,
    "firstSeen": "2026-11-25T17:17:43Z"
-  },
-  {
-   "id": "3cb3c4c5fd720545",
-   "source": "mongabay",
-   "sourceName": "Mongabay",
-   "lang": "en",
-   "title": "Study reveals rising ‘double threat’ of wildfire smoke and heatwaves in Indonesia",
-   "summary": "JAKARTA — While the worst of Indonesia’s wildfire and haze season for 2026 may be over with fewer hotspots detected in recent weeks, this wasn’t the only hazard faced by residents in the months-long crisis. Take, for example, Palangka Raya in Central Kalimantan province, one of…",
-   "link": "https://news.mongabay.com/2026/11/study-reveals-rising-double-threat-of-wildfire-smoke-and-heatwaves-in-indonesia/",
-   "published": "2026-11-25T02:15:02Z",
-   "image": null,
-   "imageCredit": null,
-   "universe": "earth",
-   "related": null,
-   "firstSeen": "2026-11-25T02:25:55Z"
   },
   {
    "id": "45a8edf6953e4d59",
@@ -1562,51 +1652,6 @@
    "firstSeen": "2026-11-24T04:34:34Z"
   },
   {
-   "id": "baeeeab3c0016d74",
-   "source": "sciencedaily-health",
-   "sourceName": "ScienceDaily",
-   "lang": "en",
-   "title": "Scientists discover a surprising link between weak bones and faster brain aging",
-   "summary": "Weakening bones may reveal more about brain health than scientists previously realized, with new research linking lower spinal bone density to faster cognitive decline and accelerated changes in the brain's white matter. The surprising connection suggests that routine medical scans could help uncover hidden warning signs of brain aging and identify people at increased risk of dementia.",
-   "link": "https://www.sciencedaily.com/releases/2026/11/261121221132.htm",
-   "published": "2026-11-23T00:45:42Z",
-   "image": null,
-   "imageCredit": null,
-   "universe": "body",
-   "related": "brain",
-   "firstSeen": "2026-11-24T04:34:34Z"
-  },
-  {
-   "id": "6bfc22039f06bbcc",
-   "source": "sciencedaily-health",
-   "sourceName": "ScienceDaily",
-   "lang": "en",
-   "title": "Common medications may secretly rewire your gut, with effects lasting for years",
-   "summary": "Medications taken years or even long ago may leave lasting changes in your gut microbiome, according to a study of more than 2,500 people. Researchers discovered that common drugs, including antidepressants, blood pressure medications, and anxiety treatments, can leave microbial “fingerprints” long after patients stop taking them. Surprisingly, some anxiety medications had effects comparable to broad-spectrum antibiotics.",
-   "link": "https://www.sciencedaily.com/releases/2026/11/261120071501.htm",
-   "published": "2026-11-22T21:35:19Z",
-   "image": null,
-   "imageCredit": null,
-   "universe": "body",
-   "related": "penicillin",
-   "firstSeen": "2026-11-24T04:34:34Z"
-  },
-  {
-   "id": "b3dae0016b971025",
-   "source": "sciencedaily-health",
-   "sourceName": "ScienceDaily",
-   "lang": "en",
-   "title": "Type 2 diabetes linked to 53% higher Alzheimer’s risk, major review finds",
-   "summary": "People with type 2 diabetes face a 53% higher risk of developing Alzheimer’s disease, according to a major new review of 40 studies. Researchers estimate that nearly five out of every 1,000 people with type 2 diabetes develop Alzheimer’s each year. By focusing specifically on these two conditions, the study offers a clearer understanding of a potentially serious connection between metabolic health and brain health.",
-   "link": "https://www.sciencedaily.com/releases/2026/11/261121221124.htm",
-   "published": "2026-11-22T20:57:35Z",
-   "image": null,
-   "imageCredit": null,
-   "universe": "body",
-   "related": "memory",
-   "firstSeen": "2026-11-24T04:34:34Z"
-  },
-  {
    "id": "fb014a1e7ee7fcda",
    "source": "sciencedaily",
    "sourceName": "ScienceDaily",
@@ -1634,51 +1679,6 @@
    "imageCredit": null,
    "universe": "cosmos",
    "related": "blackhole",
-   "firstSeen": "2026-11-24T04:34:34Z"
-  },
-  {
-   "id": "4829fda5229d22d9",
-   "source": "sciencedaily",
-   "sourceName": "ScienceDaily",
-   "lang": "en",
-   "title": "DNA’s secret sunscreen may have helped life survive on early Earth",
-   "summary": "Scientists have uncovered a surprising reason why early life may have survived Earth's intense ultraviolet radiation: a key component of DNA appears to turn potentially destructive damage into something easier to repair. The discovery could help solve a decades-old evolutionary mystery and reveal how life endured the harsh conditions of our planet's earliest days.",
-   "link": "https://www.sciencedaily.com/releases/2026/11/261121221128.htm",
-   "published": "2026-11-22T11:31:14Z",
-   "image": null,
-   "imageCredit": null,
-   "universe": "cosmos",
-   "related": "genome",
-   "firstSeen": "2026-11-24T04:34:34Z"
-  },
-  {
-   "id": "6f1ac1be7637947a",
-   "source": "sciencedaily-health",
-   "sourceName": "ScienceDaily",
-   "lang": "en",
-   "title": "A 194-year-old tortoise has a remarkable anti-aging secret hidden in its DNA",
-   "summary": "At an astonishing 194 years old, Jonathan the giant tortoise is the world's oldest living land animal, and scientists may have finally uncovered the secrets behind his extraordinary lifespan. Researchers identified 287 unique genetic variants linked to processes that help repair damaged DNA, control inflammation, regulate insulin, and suppress cancer.",
-   "link": "https://www.sciencedaily.com/releases/2026/11/261121221130.htm",
-   "published": "2026-11-22T11:04:06Z",
-   "image": null,
-   "imageCredit": null,
-   "universe": "body",
-   "related": "cancer",
-   "firstSeen": "2026-11-24T04:34:34Z"
-  },
-  {
-   "id": "5c0487ac07a1f642",
-   "source": "sciencedaily",
-   "sourceName": "ScienceDaily",
-   "lang": "en",
-   "title": "Time may be far stranger than we realize. Scientists have a way to test it",
-   "summary": "Time may be far stranger than we realize, and scientists have proposed a way to detect clocks experiencing multiple flows of time simultaneously. Using atomic clocks with dramatically enhanced sensitivity, researchers hope to reveal a never-before-observed quantum effect that could transform our understanding of time and gravity.",
-   "link": "https://www.sciencedaily.com/releases/2026/11/261120075558.htm",
-   "published": "2026-11-21T15:09:46Z",
-   "image": null,
-   "imageCredit": null,
-   "universe": "science",
-   "related": "quantum",
    "firstSeen": "2026-11-24T04:34:34Z"
   },
   {
