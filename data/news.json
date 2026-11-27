@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-27T13:00:44Z",
- "checked": "2026-11-27T13:00:44Z",
+ "updated": "2026-11-27T21:54:31Z",
+ "checked": "2026-11-27T21:54:31Z",
  "sources": [
   {
    "id": "nasa",
@@ -40,7 +40,7 @@
    "home": "https://www.sciencedaily.com",
    "ok": true,
    "found": 60,
-   "new": 36
+   "new": 35
   },
   {
    "id": "sciencedaily-health",
@@ -48,7 +48,7 @@
    "home": "https://www.sciencedaily.com",
    "ok": true,
    "found": 60,
-   "new": 31
+   "new": 32
   },
   {
    "id": "who",
@@ -64,7 +64,7 @@
    "home": "https://www.smithsonianmag.com",
    "ok": true,
    "found": 10,
-   "new": 1
+   "new": 0
   },
   {
    "id": "mongabay",
@@ -76,6 +76,141 @@
   }
  ],
  "items": [
+  {
+   "id": "4f993592e01ba7b0",
+   "source": "mongabay",
+   "sourceName": "Mongabay",
+   "lang": "en",
+   "title": "International Jaguar Day: Big cats hold on at the edges of their range",
+   "summary": "International Jaguar Day has been marked every Nov. 29 since 2018, to raise awareness of the threats faced by the Americas’ biggest cats and the efforts to protect them. Jaguars (Panthera onca) were once found across some 19 million square kilometers (7.3 million square miles)…",
+   "link": "https://news.mongabay.com/short-article/2026/11/international-jaguar-day-big-cats-hold-on-at-the-edges-of-their-range/",
+   "published": "2026-11-27T17:37:23Z",
+   "image": null,
+   "imageCredit": null,
+   "universe": "living",
+   "related": null,
+   "firstSeen": "2026-11-27T21:54:31Z"
+  },
+  {
+   "id": "e3a2efda855ca7cd",
+   "source": "mongabay",
+   "sourceName": "Mongabay",
+   "lang": "en",
+   "title": "Refugee families use agroforestry to restore degraded landscape in Bangladesh camp",
+   "summary": "KUTUPALONG REFUGEE CAMP, Bangladesh —”It is like a jail, but it isn’t a jail,” says Roshid Ahamed Bin, a 47-year-old Rohingya farmer, living in what is now a refugee camp in Bangladesh. It is far from the farmland where he used to live in Myanmar, before he and thousands of…",
+   "link": "https://news.mongabay.com/2026/11/refugee-families-use-agroforestry-to-restore-degraded-landscape-in-bangladesh-camp/",
+   "published": "2026-11-27T15:32:02Z",
+   "image": null,
+   "imageCredit": null,
+   "universe": "living",
+   "related": null,
+   "firstSeen": "2026-11-27T21:54:31Z"
+  },
+  {
+   "id": "86550bf281d45001",
+   "source": "mongabay",
+   "sourceName": "Mongabay",
+   "lang": "en",
+   "title": "In Republic of Congo, residents and a scientist take on a fight against lead pollution",
+   "summary": "Nearly 120 residents of Vindoulou, a neighborhood in Pointe-Noire, Republic of Congo, have filed a civil claim before the city’s High Court in relation to pollution allegedly caused by a foundry. “We want tests, but also compensation for damages and losses,” Cyrille Traoré…",
+   "link": "https://news.mongabay.com/2026/11/in-republic-of-congo-residents-and-a-scientist-take-on-a-fight-against-lead-pollution/",
+   "published": "2026-11-27T15:19:59Z",
+   "image": null,
+   "imageCredit": null,
+   "universe": "living",
+   "related": null,
+   "firstSeen": "2026-11-27T21:54:31Z"
+  },
+  {
+   "id": "58f3e1af69f4da85",
+   "source": "nasa-iotd",
+   "sourceName": "NASA · Image du jour",
+   "lang": "en",
+   "title": "Artemis III Astronaut Andre Douglas Visits VAB",
+   "summary": "NASA astronaut Andre Douglas, Artemis III mission specialist, stands inside an RS-25 engine test article during a visit to the Vehicle Assembly Building at NASA’s Kennedy Space Center in Florida on Tuesday, Nov. 17, 2026.",
+   "link": "https://www.nasa.gov/image-detail/afs-8-101-1328/",
+   "published": "2026-11-27T15:02:00Z",
+   "image": "https://www.nasa.gov/wp-content/uploads/2026/11/ksc-20261117-ph-kls02-0020orig.jpg",
+   "imageCredit": "NASA",
+   "universe": "cosmos",
+   "related": null,
+   "firstSeen": "2026-11-27T21:54:31Z"
+  },
+  {
+   "id": "b19d92564b49581f",
+   "source": "nasa",
+   "sourceName": "NASA",
+   "lang": "en",
+   "title": "Artemis III Astronaut Andre Douglas Visits VAB",
+   "summary": "NASA astronaut Andre Douglas, Artemis III mission specialist, stands inside an RS-25 engine test article during a visit to the Vehicle Assembly Building at NASA’s Kennedy Space Center in Florida on Tuesday, Nov. 17, 2026. During Artemis III, four RS-25 engines will power the SLS…",
+   "link": "https://www.nasa.gov/image-article/artemis-iii-astronaut-andre-douglas-visits-vab/",
+   "published": "2026-11-27T15:01:00Z",
+   "image": "https://www.nasa.gov/wp-content/uploads/2026/11/ksc-20261117-ph-kls02-0020orig.jpg?w=2048",
+   "imageCredit": "NASA",
+   "universe": "cosmos",
+   "related": null,
+   "firstSeen": "2026-11-27T21:54:31Z"
+  },
+  {
+   "id": "7b35447e2f206bbb",
+   "source": "mongabay",
+   "sourceName": "Mongabay",
+   "lang": "en",
+   "title": "What kind of wealth do Borneo’s ancient rainforests hold?",
+   "summary": "What kind of wealth do Borneo’s ancient rainforests hold? Industries such as logging and palm oil have generated vast monetary wealth for some. But for the Indigenous communities who call the Malaysian Borneo home—its forests, rivers and mountains hold a different kind of value.…",
+   "link": "https://news.mongabay.com/short-article/2026/11/what-kind-of-wealth-do-borneos-ancient-rainforests-hold/",
+   "published": "2026-11-27T14:42:01Z",
+   "image": null,
+   "imageCredit": null,
+   "universe": "living",
+   "related": null,
+   "firstSeen": "2026-11-27T21:54:31Z"
+  },
+  {
+   "id": "6121335bd5a3bf6b",
+   "source": "nasa",
+   "sourceName": "NASA",
+   "lang": "en",
+   "title": "NASA’s NG-25 Mission to Launch Pioneering Space Crops Research",
+   "summary": "NASA experiments, including a first-of-its-kind space crop production system, will travel to the International Space Station aboard Northrop Grumman’s 25th Commercial Resupply Services mission for the agency. Investigations from NASA’s Biological and Physical Sciences Division…",
+   "link": "https://science.nasa.gov/science-research/biological-physical-sciences/nasas-ng-25-mission-to-launch-pioneering-space-crops-research/",
+   "published": "2026-11-27T14:22:00Z",
+   "image": "https://images-assets.nasa.gov/image/jsc2026e415098/jsc2026e415098~large.jpg?w=1920&h=1080&fit=clip&crop=faces%2Cfocalpoint",
+   "imageCredit": "NASA",
+   "universe": "cosmos",
+   "related": null,
+   "firstSeen": "2026-11-27T21:54:31Z"
+  },
+  {
+   "id": "bcb0b002eaca0374",
+   "source": "mongabay",
+   "sourceName": "Mongabay",
+   "lang": "en",
+   "title": "Aerial photos show recovery of Florida Bay, US, as restoration sends Everglades water",
+   "summary": "Freshwater flows into Florida Bay, significantly reduced by decades of Everglades drainage, are slowly increasing under the Comprehensive Everglades Restoration Plan. Helicopter surveys by avian ecologist Mark Ian Cook document returning wading birds, wintering waterfowl…",
+   "link": "https://news.mongabay.com/custom-story/2026/11/aerial-photos-show-recovery-of-florida-bay-us-as-restoration-sends-everglades-water/",
+   "published": "2026-11-27T14:04:23Z",
+   "image": null,
+   "imageCredit": null,
+   "universe": "living",
+   "related": null,
+   "firstSeen": "2026-11-27T21:54:31Z"
+  },
+  {
+   "id": "e4074e74ec3b2919",
+   "source": "mongabay",
+   "sourceName": "Mongabay",
+   "lang": "en",
+   "title": "‘Vote for trees’: Taiwan community pins hope on ‘Forest Grandma’ to save beloved woods",
+   "summary": "KAOHSIUNG, Taiwan — At dawn, just as the birds begin to sing, Chiang Huang-nu usually puts on her traditional straw hat and walks through the wooded grounds of a former sugar factory in Ciaotou district in southwest Taiwan. Along the way, the 83-year-old might greet around 30…",
+   "link": "https://news.mongabay.com/2026/11/vote-for-trees-taiwan-community-pins-hope-on-forest-grandma-to-save-beloved-woods/",
+   "published": "2026-11-27T13:52:03Z",
+   "image": null,
+   "imageCredit": null,
+   "universe": "living",
+   "related": null,
+   "firstSeen": "2026-11-27T21:54:31Z"
+  },
   {
    "id": "1e223da60eb7f9d7",
    "source": "mongabay",
@@ -647,21 +782,6 @@
    "firstSeen": "2026-11-26T11:25:28Z"
   },
   {
-   "id": "0dbee1b15c043372",
-   "source": "mongabay",
-   "sourceName": "Mongabay",
-   "lang": "en",
-   "title": "The night watchmen guarding Malaysia’s critically endangered river terrapins",
-   "summary": "KEMAMAN, Malaysia — As night settles over Kampung Pasir Gajah, a small team of men can be found sitting in the moonlight by the riverbank. They scroll on their phones, share a late meal, but their ears are tuned to the river. These men call themselves the Terrapin Guardians, or…",
-   "link": "https://news.mongabay.com/2026/11/the-night-watchmen-guarding-malaysias-critically-endangered-river-terrapins/",
-   "published": "2026-11-26T02:00:42Z",
-   "image": null,
-   "imageCredit": null,
-   "universe": "earth",
-   "related": null,
-   "firstSeen": "2026-11-26T02:08:11Z"
-  },
-  {
    "id": "dc6fbeafb878e68e",
    "source": "sciencedaily",
    "sourceName": "ScienceDaily",
@@ -707,21 +827,6 @@
    "firstSeen": "2026-11-26T11:25:28Z"
   },
   {
-   "id": "0cd25c109d938b12",
-   "source": "mongabay",
-   "sourceName": "Mongabay",
-   "lang": "en",
-   "title": "Brazil’s President Lula moves to recognize Chief Raoni’s Indigenous land",
-   "summary": "Brazil has taken a step toward formally recognizing the Indigenous land where one of the Amazon rainforest’s best-known defenders, Indigenous leader Raoni Metuktire, was born. The Mẽbêngôkre, or Kayapó, and Yudjá, or Juruna, peoples live on the 362,000-hectare (895,000-acre)…",
-   "link": "https://news.mongabay.com/short-article/2026/11/brazils-president-lula-moves-to-recognize-chief-raonis-indigenous-land/",
-   "published": "2026-11-25T21:26:23Z",
-   "image": null,
-   "imageCredit": null,
-   "universe": "living",
-   "related": null,
-   "firstSeen": "2026-11-26T02:08:11Z"
-  },
-  {
    "id": "0b84457f7deb26aa",
    "source": "smithsonian",
    "sourceName": "Smithsonian",
@@ -733,36 +838,6 @@
    "image": null,
    "imageCredit": null,
    "universe": "history",
-   "related": null,
-   "firstSeen": "2026-11-26T02:08:11Z"
-  },
-  {
-   "id": "e95830a770d4700d",
-   "source": "mongabay",
-   "sourceName": "Mongabay",
-   "lang": "en",
-   "title": "Kenyan communities take on Nigerian billionaire’s $16 billion refinery project as court adjourns hearing",
-   "summary": "Around 40 community representatives gathered early in the morning on Nov. 24 at a county assembly hall in Lamu, a town on an island off Kenya’s coast, to virtually witness a court hearing. The case pits residents against the Dangote group, owned by Nigerian billionaire Aliko…",
-   "link": "https://news.mongabay.com/short-article/2026/11/kenyan-communities-take-on-nigerian-billionaires-16-billion-refinery-project-as-court-adjourns-hearing/",
-   "published": "2026-11-25T20:16:51Z",
-   "image": null,
-   "imageCredit": null,
-   "universe": "living",
-   "related": null,
-   "firstSeen": "2026-11-26T02:08:11Z"
-  },
-  {
-   "id": "6e678d65ccbb7657",
-   "source": "mongabay",
-   "sourceName": "Mongabay",
-   "lang": "en",
-   "title": "Despite heavy rains, farmers hope for a viable waterleaf harvest in Nigeria",
-   "summary": "This is Part 2 in a two-part series on Nigerian waterleaf. Read Part 1 here. Except for the occasional roar of an airplane landing on the runway, it’s all quiet and lonely in the plantations surrounding the local airport in Calabar, southeastern Nigeria. Across the vast fields…",
-   "link": "https://news.mongabay.com/2026/11/despite-heavy-rains-farmers-hope-for-a-viable-waterleaf-harvest-in-nigeria/",
-   "published": "2026-11-25T20:00:31Z",
-   "image": null,
-   "imageCredit": null,
-   "universe": "living",
    "related": null,
    "firstSeen": "2026-11-26T02:08:11Z"
   },
@@ -810,36 +885,6 @@
    "universe": "cosmos",
    "related": "ingenuity",
    "firstSeen": "2026-11-25T19:18:33Z"
-  },
-  {
-   "id": "539e41e21a22b609",
-   "source": "mongabay",
-   "sourceName": "Mongabay",
-   "lang": "en",
-   "title": "Nations hail new shark finning rules in the Atlantic. Conservationists say Japan blocked better ones",
-   "summary": "VILAMOURA, Portugal — Shark finning entails slashing fins off sharks and dumping the bodies into the sea, often while they’re still alive. In the Atlantic Ocean, the practice has been banned on paper since 2004, yet some Japanese and Chinese vessels still do it. The fins end up…",
-   "link": "https://news.mongabay.com/2026/11/nations-hail-new-shark-finning-rules-in-the-atlantic-conservationists-say-japan-blocked-better-ones/",
-   "published": "2026-11-25T17:52:18Z",
-   "image": null,
-   "imageCredit": null,
-   "universe": "living",
-   "related": "ocean",
-   "firstSeen": "2026-11-25T18:48:31Z"
-  },
-  {
-   "id": "d9d5f7a3c5cf8b24",
-   "source": "mongabay",
-   "sourceName": "Mongabay",
-   "lang": "en",
-   "title": "As Indonesia burns, communities look to fire-free agriculture for relief",
-   "summary": "In Kalimantan, the Indonesian portion of the island of Borneo, rain is bringing relief to the months-long fire season. Around 684,000 hectares (1.69 million acres) of land burned between January and September, amounting to 36% of the national total, despite the region comprising…",
-   "link": "https://news.mongabay.com/2026/11/as-indonesia-burns-communities-look-to-fire-free-agriculture-for-relief/",
-   "published": "2026-11-25T17:25:38Z",
-   "image": null,
-   "imageCredit": null,
-   "universe": "living",
-   "related": null,
-   "firstSeen": "2026-11-25T18:48:31Z"
   },
   {
    "id": "afc105b15bba2213",
@@ -1427,21 +1472,6 @@
    "firstSeen": "2026-11-24T19:06:54Z"
   },
   {
-   "id": "7b9fce499d3b0b80",
-   "source": "nasa",
-   "sourceName": "NASA",
-   "lang": "en",
-   "title": "NASA Hubble’s New View of NGC 4394 Raises the Bar",
-   "summary": "The brilliant galaxy NGC 4394 with its distinct galactic bar takes center stage in this Hubble Space Telescope image",
-   "link": "https://science.nasa.gov/missions/hubble/nasa-hubbles-new-view-of-ngc-4394-raises-the-bar/",
-   "published": "2026-11-24T13:58:28Z",
-   "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/galaxies/spiral/Hubble_NGC4394_potm2611a.jpg?w=2048&h=2048&fit=clip",
-   "imageCredit": "NASA",
-   "universe": "cosmos",
-   "related": null,
-   "firstSeen": "2026-11-24T19:06:54Z"
-  },
-  {
    "id": "5231179111e830af",
    "source": "smithsonian",
    "sourceName": "Smithsonian",
@@ -1545,21 +1575,6 @@
    "universe": "cosmos",
    "related": "blackhole",
    "firstSeen": "2026-11-25T00:28:32Z"
-  },
-  {
-   "id": "f09a9e79e8c1cf63",
-   "source": "nasa",
-   "sourceName": "NASA",
-   "lang": "en",
-   "title": "APOD: 2026 November 24 – Galaxies Battle in the NGC 7771 Group",
-   "summary": "APOD Science APOD APOD: 2026 November 24 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a…",
-   "link": "https://science.nasa.gov/image-article/apod-2026-november-24-galaxies-battle-in-the-ngc-7771-group/",
-   "published": "2026-11-24T05:05:00Z",
-   "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/november/NGC7771group_Marinoni_1179.jpg?w=1179&h=1422&fit=clip",
-   "imageCredit": "NASA",
-   "universe": "cosmos",
-   "related": null,
-   "firstSeen": "2026-11-24T05:51:31Z"
   },
   {
    "id": "b5b507248c53833d",
@@ -1855,21 +1870,6 @@
    "summary": "For forty years, Prodex, the European Space Agency’s Programme for the Development of Scientific Experiments, has turned the scientific ambitions of its Participating States into instruments and experiments flown in space.",
    "link": "https://www.esa.int/articles/prodex-at-40-advancing-european-space-science",
    "published": "2026-11-17T12:03:28Z",
-   "image": null,
-   "imageCredit": null,
-   "universe": "cosmos",
-   "related": null,
-   "firstSeen": "2026-11-24T03:48:02Z"
-  },
-  {
-   "id": "c1ae6cdd7a3a8a4b",
-   "source": "esa",
-   "sourceName": "ESA",
-   "lang": "en",
-   "title": "Hera surveying asteroids with superhuman vision",
-   "summary": "The European Space Agency’s Hera mission for planetary defence surveys its target asteroids with a combination of instruments, peering beyond the limits of the human eye. The larger Didymos asteroid – dominated by its dramatic equatorial ridge – is seen here from just 28.5 km…",
-   "link": "https://www.esa.int/articles/about-us/directorates/operations/space-safety/hera/hera-surveying-asteroids-with-superhuman-vision",
-   "published": "2026-11-17T08:59:44Z",
    "image": null,
    "imageCredit": null,
    "universe": "cosmos",
