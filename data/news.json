@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-26T20:28:40Z",
- "checked": "2026-11-26T20:28:40Z",
+ "updated": "2026-11-27T03:10:28Z",
+ "checked": "2026-11-27T03:10:28Z",
  "sources": [
   {
    "id": "nasa",
@@ -40,7 +40,7 @@
    "home": "https://www.sciencedaily.com",
    "ok": true,
    "found": 60,
-   "new": 35
+   "new": 36
   },
   {
    "id": "sciencedaily-health",
@@ -48,7 +48,7 @@
    "home": "https://www.sciencedaily.com",
    "ok": true,
    "found": 60,
-   "new": 31
+   "new": 30
   },
   {
    "id": "who",
@@ -76,6 +76,36 @@
   }
  ],
  "items": [
+  {
+   "id": "4b45eb802b0b479a",
+   "source": "mongabay",
+   "sourceName": "Mongabay",
+   "lang": "en",
+   "title": "In Nepal, experts debate future of mega-dams after August’s flood",
+   "summary": "KATHMANDU — Until recently, residents living in the lap of the Himalayas saw the peaks as immovable giants silently nurturing them with snowmelt. But on Aug. 26, there was a road from the mountain overlooking the Bhotekoshi rivershed in central Nepal roared. What appears to have…",
+   "link": "https://news.mongabay.com/2026/11/in-nepal-experts-debate-future-of-mega-dams-after-augusts-flood/",
+   "published": "2026-11-27T02:15:40Z",
+   "image": null,
+   "imageCredit": null,
+   "universe": "earth",
+   "related": null,
+   "firstSeen": "2026-11-27T03:10:28Z"
+  },
+  {
+   "id": "11f42c868394a730",
+   "source": "mongabay",
+   "sourceName": "Mongabay",
+   "lang": "en",
+   "title": "Community forests offer hope for conservation in DRC, but major hurdles remain",
+   "summary": "LUBUMBASHI, Democratic Republic of Congo — In the Democratic Republic of Congo, an initiative is underway to award community-based forestry land titles to 7.1 million hectares of land, or about 17.5 million acres — an area the size of Ireland. This is one of several conservation…",
+   "link": "https://news.mongabay.com/2026/11/community-forests-offer-hope-for-conservation-in-drc-but-major-hurdles-remain/",
+   "published": "2026-11-26T21:30:06Z",
+   "image": null,
+   "imageCredit": null,
+   "universe": "living",
+   "related": null,
+   "firstSeen": "2026-11-27T03:10:28Z"
+  },
   {
    "id": "2d89e8612e572a3b",
    "source": "mongabay",
@@ -105,6 +135,36 @@
    "universe": "living",
    "related": null,
    "firstSeen": "2026-11-26T20:28:40Z"
+  },
+  {
+   "id": "d44dd9f62b171960",
+   "source": "esa",
+   "sourceName": "ESA",
+   "lang": "en",
+   "title": "Ozone hole one of the largest in decades",
+   "summary": "In contrast to the 2025 seasonal ozone hole above Antarctica, which was the fifth smallest since 1992, this year’s ozone hole ranks as one of the largest in 48 years.",
+   "link": "https://www.esa.int/articles/about-us/directorates/earth-observation-programmes/copernicus/sentinel-5p/ozone-hole-one-of-the-largest-in-decades",
+   "published": "2026-11-26T13:00:00Z",
+   "image": null,
+   "imageCredit": null,
+   "universe": "cosmos",
+   "related": null,
+   "firstSeen": "2026-11-27T03:10:28Z"
+  },
+  {
+   "id": "53ea342ee03a3884",
+   "source": "esa",
+   "sourceName": "ESA",
+   "lang": "en",
+   "title": "Watch live: Gaia releases its largest-ever goldmine of cosmic data",
+   "summary": "Join the European Space Agency and Gaia mission representatives on Wednesday 2 December for the unveiling of Gaia Data Release 4, the mission’s first principal data release.",
+   "link": "https://www.esa.int/articles/about-us/directorates/science/gaia/watch-live-gaia-releases-its-largest-ever-goldmine-of-cosmic-data",
+   "published": "2026-11-26T12:39:02Z",
+   "image": null,
+   "imageCredit": null,
+   "universe": "cosmos",
+   "related": null,
+   "firstSeen": "2026-11-27T03:10:28Z"
   },
   {
    "id": "a9c09dec821c2f8b",
@@ -797,21 +857,6 @@
    "firstSeen": "2026-11-25T17:17:43Z"
   },
   {
-   "id": "c9f901a980ad26ab",
-   "source": "mongabay",
-   "sourceName": "Mongabay",
-   "lang": "en",
-   "title": "Severe drought dries up rivers, cuts off communities in Brazil’s Amazon",
-   "summary": "A third El Niño-fueled drought since 2015 has pushed river levels in Roraima, Brazil’s northernmost Amazonian state, to critical lows. Severe drought affected 95% of the state in October, up from 47% in September, according to Brazil’s federal water agency, ANA. Roraima’s main…",
-   "link": "https://news.mongabay.com/short-article/2026/11/severe-drought-dries-up-rivers-cuts-off-communities-in-brazils-amazon/",
-   "published": "2026-11-25T09:49:01Z",
-   "image": null,
-   "imageCredit": null,
-   "universe": "earth",
-   "related": null,
-   "firstSeen": "2026-11-25T17:17:43Z"
-  },
-  {
    "id": "9226f0797834804d",
    "source": "sciencedaily-health",
    "sourceName": "ScienceDaily",
@@ -824,21 +869,6 @@
    "imageCredit": null,
    "universe": "future",
    "related": "memory",
-   "firstSeen": "2026-11-25T17:17:43Z"
-  },
-  {
-   "id": "84ac4d0300a9a623",
-   "source": "mongabay",
-   "sourceName": "Mongabay",
-   "lang": "en",
-   "title": "Otters raise hope for Kuala Lumpur’s river",
-   "summary": "Smooth-coated otters are increasingly being spotted along Kuala Lumpur’s Klang River, raising hopes that years of clean-up efforts are improving water quality and restoring urban wildlife habitats. However, their growing presence is not without conflict. Habitat loss caused by…",
-   "link": "https://news.mongabay.com/short-article/2026/11/otters-raise-hope-for-kuala-lumpurs-river/",
-   "published": "2026-11-25T09:03:10Z",
-   "image": null,
-   "imageCredit": null,
-   "universe": "living",
-   "related": null,
    "firstSeen": "2026-11-25T17:17:43Z"
   },
   {
@@ -1844,36 +1874,6 @@
    "imageCredit": null,
    "universe": "cosmos",
    "related": null,
-   "firstSeen": "2026-11-24T03:48:02Z"
-  },
-  {
-   "id": "28afc7114beba658",
-   "source": "nasa-iotd",
-   "sourceName": "NASA · Image du jour",
-   "lang": "en",
-   "title": "Thunderbirds in Formation",
-   "summary": "U.S. Air Force Thunderbirds fighter jets pass overhead during the agency’s MAX POWER expo and air show on Saturday, Nov. 7, 2026, at NASA’s Kennedy Space Center in Florida.",
-   "link": "https://www.nasa.gov/image-detail/11072026-ksc-max-power-airdotshow-2orig/",
-   "published": "2026-11-16T18:35:00Z",
-   "image": "https://www.nasa.gov/wp-content/uploads/2026/11/11072026-ksc-max-power-airdotshow-2orig.jpg",
-   "imageCredit": "NASA",
-   "universe": "cosmos",
-   "related": null,
-   "firstSeen": "2026-11-24T03:48:02Z"
-  },
-  {
-   "id": "03afc48f811a74aa",
-   "source": "nasa-iotd",
-   "sourceName": "NASA · Image du jour",
-   "lang": "en",
-   "title": "Outbursts from a Massive Star",
-   "summary": "Using Chandra, astronomers have discovered a previously hidden black hole or neutron star companion that is triggering repeated outbursts from a giant, unstable star.",
-   "link": "https://www.nasa.gov/image-detail/a-giant-star-in-a-distant-galaxy-has-been-mysteriously-erupting-for-at-least-15-years-new-data-from-nasas-chandra-explains-what-is-causing-these-huge-outbursts/",
-   "published": "2026-11-13T16:41:00Z",
-   "image": "https://www.nasa.gov/wp-content/uploads/2026/11/at2016blu.jpg",
-   "imageCredit": "NASA",
-   "universe": "cosmos",
-   "related": "blackhole",
    "firstSeen": "2026-11-24T03:48:02Z"
   }
  ]
