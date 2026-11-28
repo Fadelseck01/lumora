@@ -2482,5 +2482,143 @@
   "license": "Public domain",
   "artist": "Jean-Pierre Houël",
   "credit": "This file comes from Gallica Digital Library and is available under the digital ID btv1b103025148/f1"
+ },
+ "assets/photos/decouvertes/atlantis-1.jpg": {
+  "title": "File:Athanasius Kircher's Atlantis.gif",
+  "license": "Public domain",
+  "artist": "Athanasius Kircher",
+  "credit": "https://www.haktanir.org/"
+ },
+ "assets/photos/plus/plato-aristotle.jpg": {
+  "title": "File:Plato and Aristotle from School of Athens BW.jpg",
+  "license": "Public domain",
+  "artist": "Raphael",
+  "credit": "from EXIF: gettyimages-51246390 - Author: Hulton Archive"
+ },
+ "assets/photos/plus/akrotiri-spring.jpg": {
+  "title": "File:Spring fresco Akrotiri NAMA.jpg",
+  "license": "CC0",
+  "artist": "Jebulon",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/richat-iss.jpg": {
+  "title": "File:ISS-59 Richat Structure (1).jpg",
+  "license": "Public domain",
+  "artist": "NASA",
+  "credit": "https://www.flickr.com/photos/nasa2explore/40614492163/"
+ },
+ "assets/photos/decouvertes/troy-1.jpg": {
+  "title": "File:Legendary walls of Troy (8708672267).jpg",
+  "license": "CC BY 2.0",
+  "artist": "Jorge Láscar from Australia",
+  "credit": "Legendary walls of Troy"
+ },
+ "assets/photos/plus/achilles-hector.jpg": {
+  "title": "File:Achilles Hector Louvre G153.jpg",
+  "license": "Public domain",
+  "artist": "Marie-Lan Nguyen",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/troy-trench.jpg": {
+  "title": "File:Troy Schliemann trench 2650.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Dosseman",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/trojan-horse-canakkale.jpg": {
+  "title": "File:Trojan horse Çanakkale.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "Ross Burgess",
+  "credit": "Self-published work by Ross Burgess"
+ },
+ "assets/photos/decouvertes/arthur-1.jpg": {
+  "title": "File:The Lady of the Lake telleth Arthur of the sword Excalibur.jpg",
+  "license": "Public domain",
+  "artist": "Aubrey Vincent Beardsley (1872-1898) for Le Morte d'Arthur: J. M. Dent &amp; Co. _ Year : 1893",
+  "credit": "Thomas Malory : Le Morte d'Arthur - Book I - Chapter XXV \"How Arthur by the mean of Merlin gat Excalibur his sword of th"
+ },
+ "assets/photos/plus/bedivere-beardsley.jpg": {
+  "title": "File:Bedivere.jpg",
+  "license": "Public domain",
+  "artist": "Aubrey Beardsley",
+  "credit": "http://www.lib.rochester.edu/camelot/images/abbed.htm"
+ },
+ "assets/photos/plus/tintagel.jpg": {
+  "title": "File:View from Tintagel Castle - Cornwall - England.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Terragio67",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/winchester-table.jpg": {
+  "title": "File:Winchester Round Table.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Photograph by Mike Peel (www.mikepeel.net).",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/glastonbury-tomb.jpg": {
+  "title": "File:Glastonbury Abbey, King Arthur's Tomb.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "Nilfanion",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/san-galgano-sword.jpg": {
+  "title": "File:San Galgano Spada nella roccia.JPG",
+  "license": "CC BY-SA 3.0",
+  "artist": "Alexmar983",
+  "credit": "Own work"
+ },
+ "assets/photos/decouvertes/lochness-1.jpg": {
+  "title": "File:Urquhart Castle 1 20211024.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "Daniel Kraft",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/surgeons-photo.jpg": {
+  "title": "File:Loch Ness Monster Surgeon's photograph.jpg",
+  "license": "Public domain",
+  "artist": "M. A. Wetherell",
+  "credit": "[1], [2]"
+ },
+ "assets/photos/plus/kelpies-falkirk.jpg": {
+  "title": "File:The Kelpies at The Helix in Falkirk, Scotland, June 2014.jpg",
+  "license": "CC BY 2.0",
+  "artist": "Steven Straiton",
+  "credit": "Flickr: Kelpies"
+ },
+ "assets/photos/plus/lochness-panorama.jpg": {
+  "title": "File:Loch Ness Panorama.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Jcx",
+  "credit": "Own work"
+ },
+ "assets/photos/decouvertes/eldorado-1.jpg": {
+  "title": "File:Muisca raft BOG 04 2012 Museo de Oro 1251.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "Mariordo (Mario Roberto Durán Ortiz)",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/guatavita.jpg": {
+  "title": "File:Guatavita hogar de La Leyenda de El Dorado.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "MdelPVD",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/raleigh-hilliard.jpg": {
+  "title": "File:Sir Walter Raleigh oval portrait by Nicholas Hilliard.jpg",
+  "license": "Public domain",
+  "artist": "Nicholas Hilliard",
+  "credit": "The Yorck Project (2002)       10.000 Meisterwerke der Malerei (DVD-ROM), distributed by DIRECTMEDIA Publishing GmbH.  I"
+ },
+ "assets/photos/decouvertes/pharaohcurse-1.jpg": {
+  "title": "File:The Moment Carter Opens the Shrine.jpg",
+  "license": "Public domain",
+  "artist": "Harry Burton",
+  "credit": "The New York Times photo archive, via their online store, Medelhavsmuseet:  HB06"
+ },
+ "assets/photos/plus/carter-callender.jpg": {
+  "title": "File:Howard Carter and Arthur Callender in Tutankhamun's tomb.jpg",
+  "license": "Public domain",
+  "artist": "Harry Burton",
+  "credit": "The Griffith Institute Archive.\nHarry Burton’s photos of Tutankhamun’s Tomb taken in 1922 are on the Griffith Institute "
  }
 }
