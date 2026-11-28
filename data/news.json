@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-27T21:54:31Z",
- "checked": "2026-11-27T21:54:31Z",
+ "updated": "2026-11-28T06:32:15Z",
+ "checked": "2026-11-28T06:32:15Z",
  "sources": [
   {
    "id": "nasa",
@@ -8,7 +8,7 @@
    "home": "https://www.nasa.gov",
    "ok": true,
    "found": 10,
-   "new": 2
+   "new": 1
   },
   {
    "id": "nasa-iotd",
@@ -16,7 +16,7 @@
    "home": "https://www.nasa.gov/image-of-the-day/",
    "ok": true,
    "found": 60,
-   "new": 53
+   "new": 52
   },
   {
    "id": "esa",
@@ -24,7 +24,7 @@
    "home": "https://www.esa.int",
    "ok": true,
    "found": 15,
-   "new": 2
+   "new": 3
   },
   {
    "id": "esa-fr",
@@ -76,6 +76,21 @@
   }
  ],
  "items": [
+  {
+   "id": "cb9d823fc488da65",
+   "source": "nasa",
+   "sourceName": "NASA",
+   "lang": "en",
+   "title": "APOD: 2026 November 28 – Apollo 17 VIP Site Anaglyph",
+   "summary": "APOD Science APOD APOD: 2026 November 28 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a…",
+   "link": "https://science.nasa.gov/image-article/apod-2026-november-28-apollo-17-vip-site-anaglyph/",
+   "published": "2026-11-28T05:05:00Z",
+   "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/november/a17anaglyph_vanMeijgaarden_f.jpg?w=2014&h=2048&fit=clip",
+   "imageCredit": "NASA",
+   "universe": "cosmos",
+   "related": null,
+   "firstSeen": "2026-11-28T06:32:15Z"
+  },
   {
    "id": "4f993592e01ba7b0",
    "source": "mongabay",
@@ -1439,21 +1454,6 @@
    "imageCredit": null,
    "universe": "living",
    "related": null,
-   "firstSeen": "2026-11-24T19:06:54Z"
-  },
-  {
-   "id": "d97b339455e3f257",
-   "source": "nasa",
-   "sourceName": "NASA",
-   "lang": "en",
-   "title": "NASA’s Titan-Bound Dragonfly Rotorcraft Gets Its Eyes",
-   "summary": "Science instruments for NASA’s Dragonfly are starting to arrive at the Johns Hopkins Applied Physics Laboratory (APL) in Laurel, Maryland, where the car-sized rotorcraft is coming together for its mission to explore Saturn’s largest moon, Titan. First to check in: DragonCam…",
-   "link": "https://science.nasa.gov/missions/dragonfly/nasas-titan-bound-dragonfly-rotorcraft-gets-its-eyes/",
-   "published": "2026-11-24T15:44:38Z",
-   "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/dragonfly/DragonCamInstall.jpg?w=1280&h=853&fit=clip",
-   "imageCredit": "NASA",
-   "universe": "cosmos",
-   "related": "saturn",
    "firstSeen": "2026-11-24T19:06:54Z"
   },
   {
