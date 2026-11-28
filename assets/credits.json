@@ -2039,12 +2039,6 @@
   "artist": "Harry Burton",
   "credit": "New York Times"
  },
- "assets/photos/plus/carter-tomb.jpg": {
-  "title": "File:Howard Carter in the King Tutankhamen's tomb.jpg",
-  "license": "Public domain",
-  "artist": "Harry Burton",
-  "credit": "http://bigpicture.ru/?p=36924"
- },
  "assets/photos/plus/kv62-today.jpg": {
   "title": "File:KV62, Egypt 03.jpg",
   "license": "Public domain",
@@ -2068,12 +2062,6 @@
   "license": "Public domain",
   "artist": "Eugène Salesses (1858-1931)",
   "credit": "Collection particulière"
- },
- "assets/photos/plus/kangaba-landscape.jpg": {
-  "title": "File:Landscape of Kangaba.jpg",
-  "license": "CC BY-SA 2.0",
-  "artist": "David Sessoms",
-  "credit": "Flickr: IMG_0162"
  },
  "assets/photos/decouvertes/songhai-1.jpg": {
   "title": "File:Tombeau dAskia in Gao by David Sessoms.jpg",
@@ -2207,18 +2195,6 @@
   "artist": "DavGreg",
   "credit": "Own work"
  },
- "assets/photos/decouvertes/hitler-1.jpg": {
-  "title": "File:Bundesarchiv Bild 102-14439, Rede Adolf Hitlers zum Ermächtigungsgesetz.jpg",
-  "license": "CC BY-SA 3.0 de",
-  "artist": "Georg Pahl",
-  "credit": "This image was provided to Wikimedia Commons by the German Federal Archive (Deutsches Bundesarchiv) as part of a coopera"
- },
- "assets/photos/plus/reichstag-fire.jpg": {
-  "title": "File:Reichstagsbrand.jpg",
-  "license": "Public domain",
-  "artist": "Unknown authorUnknown author",
-  "credit": "This tag does not indicate the copyright status of the attached work. A normal copyright tag is still required. See Comm"
- },
  "assets/photos/plus/putsch-1923.jpg": {
   "title": "File:Bundesarchiv Bild 119-1486, Hitler-Putsch, München, Marienplatz.jpg",
   "license": "CC BY-SA 3.0 de",
@@ -2279,10 +2255,16 @@
   "artist": "Aad van der Drift",
   "credit": "0576 1989 BERLIJN de muur 3 weken na de val (1 december)"
  },
- "assets/photos/plus/checkpoint-tanks.jpg": {
-  "title": "File:U. S. Tanks at Checkpoint Charlie - Flickr - The Central Intelligence Agency.jpg",
+ "assets/photos/plus/enabling-act-1933.jpg": {
+  "title": "File:Bundesarchiv Bild 102-14439, Rede Adolf Hitlers zum Ermächtigungsgesetz.jpg",
+  "license": "CC BY-SA 3.0 de",
+  "artist": "Georg Pahl",
+  "credit": "This image was provided to Wikimedia Commons by the German Federal Archive (Deutsches Bundesarchiv) as part of a coopera"
+ },
+ "assets/photos/decouvertes/hitler-1.jpg": {
+  "title": "File:Reichstagsbrand.jpg",
   "license": "Public domain",
-  "artist": "The Central Intelligence Agency",
-  "credit": "U. S. Tanks at Checkpoint Charlie"
+  "artist": "Unknown authorUnknown author",
+  "credit": "This tag does not indicate the copyright status of the attached work. A normal copyright tag is still required. See Comm"
  }
 }

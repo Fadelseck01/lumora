@@ -5,9 +5,7 @@ mansa: {
  sources:[{t:"UNESCO — Charte du Manden, proclamée à Kouroukan Fouga", u:"https://ich.unesco.org/fr/RL/la-charte-du-manden-proclamee-a-kouroukan-fouga-00290"},{t:"Wikipedia — Catalan Atlas (1375)", u:"https://en.wikipedia.org/wiki/Catalan_Atlas"},{t:"UNESCO — Tombouctou (patrimoine mondial)", u:"https://whc.unesco.org/fr/list/119/"}],
  fr:[
   {h:"Avant Mansa Moussa : Soundiata et la charte du Manden", p:[
-   "L'empire du Mali est né une centaine d'années avant le règne de Mansa Moussa. Selon la tradition orale, son fondateur est Soundiata Keïta, un prince mandingue qui, enfant, ne pouvait pas marcher et fut moqué de tous, avant de devenir un grand guerrier. Vers 1235, il bat Soumaoro Kanté, le roi du Sosso, à la bataille de Kirina, et unit les peuples mandingues sous son autorité.",
-   "Cette histoire nous est parvenue grâce aux griots, les gardiens de la mémoire en Afrique de l'Ouest. Pendant des siècles, ils ont récité l'épopée de Soundiata de génération en génération, en s'accompagnant de la kora ou du balafon. Le texte n'a été mis par écrit qu'au XXe siècle, notamment par l'historien guinéen Djibril Tamsir Niane, en 1960.",
-   "La tradition attribue aussi à Soundiata et à ses alliés une sorte de constitution, la charte du Manden, proclamée à Kouroukan Fouga. Elle aurait organisé la société en clans, fixé des règles de vie commune et affirmé le respect de la vie humaine. Son contenu exact, transmis oralement, est discuté par les historiens, mais l'UNESCO l'a inscrite en 2009 au patrimoine culturel immatériel de l'humanité."
+   "L'empire du Mali est né une centaine d'années avant le règne de Mansa Moussa, sous l'autorité de Soundiata Keïta, vainqueur du roi sosso Soumaoro Kanté vers 1235. Son épopée, transmise par les griots, et la charte du Manden qu'on lui attribue sont racontées dans la découverte consacrée à Soundiata."
   ]},
   {h:"L'Atlas catalan et les manuscrits de Tombouctou", p:[
    "La renommée de Mansa Moussa a traversé la Méditerranée. Vers 1375, un atelier de cartographes juifs de Majorque, attribué à Abraham Cresques, réalise l'Atlas catalan, l'une des plus belles cartes du Moyen Âge. Au milieu du Sahara, on y voit un roi noir couronné, assis sur un trône, tenant une pépite d'or : la légende le désigne comme le seigneur des Noirs de Guinée, le plus riche et le plus noble souverain de la région.",
@@ -17,9 +15,7 @@ mansa: {
  ],
  en:[
   {h:"Before Mansa Musa: Sundiata and the Manden Charter", p:[
-   "The Mali Empire was born about a century before Mansa Musa's reign. According to oral tradition its founder was Sundiata Keita, a Mandinka prince who as a child could not walk and was mocked by all, before becoming a great warrior. Around 1235 he defeated Sumanguru Kanté, king of Sosso, at the Battle of Kirina and united the Mandinka peoples under his rule.",
-   "This story has come down to us thanks to the griots, the guardians of memory in West Africa. For centuries they recited the epic of Sundiata from generation to generation, accompanying themselves on the kora or balafon. The text was only written down in the 20th century, notably by the Guinean historian Djibril Tamsir Niane in 1960.",
-   "Tradition also credits Sundiata and his allies with a kind of constitution, the Manden Charter, proclaimed at Kouroukan Fouga. It is said to have organised society into clans, set rules for living together and affirmed respect for human life. Its exact content, passed down orally, is debated by historians, but UNESCO inscribed it in 2009 as intangible cultural heritage of humanity."
+   "The Mali Empire was born about a century before Mansa Musa's reign, under Sundiata Keita, who defeated the Sosso king Sumanguru Kanté around 1235. His epic, passed down by griots, and the Manden Charter attributed to him are told in the discovery devoted to Sundiata."
   ]},
   {h:"The Catalan Atlas and the manuscripts of Timbuktu", p:[
    "Mansa Musa's fame crossed the Mediterranean. Around 1375 a workshop of Jewish mapmakers in Majorca, attributed to Abraham Cresques, produced the Catalan Atlas, one of the finest maps of the Middle Ages. In the middle of the Sahara it shows a crowned Black king seated on a throne, holding a gold nugget: the caption calls him the lord of the Black people of Guinea, the richest and noblest ruler of the region.",

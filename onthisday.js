@@ -73,11 +73,20 @@ const OTD_LINKS = {
   vaquita:["vaquita","marsouin du Pacifique"], muertos:["Día de Muertos","Día de los Muertos","jour des Morts"],
   silbo:["La Gomera","silbo"], sentinelese:["Sentinelle du Nord","North Sentinel","îles Andaman","Andaman Islands"],
   polarnight:["Svalbard","nuit polaire","polar night"], minotaur:["Cnossos","Knossos"], kukulcan:["Chichén Itzá","Chichen Itza"],
-  mummies:["momie","mummy","Toutânkhamon","Tutankhamun","Howard Carter"], ocean:["Jacques-Yves Cousteau","Calypso","bathyscaphe"],
+  mummies:["momie","mummy"], ocean:["Jacques-Yves Cousteau","Calypso","bathyscaphe"],
   sputnik:["Spoutnik", "Sputnik"],
   laika:["Laïka", "Laika", "Spoutnik 2", "Sputnik 2"],
   gagarin:["Gagarine", "Gagarin", "Vostok 1"],
-  apollo11:["Apollo 11", "Neil Armstrong", "Buzz Aldrin", "Michael Collins", "alunissage", "Moon landing"]
+  apollo11:["Apollo 11", "Neil Armstrong", "Buzz Aldrin", "Michael Collins", "alunissage", "Moon landing"],
+  tutankhamun:["Toutânkhamon", "Tutankhamun", "Howard Carter", "Lord Carnarvon"],
+  soundiata:["Soundiata", "Sundiata", "Soundjata"],
+  songhai:["Songhaï", "Songhai", "Askia", "Sonni Ali", "Tondibi"],
+  dahomey:["Dahomey", "Béhanzin", "Behanzin", "Abomey"],
+  vinland:["Vinland", "Leif Erikson", "Erik le Rouge", "Erik the Red", "L'Anse aux Meadows"],
+  magellan:["Magellan", "Elcano", "Lapulapu"],
+  mlk:["Martin Luther King", "I have a dream", "Rosa Parks", "droits civiques", "civil rights"],
+  hitler:["Adolf Hitler", "Hitler"],
+  berlinwall:["mur de Berlin", "Berlin Wall", "Checkpoint Charlie"]
 };
 const otdRe = {};
 function otdMatches(ev){

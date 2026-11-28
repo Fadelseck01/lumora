@@ -21,7 +21,16 @@ const subOf = {
   sputnik:5,
   laika:5,
   gagarin:5,
-  apollo11:5
+  apollo11:5,
+  tutankhamun:0,
+  soundiata:1,
+  songhai:1,
+  dahomey:1,
+  vinland:2,
+  magellan:3,
+  mlk:3,
+  hitler:3,
+  berlinwall:4
 };
 
 /* Phrase d'accueil de chaque page univers */
@@ -63,7 +72,16 @@ const timeline = {
   sputnik:{y:1957},
   laika:{y:1957, l:{"fr": "Novembre 1957", "en": "November 1957"}},
   gagarin:{y:1961},
-  apollo11:{y:1969}
+  apollo11:{y:1969},
+  tutankhamun:{y:1922, l:{"fr": "1922 (règne vers 1332-1323 av. J.-C.)", "en": "1922 (reign c. 1332–1323 BCE)"}},
+  soundiata:{y:1235, l:{"fr": "Vers 1235", "en": "Around 1235"}},
+  songhai:{y:1468, l:{"fr": "1464 – 1591", "en": "1464 – 1591"}},
+  dahomey:{y:1818, l:{"fr": "XVIIIe – XIXe siècle", "en": "18th – 19th century"}},
+  vinland:{y:1000, l:{"fr": "Vers l'an 1000", "en": "Around the year 1000"}},
+  magellan:{y:1519, l:{"fr": "1519 – 1522", "en": "1519 – 1522"}},
+  mlk:{y:1963, l:{"fr": "1955 – 1968", "en": "1955 – 1968"}},
+  hitler:{y:1933, l:{"fr": "1933 – 1945", "en": "1933 – 1945"}},
+  berlinwall:{y:1961, l:{"fr": "1961 – 1989", "en": "1961 – 1989"}}
 };
 
 /* Quiz : deux questions écrites par univers (+ questions photo générées automatiquement).
@@ -128,7 +146,25 @@ const quizBank = [
   {cat:"cosmos",ref:"gagarin",a:0,q:{"fr": "Combien de temps a duré le vol de Youri Gagarine ?", "en": "How long did Yuri Gagarin's flight last?"},
    o:{"fr": ["108 minutes", "15 minutes", "24 heures", "3 jours"], "en": ["108 minutes", "15 minutes", "24 hours", "3 days"]}},
   {cat:"cosmos",ref:"apollo11",a:3,q:{"fr": "Combien d'astronautes ont marché sur la Lune entre 1969 et 1972 ?", "en": "How many astronauts walked on the Moon between 1969 and 1972?"},
-   o:{"fr": ["2", "6", "9", "12"], "en": ["2", "6", "9", "12"]}}
+   o:{"fr": ["2", "6", "9", "12"], "en": ["2", "6", "9", "12"]}},
+  {cat:"history",ref:"tutankhamun",a:2,q:{"fr": "En quoi est faite la lame du poignard retrouvé contre Toutânkhamon ?", "en": "What is the blade of the dagger found against Tutankhamun made of?"},
+   o:{"fr": ["En or", "En bronze", "En fer météoritique", "En obsidienne"], "en": ["Gold", "Bronze", "Meteoritic iron", "Obsidian"]}},
+  {cat:"history",ref:"soundiata",a:1,q:{"fr": "Qui raconte l'épopée de Soundiata depuis des siècles ?", "en": "Who has told the epic of Sundiata for centuries?"},
+   o:{"fr": ["Des moines copistes", "Les griots", "Des chroniqueurs chinois", "Des explorateurs portugais"], "en": ["Copyist monks", "The griots", "Chinese chroniclers", "Portuguese explorers"]}},
+  {cat:"history",ref:"songhai",a:0,q:{"fr": "Quelle bataille marque la chute de l'empire songhaï en 1591 ?", "en": "Which battle marks the fall of the Songhai Empire in 1591?"},
+   o:{"fr": ["Tondibi", "Kirina", "Mactan", "Abeokuta"], "en": ["Tondibi", "Kirina", "Mactan", "Abeokuta"]}},
+  {cat:"history",ref:"dahomey",a:3,q:{"fr": "Comment les Fon appelaient-ils les guerrières du Dahomey ?", "en": "What did the Fon call the women warriors of Dahomey?"},
+   o:{"fr": ["Les lionnes", "Les filles du roi", "Les gardiennes", "Nos mères"], "en": ["The lionesses", "The king's daughters", "The guardians", "Our mothers"]}},
+  {cat:"history",ref:"vinland",a:1,q:{"fr": "En quelle année des Vikings ont-ils coupé des arbres à L'Anse aux Meadows ?", "en": "In which year did Vikings cut trees at L'Anse aux Meadows?"},
+   o:{"fr": ["1492", "1021", "870", "1347"], "en": ["1492", "1021", "870", "1347"]}},
+  {cat:"history",ref:"magellan",a:2,q:{"fr": "Combien de navires de Magellan sont revenus en Espagne ?", "en": "How many of Magellan's ships returned to Spain?"},
+   o:{"fr": ["Cinq", "Trois", "Un seul", "Aucun"], "en": ["Five", "Three", "Only one", "None"]}},
+  {cat:"history",ref:"mlk",a:0,q:{"fr": "Combien de jours a duré le boycott des bus de Montgomery ?", "en": "How many days did the Montgomery bus boycott last?"},
+   o:{"fr": ["381", "38", "100", "1 000"], "en": ["381", "38", "100", "1,000"]}},
+  {cat:"history",ref:"hitler",a:1,q:{"fr": "Quel score maximal le parti nazi a-t-il obtenu lors d'élections libres, en juillet 1932 ?", "en": "What was the Nazi Party's highest share of the vote in free elections, in July 1932?"},
+   o:{"fr": ["Plus de 60 %", "Environ 37 %", "Environ 15 %", "51 %"], "en": ["Over 60%", "About 37%", "About 15%", "51%"]}},
+  {cat:"history",ref:"berlinwall",a:3,q:{"fr": "Qu'a provoqué la conférence de presse de Günter Schabowski le 9 novembre 1989 ?", "en": "What did Günter Schabowski's press conference on 9 November 1989 cause?"},
+   o:{"fr": ["La construction du mur", "La réunification immédiate", "La démission de Gorbatchev", "L'ouverture des postes-frontières"], "en": ["The building of the wall", "Immediate reunification", "Gorbachev's resignation", "The opening of the checkpoints"]}}
 ];
 
 /* Textes de l'interface pour les nouvelles pages */
@@ -185,7 +221,7 @@ const uiPages = {
 const places = [
   {id:"senegal",lat:14.7,lon:-17.4,name:{fr:"Sénégal",en:"Senegal"},blurb:{fr:"Une île de mémoire, un lac rose et le plat national.",en:"An island of memory, a pink lake and the national dish."},items:["goree","lacrose","ceebu"]},
   {id:"kedougou",lat:12.38,lon:-12.33,name:{fr:"Sénégal oriental (Kédougou)",en:"Eastern Senegal (Kédougou)"},blurb:{fr:"Une cascade de près de 100 mètres et les derniers chimpanzés du pays.",en:"A waterfall of nearly 100 metres and the country's last chimpanzees."},items:["dindefelo"]},
-  {id:"egypt",lat:29.9,lon:31.1,name:{fr:"Égypte",en:"Egypt"},blurb:{fr:"Pyramides, pharaons et dieux à tête d'animal.",en:"Pyramids, pharaohs and animal-headed gods."},items:["khufu","cleopatra","mummies","anubis"]},
+  {id:"egypt",lat:29.9,lon:31.1,name:{fr:"Égypte",en:"Egypt"},blurb:{fr:"Pyramides, pharaons et dieux à tête d'animal.",en:"Pyramids, pharaohs and animal-headed gods."},items:["tutankhamun","khufu","cleopatra","mummies","anubis"]},
   {id:"iceland",lat:64.9,lon:-18.6,name:{fr:"Islande",en:"Iceland"},blurb:{fr:"Volcans, sable noir, cascades et aurores boréales.",en:"Volcanoes, black sand, waterfalls and northern lights."},items:["vestrahorn","godafoss","aurora"]},
   {id:"norway",lat:61.0,lon:8.5,name:{fr:"Norvège et Svalbard",en:"Norway and Svalbard"},blurb:{fr:"Fjords, nuit polaire et légendes nordiques.",en:"Fjords, polar night and Norse legends."},items:["preikestolen","polarnight","yggdrasil","kraken"]},
   {id:"faroe",lat:62.3,lon:-6.8,name:{fr:"Îles Féroé",en:"Faroe Islands"},blurb:{fr:"Falaises vertigineuses et femme-phoque.",en:"Towering cliffs and the seal woman."},items:["kalsoy"]},
@@ -197,7 +233,7 @@ const places = [
   {id:"italy",lat:42.3,lon:12.6,name:{fr:"Italie et Vatican",en:"Italy and Vatican City"},blurb:{fr:"Une ville figée, un empire tombé, le plus petit pays du monde et un lac des Dolomites.",en:"A frozen city, a fallen empire, the world's smallest country and a Dolomite lake."},items:["pompeii","rome476","vatican","federa"]},
   {id:"germany",lat:50.0,lon:8.3,name:{fr:"Allemagne",en:"Germany"},blurb:{fr:"L'atelier de Gutenberg à Mayence.",en:"Gutenberg's workshop in Mainz."},items:["printing"]},
   {id:"greece",lat:37.5,lon:23.5,name:{fr:"Grèce et Crète",en:"Greece and Crete"},blurb:{fr:"Gorgones, labyrinthe et Minotaure.",en:"Gorgons, a labyrinth and the Minotaur."},items:["medusa","minotaur"]},
-  {id:"mali",lat:16.8,lon:-3.0,name:{fr:"Mali",en:"Mali"},blurb:{fr:"L'empire du roi le plus riche de l'histoire.",en:"The empire of history's richest king."},items:["mansa"]},
+  {id:"mali",lat:16.8,lon:-3.0,name:{fr:"Mali",en:"Mali"},blurb:{fr:"L'empire du roi le plus riche de l'histoire.",en:"The empire of history's richest king."},items:["soundiata","mansa"]},
   {id:"morocco",lat:35.8,lon:-5.8,name:{fr:"Maroc",en:"Morocco"},blurb:{fr:"Tanger, point de départ du plus grand voyageur du Moyen Âge.",en:"Tangier, where the Middle Ages' greatest traveller set out."},items:["ibnbattuta"]},
   {id:"ghana",lat:6.7,lon:-1.6,name:{fr:"Ghana",en:"Ghana"},blurb:{fr:"Anansi, l'araignée conteuse.",en:"Anansi, the storytelling spider."},items:["anansi"]},
   {id:"ethiopia",lat:9.0,lon:38.7,name:{fr:"Éthiopie",en:"Ethiopia"},blurb:{fr:"La galette qui sert d'assiette.",en:"The flatbread that doubles as a plate."},items:["injera"]},
@@ -222,7 +258,13 @@ const places = [
   {id:"mexico",lat:20.0,lon:-99.0,name:{fr:"Mexique",en:"Mexico"},blurb:{fr:"Serpent à plumes, fête des morts, axolotl et vaquita.",en:"Feathered serpent, Day of the Dead, axolotl and vaquita."},items:["kukulcan","muertos","mole","axolotl","vaquita"]},
   {id:"usa",lat:35.5,lon:-78.0,name:{fr:"Est des États-Unis",en:"Eastern United States"},blurb:{fr:"Une colonie disparue, une plante carnivore et un signal venu de l'espace.",en:"A vanished colony, a carnivorous plant and a signal from space."},items:["roanoke","carnivorous","wow"]},
   {id:"capecanaveral",lat:28.57,lon:-80.65,name:{fr:"Centre spatial Kennedy (Floride)",en:"Kennedy Space Center (Florida)"},blurb:{fr:"Le pas de tir d'où Apollo 11 est partie vers la Lune.",en:"The launch pad from which Apollo 11 left for the Moon."},items:["apollo11"]},
-  {id:"bermuda",lat:28.0,lon:-68.0,name:{fr:"Triangle des Bermudes",en:"Bermuda Triangle"},blurb:{fr:"Mystère ou mythe ?",en:"Mystery or myth?"},items:["bermuda"]}
+  {id:"bermuda",lat:28.0,lon:-68.0,name:{fr:"Triangle des Bermudes",en:"Bermuda Triangle"},blurb:{fr:"Mystère ou mythe ?",en:"Mystery or myth?"},items:["bermuda"]},
+  {id:"gao",lat:16.27,lon:-0.04,name:{"fr": "Gao (Mali)", "en": "Gao (Mali)"},blurb:{"fr": "La capitale de l'empire songhaï et le tombeau des Askia.", "en": "The capital of the Songhai Empire and the Tomb of Askia."},items:["songhai"]},
+  {id:"abomey",lat:7.18,lon:1.99,name:{"fr": "Abomey (Bénin)", "en": "Abomey (Benin)"},blurb:{"fr": "Les palais royaux du Dahomey et la mémoire des Agodjié.", "en": "The royal palaces of Dahomey and the memory of the Agojie."},items:["dahomey"]},
+  {id:"newfoundland",lat:51.6,lon:-55.53,name:{"fr": "L'Anse aux Meadows (Canada)", "en": "L'Anse aux Meadows (Canada)"},blurb:{"fr": "Le camp où des Vikings ont coupé du bois en 1021.", "en": "The camp where Vikings cut wood in 1021."},items:["vinland"]},
+  {id:"mactan",lat:10.31,lon:124.02,name:{"fr": "Mactan (Philippines)", "en": "Mactan (Philippines)"},blurb:{"fr": "L'île où Magellan a été tué par les guerriers de Lapulapu.", "en": "The island where Magellan was killed by Lapulapu's warriors."},items:["magellan"]},
+  {id:"alabama",lat:32.38,lon:-86.3,name:{"fr": "Montgomery et Memphis (États-Unis)", "en": "Montgomery and Memphis (United States)"},blurb:{"fr": "Du boycott des bus au dernier combat de Martin Luther King.", "en": "From the bus boycott to Martin Luther King's last fight."},items:["mlk"]},
+  {id:"berlin",lat:52.52,lon:13.4,name:{"fr": "Berlin (Allemagne)", "en": "Berlin (Germany)"},blurb:{"fr": "Le mur qui a coupé une ville en deux pendant 28 ans.", "en": "The wall that cut a city in two for 28 years."},items:["berlinwall"]}
 ];
 
 Object.assign(uiPages.fr, {

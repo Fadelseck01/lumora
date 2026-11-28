@@ -349,12 +349,12 @@ kukulcan:{
 anubis:{
  sources:[{t:"Nelson, BMJ (2002) — The mummy's curse: historical cohort study", u:"https://www.bmj.com/content/325/7378/1482"}],
  fr:[{h:"La malédiction des pharaons", p:[
-  "Le 4 novembre 1922, l'archéologue britannique Howard Carter découvre l'entrée de la tombe de Toutânkhamon, dans la Vallée des Rois. Quelques semaines plus tard, en apercevant à la lueur d'une bougie l'or de la première salle, il aurait répondu à son mécène, Lord Carnarvon, qui lui demandait s'il voyait quelque chose : « Oui, des choses merveilleuses. »",
+  "En 1922, l'archéologue britannique Howard Carter découvre la tombe presque intacte de Toutânkhamon, financé par son mécène, Lord Carnarvon. Cette découverte extraordinaire est racontée dans l'article consacré à la tombe de Toutânkhamon.",
   "En avril 1923, Lord Carnarvon meurt au Caire, d'une infection après une piqûre de moustique qu'il avait coupée en se rasant. Les journaux s'emparent de l'affaire et inventent la « malédiction du pharaon » : quiconque aurait troublé le repos du roi serait condamné. Chaque nouveau décès lié de près ou de loin à l'expédition est alors présenté comme une preuve.",
   "En 2002, un chercheur australien a vérifié cette légende avec des méthodes statistiques. Il a comparé l'espérance de vie des 25 Occidentaux présents lors de l'ouverture de la tombe ou du sarcophage avec celle d'autres personnes de la même époque. Résultat : aucune différence significative. Howard Carter lui-même a vécu jusqu'en 1939. La malédiction relève donc du mythe, mais elle a beaucoup contribué à la célébrité de Toutânkhamon."
  ]}],
  en:[{h:"The curse of the pharaohs", p:[
-  "On 4 November 1922 the British archaeologist Howard Carter found the entrance to Tutankhamun's tomb in the Valley of the Kings. A few weeks later, glimpsing the gold of the first chamber by candlelight, he reportedly answered his patron Lord Carnarvon, who asked whether he could see anything: \"Yes, wonderful things.\"",
+  "In 1922 the British archaeologist Howard Carter discovered Tutankhamun's almost intact tomb, funded by his patron Lord Carnarvon. This extraordinary discovery is told in the article devoted to Tutankhamun's tomb.",
   "In April 1923 Lord Carnarvon died in Cairo of an infection after a mosquito bite he had nicked while shaving. The newspapers seized on the story and invented the \"pharaoh's curse\": anyone who disturbed the king's rest would be doomed. Every new death linked in any way to the expedition was then presented as proof.",
   "In 2002 an Australian researcher tested the legend statistically. He compared the life expectancy of the 25 Westerners present at the opening of the tomb or sarcophagus with that of other people of the time. Result: no significant difference. Howard Carter himself lived until 1939. The curse is therefore a myth, but it did much to make Tutankhamun famous."
  ]}]
