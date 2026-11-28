@@ -59,7 +59,7 @@ monalisa: {
     "Plus récemment, en 2022, un homme déguisé en vieille dame en fauteuil roulant écrasa une part de gâteau sur la vitre, et en 2024, des militantes écologistes y lancèrent de la soupe. À chaque fois, la vitre a protégé le tableau, qui n'a subi aucun dommage."
    ]},
    {h:"La Joconde voyage", p:[
-    "La Joconde n'a presque jamais quitté le Louvre en temps de paix. Mais en 1963, à la demande de la présidente américaine Jacqueline Kennedy, elle fut prêtée aux États-Unis. Elle voyagea en bateau, dans une caisse spéciale, et fut exposée à Washington puis à New York.",
+    "La Joconde n'a presque jamais quitté le Louvre en temps de paix. Mais en 1963, à la demande de la première dame américaine Jacqueline Kennedy, elle fut prêtée aux États-Unis. Elle voyagea en bateau, dans une caisse spéciale, et fut exposée à Washington puis à New York.",
     "Plus de 1,7 million de personnes firent la queue pour l'admirer, parfois pendant des heures, souvent pour la voir seulement quelques secondes. En 1974, elle fut exposée à Tokyo, où elle attira plus d'un million et demi de visiteurs, puis à Moscou.",
     "Pendant la Seconde Guerre mondiale, la Joconde fut cachée, comme beaucoup d'autres œuvres du Louvre, dans plusieurs châteaux de province, pour la protéger des bombardements et des pillages. Elle changea plusieurs fois de cachette, parfois en pleine nuit. Depuis ces voyages, le Louvre a décidé qu'elle ne quitterait plus le musée, en raison des risques."
    ]},

@@ -18,7 +18,7 @@ gps: {
   ],
   sections: [
    {h:"Tout a commencé avec Spoutnik", p:[
-    "Le 4 octobre 1957, l'Union soviétique lance Spoutnik 1, le premier satellite artificiel. Dans le monde entier, des radioamateurs captent ses « bips ». À l'université Johns Hopkins, aux États-Unis, deux jeunes physiciens, William Guier et George Weiffenbach, enregistrent ses signaux par curiosité.",
+    "Quand Spoutnik 1 est lancé, en octobre 1957 (voir la découverte qui lui est consacrée), ses signaux radio intriguent un laboratoire américain. À l'université Johns Hopkins, aux États-Unis, deux jeunes physiciens, William Guier et George Weiffenbach, enregistrent ses signaux par curiosité.",
     "Ils remarquent que la fréquence du signal change légèrement selon que le satellite s'approche ou s'éloigne, comme la sirène d'une ambulance qui passe : c'est l'effet Doppler. En analysant ces variations, ils parviennent à calculer l'orbite exacte de Spoutnik depuis le sol.",
     "Leur chef, Frank McClure, a alors une idée de génie : si l'on peut trouver la position d'un satellite à partir du sol, on doit pouvoir faire l'inverse, et trouver sa position sur Terre à partir de satellites dont l'orbite est connue. Le principe de la navigation par satellite était né.",
     "Cette idée donne naissance au système Transit, mis en service par la marine américaine dans les années 1960 pour guider ses sous-marins. Il ne donnait une position que toutes les heures environ, mais c'était déjà une révolution."
@@ -102,7 +102,7 @@ gps: {
   ],
   sections: [
    {h:"It all began with Sputnik", p:[
-    "On 4 October 1957 the Soviet Union launched Sputnik 1, the first artificial satellite. Radio amateurs around the world picked up its \"beeps\". At Johns Hopkins University in the United States two young physicists, William Guier and George Weiffenbach, recorded its signals out of curiosity.",
+    "When Sputnik 1 was launched in October 1957 (see its own discovery), its radio signals intrigued an American lab. At Johns Hopkins University in the United States two young physicists, William Guier and George Weiffenbach, recorded its signals out of curiosity.",
     "They noticed that the signal's frequency changed slightly as the satellite approached or moved away, like a passing ambulance siren: the Doppler effect. By analysing these variations they managed to work out Sputnik's exact orbit from the ground.",
     "Their boss, Frank McClure, then had a brilliant idea: if you can find a satellite's position from the ground, you should be able to do the reverse and find your position on Earth from satellites whose orbits are known. The principle of satellite navigation was born.",
     "This idea gave rise to the Transit system, put into service by the US Navy in the 1960s to guide its submarines. It only gave a position roughly every hour, but it was already a revolution."

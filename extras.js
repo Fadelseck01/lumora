@@ -17,7 +17,11 @@ const subOf = {
   quantum:0, gps:1, emc2:4, absolutezero:4, montyhall:2,
   ai:0, ingenuity:1, quantumcomputer:2, graphene:3, fusion:4,
   life:3, consciousness:1, time:2, whyexist:0, fermi:3, printing:4,
-  goree:4, lacrose:0, dindefelo:0
+  goree:4, lacrose:0, dindefelo:0,
+  sputnik:5,
+  laika:5,
+  gagarin:5,
+  apollo11:5
 };
 
 /* Phrase d'accueil de chaque page univers */
@@ -55,7 +59,11 @@ const timeline = {
   darkmatter:{y:1933}, ww2:{y:1939}, oort:{y:1950}, fermi:{y:1950}, ai:{y:1956},
   challenger:{y:1960}, voyager:{y:1977}, wow:{y:1977}, genome:{y:2003},
   tsunami2004:{y:2004}, graphene:{y:2004}, calbuco:{y:2015},
-  blackhole:{y:2019}, covid:{y:2019, l:{fr:"2019 – 2023",en:"2019 – 2023"}}, ingenuity:{y:2021}
+  blackhole:{y:2019}, covid:{y:2019, l:{fr:"2019 – 2023",en:"2019 – 2023"}}, ingenuity:{y:2021},
+  sputnik:{y:1957},
+  laika:{y:1957, l:{"fr": "Novembre 1957", "en": "November 1957"}},
+  gagarin:{y:1961},
+  apollo11:{y:1969}
 };
 
 /* Quiz : deux questions écrites par univers (+ questions photo générées automatiquement).
@@ -112,7 +120,15 @@ const quizBank = [
   {cat:"questions",ref:"printing",a:0,q:{fr:"Qui a mis au point l'imprimerie à caractères mobiles en Europe ?",en:"Who developed movable-type printing in Europe?"},
    o:{fr:["Johannes Gutenberg","Léonard de Vinci","Galilée","Érasme"],en:["Johannes Gutenberg","Leonardo da Vinci","Galileo","Erasmus"]}},
   {cat:"questions",ref:"fermi",a:0,q:{fr:"La question « Où sont-ils tous ? » porte le nom de quel physicien ?",en:"The question \"Where is everybody?\" is named after which physicist?"},
-   o:{fr:["Enrico Fermi","Albert Einstein","Carl Sagan","Stephen Hawking"],en:["Enrico Fermi","Albert Einstein","Carl Sagan","Stephen Hawking"]}}
+   o:{fr:["Enrico Fermi","Albert Einstein","Carl Sagan","Stephen Hawking"],en:["Enrico Fermi","Albert Einstein","Carl Sagan","Stephen Hawking"]}},
+  {cat:"cosmos",ref:"sputnik",a:1,q:{"fr": "Que signifie le mot russe « spoutnik » ?", "en": "What does the Russian word \"sputnik\" mean?"},
+   o:{"fr": ["Étoile filante", "Compagnon de route", "Petite lune", "Messager"], "en": ["Shooting star", "Fellow traveller", "Little moon", "Messenger"]}},
+  {cat:"cosmos",ref:"laika",a:2,q:{"fr": "De quoi la chienne Laïka est-elle morte en orbite ?", "en": "What did the dog Laika die of in orbit?"},
+   o:{"fr": ["D'un manque de nourriture", "D'un poison prévu", "De la surchauffe de sa cabine", "D'une collision"], "en": ["Lack of food", "A planned poison", "Her cabin overheating", "A collision"]}},
+  {cat:"cosmos",ref:"gagarin",a:0,q:{"fr": "Combien de temps a duré le vol de Youri Gagarine ?", "en": "How long did Yuri Gagarin's flight last?"},
+   o:{"fr": ["108 minutes", "15 minutes", "24 heures", "3 jours"], "en": ["108 minutes", "15 minutes", "24 hours", "3 days"]}},
+  {cat:"cosmos",ref:"apollo11",a:3,q:{"fr": "Combien d'astronautes ont marché sur la Lune entre 1969 et 1972 ?", "en": "How many astronauts walked on the Moon between 1969 and 1972?"},
+   o:{"fr": ["2", "6", "9", "12"], "en": ["2", "6", "9", "12"]}}
 ];
 
 /* Textes de l'interface pour les nouvelles pages */
@@ -189,6 +205,7 @@ const places = [
   {id:"mauritius",lat:-20.3,lon:57.6,name:{fr:"Île Maurice",en:"Mauritius"},blurb:{fr:"Le dernier refuge du dodo.",en:"The dodo's last refuge."},items:["dodo"]},
   {id:"socotra",lat:12.5,lon:53.9,name:{fr:"Socotra (Yémen)",en:"Socotra (Yemen)"},blurb:{fr:"Les arbres-dragons du plateau de Diksam.",en:"The dragon trees of the Diksam plateau."},items:["diksam"]},
   {id:"kazakhstan",lat:43.6,lon:54.0,name:{fr:"Mangystau (Kazakhstan)",en:"Mangystau (Kazakhstan)"},blurb:{fr:"Une montagne aux couches colorées comme un gâteau.",en:"A mountain with cake-like coloured layers."},items:["bokty"]},
+  {id:"baikonur",lat:45.92,lon:63.34,name:{fr:"Baïkonour (Kazakhstan)",en:"Baikonur (Kazakhstan)"},blurb:{fr:"Le cosmodrome d'où sont partis Spoutnik, Laïka et Youri Gagarine.",en:"The cosmodrome from which Sputnik, Laika and Yuri Gagarin set off."},items:["sputnik","laika","gagarin"]},
   {id:"tianshan",lat:42.0,lon:80.0,name:{fr:"Tian Shan",en:"Tian Shan"},blurb:{fr:"Les « montagnes célestes » d'Asie centrale.",en:"The \"celestial mountains\" of Central Asia."},items:["tianshan"]},
   {id:"india",lat:27.2,lon:78.0,name:{fr:"Inde",en:"India"},blurb:{fr:"Un tombeau construit par amour.",en:"A tomb built for love."},items:["tajmahal"]},
   {id:"andaman",lat:11.6,lon:92.2,name:{fr:"Île de Sentinelle du Nord",en:"North Sentinel Island"},blurb:{fr:"L'un des derniers peuples isolés de la planète.",en:"One of the last isolated peoples on the planet."},items:["sentinelese"]},
@@ -204,6 +221,7 @@ const places = [
   {id:"chile",lat:-30.0,lon:-70.0,name:{fr:"Chili",en:"Chile"},blurb:{fr:"Le désert le plus sec du monde et un volcan en furie.",en:"The world's driest desert and a raging volcano."},items:["atacama","calbuco"]},
   {id:"mexico",lat:20.0,lon:-99.0,name:{fr:"Mexique",en:"Mexico"},blurb:{fr:"Serpent à plumes, fête des morts, axolotl et vaquita.",en:"Feathered serpent, Day of the Dead, axolotl and vaquita."},items:["kukulcan","muertos","mole","axolotl","vaquita"]},
   {id:"usa",lat:35.5,lon:-78.0,name:{fr:"Est des États-Unis",en:"Eastern United States"},blurb:{fr:"Une colonie disparue, une plante carnivore et un signal venu de l'espace.",en:"A vanished colony, a carnivorous plant and a signal from space."},items:["roanoke","carnivorous","wow"]},
+  {id:"capecanaveral",lat:28.57,lon:-80.65,name:{fr:"Centre spatial Kennedy (Floride)",en:"Kennedy Space Center (Florida)"},blurb:{fr:"Le pas de tir d'où Apollo 11 est partie vers la Lune.",en:"The launch pad from which Apollo 11 left for the Moon."},items:["apollo11"]},
   {id:"bermuda",lat:28.0,lon:-68.0,name:{fr:"Triangle des Bermudes",en:"Bermuda Triangle"},blurb:{fr:"Mystère ou mythe ?",en:"Mystery or myth?"},items:["bermuda"]}
 ];
 
