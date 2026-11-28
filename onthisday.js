@@ -94,7 +94,13 @@ const OTD_LINKS = {
   mh370:["MH370", "Malaysia Airlines"],
   dbcooper:["D. B. Cooper", "D.B. Cooper"],
   tunguska:["Toungouska", "Tunguska"],
-  ironmask:["masque de fer", "Iron Mask"]
+  ironmask:["masque de fer", "Iron Mask"],
+  atlantis:["Atlantide", "Atlantis"],
+  troy:["Troie", "Troy", "Schliemann", "Iliade", "Iliad"],
+  arthur:["roi Arthur", "King Arthur", "Excalibur", "Table ronde", "Round Table"],
+  lochness:["Loch Ness", "Nessie"],
+  eldorado:["Eldorado", "El Dorado", "Guatavita"],
+  pharaohcurse:["malédiction des pharaons", "curse of the pharaohs", "Lord Carnarvon"]
 };
 const otdRe = {};
 function otdMatches(ev){

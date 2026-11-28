@@ -349,14 +349,10 @@ kukulcan:{
 anubis:{
  sources:[{t:"Nelson, BMJ (2002) — The mummy's curse: historical cohort study", u:"https://www.bmj.com/content/325/7378/1482"}],
  fr:[{h:"La malédiction des pharaons", p:[
-  "En 1922, l'archéologue britannique Howard Carter découvre la tombe presque intacte de Toutânkhamon, financé par son mécène, Lord Carnarvon. Cette découverte extraordinaire est racontée dans l'article consacré à la tombe de Toutânkhamon.",
-  "En avril 1923, Lord Carnarvon meurt au Caire, d'une infection après une piqûre de moustique qu'il avait coupée en se rasant. Les journaux s'emparent de l'affaire et inventent la « malédiction du pharaon » : quiconque aurait troublé le repos du roi serait condamné. Chaque nouveau décès lié de près ou de loin à l'expédition est alors présenté comme une preuve.",
-  "En 2002, un chercheur australien a vérifié cette légende avec des méthodes statistiques. Il a comparé l'espérance de vie des 25 Occidentaux présents lors de l'ouverture de la tombe ou du sarcophage avec celle d'autres personnes de la même époque. Résultat : aucune différence significative. Howard Carter lui-même a vécu jusqu'en 1939. La malédiction relève donc du mythe, mais elle a beaucoup contribué à la célébrité de Toutânkhamon."
+  "La découverte de la tombe de Toutânkhamon, en 1922, a fait naître une légende célèbre : celle d'une malédiction qui frapperait quiconque dérange le repos d'un pharaon. Son histoire, et ce qu'en dit la science, sont racontées dans la découverte consacrée à la malédiction des pharaons."
  ]}],
  en:[{h:"The curse of the pharaohs", p:[
-  "In 1922 the British archaeologist Howard Carter discovered Tutankhamun's almost intact tomb, funded by his patron Lord Carnarvon. This extraordinary discovery is told in the article devoted to Tutankhamun's tomb.",
-  "In April 1923 Lord Carnarvon died in Cairo of an infection after a mosquito bite he had nicked while shaving. The newspapers seized on the story and invented the \"pharaoh's curse\": anyone who disturbed the king's rest would be doomed. Every new death linked in any way to the expedition was then presented as proof.",
-  "In 2002 an Australian researcher tested the legend statistically. He compared the life expectancy of the 25 Westerners present at the opening of the tomb or sarcophagus with that of other people of the time. Result: no significant difference. Howard Carter himself lived until 1939. The curse is therefore a myth, but it did much to make Tutankhamun famous."
+  "The discovery of Tutankhamun's tomb in 1922 gave rise to a famous legend: that of a curse striking anyone who disturbs a pharaoh's rest. Its story, and what science says about it, are told in the discovery devoted to the curse of the pharaohs."
  ]}]
 },
 anansi:{

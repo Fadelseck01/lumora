@@ -38,7 +38,13 @@ const subOf = {
   mh370:2,
   dbcooper:2,
   tunguska:1,
-  ironmask:2
+  ironmask:2,
+  atlantis:0,
+  troy:0,
+  arthur:5,
+  lochness:5,
+  eldorado:5,
+  pharaohcurse:3
 };
 
 /* Phrase d'accueil de chaque page univers */
@@ -97,7 +103,13 @@ const timeline = {
   mh370:{y:2014},
   dbcooper:{y:1971},
   tunguska:{y:1908},
-  ironmask:{y:1669, l:{"fr": "1669 – 1703", "en": "1669 – 1703"}}
+  ironmask:{y:1669, l:{"fr": "1669 – 1703", "en": "1669 – 1703"}},
+  atlantis:{y:-360, l:{"fr": "Vers 360 av. J.-C. (récit de Platon)", "en": "Around 360 BCE (Plato's account)"}},
+  troy:{y:-1180, l:{"fr": "Vers 1200 av. J.-C.", "en": "Around 1200 BCE"}},
+  arthur:{y:500, l:{"fr": "Vers 500 (légende)", "en": "Around 500 (legend)"}},
+  lochness:{y:1933},
+  eldorado:{y:1536, l:{"fr": "XVIe – XVIIIe siècle", "en": "16th – 18th century"}},
+  pharaohcurse:{y:1923}
 };
 
 /* Quiz : deux questions écrites par univers (+ questions photo générées automatiquement).
@@ -196,7 +208,19 @@ const quizBank = [
   {cat:"mystery",ref:"tunguska",a:2,q:{"fr": "Pourquoi n'a-t-on trouvé aucun cratère à la Toungouska ?", "en": "Why was no crater found at Tunguska?"},
    o:{"fr": ["Il a été recouvert par un lac", "Le sol était trop dur", "L'objet a explosé dans l'air", "Il a été effacé par la forêt"], "en": ["It was covered by a lake", "The ground was too hard", "The object exploded in the air", "The forest erased it"]}},
   {cat:"mystery",ref:"ironmask",a:0,q:{"fr": "En quelle matière était le masque du célèbre prisonnier ?", "en": "What was the famous prisoner's mask made of?"},
-   o:{"fr": ["En velours noir", "En fer", "En cuir", "En argent"], "en": ["Black velvet", "Iron", "Leather", "Silver"]}}
+   o:{"fr": ["En velours noir", "En fer", "En cuir", "En argent"], "en": ["Black velvet", "Iron", "Leather", "Silver"]}},
+  {cat:"myths",ref:"atlantis",a:2,q:{"fr": "Quel philosophe a décrit l'Atlantide ?", "en": "Which philosopher described Atlantis?"},
+   o:{"fr": ["Aristote", "Socrate", "Platon", "Homère"], "en": ["Aristotle", "Socrates", "Plato", "Homer"]}},
+  {cat:"myths",ref:"troy",a:3,q:{"fr": "Dans quel texte trouve-t-on la ruse du cheval de Troie ?", "en": "In which text is the Trojan Horse trick found?"},
+   o:{"fr": ["L'Iliade", "La Théogonie", "Les Métamorphoses", "L'Énéide"], "en": ["The Iliad", "The Theogony", "The Metamorphoses", "The Aeneid"]}},
+  {cat:"myths",ref:"arthur",a:1,q:{"fr": "Quel écrivain a fait d'Arthur un grand roi, vers 1136 ?", "en": "Which writer turned Arthur into a great king around 1136?"},
+   o:{"fr": ["Chrétien de Troyes", "Geoffroy de Monmouth", "Thomas Malory", "Wace"], "en": ["Chrétien de Troyes", "Geoffrey of Monmouth", "Thomas Malory", "Wace"]}},
+  {cat:"myths",ref:"lochness",a:0,q:{"fr": "Qu'était réellement la célèbre « photo du chirurgien » de 1934 ?", "en": "What was the famous 1934 \"Surgeon's Photograph\" really?"},
+   o:{"fr": ["Un sous-marin jouet avec une tête sculptée", "Un tronc d'arbre", "Une anguille géante", "Un phoque"], "en": ["A toy submarine with a sculpted head", "A tree trunk", "A giant eel", "A seal"]}},
+  {cat:"myths",ref:"eldorado",a:1,q:{"fr": "Que désignait d'abord le mot « El Dorado » ?", "en": "What did the term \"El Dorado\" originally refer to?"},
+   o:{"fr": ["Une ville", "Un homme couvert d'or", "Une montagne", "Une mine"], "en": ["A city", "A man covered in gold", "A mountain", "A mine"]}},
+  {cat:"myths",ref:"pharaohcurse",a:2,q:{"fr": "Jusqu'à quelle année Howard Carter, qui a ouvert la tombe, a-t-il vécu ?", "en": "Until what year did Howard Carter, who opened the tomb, live?"},
+   o:{"fr": ["1923", "1924", "1939", "1925"], "en": ["1923", "1924", "1939", "1925"]}}
 ];
 
 /* Textes de l'interface pour les nouvelles pages */
@@ -253,7 +277,7 @@ const uiPages = {
 const places = [
   {id:"senegal",lat:14.7,lon:-17.4,name:{fr:"Sénégal",en:"Senegal"},blurb:{fr:"Une île de mémoire, un lac rose et le plat national.",en:"An island of memory, a pink lake and the national dish."},items:["joola","goree","lacrose","ceebu"]},
   {id:"kedougou",lat:12.38,lon:-12.33,name:{fr:"Sénégal oriental (Kédougou)",en:"Eastern Senegal (Kédougou)"},blurb:{fr:"Une cascade de près de 100 mètres et les derniers chimpanzés du pays.",en:"A waterfall of nearly 100 metres and the country's last chimpanzees."},items:["dindefelo"]},
-  {id:"egypt",lat:29.9,lon:31.1,name:{fr:"Égypte",en:"Egypt"},blurb:{fr:"Pyramides, pharaons et dieux à tête d'animal.",en:"Pyramids, pharaohs and animal-headed gods."},items:["tutankhamun","khufu","cleopatra","mummies","anubis"]},
+  {id:"egypt",lat:29.9,lon:31.1,name:{fr:"Égypte",en:"Egypt"},blurb:{fr:"Pyramides, pharaons et dieux à tête d'animal.",en:"Pyramids, pharaohs and animal-headed gods."},items:["pharaohcurse","tutankhamun","khufu","cleopatra","mummies","anubis"]},
   {id:"iceland",lat:64.9,lon:-18.6,name:{fr:"Islande",en:"Iceland"},blurb:{fr:"Volcans, sable noir, cascades et aurores boréales.",en:"Volcanoes, black sand, waterfalls and northern lights."},items:["vestrahorn","godafoss","aurora"]},
   {id:"norway",lat:61.0,lon:8.5,name:{fr:"Norvège et Svalbard",en:"Norway and Svalbard"},blurb:{fr:"Fjords, nuit polaire et légendes nordiques.",en:"Fjords, polar night and Norse legends."},items:["preikestolen","polarnight","yggdrasil","kraken"]},
   {id:"faroe",lat:62.3,lon:-6.8,name:{fr:"Îles Féroé",en:"Faroe Islands"},blurb:{fr:"Falaises vertigineuses et femme-phoque.",en:"Towering cliffs and the seal woman."},items:["kalsoy"]},
@@ -303,7 +327,11 @@ const places = [
   {id:"indianocean",lat:-35.0,lon:92.0,name:{"fr": "Sud de l'océan Indien", "en": "Southern Indian Ocean"},blurb:{"fr": "Quelque part le long du « septième arc », l'épave du vol MH370.", "en": "Somewhere along the \"seventh arc\", the wreck of flight MH370."},items:["mh370"]},
   {id:"portland",lat:45.9,lon:-122.6,name:{"fr": "Sud-ouest de l'État de Washington (États-Unis)", "en": "South-western Washington State (United States)"},blurb:{"fr": "Les forêts où D. B. Cooper a sauté en parachute en 1971.", "en": "The forests where D. B. Cooper parachuted in 1971."},items:["dbcooper"]},
   {id:"tunguska",lat:60.89,lon:101.89,name:{"fr": "Toungouska (Sibérie, Russie)", "en": "Tunguska (Siberia, Russia)"},blurb:{"fr": "La forêt soufflée par une explosion venue du ciel en 1908.", "en": "The forest flattened by an explosion from the sky in 1908."},items:["tunguska"]},
-  {id:"lerins",lat:43.52,lon:7.05,name:{"fr": "Île Sainte-Marguerite (France)", "en": "Île Sainte-Marguerite (France)"},blurb:{"fr": "Le fort où l'Homme au masque de fer a été enfermé onze ans.", "en": "The fort where the Man in the Iron Mask was held for eleven years."},items:["ironmask"]}
+  {id:"lerins",lat:43.52,lon:7.05,name:{"fr": "Île Sainte-Marguerite (France)", "en": "Île Sainte-Marguerite (France)"},blurb:{"fr": "Le fort où l'Homme au masque de fer a été enfermé onze ans.", "en": "The fort where the Man in the Iron Mask was held for eleven years."},items:["ironmask"]},
+  {id:"troy",lat:39.96,lon:26.24,name:{"fr": "Troie (Turquie)", "en": "Troy (Turkey)"},blurb:{"fr": "La colline d'Hisarlik et ses neuf villes superposées.", "en": "The hill of Hisarlik and its nine stacked cities."},items:["troy"]},
+  {id:"tintagel",lat:50.67,lon:-4.76,name:{"fr": "Tintagel (Cornouailles, Royaume-Uni)", "en": "Tintagel (Cornwall, United Kingdom)"},blurb:{"fr": "Le promontoire associé à la naissance du roi Arthur.", "en": "The headland associated with King Arthur's birth."},items:["arthur"]},
+  {id:"lochness",lat:57.3,lon:-4.45,name:{"fr": "Loch Ness (Écosse)", "en": "Loch Ness (Scotland)"},blurb:{"fr": "Un lac sombre et profond, royaume de Nessie.", "en": "A dark, deep loch, the realm of Nessie."},items:["lochness"]},
+  {id:"guatavita",lat:4.98,lon:-73.78,name:{"fr": "Lac de Guatavita (Colombie)", "en": "Lake Guatavita (Colombia)"},blurb:{"fr": "Le lac sacré des Muiscas, à l'origine de la légende de l'Eldorado.", "en": "The Muisca sacred lake where the legend of El Dorado began."},items:["eldorado"]}
 ];
 
 Object.assign(uiPages.fr, {
