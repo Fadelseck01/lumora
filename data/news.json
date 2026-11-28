@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-28T06:32:15Z",
- "checked": "2026-11-28T06:32:15Z",
+ "updated": "2026-11-28T12:52:08Z",
+ "checked": "2026-11-28T12:52:08Z",
  "sources": [
   {
    "id": "nasa",
@@ -8,7 +8,7 @@
    "home": "https://www.nasa.gov",
    "ok": true,
    "found": 10,
-   "new": 1
+   "new": 0
   },
   {
    "id": "nasa-iotd",
@@ -76,6 +76,21 @@
   }
  ],
  "items": [
+  {
+   "id": "e894cdf832163dd8",
+   "source": "mongabay",
+   "sourceName": "Mongabay",
+   "lang": "en",
+   "title": "Will my glacier go extinct? Interview with Lander Van Tricht",
+   "summary": "In mid-October, Lander Van Tricht received a message from a woman. She had visited a glacier when she was 10 years old and, according to a tool that Van Tricht had developed, that same glacier was now expected to go extinct in less than 40 years. Instances of public engagement…",
+   "link": "https://news.mongabay.com/2026/11/will-my-glacier-go-extinct-interview-with-lander-van-tricht/",
+   "published": "2026-11-28T08:10:22Z",
+   "image": null,
+   "imageCredit": null,
+   "universe": "living",
+   "related": "dodo",
+   "firstSeen": "2026-11-28T12:52:08Z"
+  },
   {
    "id": "cb9d823fc488da65",
    "source": "nasa",
@@ -715,21 +730,6 @@
    "summary": "BRUGES, Belgium — More than 800 people gathered for the 7th World Conference on Marine Biodiversity, held Nov. 17-20, in Bruges, Belgium. The conference took on topics as varied as deep-sea mining impacts, ocean-related art, citizen science, methods for working with large…",
    "link": "https://news.mongabay.com/2026/11/international-marine-biodiversity-conference-emphasizes-the-unsung-and-the-unknown/",
    "published": "2026-11-26T08:01:34Z",
-   "image": null,
-   "imageCredit": null,
-   "universe": "living",
-   "related": null,
-   "firstSeen": "2026-11-26T11:25:28Z"
-  },
-  {
-   "id": "c119b5d52cb53cad",
-   "source": "mongabay",
-   "sourceName": "Mongabay",
-   "lang": "en",
-   "title": "How Uttarakhand’s women farmers are reviving endangered Himalayan medicinal plants",
-   "summary": "RAMNI, Uttarakhand, India — At state fairs across Uttarakhand, while most farmers set up stalls featuring local millet varieties, Guddi Devi and her fellow farmers showcase saplings of high-altitude medicinal plants. “In the past, people used to bring kutki [Picrorhiza kurroa]…",
-   "link": "https://news.mongabay.com/2026/11/how-uttarakhands-women-farmers-are-reviving-endangered-himalayan-medicinal-plants/",
-   "published": "2026-11-26T08:00:13Z",
    "image": null,
    "imageCredit": null,
    "universe": "living",
