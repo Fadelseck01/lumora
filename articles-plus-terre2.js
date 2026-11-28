@@ -68,9 +68,7 @@ ringoffire: {
    "Montagne sacrée pour le shintoïsme et le bouddhisme, il est inscrit depuis 2013 au patrimoine mondial de l'UNESCO comme « lieu sacré et source d'inspiration artistique », notamment pour les célèbres estampes de Hokusai. Chaque été, des centaines de milliers de randonneurs en font l'ascension. Pour limiter l'affluence, l'accès au sentier le plus fréquenté est désormais payant et plafonné à quelques milliers de personnes par jour."
   ]},
   {h:"Krakatoa, l'explosion entendue à 4 800 km", p:[
-   "Le 27 août 1883, le volcan Krakatoa, sur une petite île entre Java et Sumatra, en Indonésie, explose avec une violence inouïe. Le bruit est entendu jusqu'à l'île Rodrigues, dans l'océan Indien, à environ 4 800 kilomètres : c'est sans doute le son le plus fort jamais rapporté. L'onde de pression fait plusieurs fois le tour de la Terre et est enregistrée par les baromètres du monde entier.",
-   "La plupart des quelque 36 000 victimes sont tuées par les tsunamis, des vagues de plus de 30 mètres qui balaient les côtes voisines. Les cendres projetées dans la haute atmosphère se répandent autour du globe : pendant des mois, les couchers de soleil sont d'un rouge si intense qu'à New York, des pompiers sont appelés, croyant à un incendie.",
-   "L'île a presque entièrement disparu dans l'explosion. Mais en 1927, un nouveau volcan émerge de la mer au même endroit : Anak Krakatau, « l'enfant du Krakatoa ». En décembre 2018, un pan entier de ce jeune volcan s'effondre dans la mer et provoque un tsunami qui tue plus de 400 personnes sur les côtes de Java et de Sumatra, sans qu'aucune alerte n'ait pu être donnée à temps."
+   "En 1883, l'explosion du Krakatoa, en Indonésie, a produit sans doute le son le plus fort de l'histoire et des tsunamis meurtriers : cette éruption est racontée en détail dans la découverte qui lui est consacrée."
   ]},
   {h:"Hunga Tonga, l'éruption de tous les records", p:[
    "Le 15 janvier 2022, le volcan sous-marin Hunga Tonga-Hunga Ha'apai, dans le royaume des Tonga, au sud du Pacifique, connaît une explosion extraordinaire. Son panache s'élève jusqu'à environ 57 kilomètres d'altitude, atteignant la mésosphère : c'est le plus haut panache volcanique jamais mesuré par satellite.",
@@ -95,9 +93,7 @@ ringoffire: {
    "A sacred mountain in Shinto and Buddhism, it has been a UNESCO World Heritage Site since 2013 as a \"sacred place and source of artistic inspiration\", notably for Hokusai's famous prints. Every summer hundreds of thousands of hikers climb it. To limit crowds, access to the busiest trail now carries a fee and is capped at a few thousand people a day."
   ]},
   {h:"Krakatoa, the explosion heard 4,800 km away", p:[
-   "On 27 August 1883 the volcano Krakatoa, on a small island between Java and Sumatra in Indonesia, exploded with unheard-of violence. The noise was heard as far as Rodrigues Island in the Indian Ocean, about 4,800 kilometres away: probably the loudest sound ever reported. The pressure wave circled the Earth several times and was recorded by barometers all over the world.",
-   "Most of the roughly 36,000 victims were killed by tsunamis, waves over 30 metres high that swept the nearby coasts. Ash thrown into the upper atmosphere spread around the globe: for months sunsets were such an intense red that in New York firefighters were called out, thinking there was a fire.",
-   "The island almost entirely vanished in the explosion. But in 1927 a new volcano rose from the sea in the same spot: Anak Krakatau, \"child of Krakatoa\". In December 2018 a whole flank of this young volcano collapsed into the sea, causing a tsunami that killed more than 400 people on the coasts of Java and Sumatra before any warning could be given."
+   "In 1883 the explosion of Krakatoa in Indonesia produced probably the loudest sound in history and deadly tsunamis: the eruption is told in detail in the discovery devoted to it."
   ]},
   {h:"Hunga Tonga, the record-breaking eruption", p:[
    "On 15 January 2022 the underwater volcano Hunga Tonga-Hunga Ha'apai, in the Kingdom of Tonga in the South Pacific, exploded extraordinarily. Its plume rose to about 57 kilometres, reaching the mesosphere: the highest volcanic plume ever measured by satellite.",
@@ -148,7 +144,6 @@ const fig=(id,hf,he,f)=>({[id]:{fr:{[hf]:f[0]},en:{[he]:f[1]}}});
 [
  fig("aurora","Le Canada, au cœur de l'ovale auroral","Canada, at the heart of the auroral oval",F("aurora-yellowknife.jpg","Une aurore boréale verte au-dessus d'un campement près de Yellowknife, dans les Territoires du Nord-Ouest, en 2018.","A green aurora borealis over a camp near Yellowknife, Northwest Territories, in 2018.","Photo : raymond22112376 — domaine public","Photo: raymond22112376 — public domain")),
  fig("aurora","STEVE, l'aurore qui n'en était pas une","STEVE, the aurora that wasn't",F("steve-aurora.jpg","Le mince ruban violet de STEVE traversant le ciel, photographié au Canada et diffusé par la NASA.","STEVE's thin purple ribbon crossing the sky, photographed in Canada and released by NASA.","NASA Goddard — CC0","NASA Goddard — CC0","420px")),
- fig("ringoffire","Krakatoa, l'explosion entendue à 4 800 km","Krakatoa, the explosion heard 4,800 km away",F("krakatoa-1888.jpg","L'éruption du Krakatoa de 1883 vue par une lithographie britannique publiée en 1888, dans le rapport de la Royal Society consacré à la catastrophe.","The 1883 eruption of Krakatoa in a British lithograph published in 1888 in the Royal Society's report on the disaster.","Lithographie Parker & Coward (1888) — domaine public","Lithograph by Parker & Coward (1888) — public domain","440px"))
 ].forEach(addFig);
 }
 
@@ -170,6 +165,5 @@ addParas({
 addParas({
  aurora:{fr:{"Les couleurs du ciel":"Les aurores australes, autour du pôle Sud, sont aussi belles que les aurores boréales, mais beaucoup moins observées, car l'ovale auroral passe surtout au-dessus de l'Antarctique et de l'océan. On peut néanmoins les voir depuis le sud de la Nouvelle-Zélande, la Tasmanie ou la Patagonie, et les chercheurs des bases antarctiques en profitent pendant la longue nuit polaire."},
          en:{"The colours of the sky":"The southern lights, around the South Pole, are as beautiful as the northern lights but far less observed, since the auroral oval lies mostly over Antarctica and the ocean. They can still be seen from southern New Zealand, Tasmania or Patagonia, and researchers at Antarctic bases enjoy them during the long polar night."}},
- ringoffire:{fr:{"Krakatoa, l'explosion entendue à 4 800 km":"Certains historiens de l'art se sont même demandé si ces ciels flamboyants n'avaient pas inspiré le ciel rouge sang du Cri, le célèbre tableau du Norvégien Edvard Munch, peint en 1893. L'hypothèse reste discutée, mais elle montre combien l'éruption a marqué les esprits, bien au-delà de l'Indonésie."},
-             en:{"Krakatoa, the explosion heard 4,800 km away":"Some art historians have even wondered whether these blazing skies inspired the blood-red sky of The Scream, the famous painting by the Norwegian Edvard Munch, made in 1893. The hypothesis is debated, but it shows how deeply the eruption struck people's minds, far beyond Indonesia."}}
+ ringoffire:{fr:{},en:{}}
 });

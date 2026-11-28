@@ -30,7 +30,11 @@ const subOf = {
   magellan:3,
   mlk:3,
   hitler:3,
-  berlinwall:4
+  berlinwall:4,
+  titanic:3,
+  joola:3,
+  krakatoa:2,
+  september11:3
 };
 
 /* Phrase d'accueil de chaque page univers */
@@ -81,7 +85,11 @@ const timeline = {
   magellan:{y:1519, l:{"fr": "1519 – 1522", "en": "1519 – 1522"}},
   mlk:{y:1963, l:{"fr": "1955 – 1968", "en": "1955 – 1968"}},
   hitler:{y:1933, l:{"fr": "1933 – 1945", "en": "1933 – 1945"}},
-  berlinwall:{y:1961, l:{"fr": "1961 – 1989", "en": "1961 – 1989"}}
+  berlinwall:{y:1961, l:{"fr": "1961 – 1989", "en": "1961 – 1989"}},
+  titanic:{y:1912},
+  joola:{y:2002},
+  krakatoa:{y:1883},
+  september11:{y:2001}
 };
 
 /* Quiz : deux questions écrites par univers (+ questions photo générées automatiquement).
@@ -164,7 +172,15 @@ const quizBank = [
   {cat:"history",ref:"hitler",a:1,q:{"fr": "Quel score maximal le parti nazi a-t-il obtenu lors d'élections libres, en juillet 1932 ?", "en": "What was the Nazi Party's highest share of the vote in free elections, in July 1932?"},
    o:{"fr": ["Plus de 60 %", "Environ 37 %", "Environ 15 %", "51 %"], "en": ["Over 60%", "About 37%", "About 15%", "51%"]}},
   {cat:"history",ref:"berlinwall",a:3,q:{"fr": "Qu'a provoqué la conférence de presse de Günter Schabowski le 9 novembre 1989 ?", "en": "What did Günter Schabowski's press conference on 9 November 1989 cause?"},
-   o:{"fr": ["La construction du mur", "La réunification immédiate", "La démission de Gorbatchev", "L'ouverture des postes-frontières"], "en": ["The building of the wall", "Immediate reunification", "Gorbachev's resignation", "The opening of the checkpoints"]}}
+   o:{"fr": ["La construction du mur", "La réunification immédiate", "La démission de Gorbatchev", "L'ouverture des postes-frontières"], "en": ["The building of the wall", "Immediate reunification", "Gorbachev's resignation", "The opening of the checkpoints"]}},
+  {cat:"upheavals",ref:"titanic",a:2,q:{"fr": "Pour quelle part des personnes à bord le Titanic avait-il des places dans les canots ?", "en": "For what share of the people on board did the Titanic have lifeboat places?"},
+   o:{"fr": ["Toutes", "Les trois quarts", "Environ la moitié", "Un dixième"], "en": ["All of them", "Three-quarters", "About half", "A tenth"]}},
+  {cat:"upheavals",ref:"joola",a:1,q:{"fr": "Pour combien de passagers le Joola avait-il été conçu ?", "en": "How many passengers was the Joola designed to carry?"},
+   o:{"fr": ["1 900", "580", "1 200", "3 000"], "en": ["1,900", "580", "1,200", "3,000"]}},
+  {cat:"upheavals",ref:"krakatoa",a:0,q:{"fr": "Jusqu'à quelle distance l'explosion du Krakatoa a-t-elle été entendue ?", "en": "How far away was Krakatoa's explosion heard?"},
+   o:{"fr": ["Environ 4 800 km", "Environ 50 km", "Environ 500 km", "Dans le monde entier"], "en": ["About 4,800 km", "About 50 km", "About 500 km", "All over the world"]}},
+  {cat:"upheavals",ref:"september11",a:3,q:{"fr": "Pourquoi le vol 93 n'a-t-il pas atteint sa cible le 11 septembre 2001 ?", "en": "Why did Flight 93 not reach its target on 11 September 2001?"},
+   o:{"fr": ["Il a été abattu par l'armée", "Il manquait de carburant", "Le pilote a repris les commandes", "Les passagers se sont révoltés"], "en": ["It was shot down by the military", "It ran out of fuel", "The pilot regained control", "The passengers revolted"]}}
 ];
 
 /* Textes de l'interface pour les nouvelles pages */
@@ -219,7 +235,7 @@ const uiPages = {
 
 /* Carte du monde : lieux et découvertes liées (lat, lon en degrés) */
 const places = [
-  {id:"senegal",lat:14.7,lon:-17.4,name:{fr:"Sénégal",en:"Senegal"},blurb:{fr:"Une île de mémoire, un lac rose et le plat national.",en:"An island of memory, a pink lake and the national dish."},items:["goree","lacrose","ceebu"]},
+  {id:"senegal",lat:14.7,lon:-17.4,name:{fr:"Sénégal",en:"Senegal"},blurb:{fr:"Une île de mémoire, un lac rose et le plat national.",en:"An island of memory, a pink lake and the national dish."},items:["joola","goree","lacrose","ceebu"]},
   {id:"kedougou",lat:12.38,lon:-12.33,name:{fr:"Sénégal oriental (Kédougou)",en:"Eastern Senegal (Kédougou)"},blurb:{fr:"Une cascade de près de 100 mètres et les derniers chimpanzés du pays.",en:"A waterfall of nearly 100 metres and the country's last chimpanzees."},items:["dindefelo"]},
   {id:"egypt",lat:29.9,lon:31.1,name:{fr:"Égypte",en:"Egypt"},blurb:{fr:"Pyramides, pharaons et dieux à tête d'animal.",en:"Pyramids, pharaohs and animal-headed gods."},items:["tutankhamun","khufu","cleopatra","mummies","anubis"]},
   {id:"iceland",lat:64.9,lon:-18.6,name:{fr:"Islande",en:"Iceland"},blurb:{fr:"Volcans, sable noir, cascades et aurores boréales.",en:"Volcanoes, black sand, waterfalls and northern lights."},items:["vestrahorn","godafoss","aurora"]},
@@ -264,7 +280,10 @@ const places = [
   {id:"newfoundland",lat:51.6,lon:-55.53,name:{"fr": "L'Anse aux Meadows (Canada)", "en": "L'Anse aux Meadows (Canada)"},blurb:{"fr": "Le camp où des Vikings ont coupé du bois en 1021.", "en": "The camp where Vikings cut wood in 1021."},items:["vinland"]},
   {id:"mactan",lat:10.31,lon:124.02,name:{"fr": "Mactan (Philippines)", "en": "Mactan (Philippines)"},blurb:{"fr": "L'île où Magellan a été tué par les guerriers de Lapulapu.", "en": "The island where Magellan was killed by Lapulapu's warriors."},items:["magellan"]},
   {id:"alabama",lat:32.38,lon:-86.3,name:{"fr": "Montgomery et Memphis (États-Unis)", "en": "Montgomery and Memphis (United States)"},blurb:{"fr": "Du boycott des bus au dernier combat de Martin Luther King.", "en": "From the bus boycott to Martin Luther King's last fight."},items:["mlk"]},
-  {id:"berlin",lat:52.52,lon:13.4,name:{"fr": "Berlin (Allemagne)", "en": "Berlin (Germany)"},blurb:{"fr": "Le mur qui a coupé une ville en deux pendant 28 ans.", "en": "The wall that cut a city in two for 28 years."},items:["berlinwall"]}
+  {id:"berlin",lat:52.52,lon:13.4,name:{"fr": "Berlin (Allemagne)", "en": "Berlin (Germany)"},blurb:{"fr": "Le mur qui a coupé une ville en deux pendant 28 ans.", "en": "The wall that cut a city in two for 28 years."},items:["berlinwall"]},
+  {id:"titanicwreck",lat:41.73,lon:-49.95,name:{"fr": "Épave du Titanic (Atlantique Nord)", "en": "Wreck of the Titanic (North Atlantic)"},blurb:{"fr": "À près de 3 800 mètres sous la surface, au large de Terre-Neuve.", "en": "Nearly 3,800 metres below the surface, off Newfoundland."},items:["titanic"]},
+  {id:"krakatau",lat:-6.1,lon:105.42,name:{"fr": "Krakatoa (Indonésie)", "en": "Krakatoa (Indonesia)"},blurb:{"fr": "Le volcan dont l'explosion fut entendue à 4 800 kilomètres.", "en": "The volcano whose explosion was heard 4,800 kilometres away."},items:["krakatoa"]},
+  {id:"newyork",lat:40.71,lon:-74.01,name:{"fr": "New York (États-Unis)", "en": "New York (United States)"},blurb:{"fr": "Le site du World Trade Center et son mémorial.", "en": "The World Trade Center site and its memorial."},items:["september11"]}
 ];
 
 Object.assign(uiPages.fr, {

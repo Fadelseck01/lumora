@@ -59,7 +59,7 @@ const OTD_LINKS = {
   pompeii:["Pompéi","Pompeii","Vésuve","Vesuvius","Herculanum","Herculaneum"],
   cleopatra:["Cléopâtre","Cleopatra"], mansa:["Mansa Moussa","Mansa Musa","empire du Mali","Mali Empire"],
   ibnbattuta:["Ibn Battûta","Ibn Battuta"], zimbabwe:["Grand Zimbabwe","Great Zimbabwe"],
-  tsunami2004:["tsunami","raz-de-marée"], ringoffire:["ceinture de feu","Ring of Fire","Krakatoa","Krakatau","Pinatubo","mont Saint Helens","Mount St. Helens"],
+  tsunami2004:["tsunami","raz-de-marée"], ringoffire:["ceinture de feu","Ring of Fire","Pinatubo","mont Saint Helens","Mount St. Helens"],
   calbuco:["Calbuco"], challenger:["fosse des Mariannes","Mariana Trench","Challenger Deep"],
   goree:["Gorée","traite négrière","traite atlantique","Atlantic slave trade","abolition de l'esclavage","abolition of slavery"],
   lacrose:["lac Rose","Lake Retba","Paris-Dakar","Dakar Rally","rallye Dakar"],
@@ -86,7 +86,11 @@ const OTD_LINKS = {
   magellan:["Magellan", "Elcano", "Lapulapu"],
   mlk:["Martin Luther King", "I have a dream", "Rosa Parks", "droits civiques", "civil rights"],
   hitler:["Adolf Hitler", "Hitler"],
-  berlinwall:["mur de Berlin", "Berlin Wall", "Checkpoint Charlie"]
+  berlinwall:["mur de Berlin", "Berlin Wall", "Checkpoint Charlie"],
+  titanic:["Titanic"],
+  joola:["Joola"],
+  krakatoa:["Krakatoa", "Krakatau"],
+  september11:["11 septembre 2001", "September 11 attacks", "World Trade Center", "attentats du 11 septembre", "Al-Qaïda", "al-Qaeda"]
 };
 const otdRe = {};
 function otdMatches(ev){

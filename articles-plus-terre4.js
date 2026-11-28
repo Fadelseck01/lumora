@@ -156,14 +156,14 @@ const fig=(id,hf,he,f)=>({[id]:{fr:{[hf]:f[0]},en:{[he]:f[1]}}});
 addLong({
 ocean:{
  fr:[{h:"Les épaves des grands fonds", p:[
-  "Les grands fonds sont aussi un musée silencieux. En 1985, une équipe franco-américaine menée par Jean-Louis Michel et Robert Ballard retrouve l'épave du Titanic, à près de 3 800 mètres de profondeur, au large de Terre-Neuve, 73 ans après son naufrage. Le navire s'est brisé en deux en coulant, et ses deux parties reposent à environ 600 mètres l'une de l'autre.",
+  "Les grands fonds sont aussi un musée silencieux. Le plus célèbre de ses visiteurs, le Titanic, retrouvé en 1985 au large de Terre-Neuve, a sa propre découverte sur LUMORA. Mais bien d'autres navires reposent dans les profondeurs, préservés par le froid et l'obscurité.",
   "En mars 2022, une expédition retrouve dans la mer de Weddell, en Antarctique, l'Endurance, le navire de l'explorateur Ernest Shackleton, écrasé par la banquise en 1915. À plus de 3 000 mètres de profondeur, dans une eau glaciale où les vers qui mangent le bois ne vivent pas, l'épave est remarquablement conservée : on peut encore lire son nom sur la poupe.",
-  "Visiter ces épaves reste dangereux. En juin 2023, le petit submersible Titan, qui emmenait des passagers voir le Titanic, implose pendant sa descente, tuant les cinq personnes à bord. L'enquête a pointé des défauts dans la conception de sa coque. Ce drame a rappelé combien la pression des profondeurs ne pardonne aucune erreur."
+  "Les épaves les plus profondes se trouvent dans le Pacifique. En juin 2022, une expédition de l'explorateur Victor Vescovo a identifié l'USS Samuel B. Roberts, un petit navire de guerre américain coulé en 1944 lors d'une bataille au large des Philippines. Il repose à près de 6 900 mètres de profondeur : c'est l'épave la plus profonde jamais retrouvée."
  ]}],
  en:[{h:"Wrecks of the deep", p:[
-  "The deep sea is also a silent museum. In 1985 a French-American team led by Jean-Louis Michel and Robert Ballard found the wreck of the Titanic, nearly 3,800 metres down off Newfoundland, 73 years after it sank. The ship broke in two as it went down, and its two parts lie about 600 metres apart.",
+  "The deep sea is also a silent museum. Its most famous resident, the Titanic, found in 1985 off Newfoundland, has its own discovery on LUMORA. But many other ships lie in the depths, preserved by cold and darkness.",
   "In March 2022 an expedition found in Antarctica's Weddell Sea the Endurance, the ship of the explorer Ernest Shackleton, crushed by sea ice in 1915. More than 3,000 metres down, in icy water where wood-eating worms do not live, the wreck is remarkably well preserved: its name can still be read on the stern.",
-  "Visiting these wrecks remains dangerous. In June 2023 the small submersible Titan, taking passengers to see the Titanic, imploded during its descent, killing all five people aboard. The investigation pointed to flaws in the design of its hull. The tragedy was a reminder that the pressure of the deep forgives no mistakes."
+  "The deepest wrecks lie in the Pacific. In June 2022 an expedition led by the explorer Victor Vescovo identified the USS Samuel B. Roberts, a small American warship sunk in 1944 during a battle off the Philippines. It lies nearly 6,900 metres down: the deepest wreck ever found."
  ]}]
 },
 polarnight:{
