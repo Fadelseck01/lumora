@@ -90,7 +90,11 @@ const OTD_LINKS = {
   titanic:["Titanic"],
   joola:["Joola"],
   krakatoa:["Krakatoa", "Krakatau"],
-  september11:["11 septembre 2001", "September 11 attacks", "World Trade Center", "attentats du 11 septembre", "Al-Qaïda", "al-Qaeda"]
+  september11:["11 septembre 2001", "September 11 attacks", "World Trade Center", "attentats du 11 septembre", "Al-Qaïda", "al-Qaeda"],
+  mh370:["MH370", "Malaysia Airlines"],
+  dbcooper:["D. B. Cooper", "D.B. Cooper"],
+  tunguska:["Toungouska", "Tunguska"],
+  ironmask:["masque de fer", "Iron Mask"]
 };
 const otdRe = {};
 function otdMatches(ev){

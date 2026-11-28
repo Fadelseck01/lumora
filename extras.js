@@ -34,7 +34,11 @@ const subOf = {
   titanic:3,
   joola:3,
   krakatoa:2,
-  september11:3
+  september11:3,
+  mh370:2,
+  dbcooper:2,
+  tunguska:1,
+  ironmask:2
 };
 
 /* Phrase d'accueil de chaque page univers */
@@ -89,7 +93,11 @@ const timeline = {
   titanic:{y:1912},
   joola:{y:2002},
   krakatoa:{y:1883},
-  september11:{y:2001}
+  september11:{y:2001},
+  mh370:{y:2014},
+  dbcooper:{y:1971},
+  tunguska:{y:1908},
+  ironmask:{y:1669, l:{"fr": "1669 – 1703", "en": "1669 – 1703"}}
 };
 
 /* Quiz : deux questions écrites par univers (+ questions photo générées automatiquement).
@@ -180,7 +188,15 @@ const quizBank = [
   {cat:"upheavals",ref:"krakatoa",a:0,q:{"fr": "Jusqu'à quelle distance l'explosion du Krakatoa a-t-elle été entendue ?", "en": "How far away was Krakatoa's explosion heard?"},
    o:{"fr": ["Environ 4 800 km", "Environ 50 km", "Environ 500 km", "Dans le monde entier"], "en": ["About 4,800 km", "About 50 km", "About 500 km", "All over the world"]}},
   {cat:"upheavals",ref:"september11",a:3,q:{"fr": "Pourquoi le vol 93 n'a-t-il pas atteint sa cible le 11 septembre 2001 ?", "en": "Why did Flight 93 not reach its target on 11 September 2001?"},
-   o:{"fr": ["Il a été abattu par l'armée", "Il manquait de carburant", "Le pilote a repris les commandes", "Les passagers se sont révoltés"], "en": ["It was shot down by the military", "It ran out of fuel", "The pilot regained control", "The passengers revolted"]}}
+   o:{"fr": ["Il a été abattu par l'armée", "Il manquait de carburant", "Le pilote a repris les commandes", "Les passagers se sont révoltés"], "en": ["It was shot down by the military", "It ran out of fuel", "The pilot regained control", "The passengers revolted"]}},
+  {cat:"mystery",ref:"mh370",a:3,q:{"fr": "Où a été retrouvée la première pièce du vol MH370 ?", "en": "Where was the first piece of flight MH370 found?"},
+   o:{"fr": ["En Australie", "Au Vietnam", "En Chine", "À La Réunion"], "en": ["In Australia", "In Vietnam", "In China", "On Réunion"]}},
+  {cat:"mystery",ref:"dbcooper",a:1,q:{"fr": "Quelle somme de la rançon de D. B. Cooper a été retrouvée ?", "en": "How much of D. B. Cooper's ransom was found?"},
+   o:{"fr": ["Toute la somme", "Environ 5 800 dollars", "Environ 100 000 dollars", "Rien du tout"], "en": ["All of it", "About 5,800 dollars", "About 100,000 dollars", "Nothing at all"]}},
+  {cat:"mystery",ref:"tunguska",a:2,q:{"fr": "Pourquoi n'a-t-on trouvé aucun cratère à la Toungouska ?", "en": "Why was no crater found at Tunguska?"},
+   o:{"fr": ["Il a été recouvert par un lac", "Le sol était trop dur", "L'objet a explosé dans l'air", "Il a été effacé par la forêt"], "en": ["It was covered by a lake", "The ground was too hard", "The object exploded in the air", "The forest erased it"]}},
+  {cat:"mystery",ref:"ironmask",a:0,q:{"fr": "En quelle matière était le masque du célèbre prisonnier ?", "en": "What was the famous prisoner's mask made of?"},
+   o:{"fr": ["En velours noir", "En fer", "En cuir", "En argent"], "en": ["Black velvet", "Iron", "Leather", "Silver"]}}
 ];
 
 /* Textes de l'interface pour les nouvelles pages */
@@ -283,7 +299,11 @@ const places = [
   {id:"berlin",lat:52.52,lon:13.4,name:{"fr": "Berlin (Allemagne)", "en": "Berlin (Germany)"},blurb:{"fr": "Le mur qui a coupé une ville en deux pendant 28 ans.", "en": "The wall that cut a city in two for 28 years."},items:["berlinwall"]},
   {id:"titanicwreck",lat:41.73,lon:-49.95,name:{"fr": "Épave du Titanic (Atlantique Nord)", "en": "Wreck of the Titanic (North Atlantic)"},blurb:{"fr": "À près de 3 800 mètres sous la surface, au large de Terre-Neuve.", "en": "Nearly 3,800 metres below the surface, off Newfoundland."},items:["titanic"]},
   {id:"krakatau",lat:-6.1,lon:105.42,name:{"fr": "Krakatoa (Indonésie)", "en": "Krakatoa (Indonesia)"},blurb:{"fr": "Le volcan dont l'explosion fut entendue à 4 800 kilomètres.", "en": "The volcano whose explosion was heard 4,800 kilometres away."},items:["krakatoa"]},
-  {id:"newyork",lat:40.71,lon:-74.01,name:{"fr": "New York (États-Unis)", "en": "New York (United States)"},blurb:{"fr": "Le site du World Trade Center et son mémorial.", "en": "The World Trade Center site and its memorial."},items:["september11"]}
+  {id:"newyork",lat:40.71,lon:-74.01,name:{"fr": "New York (États-Unis)", "en": "New York (United States)"},blurb:{"fr": "Le site du World Trade Center et son mémorial.", "en": "The World Trade Center site and its memorial."},items:["september11"]},
+  {id:"indianocean",lat:-35.0,lon:92.0,name:{"fr": "Sud de l'océan Indien", "en": "Southern Indian Ocean"},blurb:{"fr": "Quelque part le long du « septième arc », l'épave du vol MH370.", "en": "Somewhere along the \"seventh arc\", the wreck of flight MH370."},items:["mh370"]},
+  {id:"portland",lat:45.9,lon:-122.6,name:{"fr": "Sud-ouest de l'État de Washington (États-Unis)", "en": "South-western Washington State (United States)"},blurb:{"fr": "Les forêts où D. B. Cooper a sauté en parachute en 1971.", "en": "The forests where D. B. Cooper parachuted in 1971."},items:["dbcooper"]},
+  {id:"tunguska",lat:60.89,lon:101.89,name:{"fr": "Toungouska (Sibérie, Russie)", "en": "Tunguska (Siberia, Russia)"},blurb:{"fr": "La forêt soufflée par une explosion venue du ciel en 1908.", "en": "The forest flattened by an explosion from the sky in 1908."},items:["tunguska"]},
+  {id:"lerins",lat:43.52,lon:7.05,name:{"fr": "Île Sainte-Marguerite (France)", "en": "Île Sainte-Marguerite (France)"},blurb:{"fr": "Le fort où l'Homme au masque de fer a été enfermé onze ans.", "en": "The fort where the Man in the Iron Mask was held for eleven years."},items:["ironmask"]}
 ];
 
 Object.assign(uiPages.fr, {
