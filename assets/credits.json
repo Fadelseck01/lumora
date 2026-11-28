@@ -1870,5 +1870,155 @@
   "license": "CC BY-SA 4.0",
   "artist": "Ms Sarah Welch",
   "credit": "Own work"
+ },
+ "assets/photos/decouvertes/apollo11-1.jpg": {
+  "title": "File:Aldrin Apollo 11 original.jpg",
+  "license": "Public domain",
+  "artist": "Neil Armstrong",
+  "credit": "http://www.hq.nasa.gov/alsj/a11/AS11-40-5903HR.jpg\nhttp://www.archive.org/details/AS11-40-5903 (TIFF image)\nNASA Image a"
+ },
+ "assets/photos/decouvertes/gagarin-1.jpg": {
+  "title": "File:Yuri Gagarin (1961) - Restoration.jpg",
+  "license": "Public domain",
+  "artist": "Arto Jousi / /Suomen valokuvataiteen museo / Alma Media / Uuden Suomen kokoelma; Restored by Adam Cuerden",
+  "credit": "Finnish Museum of Photography"
+ },
+ "assets/photos/decouvertes/sputnik-1.jpg": {
+  "title": "File:Sputnik asm.jpg",
+  "license": "Public domain",
+  "artist": "NSSDC, NASA[1]",
+  "credit": "http://nssdc.gsfc.nasa.gov/database/MasterCatalog?sc=1957-001B"
+ },
+ "assets/photos/decouvertes/laika-1.jpg": {
+  "title": "File:Лайка (собака-космонавт)1.jpg",
+  "license": "Public domain",
+  "artist": "unknown - likely Soviet space program",
+  "credit": "Собака Лайка в кабине космической ракеты. Москва. 1960-е гг."
+ },
+ "assets/photos/plus/apollo11-launch.jpg": {
+  "title": "File:Apollo 11 Launch - GPN-2000-000630.jpg",
+  "license": "Public domain",
+  "artist": "NASA",
+  "credit": "http://grin.hq.nasa.gov/IMAGES/LARGE/GPN-2000-000630.jpg on the Wayback Machine at the Wayback Machine\nhttp://grin.hq.na"
+ },
+ "assets/photos/plus/apollo8-earthrise.jpg": {
+  "title": "File:NASA-Apollo8-Dec24-Earthrise.jpg",
+  "license": "Public domain",
+  "artist": "NASA/Bill Anders",
+  "credit": "http://www.hq.nasa.gov/office/pao/History/alsj/a410/AS8-14-2383HR.jpg"
+ },
+ "assets/photos/plus/apollo11-crew.jpg": {
+  "title": "File:Apollo 11 Crew.jpg",
+  "license": "Public domain",
+  "artist": "NASA",
+  "credit": "NASA Human Space Flight Gallery (image link)"
+ },
+ "assets/photos/plus/apollo11-mcc.jpg": {
+  "title": "File:Apollo 11 Celebration at Mission Control - GPN-2000-001141.jpg",
+  "license": "Public domain",
+  "artist": "NASA",
+  "credit": "https://images.nasa.gov/details/S69-40302\nhttp://grin.hq.nasa.gov/IMAGES/LARGE/GPN-2000-001141.jpg on the Wayback Machin"
+ },
+ "assets/photos/plus/apollo11-bootprint.jpg": {
+  "title": "File:Apollo 11 bootprint - GPN-2001-000014.jpg",
+  "license": "Public domain",
+  "artist": "NASA",
+  "credit": "https://images.nasa.gov/details/KSC-as11-40-5877\nhttp://dayton.hq.nasa.gov/IMAGES/LARGE/GPN-2001-000014.jpg on the Wayba"
+ },
+ "assets/photos/plus/apollo11-tranquility.jpg": {
+  "title": "File:Aldrin Looks Back at Tranquility Base - GPN-2000-001102.jpg",
+  "license": "Public domain",
+  "artist": "NASA Neil A. Armstrong",
+  "credit": "https://images.nasa.gov/details/as11-40-5948\nhttp://dayton.hq.nasa.gov/IMAGES/LARGE/GPN-2000-001102.jpg on the Wayback M"
+ },
+ "assets/photos/plus/apollo11-eagle.jpg": {
+  "title": "File:Eagle In Lunar Orbit - GPN-2000-001210.jpg",
+  "license": "Public domain",
+  "artist": "NASA Michael Collins",
+  "credit": "https://images.nasa.gov/details/as11-44-6581\nhttp://dayton.hq.nasa.gov/IMAGES/LARGE/GPN-2000-001210.jpg on the Wayback M"
+ },
+ "assets/photos/plus/margaret-hamilton.jpg": {
+  "title": "File:Margaret Hamilton - restoration.jpg",
+  "license": "Public domain",
+  "artist": "Adam Cuerden",
+  "credit": "This  is a retouched picture, which means that it has been digitally altered from its original version. Modifications: d"
+ },
+ "assets/photos/plus/apollo11-lro.jpg": {
+  "title": "File:LRO Apollo11 landing site 369440main lroc apollo11 lrg.jpg",
+  "license": "Public domain",
+  "artist": "NASA/Goddard Space Flight Center/Arizona State University",
+  "credit": "http://www.nasa.gov/images/content/369440main_lroc_apollo11_lrg.jpg"
+ },
+ "assets/photos/plus/vostok-bourget.jpg": {
+  "title": "File:Full-Size Mock-up of Vostok 1 capsule at Musée de l'air et de l'espace, Le Bourget, France (53431558341).jpg",
+  "license": "CC BY-SA 2.0",
+  "artist": "Alan Wilson from Peterborough, Cambs, UK",
+  "credit": "Full-Size Mock-up of Vostok 1 capsule at Musée de l'air et de l'espace, Le Bourget, France"
+ },
+ "assets/photos/plus/gagarin-capsule-moscow.jpg": {
+  "title": "File:Gagarin's capsule in Moscow Cosmonautics museum.jpg",
+  "license": "CC BY 2.0",
+  "artist": "Allan Lee (StormyDog) from Auckland, New Zealand",
+  "credit": "Flickr"
+ },
+ "assets/photos/plus/gagarin-moscow-1961.jpg": {
+  "title": "File:Greeting of Yuri Gagarin 02.jpg",
+  "license": "CC BY 4.0",
+  "artist": "Главархив Москвы",
+  "credit": "https://www.mos.ru/news/item/122374073/"
+ },
+ "assets/photos/plus/tereshkova.jpg": {
+  "title": "File:RIAN archive 612748 Valentina Tereshkova.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "Alexander Mokletsov / Александр Моклецов",
+  "credit": "RIA Novosti archive, image #612748, http://visualrian.ru/media/612748 6x6 film / 6х6 негатив"
+ },
+ "assets/photos/plus/gagarin-statue-london.jpg": {
+  "title": "File:Gagarin statue london.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "Alexf",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/gagarins-start.jpg": {
+  "title": "File:Baikonur Cosmodrome Soyuz launch pad.jpg",
+  "license": "Public domain",
+  "artist": "Bill Ingalls",
+  "credit": "NASA website; description,[1] high resolution image.[2]"
+ },
+ "assets/photos/plus/r7-vostok-moscow.jpg": {
+  "title": "File:Russian Rockets (4206486740).jpg",
+  "license": "CC BY 2.0",
+  "artist": "Ese-emon from Japan",
+  "credit": "Russian Rockets"
+ },
+ "assets/photos/plus/sputnik-liverpool.jpg": {
+  "title": "File:Replica of Sputnik 1, World Museum Liverpool (4).JPG",
+  "license": "CC BY-SA 3.0",
+  "artist": "Rept0n1x",
+  "credit": "Own work"
+ },
+ "assets/photos/plus/explorer1-conference.jpg": {
+  "title": "File:Explorer 1 conference 1958.jpg",
+  "license": "Public domain",
+  "artist": "NASA/JPL",
+  "credit": "https://www.astronomy.com/space-exploration/explorer-1-the-start-of-the-american-space-age/"
+ },
+ "assets/photos/plus/laika-stamp-romania.jpg": {
+  "title": "File:Posta Romana - 1959 - Laika 120 B.jpg",
+  "license": "Public domain",
+  "artist": "Colectivul Dumitrana",
+  "credit": "scanned by user Neozoon - 'scanned 2009-10-22'; alternative on web at https://archive.is/qg0Cb"
+ },
+ "assets/photos/plus/belka-strelka.jpg": {
+  "title": "File:Belka-Strelka-museum.jpeg",
+  "license": "CC0",
+  "artist": "Музей Космонавтики from Россия",
+  "credit": "FP2A8697"
+ },
+ "assets/photos/plus/ham-chimp.jpg": {
+  "title": "File:Ham - GPN-2000-001002.jpg",
+  "license": "Public domain",
+  "artist": "NASA",
+  "credit": "http://dayton.hq.nasa.gov/IMAGES/LARGE/GPN-2000-001002.jpg on the Wayback Machine at the Wayback Machine\nhttp://grin.hq."
  }
 }
